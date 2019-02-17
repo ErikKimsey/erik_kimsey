@@ -11,6 +11,7 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Work from './Work/Work';
 import Banner from './Banner/Banner';
+import {navToggle} from './actions/navToggle' ;
 
 class App extends Component {
   constructor(props){
@@ -27,7 +28,7 @@ class App extends Component {
   * mapDispatchToProps
   */
   mapDispatchToProps = dispatch => ({
-    simpleAction: () => dispatch(simpleAction())
+    navToggle: () => dispatch(navToggle())
   })
 
   /* 
@@ -60,4 +61,4 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(this.mapStateToProps, this.mapDispatchToProps)(App);
