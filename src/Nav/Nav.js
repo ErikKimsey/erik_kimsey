@@ -6,7 +6,7 @@ import './nav.scss';
 const Nav = () => {
   const toggleBtn = document.querySelector('.nav-list');
   const handleMobileToggle = () => {
-    toggleBtn.classList.toggle('active');
+    toggleBtn.classList.toggle('.active');
     console.log(toggleBtn);
     
   }
