@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import Banner from '../Banner/Banner';
 import './nav.scss';
 
 class Nav extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+
+    }
+    let isActive = this.props.isActive;
+  }
 
   componentDidMount = () => {
     let navList = document.querySelector('.nav-list');
     let toggleBtn = document.querySelector('.navbar-toggle');
-    toggleBtn.addEventListener('click', ()=>{
-      this.handleToggle();
-    }) 
   }
   
   handleToggle = () => {
@@ -23,12 +26,6 @@ class Nav extends Component {
     
     return (
       <div className="nav-container">
-        <div className="toggle-logo-container">
-            <Banner />
-          <span className="navbar-toggle" id="js-navbar-toggle" >
-              <i className="fas fa-bars"></i>
-        </span>
-        </div>
         <ul className="nav-list">
           <li>
             <Link className="nav-link" to="/">home</Link>
