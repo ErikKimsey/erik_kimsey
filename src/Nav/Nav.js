@@ -10,8 +10,7 @@ class Nav extends Component {
     let toggleBtn = document.querySelector('.navbar-toggle');
     toggleBtn.addEventListener('click', ()=>{
       this.handleToggle();
-    })
-    
+    }) 
   }
   
   handleToggle = () => {
@@ -19,8 +18,6 @@ class Nav extends Component {
     console.log(navList); 
     navList.classList.toggle('active');
   }
-
-
   
   render(){
     
