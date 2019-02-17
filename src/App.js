@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Router, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.scss';
 import './Banner/banner.scss';
@@ -21,6 +22,20 @@ class App extends Component {
   componentDidMount() {
     
   }
+
+  /* 
+  * mapDispatchToProps
+  */
+  mapDispatchToProps = dispatch => ({
+    simpleAction: () => dispatch(simpleAction())
+  })
+
+  /* 
+  * mapStateToProps
+  */
+  mapStateToProps = state => ({
+    ...state
+  })
 
   handleToggle = () => {
     
@@ -45,4 +60,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
