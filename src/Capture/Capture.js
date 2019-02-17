@@ -26,12 +26,12 @@ class Capture extends Component {
   render(){
     return (
       <div className="capture-container">
-        <div class="camera">
+        <div className="camera">
           <video id="video"></video>
         </div>
         <canvas id="canvas">
         </canvas>
-        <div class="output">
+        <div className="output">
           <img id="photo" /> 
         </div>
 

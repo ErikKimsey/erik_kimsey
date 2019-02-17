@@ -1,0 +1,40 @@
+@import '../__styles/responsive.scss';
+
+$hover-color: #fcfa85;
+
+.banner-container {
+  width:100%;
+  position: fixed;
+  display: flex;
+  flex-flow: row;
+  color:white;
+  font-weight: 400;
+  justify-content: center;
+  top: 33px;
+  height:50px;
+  margin: 5px;
+  .banner-item {
+    font-size: 2em;
+    font-weight: 100;
+    margin: 5px 20px;
+  }
+  @media only screen and (max-width: $mdDevice) {
+    display: flex;
+    display: row;
+    justify-content: flex-start;
+    top: 0px;
+    .name {
+      position: absolute;
+      top:0px;
+
+      font-size: 2em;
+      align-self: center;
+    }
+    .underscore {
+      display: none;
+    }
+    .role {
+      display: none;
+    }
+  }
+}

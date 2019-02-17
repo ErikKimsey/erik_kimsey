@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path="/work" component={Work}/>
             <Route exact path="/contact" component={Contact}/>
           </div>
-        <Capture />
+        {/* <Capture /> */}
       </div>
     );
   }
