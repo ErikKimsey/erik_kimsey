@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { connect } from 'react-redux';
-import logo from './logo.svg';
 import './App.scss';
 import './Banner/banner.scss';
 import Capture from './Capture/Capture';
@@ -11,7 +10,21 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Work from './Work/Work';
 import Banner from './Banner/Banner';
-import {navToggle} from './actions/navToggle' ;
+import navToggle from './actions/navToggle' ;
+
+/* 
+* mapDispatchToProps
+*/
+const mapDispatchToProps = dispatch => ({
+  navToggle: () => dispatch(navToggle())
+})
+
+/* 
+* mapStateToProps
+*/
+const mapStateToProps = state => ({
+  ...state
+})
 
 class App extends Component {
   constructor(props){
@@ -20,23 +33,11 @@ class App extends Component {
       toggled: false,
     }
   }
+
   componentDidMount() {
     
   }
 
-  /* 
-  * mapDispatchToProps
-  */
-  mapDispatchToProps = dispatch => ({
-    navToggle: () => dispatch(navToggle())
-  })
-
-  /* 
-  * mapStateToProps
-  */
-  mapStateToProps = state => ({
-    ...state
-  })
 
   handleToggle = () => {
     console.log('inside!'); 
@@ -61,4 +62,4 @@ class App extends Component {
   }
 }
 
-export default connect(this.mapStateToProps, this.mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
