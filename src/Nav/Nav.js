@@ -7,12 +7,23 @@ class Nav extends Component {
 
   componentDidMount = () => {
     let navList = document.querySelector('.nav-list');
-    console.log(navList);
+    let toggleBtn = document.querySelector('.navbar-toggle');
+    toggleBtn.addEventListener('click', ()=>{
+      this.handleToggle();
+    })
     
   }
   
+  handleToggle = () => {
+    let navList = document.querySelector('.nav-list');
+    console.log(navList); 
+    navList.classList.toggle('active');
+  }
 
+
+  
   render(){
+    
     return (
       <div className="nav-container">
         <div className="toggle-logo-container">
