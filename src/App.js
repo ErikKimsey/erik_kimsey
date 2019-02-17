@@ -39,8 +39,8 @@ class App extends Component {
   })
 
   handleToggle = () => {
-    
     console.log('inside!'); 
+    this.props.navToggle();
   }
 
   render() {
