@@ -21,7 +21,7 @@ const Banner = ({toggle}) => {
     <div className="banner-container">
       <div className="toggle-logo-container">
           <span className="navbar-toggle" id="js-navbar-toggle" onClick={()=>{handleToggle() }} >
-          <Spin color="white" />
+          <Spin className="spin" color="white" />
         </span>
       </div>
       <div className="name banner-item">erik kimsey</div>

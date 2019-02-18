@@ -13,11 +13,17 @@ $hover-color: #fcfa85;
   top: 33px;
   height:50px;
   margin: 5px;
+
+  .toggle-logo-container {
+    display: none;
+  }
+
   .banner-item {
     font-size: 2em;
     font-weight: 100;
     margin: 5px 20px;
   }
+  
   @media only screen and (max-width: $mdDevice) {
     display: flex;
     display: row;
@@ -28,9 +34,9 @@ $hover-color: #fcfa85;
     .toggle-logo-container {
       height: 100px;
       width: 100%;
+      display: flex;
       .navbar-toggle {
         position: absolute;
-        display: flex;
         flex-flow: row;
         top: 10px;
         right: 20px;
