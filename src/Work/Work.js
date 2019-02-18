@@ -3,7 +3,10 @@ import './work.scss';
 
 const Work = () => {
   return (
-    <h1>Work</h1>
+    <div className="work-container">
+      <p></p>
+      <h1>Work</h1>
+    </div>
   )
 }
 
