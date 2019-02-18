@@ -17,7 +17,6 @@ class Nav extends Component {
   
   handleToggle = () => {
     let navContainer = document.querySelector('.nav-container');
-    console.log(navContainer);
     navContainer.classList.toggle('active');
   }
   
