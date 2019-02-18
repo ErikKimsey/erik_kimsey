@@ -1,15 +1,27 @@
 import React from 'react';
 import './banner.scss';
 import '../Nav/Nav';
-import { Spin } from 'react-burgers';
+import { Slider, Spin } from 'react-burgers';
+
+let isActive = false;
+const toggleBurger = () => {
+  console.log('burgersssss');
+  
+  isActive = !isActive;
+  console.log(isActive);
+}
+
 
 const Banner = ({toggle}) => {
-  let isActive = false;
+  const handleToggle = () => {
+    toggle();
+  }
+
   return (
     <div className="banner-container">
       <div className="toggle-logo-container">
-          <span className="navbar-toggle" id="js-navbar-toggle" onClick={()=>{toggle()}}>
-          <Spin color="white"/>
+          <span className="navbar-toggle" id="js-navbar-toggle" onClick={()=>{handleToggle() }} >
+          <Spin color="white" />
         </span>
       </div>
       <div className="name banner-item">erik kimsey</div>
@@ -19,4 +31,4 @@ const Banner = ({toggle}) => {
   )
 }
 
-export default Banner;false
+export default Banner;
