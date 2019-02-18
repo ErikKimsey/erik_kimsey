@@ -1,9 +1,11 @@
-export default (state = {}, action) => {
+let initialState = [{isActive: false}];
+
+export default (state = initialState, action) => {
   switch (action.type) {
     case 'NAV_TOGGLE':
-      return {
-        result: action.payload
-      }
+      return Object.assign({}, state, {
+        
+      })
     default:
       return state
   }
