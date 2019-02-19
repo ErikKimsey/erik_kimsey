@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './nav.scss';
 import Banner from '../Banner/Banner';
+
+const activeStyles = {
+  color:'#fcfa85'
+};
 
 class Nav extends Component {
   constructor(props){
@@ -25,16 +29,16 @@ class Nav extends Component {
         <div className="nav-container">
           <ul className="nav-list">
             <li onClick={this.handleToggle}>
-              <Link className="nav-link" to="/">home</Link>
+              <NavLink activeStyle={activeStyles} className="nav-link" exact to="/">home</NavLink>
             </li>
             <li onClick={this.handleToggle}>
-              <Link className="nav-link" to="/about">me</Link>
+              <NavLink activeStyle={activeStyles} className="nav-link" to="/about">me</NavLink>
             </li>
             <li onClick={this.handleToggle}>
-              <Link className="nav-link" to="/work">work</Link>
+              <NavLink activeStyle={activeStyles} className="nav-link" to="/work">work</NavLink>
             </li>
             <li onClick={this.handleToggle}>
-              <Link className="nav-link" to="/contact">contact me</Link>
+              <NavLink activeStyle={activeStyles} className="nav-link" to="/contact">contact me</NavLink>
             </li>
           </ul>
         </div>

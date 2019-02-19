@@ -22,6 +22,13 @@ $hover-color: #fcfa85;
     font-weight: 100;
     margin: 5px 20px;
   }
+
+  .name {
+    color: #fcfa85;
+  }
+  // .role {
+  //   color: #fcfa85;
+  // }
   
   @media only screen and (max-width: $lgDevice) {
     display: flex;

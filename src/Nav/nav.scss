@@ -182,13 +182,6 @@ $hover-color: #fcfa85;
   20% {
     filter: blur(2px);
   }
-  40% {
-    // transform: translate3d(-20%, 0, 0);
-    // filter: blur(0);
-  }
-  60% {
-    // filter: blur(2px);
-  }
   80% {
     transform: translate3d(-60%, 0, 0);
     filter: blur(0);

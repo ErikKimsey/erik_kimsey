@@ -34,9 +34,9 @@ class App extends Component {
         <Nav isActive={this.state.toggled}/>
           <div className="routes-container">
             <Route exact path="/" component={Landing}/>
-            <Route exact path="/about" component={About}/>
-            <Route exact path="/work" component={Work}/>
-            <Route exact path="/contact" component={Contact}/>
+            <Route path="/about" component={About}/>
+            <Route path="/work" component={Work}/>
+            <Route path="/contact" component={Contact}/>
           </div>
         {/* <Capture /> */}
       </div>
