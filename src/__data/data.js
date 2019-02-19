@@ -12,6 +12,7 @@ const STYLE_DATA = [
   'SASS',
   'Less',
   'Style-Components',
+  'GreenSock',
 ]
 
 const HTML_DATA = [
@@ -54,6 +55,24 @@ const DESIGN_DATA = [
   'XD',
 ];
 
+const MOST_INTRIGUING_DATA = [
+  'WebRTC',
+  'WebRTC',
+  'WebRTC',
+];
+
+const FAV_COMBOS_DATA = [
+  'JS + Sass + React + GreenSock',
+  'React + Express + Apollo + GraphQL',
+  'ReactStrap + Illustrator + FontAwesome',
+  'mobile-device sensors + new Web APIs + art&sound',
+  'Webpack + Yarn + GitHub',
+  'Python + Django',
+  'D3.js + Angular + German',
+  'Processing + Arduino + freetime + IC',
+  'Java + Android + Android Studio',
+]
+
 export {
   JS_DATA, 
   BACKEND_DATA,
@@ -61,5 +80,7 @@ export {
   HTML_DATA, 
   STYLE_DATA, 
   WEB_API_DATA,
-  DESIGN_DATA 
+  DESIGN_DATA,
+  FAV_COMBOS_DATA,
+  MOST_INTRIGUING_DATA
 }
