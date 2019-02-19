@@ -16,24 +16,16 @@ class Banner extends Component {
   constructor(props){
     super(props);
     this.state = {
-      iconActive: null,
+      iconActive: this.props.isActive,
     }
   }
 
   componentDidMount = () => {
     this.setState({iconActive: false});
-    console.log(this.state.iconActive);
-  }
-
-  isActive = () => {
-    return this.state.iconActive;
   }
 
   handleToggle = () => {
     this.props.toggle();
-    this.setState({iconActive: !this.state.iconActive});
-    console.log(this.state.iconActive);
-    
   }
 
   render(){
@@ -41,7 +33,7 @@ class Banner extends Component {
       <div className="banner-container">
         <div className="toggle-logo-container">
             <span className="navbar-toggle" id="js-navbar-toggle" onClick={this.handleToggle} >
-            <Spin className="spin" active={this.isActive()} color="white" />
+            <Spin className="spin" active={this.props.isActive} color="white" />
           </span>
         </div>
         <div className="name banner-item">erik kimsey</div>
