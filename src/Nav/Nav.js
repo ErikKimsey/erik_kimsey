@@ -6,13 +6,6 @@ import Banner from '../Banner/Banner';
 class Nav extends Component {
   constructor(props){
     super(props);
-    let isActive = this.props.isActive;
-    console.log(isActive);
-  }
-
-  componentDidMount = () => {
-    let navList = document.querySelector('.nav-container');
-    let toggleBtn = document.querySelector('.navbar-toggle');
   }
   
   handleToggle = () => {
