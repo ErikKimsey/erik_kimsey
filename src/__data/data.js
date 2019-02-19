@@ -1,3 +1,5 @@
+// The document contains data used to populate fields throughout the site.
+
 const JS_DATA = [
   'JavaScript (ES6+)',
   'React',
@@ -5,7 +7,7 @@ const JS_DATA = [
   'Node.js',
   'Axios',
   'Apollo'
-]
+];
 
 const STYLE_DATA = [
   'CSS3',
@@ -13,7 +15,7 @@ const STYLE_DATA = [
   'Less',
   'Style-Components',
   'GreenSock',
-]
+];
 
 const HTML_DATA = [
   'HTML 5',
@@ -38,7 +40,7 @@ const WEB_API_DATA = [
   'Mic/Camera',
   'Drag and Drop',
   'Vibration API',
-]
+];
 
 const LANGUAGE_DATA = [
   'Python',
@@ -46,7 +48,7 @@ const LANGUAGE_DATA = [
   'Processing',
   'Java (Android)',
   'C++',
-]
+];
 
 const DESIGN_DATA = [
   'Illustrator',
@@ -62,16 +64,14 @@ const MOST_INTRIGUING_DATA = [
 ];
 
 const FAV_COMBOS_DATA = [
-  'JS + Sass + React + GreenSock',
+  'JS + Sass + GreenSock',
   'React + Express + Apollo + GraphQL',
   'ReactStrap + Illustrator + FontAwesome',
   'mobile-device sensors + new Web APIs + art&sound',
   'Webpack + Yarn + GitHub',
-  'Python + Django',
-  'D3.js + Angular + German',
+  'D3.js + Angular',
   'Processing + Arduino + freetime + IC',
-  'Java + Android + Android Studio',
-]
+];
 
 export {
   JS_DATA, 
