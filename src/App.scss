@@ -19,8 +19,34 @@
     box-shadow: inset 0px 0px 1px #111;
   }
 
-  @media only screen and (max-width: $mdDevice) {}
-  @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $lgDevice) {
+    .routes-container {
+      margin: 153px auto;
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: $lgDevice) {
+    .routes-container {
+      width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: $mdDevice) {
+    .routes-container {
+      width: 100%;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+  }
+  @media only screen and (max-width: $smDevice) {
+  
+    .routes-container {
+      width: 100%;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
   @media only screen and (max-width: $xsDevice) {}
 }
 
