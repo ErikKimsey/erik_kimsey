@@ -26,9 +26,8 @@ $hover-color: #fcfa85;
   .name {
     color: #fcfa85;
   }
-  // .role {
-  //   color: #fcfa85;
-  // }
+
+  .role {}
   
   @media only screen and (max-width: $lgDevice) {
     display: flex;
