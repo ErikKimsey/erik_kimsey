@@ -1,3 +1,5 @@
+@import './__styles/responsive.scss';
+
 .App {
   position: absolute;
   height: 100vh;
@@ -6,10 +8,17 @@
   flex-flow: row;
   justify-content: space-around;
 
-.routes-container{
-  width:80%;
-  height: 700px;
-  margin:107px 1%;
-}
+  .routes-container{
+    height: 700px;
+    overflow: scroll;
+    margin:107px 1%;
+    margin:1px;
+    scroll-behavior: smooth;
+    box-shadow: inset 0px 0px 3px #111111;
+  }
+
+  @media only screen and (max-width: $mdDevice) {}
+  @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $xsDevice) {}
 }
 

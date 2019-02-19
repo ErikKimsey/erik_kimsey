@@ -1,14 +1,36 @@
 .about-container {
+
   color:#fff;
-  h5{
-    font-size: 1.4em;
+  width:700px;
+
+  .self-blurb-container {
+
   }
-  h4 {
-    font-size: 1.6em;
+
+  .tech-knowledge-container {
+
   }
+
+  .liked-things-container {
+
+  }
+
+  .education-container {
+
+  }
+
   .liked-things-container {
     p {
       margin: 4px;
     }
   }
+
+  h5{
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.6em;
+  }
+
 }
