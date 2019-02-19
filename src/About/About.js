@@ -7,7 +7,7 @@ const About = () => {
 
     <div className="self-blurb-container">
       <p>I work creatively with technology.</p>
-      <p>Focusing on web-based and mobile-web technology.</p>
+      <p>Focusing on web-based and mobile-web technology, design, and content.</p>
       <p>I like the cross-section of interactivity + aesthetic-appeal + innovation + good purpose.</p>
     </div>
 
