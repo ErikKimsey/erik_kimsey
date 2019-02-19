@@ -9,12 +9,14 @@
   justify-content: space-around;
 
   .routes-container{
-    height: 700px;
+    // height: 700px;
+    width: 900px;
     overflow: scroll;
-    margin:107px 1%;
-    margin:1px;
+    margin: 153px 5px;
+    top:103px;
+    background-color: rgba(0,0,0,0.06);
     scroll-behavior: smooth;
-    box-shadow: inset 0px 0px 3px #111111;
+    box-shadow: inset 0px 0px 1px #111;
   }
 
   @media only screen and (max-width: $mdDevice) {}
