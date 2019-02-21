@@ -1,4 +1,5 @@
-
+@import '../../../__styles/responsive.scss';
+$hover-color: #fcfa85;
 
 .data-item-container {
   box-sizing: border-box;
@@ -7,4 +8,42 @@
   left: 20px;
   padding:2px;
   border: 1px solid blanchedalmond;
+  @media only screen and (max-width: $lgDevice) {
+
+  }
+  @media only screen and (max-width: $lgDevice) {
+    background: hotpink;
+    color:blueviolet;
+    width: 100%;
+    margin: 0 auto;
+    background: blueviolet;
+    color:hotpink;
+    border: none;
+    margin: 1px;
+  }
+  
+  @media only screen and (max-width: $mdDevice) {
+    width: 100%;
+    margin: 0 auto;
+    background: blueviolet;
+    color:hotpink;
+    border: none;
+    margin: 1px;
+  }
+  @media only screen and (max-width: $smDevice) {
+    width: 100%;
+    margin: 0 auto;
+    background: blueviolet;
+    color:hotpink;
+    border: none;
+    margin: 1px;
+  }
+  @media only screen and (max-width: $xsDevice) {
+    width: 100%;
+    margin: 0 auto;
+    background: blueviolet;
+    color:hotpink;
+    border: none;
+    margin: 1px;
+  }
 }

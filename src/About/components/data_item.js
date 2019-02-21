@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './styles/data_item.scss';
 
 const DataItem = (props) => {
-  // console.log(props.datum);
   
   return (
     <div className="data-item-container">

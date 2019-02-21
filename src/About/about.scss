@@ -1,9 +1,8 @@
-
+@import '../__styles/responsive.scss';
 $hover-color: #fcfa85;
 
 .about-container {
   color:#fff;
-  // max-width:700px;
   width: 100%;
   
   .self-blurb-container {
@@ -20,14 +19,11 @@ $hover-color: #fcfa85;
 
   .tech-knowledge-container {
     background-color: rgba(0,0,0,0.1);
-    // margin: 0 20px;
-    // width:100%;
     padding:2%;
     display: flex;
     flex-flow: wrap;
-    // flex-wrap: wrap;
     .toolbelt-item {
-      width:auto;
+      width:auto; 
       margin: 0;
     }
   }

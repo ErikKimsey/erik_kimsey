@@ -18,8 +18,8 @@ class DataModal extends Component {
   render(){
     return (
       <div className="modal-container" onClick={this.handleToggle}>
-        <h1>{this.props.title}</h1>
         <div className="modal-triggered-container">
+        <h1>{this.props.title}</h1>
           <div className="list-container">
             {
               this.props.data.map((datum)=>{
