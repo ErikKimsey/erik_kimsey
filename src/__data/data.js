@@ -2,7 +2,7 @@
 
 const JS_DATA = [
   'JavaScript',
-  'ES6 and up',
+  'ES6+',
   'React',
   'P5.js',
   'Node.js',
