@@ -23,7 +23,6 @@ class App extends Component {
 
 
   handleToggle = () => {
-    console.log('inside!'); 
     this.setState({toggle: !this.state.toggled});
   }
 

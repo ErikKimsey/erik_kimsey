@@ -50,6 +50,17 @@ const LANGUAGE_DATA = [
   'C++',
 ];
 
+const TECH_LIST = [
+  'JavaScript',
+  'Styling',
+  'HTML5',
+  'BackEnd Web',
+  'Cool Web-Tech',
+  'Other Languages',
+  'Design Experience',
+  'Favorite Tech-Stacks'
+];
+
 const DESIGN_DATA = [
   'Illustrator',
   'Photoshop',
@@ -82,5 +93,6 @@ export {
   WEB_API_DATA,
   DESIGN_DATA,
   FAV_COMBOS_DATA,
-  MOST_INTRIGUING_DATA
+  MOST_INTRIGUING_DATA,
+  TECH_LIST,
 }

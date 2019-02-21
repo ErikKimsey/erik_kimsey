@@ -1,0 +1,27 @@
+
+$hover-color: #fcfa85;
+
+.modal-container {
+  
+  display: flex;
+  flex-flow: row;
+
+  h1 {
+    margin: 0;
+    width: 200px;
+    height:40px;
+  }
+
+  &:hover {
+    h1{
+      cursor: pointer;
+      color:$hover-color;
+      // transform: translateX(3px);
+    }
+  }
+
+  .list-container {
+    display: none;
+    
+  }
+}

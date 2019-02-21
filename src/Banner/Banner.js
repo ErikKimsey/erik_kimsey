@@ -4,11 +4,8 @@ import '../Nav/Nav';
 import { Slider, Spin } from 'react-burgers';
 
 let isActive = false;
-const toggleBurger = () => {
-  console.log('burgersssss');
-  
+const toggleBurger = () => {  
   isActive = !isActive;
-  console.log(isActive);
 }
 
 
