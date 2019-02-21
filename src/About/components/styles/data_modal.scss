@@ -3,9 +3,9 @@ $hover-color: #fcfa85;
 
 .modal-container {
   
-  display: flex;
-  flex-flow: row;
-
+  // display: flex;
+  // flex-flow: row;
+  margin: 0 auto;
   h1 {
     margin: 0;
     width: 200px;
@@ -16,12 +16,26 @@ $hover-color: #fcfa85;
     h1{
       cursor: pointer;
       color:$hover-color;
-      // transform: translateX(3px);
     }
   }
-
-  .list-container {
-    display: none;
-    
+  .modal-triggered-container {
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    left:0px;
+    top:0px;
+    background-color: aquamarine;
+    .list-container {
+      position: relative;
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      top: 100px;
+      width: 600px;
+      height:500px;
+      background-color: aqua;
+      color: black;
+    }
   }
 }

@@ -19,12 +19,14 @@ class DataModal extends Component {
     return (
       <div className="modal-container" onClick={this.handleToggle}>
         <h1>{this.props.title}</h1>
-        <div className="list-container">
-          {
-            this.props.data.map((datum)=>{
-              return <DataItem key={datum} datum={datum} />
-            })
-          }
+        <div className="modal-triggered-container">
+          <div className="list-container">
+            {
+              this.props.data.map((datum)=>{
+                return <DataItem className="item" key={datum} datum={datum} />
+              })
+            }
+          </div>
         </div>
       </div>
     )

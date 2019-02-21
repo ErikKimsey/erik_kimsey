@@ -37,10 +37,9 @@ class About extends Component {
         <h1 className="toolbelt-h1">ToolBelt</h1>
       <div className="tech-knowledge-container">
         <div className="js-scroll toolbelt-item">
-          
           <DataModal title={"FrontEnd-JavaScript"} data={DATA.JS_DATA} />
         </div>
-        <div className="style-scroll toolbelt-item">
+        {/* <div className="style-scroll toolbelt-item">
           
           <DataModal title={"Styling"} data={DATA.STYLE_DATA} />
         </div>
@@ -63,7 +62,7 @@ class About extends Component {
         <div className="fav-stacks-scroll toolbelt-item">
           <DataModal title={"Fav Stacks"} data={DATA.FAV_COMBOS_DATA} />
         </div>
-  
+   */}
       </div>
   
       <div className="education-container">

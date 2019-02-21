@@ -1,13 +1,20 @@
 // The document contains data used to populate fields throughout the site.
 
 const JS_DATA = [
-  'JavaScript (ES6+)',
+  'JavaScript',
+  'ES6 and up',
   'React',
   'P5.js',
   'Node.js',
   'Axios',
-  'Apollo'
+  'D3',
+  'Angular',
+  'Apollo',
 ];
+
+const FULLSTACK_DATA = [
+
+]
 
 const STYLE_DATA = [
   'CSS3',
@@ -54,6 +61,7 @@ const TECH_LIST = [
   'JavaScript',
   'Styling',
   'HTML5',
+  'FullStack',
   'BackEnd Web',
   'Cool Web-Tech',
   'Other Languages',
@@ -95,4 +103,5 @@ export {
   FAV_COMBOS_DATA,
   MOST_INTRIGUING_DATA,
   TECH_LIST,
+  FULLSTACK_DATA,
 }
