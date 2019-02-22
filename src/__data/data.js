@@ -1,6 +1,7 @@
 // The document contains data used to populate fields throughout the site.
 
 const JS_DATA = [
+  'FrontEnd Tools',
   'JavaScript',
   'ES6+',
   'React',
@@ -12,11 +13,8 @@ const JS_DATA = [
   'Apollo',
 ];
 
-const FULLSTACK_DATA = [
-
-]
-
 const STYLE_DATA = [
+  'Styling Tools',
   'CSS3',
   'SASS',
   'Less',
@@ -30,6 +28,7 @@ const HTML_DATA = [
 ];
 
 const BACKEND_DATA = [
+  'BackEnd Tools',
   'SQL',
   'SQL Lite',
   'Node.js',
@@ -40,6 +39,7 @@ const BACKEND_DATA = [
 ];
 
 const WEB_API_DATA = [
+  'Favorite W3C APIs',
   'Web Audio API',
   'Accelerometer',
   'Gryoscope',
@@ -50,6 +50,7 @@ const WEB_API_DATA = [
 ];
 
 const LANGUAGE_DATA = [
+  'MultiLingual',
   'Python',
   'C',
   'Processing',
@@ -70,19 +71,16 @@ const TECH_LIST = [
 ];
 
 const DESIGN_DATA = [
+  'Graphic Design Tools',
   'Illustrator',
   'Photoshop',
   'InDesign',
   'XD',
 ];
 
-const MOST_INTRIGUING_DATA = [
-  'WebRTC',
-  'WebRTC',
-  'WebRTC',
-];
 
 const FAV_COMBOS_DATA = [
+  'Favorite Tech Stacks',
   'JS + Sass + GreenSock',
   'React + Express + Apollo + GraphQL',
   'ReactStrap + Illustrator + FontAwesome',
@@ -93,7 +91,7 @@ const FAV_COMBOS_DATA = [
 ];
 
 export {
-  JS_DATA, 
+  // JS_DATA, 
   BACKEND_DATA,
   LANGUAGE_DATA,
   HTML_DATA, 
@@ -101,7 +99,5 @@ export {
   WEB_API_DATA,
   DESIGN_DATA,
   FAV_COMBOS_DATA,
-  MOST_INTRIGUING_DATA,
   TECH_LIST,
-  FULLSTACK_DATA,
 }

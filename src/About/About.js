@@ -4,9 +4,12 @@ import * as DATA from '../__data/data';
 import DataModal from './components/data_modal';
 
 let DATA_ARR = [];
+
 for(let key in DATA){
   DATA_ARR.push(DATA[key]);
 }
+
+console.log(DATA_ARR);
 
 
 
@@ -36,33 +39,13 @@ class About extends Component {
   
         <h1 className="toolbelt-h1">ToolBelt</h1>
       <div className="tech-knowledge-container">
-        <div className="js-scroll toolbelt-item">
-          <DataModal title={"FrontEnd-JavaScript"} data={DATA.JS_DATA} />
-        </div>
-        {/* <div className="style-scroll toolbelt-item">
-          
-          <DataModal title={"Styling"} data={DATA.STYLE_DATA} />
-        </div>
-        <div className="backend-scroll toolbelt-item">
-        
-          <DataModal title={"BackEnd"} data={DATA.BACKEND_DATA} />
-        </div>
-        <div className="lang-scroll toolbelt-item">
-        
-          <DataModal title={"Other Languages"} data={DATA.LANGUAGE_DATA} />
-        </div>
-        <div className="design-scroll toolbelt-item">
-        
-          <DataModal title={"Design-Related"} data={DATA.DESIGN_DATA} />
-        </div>
-        <div className="APIs-scroll toolbelt-item">
-           
-          <DataModal title={"Besties w/ W3C APIs"} data={DATA.WEB_API_DATA} />
-        </div>
-        <div className="fav-stacks-scroll toolbelt-item">
-          <DataModal title={"Fav Stacks"} data={DATA.FAV_COMBOS_DATA} />
-        </div>
-   */}
+
+          {
+            DATA_ARR.map((e, i)=>{
+              return <DataModal className="toolbelt-item" title={DATA_ARR[i][0]} data={e}/>
+            })
+          }
+    
       </div>
   
       <div className="education-container">
