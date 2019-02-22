@@ -1,101 +1,20 @@
-@import '../../../__styles/responsive.scss';
 $hover-color: #fcfa85;
-
 .modal-container {
-  margin: 0 auto;
-  h1 {
-    margin: 0;
-    width: 200px;
-    height:40px;
-  }
-
-  &:hover {
-    h1{
-      cursor: pointer;
-      color:$hover-color;
-    }
-  }
-
-  .modal-triggered-container {
-    display: flex;
 
     h1 {
-      color:black;
-    }
-
-    position: absolute;
-    background-color: rgba(6,0,6,0.9);
-    width:100vw;
-    height: 100vh;
-    left:0px;
-    top:0px;
-    
-    .list-container {
-      position: relative;
-      display: flex;
-      flex-flow: row;
-      flex-wrap: wrap;
-      margin: 0 auto;
-      top: 100px;
-      width: 600px;
-      height:500px;
-    }
-  }
-
-  @media only screen and (max-width: $lgDevice) {
-    
-  }
-  @media only screen and (max-width: $lgDevice) {
-    .modal-triggered-container {
-      position: absolute;
-      height: 100vh;
-      .list-container {
-        position: relative;
-        display: flex;
-        flex-flow: column;
-        flex-flow: column;
+      font-size: 1.3em;
+      margin: 5px 15px;
+      &:hover {
+        color:$hover-color;
+        cursor: pointer;
       }
     }
+  .list-container {
+    display: flex;
   }
-  
-  @media only screen and (max-width: $mdDevice) {
-    
-    .modal-triggered-container {
-      position: absolute;
-      height: 100vh;
-      .list-container {
-        width: 100%;
-        position: relative;
-        display: flex;
-        flex-flow: column;
-        flex-flow: column;
-      }
-    }
-  }
-  @media only screen and (max-width: $smDevice) {
-    width: 100vw;
-    .modal-triggered-container {
-      position: absolute;
-      width:100vw;
-      height: 100vh;
-      .list-container {
-        width: 100%;
-        position: relative;
-        display: flex;
-      }
-    }
-  }
-  @media only screen and (max-width: $xsDevice) {
-    width: 100vw;
-    .modal-triggered-container {
-      position: absolute;
-      width:100vw;
-      height: 100vh;
-      .list-container {
-        width: 100%;
-        position: relative;
-        display: flex;
-      }
-    }
+  .list-container-active {
+    display: flex;
+    width:500px;
+    height:200px;
   }
 }

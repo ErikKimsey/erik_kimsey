@@ -1,38 +1,28 @@
 import React, { Component } from 'react';
+import { Route, NavLink } from 'react-router-dom';
 import './about.scss';
-import {BACKEND_DATA,
-  LANGUAGE_DATA,
-  HTML_DATA, 
-  STYLE_DATA, 
-  WEB_API_DATA,
-  DESIGN_DATA,
-  FAV_COMBOS_DATA,
-  TECH_LIST,} from '../__data/data';
+import { 
+  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA} from '../__data/data';
 import DataModal from './components/data_modal';
 
-let DATA_ARR = [BACKEND_DATA,
-  LANGUAGE_DATA,
-  HTML_DATA, 
-  STYLE_DATA, 
-  WEB_API_DATA,
-  DESIGN_DATA,
-  FAV_COMBOS_DATA,
-  TECH_LIST];
-
-  console.log(DATA_ARR[3]);
-  
+const dataArray = [
+  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA
+];
 
 class About extends Component {
   constructor(props){
     super(props);
     this.state = {
-      modal:null,
+      modal:false,
     }
   }
 
   toggleModal = () => {
-    let modal = document.querySelector('.toolbelt-');
-    modal.style.display = (modal.style.display === 'none') ? 'flex' : 'none';
+    if (this.state.modal === false){
+      this.setState({modal: true});
+    } else {
+      this.setState({modal: false});
+    }
   }
 
   render(){
@@ -48,21 +38,25 @@ class About extends Component {
       </div>
   
         <h1 className="toolbelt-h1">ToolBelt</h1>
+        <div>
+        {
+          dataArray.map((arr,i)=>{
+          return <NavLink className="nav-links" to={`/about/${arr[0]}`}>{arr[0]}</NavLink>
+        })
+        }
+
+        </div>
+
       <div className="tech-knowledge-container">
-
-
-          {
-            DATA_ARR.map((e, i)=>{
-              let nuArr = e.slice();
-              return (
-              <div>
-                <h1>{DATA_ARR[i][0]}</h1>
-                <DataModal className="toolbelt-item" title={DATA_ARR[i][0]} data={nuArr}/>
-              </div>
-              )
-            })
-          }
-    
+        {
+          dataArray.map((arr,i)=>{
+            let realArr = arr.slice(1);
+              return <Route path={`/about/${arr[0]}`} render={()=>{
+                  return <DataModal title={arr[0]} data={realArr}/>
+                }
+              }/>
+          })
+        }
       </div>
   
       <div className="education-container">

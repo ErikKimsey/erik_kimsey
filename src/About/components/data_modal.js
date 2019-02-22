@@ -1,57 +1,40 @@
-import React, { Component } from 'react';
+import React , {Component} from 'react';
+import DataItem from '../components/data_item';
 import './styles/data_modal.scss';
-import DataItem from './data_item';
 
 class DataModal extends Component {
   constructor(props){
     super(props);
+    console.log(props)
     this.state = {
       isActive: false,
-      data: [],
-      title: this.props.title,
     }
-    // console.log(this.props.data);
   }
 
-  
-  componentDidMount() {
-    let modal = document.querySelector('.modal-triggered-container');
-    modal.style.display = 'none';
-    let nuArr = this.props.data.slice();
-    this.setState({data: nuArr});
-
+  handleToggle = () => {
+    // let modal = document.querySelector('.list-container');
+    // modal.classList.toggle('list-container-active');  
+    // console.log(modal);
+    // this.setState({isActive: !this.state.isActive});
   }
-
-  openModal = () => {
-    this.setState({isActive: true});
-
-    
-  }
-  
-  closeModal = () => {
-    let modal = document.querySelector('.modal-triggered-container');
-    modal.style.display = (modal.style.display === 'none') ? 'flex' : 'none';
-  }
-
+ 
   render(){
-    // console.log(this.state.data);
-    
     return (
       <div className="modal-container">
-        <h1 onClick={this.openModal}>{this.state.title}</h1>
-        <div className="modal-triggered-container" onClick={this.closeModal}>
-          <div className="list-container">
-            {
-          
-                this.state.data.map((e,i)=>{
-                  {/* console.log(e); */}
-                  return <DataItem data={e}/>
-                })
-       
-  
-            }
-          </div>
-        </div>
+      <h1 onClick={this.handleToggle}>{this.props.title}</h1>
+      <div className="list-container">
+        {
+      
+              this.props.data.map((item)=>{
+                return (
+                  <DataItem key={item} data={item}/>
+                )
+              })
+      
+        }
+      </div>
+
+
       </div>
     )
   }

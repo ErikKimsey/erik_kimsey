@@ -1,6 +1,6 @@
 // The document contains data used to populate fields throughout the site.
 
-const JS_DATA = [
+export const JS_DATA = [
   'FrontEnd Tools',
   'JavaScript',
   'ES6+',
@@ -13,7 +13,7 @@ const JS_DATA = [
   'Apollo',
 ];
 
-const STYLE_DATA = [
+export const STYLE_DATA = [
   'Styling Tools',
   'CSS3',
   'SASS',
@@ -22,12 +22,12 @@ const STYLE_DATA = [
   'GreenSock',
 ];
 
-const HTML_DATA = [
+export const HTML_DATA = [
   'HTML 5',
   'Canvas',
 ];
 
-const BACKEND_DATA = [
+export const BACKEND_DATA = [
   'BackEnd Tools',
   'SQL',
   'SQL Lite',
@@ -38,7 +38,7 @@ const BACKEND_DATA = [
   'Redis',
 ];
 
-const WEB_API_DATA = [
+export const WEB_API_DATA = [
   'Favorite W3C APIs',
   'Web Audio API',
   'Accelerometer',
@@ -49,7 +49,7 @@ const WEB_API_DATA = [
   'Vibration API',
 ];
 
-const LANGUAGE_DATA = [
+export const LANGUAGE_DATA = [
   'MultiLingual',
   'Python',
   'C',
@@ -58,7 +58,7 @@ const LANGUAGE_DATA = [
   'C++',
 ];
 
-const TECH_LIST = [
+export const TECH_LIST = [
   'JavaScript',
   'Styling',
   'HTML5',
@@ -70,7 +70,7 @@ const TECH_LIST = [
   'Favorite Tech-Stacks'
 ];
 
-const DESIGN_DATA = [
+export const DESIGN_DATA = [
   'Graphic Design Tools',
   'Illustrator',
   'Photoshop',
@@ -79,7 +79,7 @@ const DESIGN_DATA = [
 ];
 
 
-const FAV_COMBOS_DATA = [
+export const FAV_COMBOS_DATA = [
   'Favorite Tech Stacks',
   'JS + Sass + GreenSock',
   'React + Express + Apollo + GraphQL',
@@ -89,15 +89,3 @@ const FAV_COMBOS_DATA = [
   'D3.js + Angular',
   'Processing + Arduino + freetime + IC',
 ];
-
-export {
-  // JS_DATA, 
-  BACKEND_DATA,
-  LANGUAGE_DATA,
-  HTML_DATA, 
-  STYLE_DATA, 
-  WEB_API_DATA,
-  DESIGN_DATA,
-  FAV_COMBOS_DATA,
-  TECH_LIST,
-}
