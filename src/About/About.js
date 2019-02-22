@@ -12,56 +12,44 @@ const dataArray = [
 class About extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      modal:false,
-    }
-  }
-
-  toggleModal = () => {
-    if (this.state.modal === false){
-      this.setState({modal: true});
-    } else {
-      this.setState({modal: false});
-    }
   }
 
   render(){
-
     return (
       <div className="about-container">
   
-      <div className="self-blurb-container">
-        <p>I work creatively with technology.</p>
-        <p>I focus on web-based and mobile-web technology, design, and content. </p>
-        <p>I like to think I'm at the cross-section of interactivity + aesthetic-appeal + innovation + good purpose.</p>
-        {/* <p>Jazz is the music of science-fiction.</p> */}
-      </div>
+        <div className="self-blurb-container">
+          <p>I work creatively with technology.</p>
+          <p>I focus on web-based and mobile-web technology, design, and content. </p>
+          <p>I like to think I'm at the cross-section of interactivity + aesthetic-appeal + innovation + good purpose.</p>
+        </div>
   
         <h1 className="toolbelt-h1">ToolBelt</h1>
         <div>
-        {
-          dataArray.map((arr,i)=>{
-          return <NavLink className="nav-links" to={`/about/${arr[0]}`}>{arr[0]}</NavLink>
-        })
-        }
-
+          {
+            dataArray.map((arr,i)=>{
+              return <NavLink className="nav-links" to={`/about/${arr[0]}`}>
+                {arr[0]}
+              </NavLink>
+            })
+          }
         </div>
 
-      <div className="tech-knowledge-container">
-        {
-          dataArray.map((arr,i)=>{
-            let realArr = arr.slice(1);
-              return <Route path={`/about/${arr[0]}`} render={()=>{
-                  return <DataModal title={arr[0]} data={realArr}/>
-                }
-              }/>
-          })
-        }
-      </div>
+        <div className="tech-knowledge-container">
+          {
+            dataArray.map((arr,i)=>{
+              let realArr = arr.slice(1);
+                return <Route path={`/about/${arr[0]}`} render={()=>{
+                    return <DataModal title={arr[0]} data={realArr}/>
+                  }
+                }/>
+            })
+          }
+        </div>
   
-      <div className="education-container">
-  
-      </div>
+        <div className="education-container">
+    
+        </div>
       </div>
     )
   }
