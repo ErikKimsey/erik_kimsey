@@ -37,6 +37,7 @@ class App extends Component {
             <Route path="/work" component={Work}/>
             <Route path="/contact" component={Contact}/>
           </div>
+          <div className="lil-extra"></div>
         {/* <Capture /> */}
       </div>
     );

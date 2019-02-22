@@ -24,7 +24,9 @@ class About extends Component {
           <p>I like to think I'm at the cross-section of interactivity + aesthetic-appeal + innovation + good purpose.</p>
         </div>
   
-        <h1 className="toolbelt-h1">ToolBelt</h1>
+        {/* <h1 className="toolbelt-h1">ToolBelt</h1> */}
+{/* 
+      <div className="tech-knowledge-container">
         <div className="nav-container">
           {
             dataArray.map((arr,i)=>{
@@ -35,7 +37,7 @@ class About extends Component {
           }
         </div>
 
-        <div className="tech-knowledge-container">
+        <div className="tech-knowledge">
           {
             dataArray.map((arr,i)=>{
               let realArr = arr.slice(1);
@@ -45,7 +47,8 @@ class About extends Component {
                 }/>
             })
           }
-        </div>
+        </div> 
+      </div>*/}
   
         <div className="education-container">
     

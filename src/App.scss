@@ -9,42 +9,87 @@
   justify-content: space-around;
 
   .routes-container{
-    width: 900px;
+    position: relative;
+    width: 80%;
+    z-index: -1;
+    height: 544px;
     overflow: scroll;
-    margin: 153px 5px;
-    top:103px;
-    background-color: rgba(0,0,0,0.06);
+    margin: 50px 28px;
+    top: 103px;
+    display: -webkit-flex;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.06);
     scroll-behavior: smooth;
     box-shadow: inset 0px 0px 1px #111;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+  }
+
+  .lil-extra{
+    position: absolute;
+    margin-right: 14px;
+    width: 100px;
+    right: 0px;
+    height: 544px;
+    background-color: black;
+    top: 153px;
   }
 
   @media only screen and (max-width: $lgDevice) {
+    display: flex;
+    flex-flow: column;
     .routes-container {
-      margin: 153px auto;
-      width: 80%;
+      width: 100%;
+      margin-left: 5px;
+      margin-right: 5px;
+      top: 77px;
     }
-  }
-  @media only screen and (max-width: $lgDevice) {
-    .routes-container {
-      width: 80%;
+    .lil-extra{
+      width: 99%;
+      height: 100px;
+      top: 100px;
+      margin: 0 5px;
+      left: 0px;
     }
   }
 
   @media only screen and (max-width: $mdDevice) {
+    display: flex;
+    flex-flow: column;
     .routes-container {
-      width: 100%;
-      margin-left: 5px;
+      width: 97%;
+    margin-left: 5px;
       margin-right: 5px;
+      top: 77px;
+    }
+    .lil-extra{
+      width: 97%;
+      height: 100px;
+      top: 100px;
+      margin: 0 5px;
+      left: 0px;
     }
 
   }
   @media only screen and (max-width: $smDevice) {
-  
+    display: flex;
+    flex-flow: column;
+
     .routes-container {
-      width: 100%;
+      width: 97%;
       margin-left: 5px;
       margin-right: 5px;
+      top: 77px;
     }
+
+    .lil-extra{
+      width: 97%;
+      height: 100px;
+      top: 100px;
+      margin: 0 5px;
+      left: 0px;
+    }
+    
   }
   @media only screen and (max-width: $xsDevice) {}
 }
