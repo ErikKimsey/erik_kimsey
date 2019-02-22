@@ -25,7 +25,7 @@ class About extends Component {
         </div>
   
         <h1 className="toolbelt-h1">ToolBelt</h1>
-        <div>
+        <div className="nav-container">
           {
             dataArray.map((arr,i)=>{
               return <NavLink className="nav-links" to={`/about/${arr[0]}`}>
