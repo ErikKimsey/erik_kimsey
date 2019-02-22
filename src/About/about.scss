@@ -23,6 +23,7 @@ $hover-color: #fcfa85;
     display: flex;
     flex-flow: wrap;
     .toolbelt-item {
+      display: none;
       width:auto; 
       margin: 0;
     }

@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 import './about.scss';
-import * as DATA from '../__data/data';
+import {BACKEND_DATA,
+  LANGUAGE_DATA,
+  HTML_DATA, 
+  STYLE_DATA, 
+  WEB_API_DATA,
+  DESIGN_DATA,
+  FAV_COMBOS_DATA,
+  TECH_LIST,} from '../__data/data';
 import DataModal from './components/data_modal';
 
-let DATA_ARR = [];
+let DATA_ARR = [BACKEND_DATA,
+  LANGUAGE_DATA,
+  HTML_DATA, 
+  STYLE_DATA, 
+  WEB_API_DATA,
+  DESIGN_DATA,
+  FAV_COMBOS_DATA,
+  TECH_LIST];
 
-for(let key in DATA){
-  DATA_ARR.push(DATA[key]);
-}
-
-console.log(DATA_ARR);
-
-
+  console.log(DATA_ARR[3]);
+  
 
 class About extends Component {
   constructor(props){
@@ -22,7 +31,8 @@ class About extends Component {
   }
 
   toggleModal = () => {
-
+    let modal = document.querySelector('.toolbelt-');
+    modal.style.display = (modal.style.display === 'none') ? 'flex' : 'none';
   }
 
   render(){
@@ -40,9 +50,16 @@ class About extends Component {
         <h1 className="toolbelt-h1">ToolBelt</h1>
       <div className="tech-knowledge-container">
 
+
           {
             DATA_ARR.map((e, i)=>{
-              return <DataModal className="toolbelt-item" title={DATA_ARR[i][0]} data={e}/>
+              let nuArr = e.slice();
+              return (
+              <div>
+                <h1>{DATA_ARR[i][0]}</h1>
+                <DataModal className="toolbelt-item" title={DATA_ARR[i][0]} data={nuArr}/>
+              </div>
+              )
             })
           }
     
