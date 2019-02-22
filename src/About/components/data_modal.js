@@ -20,20 +20,27 @@ class DataModal extends Component {
   
   componentDidMount() {
     let modal = document.querySelector('.modal-triggered-container');
-    
-    
+    modal.style.display = 'none';
+    console.log(modal.style.display);
   }
 
-  handleToggle = () => {
+  openModal = () => {
     let modal = document.querySelector('.modal-triggered-container');
     modal.style.display = (modal.style.display === 'none') ? 'flex' : 'none';
+    console.log('toggling >>>>> ',modal.style.display);
+  }
+
+  closeModal = () => {
+    let modal = document.querySelector('.modal-triggered-container');
+    modal.style.display = (modal.style.display === 'none') ? 'flex' : 'none';
+    console.log('close >>>>> ',modal.style.display);
   }
 
   render(){
     return (
-      <div className="modal-container" onClick={this.handleToggle}>
-        <h1>{this.props.title}</h1>
-        <div className="modal-triggered-container" onClick={this.handleToggle}>
+      <div className="modal-container">
+        <h1 onClick={this.openModal}>{this.props.title}</h1>
+        <div className="modal-triggered-container" onClick={this.closeModal}>
           <div className="list-container">
             {
               this.props.data.map((datum)=>{
