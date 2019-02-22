@@ -15,12 +15,14 @@ $hover-color: #fcfa85;
       color:$hover-color;
     }
   }
-  
+
   .modal-triggered-container {
     display: none;
+
     h1 {
       color:black;
     }
+
     position: absolute;
     background-color: rgba(6,0,6,0.9);
     width:100vw;
@@ -29,7 +31,6 @@ $hover-color: #fcfa85;
     top:0px;
     
     .list-container {
-      display: none;
       position: relative;
       display: flex;
       flex-flow: row;
@@ -40,6 +41,7 @@ $hover-color: #fcfa85;
       height:500px;
     }
   }
+
   @media only screen and (max-width: $lgDevice) {
     
   }
@@ -96,4 +98,10 @@ $hover-color: #fcfa85;
       }
     }
   }
+}
+
+.active {
+  display: flex;
+  flex-flow: row;
+  background-color: pink;
 }
