@@ -17,11 +17,6 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    
-  }
-
-
   handleToggle = () => {
     this.setState({toggle: !this.state.toggled});
   }
@@ -29,7 +24,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <video></video> */}
         <Nav isActive={this.state.toggled}/>
           <div className="routes-container">
             <Route exact path="/" component={Landing}/>
@@ -38,7 +32,6 @@ class App extends Component {
             <Route path="/contact" component={Contact}/>
           </div>
           <div className="lil-extra"></div>
-        {/* <Capture /> */}
       </div>
     );
   }
