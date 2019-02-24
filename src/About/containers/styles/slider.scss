@@ -21,7 +21,12 @@ $sliderWidth: 310px;
     width: 100%;
     height:100%;
     position: relative;
-    
+    .fas {
+      width: 30px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
     .slider-item {
       position: relative;
       width: $sliderWidth - 20;
