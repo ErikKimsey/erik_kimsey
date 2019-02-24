@@ -18,7 +18,7 @@ $sliderWidth: 310px;
   //   display: flex;
   //   flex-flow: row;
   .slider-item-container{
-    width: 100%;
+    width: 50%;
     height:100%;
     position: relative;
     .fas {
@@ -29,7 +29,7 @@ $sliderWidth: 310px;
     }
     .slider-item {
       position: relative;
-      width: $sliderWidth - 20;
+      width: $sliderWidth - 120;
       height: $sliderHeight - 10;
       border: solid 1px $hover-color;
       text-align: center;

@@ -18,11 +18,23 @@ export default class SimpleSlider extends Component {
 
   handleForwardToggle = () => {
     console.log('forward');
-    
+    if(this.state.index < this.state.data.length){
+      this.setState({index: this.state.index+1})
+    } else if (this.state.index >= this.state.data.length) {
+      this.resetIndex();
+    }
   }
   handleBackwardToggle = () => {
-    
     console.log('back');
+    if(this.state.index > 0){
+      this.setState({index: this.state.index-1})
+    } else if(this.state.index <= 0) {
+      this.setState({index: 0});
+    }
+  }
+
+  resetIndex = () => {
+    this.setState({index: 0});
   }
   
   render() {
@@ -36,11 +48,11 @@ export default class SimpleSlider extends Component {
     return (
       <div className="slider-container">
         <div className="slider-item-container">
-          <i class="fas fa-caret-left" onClick={this.handleBackwardToggle}></i>
+          <i className="fas fa-caret-left" onClick={()=>{this.handleBackwardToggle()}}></i>
+          <i className="fas fa-caret-right" onClick={this.handleForwardToggle}></i>
             <div className="slider-item">
               {this.state.data[this.state.index]}
             </div>
-          <i class="fas fa-caret-right" onClick={this.handleForwardToggle}></i>
           </div>
       </div>
     )
