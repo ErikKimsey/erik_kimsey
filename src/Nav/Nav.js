@@ -29,16 +29,16 @@ class Nav extends Component {
         <div className="nav-container">
           <ul className="nav-list">
             <li onClick={this.handleToggle}>
-              <NavLink activeStyle={activeStyles} className="nav-link" exact to="/">home</NavLink>
+              <NavLink activeStyle={activeStyles} title="HOME" className="nav-link" exact to="/"><i class="fas fa-terminal fa-1x"></i></NavLink>
             </li>
             <li onClick={this.handleToggle}>
-              <NavLink activeStyle={activeStyles} className="nav-link" to="/about">me</NavLink>
+              <NavLink activeStyle={activeStyles}  title="ME, ME, ME!" className="nav-link" to="/about"><i class="fas fa-child fa-1x"></i></NavLink>
             </li>
             <li onClick={this.handleToggle}>
-              <NavLink activeStyle={activeStyles} className="nav-link" to="/work">work</NavLink>
+              <NavLink activeStyle={activeStyles} title="CODE PLAYGROUND" className="nav-link" to="/work"><i class="fas fa-code fa-1x"></i></NavLink>
             </li>
             <li onClick={this.handleToggle}>
-              <NavLink activeStyle={activeStyles} className="nav-link" to="/contact">contact me</NavLink>
+              <NavLink activeStyle={activeStyles} title="CONTACT" className="nav-link" to="/contact"><i class="fas fa-phone fa-1x"></i></NavLink>
             </li>
           </ul>
         </div>

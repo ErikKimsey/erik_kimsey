@@ -9,8 +9,8 @@ $hover-color: #fcfa85;
   width:100px;
   opacity: 0.1;
   height:400px;
-  margin: 177px 0px;
-  left:40px;
+  margin: 77px 0px;
+  left:30px;
   
   transition: opacity 1s; 
   &:hover {
@@ -24,6 +24,8 @@ $hover-color: #fcfa85;
     list-style: none;
     li {
       transform: rotate(20deg);
+      height: 90px;
+      font-size: 26px;
       a {
         text-decoration: none;
         font-size: 2em;
@@ -52,10 +54,16 @@ $hover-color: #fcfa85;
     display: flex;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
+    opacity: 1;
     .nav-list {
       position: absolute;
       left: 10px;
       top: 18%;
+    }
+    ul {
+      li {
+        height: 90px;
+      }
     }
   }
   .active {
@@ -69,7 +77,7 @@ $hover-color: #fcfa85;
     margin: 0;
     padding: 0;
     left: 0px;
-
+    
   }
 }
 @media only screen and (max-width: $lgDevice) {
@@ -86,6 +94,11 @@ $hover-color: #fcfa85;
       position: absolute;
       left: 10px;
       top: 18%;
+    }
+    ul {
+      li {
+        height: 90px;
+      }
     }
   }
   .active {
