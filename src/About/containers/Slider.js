@@ -9,7 +9,6 @@ export default class SimpleSlider extends Component {
       data: this.props.data,
       index:1,
     }
-    console.log(props);
   }
 
   componentDidMount() {
@@ -17,17 +16,13 @@ export default class SimpleSlider extends Component {
   }
 
   handleForwardToggle = () => {
-    console.log('forward');
-    console.log(this.state.data.length);
     if(this.state.index <= this.state.data.length-2){
-      console.log(this.state.index);
       this.setState({index: this.state.index+1})
     } else {
       this.resetIndex();
     }
   }
   handleBackwardToggle = () => {
-    console.log('back');
     if(this.state.index > 0){
       this.setState({index: this.state.index-1})
     } else if(this.state.index <= 0) {
@@ -40,13 +35,6 @@ export default class SimpleSlider extends Component {
   }
   
   render() {
-    let settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
     return (
       <div className="slider-container">
         <div className="slider-item-container">

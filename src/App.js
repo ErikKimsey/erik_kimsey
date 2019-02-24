@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import './App.scss';
 import './Banner/banner.scss';
-import Capture from './Capture/Capture';
 import Nav from './Nav/Nav';
 import Landing from './Landing/Landing';
 import About from './About/About';

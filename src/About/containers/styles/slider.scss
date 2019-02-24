@@ -1,7 +1,6 @@
 @import '../../../__styles/responsive.scss';
 @import '../../../__styles/globals.scss';
 
-// $hover-color
 $sliderHeight: 100px;
 $sliderWidth: 350px;
 
@@ -12,18 +11,12 @@ $sliderWidth: 350px;
   display: inline;
   flex-flow: row;
   overflow: hidden;
-  // .slider-item-container {
-  //   width: $sliderWidth;
-  //   height: $sliderHeight;
-  //   display: flex;
-  //   flex-flow: row;
   .slider-item-container{
     width: $sliderWidth;
     height: $sliderHeight;
     position: relative;
     .fas {
       z-index: 2;
-      /* top: 20px; */
       width: 30px;
       position: absolute;
       top: 20px;
@@ -73,7 +66,6 @@ $sliderWidth: 350px;
     display: block;
     flex-flow: column;
     height: $sliderHeight;
-    // justify-content;
     .slider-item-container {
 
     }
@@ -87,5 +79,4 @@ $sliderWidth: 350px;
 
     }
   }
-  // }
 }
