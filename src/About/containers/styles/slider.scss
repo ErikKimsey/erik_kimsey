@@ -3,7 +3,7 @@
 
 // $hover-color
 $sliderHeight: 100px;
-$sliderWidth: 310px;
+$sliderWidth: 350px;
 
 .slider-container {
   width: $sliderWidth;
@@ -28,7 +28,10 @@ $sliderWidth: 310px;
       position: absolute;
       top: 20px;
       font-size: 72px;
+      opacity: 0.1;
+      transition: opacity 0.5s;
       &:hover {
+        opacity: 1;
         cursor: pointer;
         color: $hover-color;
       }
@@ -37,14 +40,15 @@ $sliderWidth: 310px;
       left: 5px;
     }
     .fa-caret-right {
-      left: 258px;
+      left: 318px;
     }
     .slider-item {
       position: relative;
-      width: $sliderWidth - 20;
-      height: $sliderHeight;
-      border: solid 0.5px rgb(22,22,22);
+      width: $sliderWidth;
+      height: 100px;
       text-align: center;
+      line-height: 3.1;
+      font-size: 34px;
     }
   }
   @media only screen and (max-width: $lgDevice) {

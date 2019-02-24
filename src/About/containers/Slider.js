@@ -7,7 +7,7 @@ export default class SimpleSlider extends Component {
     super(props);
     this.state = {
       data: this.props.data,
-      index:0,
+      index:1,
     }
     console.log(props);
   }
@@ -31,12 +31,12 @@ export default class SimpleSlider extends Component {
     if(this.state.index > 0){
       this.setState({index: this.state.index-1})
     } else if(this.state.index <= 0) {
-      this.setState({index: 0});
+      this.resetIndex();
     }
   }
 
   resetIndex = () => {
-    this.setState({index: 0});
+    this.setState({index: 1});
   }
   
   render() {
