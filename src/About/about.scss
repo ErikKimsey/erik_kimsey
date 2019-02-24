@@ -9,63 +9,20 @@ $hover-color: #fcfa85;
   .tech-knowledge-container{
     display: flex;
     flex-flow: row;
-
-    .nav-container {
-      position: relative;
-      height: 220px;
-      margin: 0;
-      overflow: scroll;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: column;
-      flex-flow: column;
-      -webkit-justify-content: space-around;
-      justify-content: space-around;
-      .nav-links {
-        color:white;
-        text-decoration: none;
-        &:hover {
-          color:$hover-color;
-          cursor: pointer;
-        }
-      }
-    }
-    .tech-knowledge {
-      background-color: rgba(0,0,0,0.1);
-      padding:2%;
-      width: 600px;
-      height: 190px;
-      display: flex;
-      flex-flow: column;
-      flex-flow: wrap;
-      .toolbelt-item {
-        display: flex;
-        width:auto; 
-        margin: 0;
-      }
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .slider {
+      
     }
   }
+  
   
   .self-blurb-container {
 
   }
 
-  .toolbelt-h1 {
-    margin: 1% 20px;
-    width: 166px;
-    font-size: 1.2em;
-    font-weight: 300;
-    border-bottom: solid 1px $hover-color;
-  }
-
   .education-container {
 
-  }
-
-  .liked-things-container {
-    p {
-      margin: 4px;
-    }
   }
 
   h5{
@@ -87,40 +44,7 @@ $hover-color: #fcfa85;
     flex-flow: column;
     height: auto;
     overflow: scroll;
-    .nav-container {
-      position: relative;
-      height: 220px;
-      margin: 0;
-      overflow: scroll;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: column;
-      flex-flow: column;
-      -webkit-justify-content: space-around;
-      justify-content: space-around;
-      .nav-links {
-        color:white;
-        text-decoration: none;
-        &:hover {
-          color:$hover-color;
-          cursor: pointer;
-        }
-      }
-    }
-    .tech-knowledge {
-      background-color: rgba(0,0,0,0.1);
-      padding:2%;
-      width: 600px;
-      height: 190px;
-      display: flex;
-      flex-flow: column;
-      flex-flow: wrap;
-      .toolbelt-item {
-        display: flex;
-        width:auto; 
-        margin: 0;
-      }
-    }
+
   }
 }
 
@@ -135,82 +59,19 @@ $hover-color: #fcfa85;
       display: flex;
       flex-flow: column;
       height: auto;
-      .nav-container {
-        position: relative;
-        height: 220px;
-        margin: 0;
-        overflow: scroll;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-flow: column;
-        flex-flow: column;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-        .nav-links {
-          color:white;
-          text-decoration: none;
-          &:hover {
-            color:$hover-color;
-            cursor: pointer;
-          }
-        }
-      }
-      .tech-knowledge {
-        background-color: rgba(0,0,0,0.1);
-        padding:2%;
-        width: 600px;
-        height: 190px;
-        display: flex;
-        flex-flow: column;
-        flex-flow: wrap;
-        .toolbelt-item {
-          display: flex;
-          width:auto; 
-          margin: 0;
-        }
-      }
     }
   }
   @media only screen and (max-width: $smDevice) {
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    justify-content: space-between;
+    .tech-knowledge-container {
       display: flex;
       flex-flow: column;
       height: auto;
-    justify-content: space-between;
-    .nav-container {
-      position: relative;
-      height: 220px;
-      margin: 0;
-      overflow: scroll;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: column;
-      flex-flow: column;
-      -webkit-justify-content: space-around;
-      justify-content: space-around;
-      .nav-links {
-        color:white;
-        text-decoration: none;
-        &:hover {
-          color:$hover-color;
-          cursor: pointer;
-        }
-      }
     }
-  
-  .tech-knowledge {
-    background-color: rgba(0,0,0,0.1);
-    padding:2%;
-    width: 600px;
-    height: 190px;
-    display: flex;
-    flex-flow: column;
-    flex-flow: wrap;
-    .toolbelt-item {
-      display: flex;
-      width:auto; 
-      margin: 0;
-    }
-  }
+
 }
   @media only screen and (max-width: $xsDevice) {}
 

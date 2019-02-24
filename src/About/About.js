@@ -3,7 +3,8 @@ import { Route, NavLink } from 'react-router-dom';
 import './about.scss';
 import { 
   JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA} from '../__data/data';
-import DataModal from './components/data_modal';
+import SimpleSlider from './containers/Slider';
+
 
 const dataArray = [
   JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA
@@ -24,32 +25,16 @@ class About extends Component {
           <p>I like to think I'm at the cross-section of interactivity + aesthetic-appeal + innovation + good purpose.</p>
         </div>
   
-        {/* <h1 className="toolbelt-h1">ToolBelt</h1> */}
-{/* 
-      <div className="tech-knowledge-container">
-        <div className="nav-container">
-          {
-            dataArray.map((arr,i)=>{
-              return <NavLink className="nav-links" to={`/about/${arr[0]}`}>
-                {arr[0]}
-              </NavLink>
-            })
-          }
-        </div>
 
-        <div className="tech-knowledge">
-          {
-            dataArray.map((arr,i)=>{
-              let realArr = arr.slice(1);
-                return <Route path={`/about/${arr[0]}`} render={()=>{
-                    return <DataModal title={arr[0]} data={realArr}/>
-                  }
-                }/>
-            })
-          }
-        </div> 
-      </div>*/}
-  
+        <div className="tech-knowledge-container">
+          <SimpleSlider className="slider" data={JS_DATA}/>
+          <SimpleSlider className="slider" data={WEB_API_DATA}/>
+          <SimpleSlider className="slider" data={STYLE_DATA}/>
+          <SimpleSlider className="slider" data={BACKEND_DATA}/>
+          <SimpleSlider className="slider" data={LANGUAGE_DATA}/>
+          <SimpleSlider className="slider" data={DESIGN_DATA}/>
+          <SimpleSlider className="slider" data={FAV_COMBOS_DATA}/>
+        </div>
         <div className="education-container">
     
         </div>

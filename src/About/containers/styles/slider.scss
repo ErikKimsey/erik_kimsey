@@ -1,0 +1,19 @@
+@import '../../../__styles/responsive.scss';
+@import '../../../__styles/globals.scss';
+
+// $hover-color
+$sliderHeight: 100px;
+$sliderWidth: 300px;
+
+.slider-container {
+  width: $sliderWidth;
+  height: $sliderHeight;
+  border-color: $hover-color;
+  display: flex;
+  flex-flow: row;
+  
+  // margin: 20px;
+  h3 {
+    font-size: 2em;
+  }
+}
