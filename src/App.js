@@ -24,7 +24,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav isActive={this.state.toggled}/>
           <div className="routes-container">
             <Route exact path="/" component={Landing}/>
             <Route path="/about" component={About}/>
@@ -32,6 +31,7 @@ class App extends Component {
             <Route path="/contact" component={Contact}/>
           </div>
           <div className="lil-extra"></div>
+        <Nav isActive={this.state.toggled}/>
       </div>
     );
   }
