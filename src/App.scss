@@ -27,12 +27,10 @@
 
   .lil-extra{
     position: absolute;
-    margin-right: 14px;
     width: 100px;
-    right: 0px;
-    height: 544px;
+    right: calc(0px);
+    height: calc(100vh - 160px);
     background-color: black;
-    top: 153px;
   }
 
   @media only screen and (max-width: $lgDevice) {
