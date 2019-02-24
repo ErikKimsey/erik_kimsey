@@ -12,6 +12,7 @@ $hover-color: #fcfa85;
   margin: 77px 0px;
   left:30px;
   
+  z-index: 5;
   transition: opacity 1s; 
   &:hover {
     opacity: 1;
