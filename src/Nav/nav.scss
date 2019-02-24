@@ -6,10 +6,16 @@ $hover-color: #fcfa85;
 .nav-container {
   display: flex;
   position: fixed;
-  width:300px;
+  width:100px;
+  opacity: 0.1;
   height:400px;
   margin: 177px 0px;
   left:40px;
+  
+  transition: opacity 1s; 
+  &:hover {
+    opacity: 1;
+  }
 
   .navbar-toggle {
     display:none;
