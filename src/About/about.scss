@@ -12,7 +12,7 @@ $hover-color: #fcfa85;
     flex-wrap: wrap;
     justify-content: space-around;
     .slider {
-      
+
     }
   }
   
@@ -51,7 +51,7 @@ $hover-color: #fcfa85;
   
 
   @media only screen and (max-width: $mdDevice) {
-    display: flex;
+    display: block;
     flex-flow: column;
     height: 100%;
     justify-content: space-between;
@@ -62,7 +62,7 @@ $hover-color: #fcfa85;
     }
   }
   @media only screen and (max-width: $smDevice) {
-    display: flex;
+    display: block;
     flex-flow: column;
     height: auto;
     justify-content: space-between;
