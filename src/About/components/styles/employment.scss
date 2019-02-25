@@ -1,16 +1,25 @@
 @import '../../../__styles/responsive.scss';
 @import '../../../__styles/globals.scss';
 
+$employment:$pink;
+
 .employment-container {
-  width:400px;
-  height:200px;
-  border:1px solid salmon;
+  width:94%;
+  border-top:0.1px solid $employment;
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+  padding: 10px;
 
   ul {
+    list-style-type: circle;
     li {}
   }
 
-  .employer-name {}
+  .employer-name {
+    color:$employment;
+    font-weight: 400;
+  }
   .role {}
   .duration {}
   .role-description {}

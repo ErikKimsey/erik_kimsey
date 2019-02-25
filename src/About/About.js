@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import './about.scss';
 import { 
-  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, EDUCATION, AUDIO_SKILLS_DATA, VIDEO_EDITING_SKILLS} from '../__data/data';
+  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, EDUCATION, AUDIO_SKILLS_DATA, VIDEO_EDITING_SKILLS, PROFESSIONAL_DATA} from '../__data/data';
 import SimpleSlider from './containers/Slider';
 import Education from './components/Education';
+import Employment from './components/Employment';
 
 class About extends Component {
   constructor(props){
@@ -41,7 +42,11 @@ class About extends Component {
         </div>
 
         <div className="professional-history-block-container">
-
+          {
+            PROFESSIONAL_DATA.map((e,i)=>{
+              return <Employment data={e}/>
+            })
+          }
         </div>
       </div>
     )

@@ -21,8 +21,11 @@ $hover-color: #fcfa85;
     justify-content: space-between;
   }
   
-  .self-blurb-container {
-
+  .professional-history-block-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
   }
 
 

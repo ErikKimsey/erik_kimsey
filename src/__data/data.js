@@ -137,11 +137,11 @@ export const EDUCATION = [
       'Git/Github',
     ],
     projects: [
-      'Conways Game of Life',
+      'Conways Game of Life (JavaScript, P5js, Canvas, React)',
       'Web Server (C Language)',
       'CPU Emulator (C Language)',
-      'Command-line Multi-User Dungeon Game',
-      'Django Rest API',
+      'Command-line Multi-User Dungeon Game (Python)',
+      'Django Rest API (Python, JavaScript)',
     ]
   },
   {
