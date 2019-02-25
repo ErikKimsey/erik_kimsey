@@ -1,21 +1,32 @@
-
+@import '../__styles/globals.scss';
+@import '../__styles/responsive.scss';
 
 .contact-container {
   width: 100%;
   display: flex;
   flex-flow: column;
   margin-left: 122px;
-  border: 1px solid white;
   padding: 50px 0 0 0;
-  
-  .contact-item {
-    color:white;
-    margin: 10px 0 0 100px;
-    font-size: 1.5em;
-  }
 
-  .name {}
+  .contact-item {
+    color:$pink;
+    margin: 10px 0 0 100px;
+    font-size: 2.5em;
+  }
+  
+  .name {
+    color:$pink;
+  }
+  
   .title {}
-  .email-address {}
-  .phone-number {}
+
+  .email-address {
+    color:$teal;
+    .fa-clipboard {
+      margin-left: 20px;
+    }
+  }
+  .phone-number {
+    color:$pink;
+  }
 }
