@@ -122,15 +122,17 @@ export const EDUCATION = [
       'CPU Emulator (C Language)',
       'Command0line Multi-User Dungeon Game',
       'Django Rest API',
-      '',
-      '',
     ]
   },
   {
     name: 'James Madison University',
     major: 'BA Philosophy',
+    minor: 'Writing (Creative and Technical)',
     focus: 'Nietzsche and 20th Century European Philosophy',
     curriculum: [],
     extraCurricular: [],
+    tech:[],
+    projects:[],
+
   },
 ]
