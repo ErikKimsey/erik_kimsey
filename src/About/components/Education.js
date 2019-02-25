@@ -8,9 +8,9 @@ export default function Education(props) {
     <div className="education-container">
       
       <div className="school-name">{props.data.name}</div>
-      <div className="major">Major: {props.data.major}</div>
-      <div className="minor">Minor: {props.data.minor}</div>
-      <div className="focus">Focus: {props.data.focus}</div>
+      <div className="major">{props.data.major}</div>
+      <div className="minor">{props.data.minor}</div>
+      <div className="focus">{props.data.focus}</div>
       <div className="curriculum-container">
         <div className="curriculum-header">Curriculum: </div>
         <ul>

@@ -12,14 +12,14 @@ $education: $purple;
   padding: 10px;
 
   .school-name {
-    font-size: 24px;
+    // font-size: 24px;
     color:$education;
     font-weight: 400;
   }
 
     ul {
+      list-style-type: square;
       li {
-        list-style-type: square;
       }
     }
 
@@ -27,8 +27,12 @@ $education: $purple;
       color:$teal;
       font-weight: 400;
     }
-    .minor {}
-    .focus {}
+    .minor {
+      color:$teal;
+    }
+    .focus {
+      color:$teal;
+    }
     .curriculum-container {
       .curriculum-header {}
       ul {
