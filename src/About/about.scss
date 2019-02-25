@@ -1,4 +1,5 @@
 @import '../__styles/responsive.scss';
+@import '../__styles/globals.scss';
 $hover-color: #fcfa85;
 
 .about-container {
@@ -6,6 +7,22 @@ $hover-color: #fcfa85;
   width: 100%;
   overflow: scroll;
   margin-left: 140px;
+
+  .icons-container {
+    width: 94%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    background-color: rgba(136, 141, 170, 0.1);
+    .icon {
+      color:white;
+      margin:30px;
+      padding:3px;
+      height:50px;
+      border: solid 0px $grayish;
+      border-radius: 10px;
+    }
+  }
   
   .tech-knowledge-container{
     display: flex;
