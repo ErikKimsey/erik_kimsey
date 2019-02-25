@@ -206,7 +206,10 @@ export const PROFESSIONAL_DATA = [
     tech: [
       'Camtasia',
       'Rosetta Stone product',
-      'Microsoft Office Suite (Word, Excel, PowerPoint)'
+      'Microsoft Office Suite (Word, Excel, PowerPoint)',
+      'Okta',
+      'SalesForce',
+      'Oracle',
     ]
   }
 ]
