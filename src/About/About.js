@@ -4,6 +4,7 @@ import './about.scss';
 import { 
   JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA} from '../__data/data';
 import SimpleSlider from './containers/Slider';
+import Education from './components/Education';
 
 
 const dataArray = [
@@ -35,7 +36,7 @@ class About extends Component {
           <SimpleSlider className="slider" data={DESIGN_DATA}/>
         </div>
         <div className="education-container">
-    
+          <Education />
         </div>
       </div>
     )

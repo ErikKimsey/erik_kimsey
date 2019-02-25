@@ -88,3 +88,49 @@ export const FAV_COMBOS_DATA = [
   'D3.js and Angular',
   'Processing, Arduino,\n'+'freetime, and IC',
 ];
+
+export const EDUCATION = [
+  {
+    name: 'Lambda School',
+    major: 'Computer Science',
+    focus: 'Full-Stack Web Development',
+    extraCurricular: [],
+    curriculum: [
+      'Full-Stack Web',
+      'Single-Page Application Development',
+      'Programming Paradigms-',
+      'Algorithm Analysis',
+      'Data Structures',
+      'Theory of Computation',
+      'Computer Architecture',
+      'Cellular Automata',
+    ],
+    tech: [
+      'JavaScript ES6/ES7',
+      'Python',
+      'C Language',
+      'ReactJS',
+      'NodeJS',
+      'SQL/SQLite',
+      'CSS3/LESS/SASS',
+      'CSS3/LESS/SASS',
+      'Git/Github',
+    ],
+    projects: [
+      'Conways Game of Life',
+      'Web Server (C Language)',
+      'CPU Emulator (C Language)',
+      'Command0line Multi-User Dungeon Game',
+      'Django Rest API',
+      '',
+      '',
+    ]
+  },
+  {
+    name: 'James Madison University',
+    major: 'BA Philosophy',
+    focus: 'Nietzsche and 20th Century European Philosophy',
+    curriculum: [],
+    extraCurricular: [],
+  },
+]
