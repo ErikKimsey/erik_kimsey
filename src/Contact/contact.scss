@@ -17,7 +17,7 @@
   .name {
     color:$pink;
   }
-  
+
   .title {}
 
   .email-address {
@@ -28,5 +28,40 @@
   }
   .phone-number {
     color:$pink;
+  }
+
+  @media only screen and (max-width: $lgDevice) {
+    width:100%;
+    margin-left: 10px;
+    margin-top: 73px;
+    padding:40px 10px;
+    .contact-item {
+      font-size: 2em;
+      margin: 0;
+    }
+  }
+
+  @media only screen and (max-width: $mdDevice) {
+    width:100%;
+    margin-left: 10px;
+    padding:40px 10px;
+    .contact-item {
+      font-size: 2em;
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width: $smDevice) {
+    margin-top: 20px;
+    padding:10px 10px;
+
+    .contact-item {
+      font-size: 1.2em;
+    }
+  }
+  @media only screen and (max-width: $xsDevice) {
+    margin-top: 20px;
+    .contact-item {
+      font-size: 1em;
+    }
   }
 }
