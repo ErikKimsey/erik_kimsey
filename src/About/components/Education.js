@@ -21,7 +21,6 @@ export default function Education(props) {
           }
         </ul>
       </div>
-      <div className=""></div>
       <div className="tech-container">
         <div className="tech-header">Technology:</div>
       <ul>
@@ -32,7 +31,7 @@ export default function Education(props) {
           }
         </ul>
       </div>
-      <div className="projects">
+      <div className="projects-container">
       <div className="projects-header">Projects:</div>
       <ul>
           {
