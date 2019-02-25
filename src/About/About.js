@@ -33,7 +33,6 @@ class About extends Component {
           <SimpleSlider className="slider" data={BACKEND_DATA}/>
           <SimpleSlider className="slider" data={LANGUAGE_DATA}/>
           <SimpleSlider className="slider" data={DESIGN_DATA}/>
-          <SimpleSlider className="slider" data={FAV_COMBOS_DATA}/>
         </div>
         <div className="education-container">
     
