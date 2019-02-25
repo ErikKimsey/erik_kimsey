@@ -43,7 +43,7 @@ export default class SimpleSlider extends Component {
 
           <i className="fas fa-caret-right" onClick={this.handleForwardToggle}></i>
 
-            <div className="slider-item">
+            <div className="slider-item" title={this.state.data[this.state.index]}>
               {this.state.data[this.state.index]}
             </div>
           </div>

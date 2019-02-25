@@ -81,11 +81,10 @@ export const DESIGN_DATA = [
 
 export const FAV_COMBOS_DATA = [
   'Favorite Tech Stacks',
-  'JS + Sass + GreenSock',
-  'React + Express + Apollo + GraphQL',
-  'ReactStrap + Illustrator + FontAwesome',
-  'mobile-device sensors + new Web APIs + art&sound',
-  'Webpack + Yarn + GitHub',
-  'D3.js + Angular',
-  'Processing + Arduino + freetime + IC',
+  'JS + Sass,\n' + ' and GreenSock',
+  'React, Express,\n' + 'Apollo, GraphQL',
+  'ReactStrap, Illustrator\n' + 'FontAwesome',
+  'mobile-device sensors\n' + 'art & sound',
+  'D3.js and Angular',
+  'Processing, Arduino,\n'+'freetime, and IC',
 ];
