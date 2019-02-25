@@ -3,13 +3,19 @@
 
 
 .education-container {
-  width:400px;
-  border: 1px solid pink;
+  width:94%;
+  border-top: 0.1px solid #aaaaaa;
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+  padding: 10px;
 
   .school-name {}
 
     ul {
-      li {}
+      li {
+        list-style-type: square;
+      }
     }
 
     .major {}

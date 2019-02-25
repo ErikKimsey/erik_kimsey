@@ -72,11 +72,27 @@ export const TECH_LIST = [
 
 export const DESIGN_DATA = [
   'Graphic Design Tools',
-  'Illustrator',
-  'Photoshop',
-  'InDesign',
-  'XD',
+  'Adobe Illustrator',
+  'Adobe Photoshop',
+  'Adobe InDesign',
+  'Adobe XD',
+  'InkScape',
 ];
+
+export const AUDIO_SKILLS_DATA = [
+  'Music Creation / Audio Editing',
+  'PropellerHeads Reason',
+  'Ableton LIVE',
+  'Audacity',
+  'Adobe Audition',
+];
+
+export const VIDEO_EDITING_SKILLS = [
+  'Video Creation / Editing',
+  'Camtasia',
+  'Adobe Premiere',
+  'After Effects',
+]
 
 
 export const FAV_COMBOS_DATA = [
@@ -89,6 +105,10 @@ export const FAV_COMBOS_DATA = [
   'Processing, Arduino,\n'+'freetime, and IC',
 ];
 
+
+/**
+ * Education Data
+ */
 export const EDUCATION = [
   {
     name: 'Lambda School',

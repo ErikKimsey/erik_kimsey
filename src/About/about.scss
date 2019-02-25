@@ -14,14 +14,17 @@ $hover-color: #fcfa85;
     justify-content: space-around;
   }
   
+  .education-block-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
   
   .self-blurb-container {
 
   }
 
-  .education-container {
-
-  }
 
   h5{
     font-size: 1.4em;

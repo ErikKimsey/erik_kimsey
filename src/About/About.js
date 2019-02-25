@@ -2,14 +2,9 @@ import React, { Component } from 'react';
 import { Route, NavLink } from 'react-router-dom';
 import './about.scss';
 import { 
-  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, EDUCATION} from '../__data/data';
+  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, EDUCATION, AUDIO_SKILLS_DATA, VIDEO_EDITING_SKILLS} from '../__data/data';
 import SimpleSlider from './containers/Slider';
 import Education from './components/Education';
-
-
-const dataArray = [
-  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA
-];
 
 class About extends Component {
   constructor(props){
@@ -34,8 +29,10 @@ class About extends Component {
           <SimpleSlider className="slider" data={BACKEND_DATA}/>
           <SimpleSlider className="slider" data={LANGUAGE_DATA}/>
           <SimpleSlider className="slider" data={DESIGN_DATA}/>
+          <SimpleSlider className="slider" data={AUDIO_SKILLS_DATA}/>
+          <SimpleSlider className="slider" data={VIDEO_EDITING_SKILLS}/>
         </div>
-        <div className="education-container">
+        <div className="education-block-container">
         {
           EDUCATION.map((e,i)=>{
             return <Education data={e}/>
