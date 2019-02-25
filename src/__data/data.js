@@ -213,3 +213,17 @@ export const PROFESSIONAL_DATA = [
     ]
   }
 ]
+/**
+ * END Professional Data
+ */
+
+ /**
+  * Contact Data
+  */
+
+  export const CONTACT_DATA = {
+    name: 'Erik Kimsey',
+    role: 'Software Developer, Creative Technologist',
+    phone: '540-278-4525',
+    email: 'kimseyerik@gmail.com',
+  }

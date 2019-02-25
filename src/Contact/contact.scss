@@ -1,0 +1,26 @@
+
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin-left: 122px;
+  border: 1px solid white;
+  padding: 50px 0 0 0;
+  .contact-item {
+    color:white;
+    margin: 10px 0 0 100px;
+    font-size: 1.5em;
+  }
+
+  .name {
+  }
+
+  .title {
+
+  }
+
+  .email-address {}
+
+  .phone-number {}
+}
