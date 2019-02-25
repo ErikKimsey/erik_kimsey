@@ -156,3 +156,57 @@ export const EDUCATION = [
 
   },
 ]
+
+/**
+ * Professional Data
+ */
+export const PROFESSIONAL_DATA = [
+  {
+    employer: 'RainCrow Studios',
+    role: 'Node Developer',
+    duration: 'January 2018',
+    description:'',
+    projects: [
+      'Contributed to the development of NodeJS server, hosting live data for map-based MMORPG, "Covens"',
+    ],
+    tech: [
+      'NodeJS',
+      'JavaScript',
+      'Redis',
+      'Google Cloud',
+    ]
+  },
+  {
+    employer: 'ChartIQ',
+    role: 'Software Developer',
+    duration:'2016 - 2017',
+    description:'',
+    projects: [
+      'Integration of ChartIQ ProCharts into eToro AngularJS application.',
+      'Contributed to debugging, building and performance enhancement of ChartIQ flagship charting product.',
+      'Contributed to ChartIQ public-facing developer documentation.',
+    ],
+    tech: [
+      'JavaScript',
+      'HTML5 Canvas',
+      'CSS3',
+      'WebPack',
+      'NodeJS',
+      'AngularJS',
+      'Jira',
+      'Trello',
+    ]
+  },
+  {
+    employer: 'Rosetta Stone',
+    role:'Studio Recording Technician / ConsumerProduct Support',
+    duration: '2012 - 2016',
+    description:'',
+    projects: [],
+    tech: [
+      'Camtasia',
+      'Rosetta Stone product',
+      'Microsoft Office Suite (Word, Excel, PowerPoint)'
+    ]
+  }
+]

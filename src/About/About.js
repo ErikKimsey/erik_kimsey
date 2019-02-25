@@ -39,6 +39,10 @@ class About extends Component {
           })
         }
         </div>
+
+        <div className="professional-history-block-container">
+
+        </div>
       </div>
     )
   }
