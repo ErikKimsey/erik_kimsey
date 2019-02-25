@@ -12,7 +12,7 @@ export default function Education(props) {
       <div className="minor">Minor: {props.data.minor}</div>
       <div className="focus">Focus: {props.data.focus}</div>
       <div className="curriculum-container">
-        <div className="curriculum-header">curriculum: </div>
+        <div className="curriculum-header">Curriculum: </div>
         <ul>
           {
             props.data.curriculum.map((e, i)=>{
@@ -23,7 +23,7 @@ export default function Education(props) {
       </div>
       <div className=""></div>
       <div className="tech-container">
-        <div className="tech-header"></div>
+        <div className="tech-header">Technology:</div>
       <ul>
           {
             props.data.tech.map((e, i)=>{
@@ -33,6 +33,7 @@ export default function Education(props) {
         </ul>
       </div>
       <div className="projects">
+      <div className="projects-header">Projects:</div>
       <ul>
           {
             props.data.projects.map((e, i)=>{
@@ -41,8 +42,9 @@ export default function Education(props) {
           }
         </ul>
       </div>
-      <div className=""></div>
-      <div className=""></div>
+      <div className="extra-curr-container">
+        {props.data.extraCurricular}
+      </div>
     </div>
   )
 }

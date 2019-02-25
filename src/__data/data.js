@@ -120,14 +120,14 @@ export const EDUCATION = [
       'Conways Game of Life',
       'Web Server (C Language)',
       'CPU Emulator (C Language)',
-      'Command0line Multi-User Dungeon Game',
+      'Command-line Multi-User Dungeon Game',
       'Django Rest API',
     ]
   },
   {
     name: 'James Madison University',
-    major: 'BA Philosophy',
-    minor: 'Writing (Creative and Technical)',
+    major: 'Bachelor\'s Degree in Philosophy',
+    minor: 'Writing (Creative/ Technical) and Fine-Art/Graphic Design',
     focus: 'Nietzsche and 20th Century European Philosophy',
     curriculum: [],
     extraCurricular: [],
