@@ -50,7 +50,7 @@ class About extends Component {
         }
 
         </div>
-        <div className="tech-knowledge-container">
+        {/* <div className="tech-knowledge-container">
           <SimpleSlider className="slider" data={JS_DATA}/>
           <SimpleSlider className="slider" data={WEB_API_DATA}/>
           <SimpleSlider className="slider" data={STYLE_DATA}/>
@@ -59,7 +59,7 @@ class About extends Component {
           <SimpleSlider className="slider" data={DESIGN_DATA}/>
           <SimpleSlider className="slider" data={AUDIO_SKILLS_DATA}/>
           <SimpleSlider className="slider" data={VIDEO_EDITING_SKILLS}/>
-        </div>
+        </div> */}
         <div className="education-block-container">
         {
           EDUCATION.map((e,i)=>{
