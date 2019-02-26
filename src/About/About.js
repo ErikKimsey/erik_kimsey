@@ -25,6 +25,10 @@ import nodeIMG from '../assets/icons/node-dot-js.svg';
 import djangoIMG from '../assets/icons/django.svg';
 import d3IMG from '../assets/icons/d3-dot-js.svg';
 
+const SKILL_DATA = [
+  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, AUDIO_SKILLS_DATA, VIDEO_EDITING_SKILLS
+];
+
 const SVGS = [adobeIMG, reactIMG, cssIMG, jsIMG, html5IMG, sassIMG, nodeIMG, npmIMG, pythonIMG, djangoIMG, d3IMG, webpackIMG,bootstrap, illustratorIMG, photoshopIMG, graphqlIMG];
 
 class About extends Component {
@@ -42,8 +46,6 @@ class About extends Component {
           <p>That said, I'm interested in work involving development of creative technology in the realm of mobile-web/PWA, responsive web,and IoT.</p>
           <p>I like to think I'm at the cross-section of interactivity + aesthetic-appeal + innovation + good purpose.</p>
           <p>I love learning new languages and technology.  Especially, in order to put them to use in novel ways.</p>
-          <p>Proficient technologies include: </p>
-
         </div>
   
         <div className="icons-container">

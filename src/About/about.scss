@@ -24,12 +24,12 @@ $hover-color: #fcfa85;
     }
   }
   
-  // .tech-knowledge-container{
-  //   display: flex;
-  //   flex-flow: row;
-  //   flex-wrap: wrap;
-  //   justify-content: space-around;
-  // }
+  .tech-knowledge-container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   
   .education-block-container {
     width: 100%;
@@ -55,11 +55,8 @@ $hover-color: #fcfa85;
   }
 
   @media only screen and (max-width: $lgDevice) {
-    display: flex;
-    flex-flow: column;
-    height: 1000px;
+    display: block;
     width: 100%;
-    justify-content: space-between;
     margin-left: 20px;
     overflow: scroll;
 
