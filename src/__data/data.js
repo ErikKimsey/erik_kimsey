@@ -18,7 +18,7 @@ export const STYLE_DATA = [
   'CSS3',
   'SASS',
   'Less',
-  'Style-Components',
+  'Styled-Components',
   'GreenSock',
 ];
 
@@ -30,11 +30,11 @@ export const HTML_DATA = [
 export const BACKEND_DATA = [
   'BackEnd Tools',
   'SQL',
-  'SQL Lite',
+  'SQLite',
   'Node.js',
+  'Knex.js',
   'Django',
   'GraphQL',
-  'NoSQL',
   'Redis',
 ];
 
