@@ -29,10 +29,12 @@ class Nav extends Component {
         <div className="nav-container">
           <ul className="nav-list">
             <li onClick={this.handleToggle}>
-              <NavLink activeStyle={activeStyles} title="HOME" className="nav-link" exact to="/"><i class="fas fa-terminal fa-1x"></i></NavLink>
+              <NavLink activeStyle={activeStyles} title="HOME" className="nav-link" exact to="/"><i class="fas fa-house-damage fa-1x"></i></NavLink>
             </li>
             <li onClick={this.handleToggle}>
-              <NavLink activeStyle={activeStyles}  title="ME, ME, ME!" className="nav-link" to="/about"><i class="fas fa-child fa-1x"></i></NavLink>
+              <NavLink activeStyle={activeStyles}  title="ME, ME, ME!" className="nav-link" to="/about">
+              <i class="fas fa-user-astronaut fa-1x"></i>
+              </NavLink>
             </li>
             <li onClick={this.handleToggle}>
               <NavLink activeStyle={activeStyles} title="CODE PLAYGROUND" className="nav-link" to="/work"><i class="fas fa-code fa-1x"></i></NavLink>
