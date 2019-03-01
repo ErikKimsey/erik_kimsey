@@ -11,17 +11,16 @@ import { WebGLRenderer } from 'three';
  *  3. 
  */
 export class Scene {
-  constructor(...args){
-    super();
+  constructor(args){
     this.canvas = args.canvas;
     this.canvasDimensions = {
       w: 0,
       h: 0,
     };
-    this.scene;
-    this.camera;
-    this.renderer;
-    this.mesh;
+    // this.scene;
+    // this.camera;
+    // this.renderer;
+    // this.mesh;
     this.mousePosition = {
       x: 0,
       y: 0,
@@ -35,8 +34,8 @@ export class Scene {
   }
 
 
-  setCanvasDimensions(w,h){
-    console.log(this.canvas);
+  setCanvasDimensions(){
+    console.log(this.canvas.width);
   }
 
   /**

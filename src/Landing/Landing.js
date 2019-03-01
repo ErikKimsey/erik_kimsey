@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './landing.scss';
+import {ThreeWrapper} from './THREE/threeInit';
 
 class Landing extends Component {
   constructor(props){
@@ -8,7 +9,7 @@ class Landing extends Component {
   }
 
   componentDidMount() {
-    
+    ThreeWrapper(this.threeJSRoot);
   }
 
   render(){

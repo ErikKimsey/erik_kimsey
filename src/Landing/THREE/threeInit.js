@@ -1,13 +1,14 @@
-import Scene from './Scene';
-export default ThreeWrapper = (container) => {
+import {Scene} from './Scene';
+export const ThreeWrapper = (container) => {
 
-
-  const canvas = createCanvas(document, container);
-  const scene = new Scene({canvas});
+  console.log(container);
+  
+  createCanvas(document, container);
 
   function createCanvas(document, container) {
     let tempCanvas = document.createElement('canvas');
-    container.appendChild(tempCanvas);
+    tempCanvas.width = container.width;
+    console.log(container.offsetHeight);
     return tempCanvas;
   }
 
@@ -19,7 +20,6 @@ export default ThreeWrapper = (container) => {
 
   function resizeCanvas(){
     console.log('canvas resuze');
-    
   }
 
   function mouseMove(screenX){
@@ -39,3 +39,5 @@ export default ThreeWrapper = (container) => {
 
   render();
 }
+
+// export default ThreeWrapper;
