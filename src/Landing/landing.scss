@@ -1,6 +1,7 @@
 
 .landing-container {
-  height: 100%;
+  height: calc(100vh - 220px);
   width:80%;
   color:white;
+  background-color: bisque;
 }
