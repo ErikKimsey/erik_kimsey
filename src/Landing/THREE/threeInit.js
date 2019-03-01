@@ -1,4 +1,6 @@
 import {Scene} from './Scene';
+
+
 export const ThreeWrapper = (container) => {
 
   console.log(container);
@@ -11,12 +13,6 @@ export const ThreeWrapper = (container) => {
     console.log(container.offsetHeight);
     return tempCanvas;
   }
-
-  /**
-   * Listeners:
-   *  1. resizeCanvas,
-   *  2. mouseMove
-   */
 
   function resizeCanvas(){
     console.log('canvas resuze');
@@ -39,5 +35,3 @@ export const ThreeWrapper = (container) => {
 
   render();
 }
-
-// export default ThreeWrapper;
