@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { WebGLRenderer } from 'three';
 
 
 /**
@@ -12,7 +13,11 @@ import * as THREE from 'three';
 export class Scene {
   constructor(...args){
     super();
-    this.canvasDimensions;
+    this.canvas = args.canvas;
+    this.canvasDimensions = {
+      w: 0,
+      h: 0,
+    };
     this.scene;
     this.camera;
     this.renderer;
@@ -21,18 +26,18 @@ export class Scene {
       x: 0,
       y: 0,
     };
+    this.cameraVals = {
+      fov: 75,
+      aspect: 0,
+      near: 0,
+      far: 0,
+    }
   }
 
 
-  /**
-   * Variables/values defining:
-   * canvas dimensions,
-   * mouse x/y locations,
-   * ...
-   */
-
-
-
+  setCanvasDimensions(w,h){
+    console.log(this.canvas);
+  }
 
   /**
    * A Bunch of Methods:
@@ -43,6 +48,10 @@ export class Scene {
    * ---- Renderer(),
    */
 
+  init(){
+    this.createCamera();
+    this.createScene();
+  }
 
   // create Scene
   createScene(){
@@ -50,17 +59,18 @@ export class Scene {
   }
 
   createCamera(){
-    /**
-     * 1. isntantiate with (fov, aspect-ratio, near, far)
-     * 2. 
-     */
-    return new THREE.PerspectiveCamera()
+    this.camera = new THREE.PerspectiveCamera(this.cameraVals.fov,
+       this.cameraVals.aspect, 
+       this.cameraVals.near, 
+       this.cameraVals.far);
+    this.camera.position.set( 0, 5, 5 );
   }
-  // create Camera
-  // create Renderer
-  // event methods pertaining to:
-  // -- interactivity, 
-  // -- canvas resize, 
-  // -- update()
+
+  createRenderer(){
+    this.renderer = new WebGLRenderer();
+    this.renderer.setPixelRatio(window.devicePixelRatio);
+    this.renderer.setSize()
+  }
+
 
 }
