@@ -3,5 +3,9 @@
   display: block;
   height: calc(100vh - 220px);
   width:100%;
-  color:white;
+  // color:white;
+  canvas {
+    width:100%;
+    height:100%;
+  }
 }
