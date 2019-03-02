@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { Route, NavLink } from 'react-router-dom';
 import './about.scss';
-import { 
-  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, EDUCATION, AUDIO_SKILLS_DATA, VIDEO_EDITING_SKILLS, PROFESSIONAL_DATA} from '../__data/data';
-import SimpleSlider from './containers/Slider';
+import { PROFESSIONAL_DATA } from '../__data/data';
 import Education from './components/Education';
 import Employment from './components/Employment';
 
@@ -25,9 +22,9 @@ import nodeIMG from '../assets/icons/node-dot-js.png';
 import djangoIMG from '../assets/icons/django.svg';
 import d3IMG from '../assets/icons/d3-dot-js.svg';
 
-const SKILL_DATA = [
-  JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, AUDIO_SKILLS_DATA, VIDEO_EDITING_SKILLS
-];
+// const SKILL_DATA = [
+//   JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, AUDIO_SKILLS_DATA, VIDEO_EDITING_SKILLS
+// ];
 
 const SVGS = [adobeIMG, reactIMG, cssIMG, jsIMG, html5IMG, sassIMG, nodeIMG, npmIMG, pythonIMG, djangoIMG, d3IMG, webpackIMG,bootstrap, illustratorIMG, photoshopIMG, graphqlIMG];
 

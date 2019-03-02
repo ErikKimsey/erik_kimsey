@@ -97,12 +97,12 @@ export const VIDEO_EDITING_SKILLS = [
 
 export const FAV_COMBOS_DATA = [
   'Favorite Tech Stacks',
-  'JS + Sass,\n' + ' and GreenSock',
-  'React, Express,\n' + 'Apollo, GraphQL',
-  'ReactStrap, Illustrator\n' + 'FontAwesome',
-  'mobile-device sensors\n' + 'art & sound',
+  'JS + Sass,\n and GreenSock',
+  'React, Express,\n Apollo, GraphQL',
+  'ReactStrap, Illustrator\n FontAwesome',
+  'mobile-device sensors\n art & sound',
   'D3.js and Angular',
-  'Processing, Arduino,\n'+'freetime, and IC',
+  'Processing, Arduino,\n freetime, and IC',
 ];
 
 
