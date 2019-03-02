@@ -16,7 +16,16 @@ export default class Scene {
   }
   
   init(){
-    console.log(this.container);
+    this.buildCamera();
+    this.buildLights();
+    let prom = new Promise((res, rej)=>{
+      setTimeout(() => {
+        res(this.scene = this.buildScene())
+      }, 100);
+    });
+    prom.then(()=>{
+      console.log(this.scene.add(this.onWindowResize));
+    })
   }
 
   // Instantiates camera
@@ -26,7 +35,7 @@ export default class Scene {
       this.container.offSetWidth / this.container.offsetHeight, 
       0.2, 
       100 );
-      this.camera.position( 0, 5, 5 );
+      this.camera.position.set( 0, 5, 5 );
   }
   
   // Instantiates renderer
@@ -36,14 +45,13 @@ export default class Scene {
   
   // Instantiates scene
   buildScene(){
-    this.scene = new THREE.Scene();
+    return new THREE.Scene();
   }
   
   // Instantiates lights
   buildLights(){
     this.pointLight = new THREE.PointLight(0xff0000, 0.8, 100);
     this.ambientLight = new THREE.AmbientLight(0x404040);
-    this.addToScene(this.scene, [this.pointLight, this.ambientLight]);
   }
 
   // create scene controls
@@ -52,6 +60,7 @@ export default class Scene {
   // Utility function to add items to scene instance
   addToScene(scene, ...toAdd){
     toAdd.forEach(item => scene.add(item));
+    // console.log(this.scene);
   }
 
   // applying responsive dimensions to canvas
