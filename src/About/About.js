@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './about.scss';
-import { PROFESSIONAL_DATA } from '../__data/data';
+import { 
+  EDUCATION, PROFESSIONAL_DATA} from '../__data/data';
 import Education from './components/Education';
 import Employment from './components/Employment';
 
