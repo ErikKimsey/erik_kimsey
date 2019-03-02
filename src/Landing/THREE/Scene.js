@@ -13,12 +13,16 @@ export default class Scene {
     this.renderer = null;
     this.pointLight = null;
     this.ambientLight = null;
+    this.geometry = null;
+    this.material = null;
+    this.sphere = null;
   }
   
   init(){
     this.buildScene();
     this.buildCamera();
     this.buildLights();
+    this.buildGeometryAndMaterial();
   }
 
   // Instantiates camera
@@ -47,8 +51,21 @@ export default class Scene {
     this.ambientLight = new THREE.AmbientLight(0x404040);
     this.scene.add(this.pointLight);
     this.scene.add(this.ambientLight);
+  }
+  
+  // Instantiates and adds geometry to scene
+  buildGeometryAndMaterial(){
+    this.geometry = new THREE.SphereGeometry(5, 32, 32);
+    this.material = new THREE.MeshBasicMaterial( { color: 0xff11ee } );
+    this.buildSphere();
+  }
+
+  buildSphere(){
+    this.sphere = new THREE.Mesh( this.geometry, this.material );
+    this.scene.add(this.sphere);
     console.log(this.scene);
   }
+
 
   // create scene controls
   buildControls(){}
