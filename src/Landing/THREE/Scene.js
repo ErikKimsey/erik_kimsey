@@ -24,7 +24,7 @@ export default class Scene {
     this.buildLights();
     this.buildGeometryAndMaterial();
     this.buildRenderer();
-    this.render();
+    this.animate();
   }
 
   // Instantiates camera
@@ -87,12 +87,13 @@ export default class Scene {
       // initalize render() and rAF
       animate(){
         requestAnimationFrame(this.animate);
-        this.render();
+        this.renderIt();
       }
       
-      render(){
+      renderIt(){
+        // console.log('built sphere >>>> ', this.sphere);
+        this.sphere.rotation.y += 0.4;
         this.renderer.render( this.scene, this.camera );
-        this.animate();
       }
 
 }
