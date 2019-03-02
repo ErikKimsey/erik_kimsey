@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './landing.scss';
-import Scene from './THREE/threeInit';
+import Scene from './THREE/Scene';
 
 class Landing extends Component {
   constructor(props){
@@ -11,7 +11,7 @@ class Landing extends Component {
   componentDidMount() {
     new Scene(this.threeJSRoot).init();
   }
-
+  
   render(){
     return (
       <div className="landing-container"
