@@ -23,6 +23,8 @@ export default class Scene {
     this.buildCamera();
     this.buildLights();
     this.buildGeometryAndMaterial();
+    this.buildRenderer();
+    this.render();
   }
 
   // Instantiates camera
@@ -33,53 +35,64 @@ export default class Scene {
       0.2, 
       100 );
       this.camera.position.set( 0, 5, 5 );
-  }
-  
-  // Instantiates renderer
-  buildRenderer(){
-    this.renderer = new THREE.WebGLRenderer();
-  }
-  
-  // Instantiates scene
-  buildScene(){
-    this.scene = new THREE.Scene();
-  }
-  
-  // Instantiates lights
-  buildLights(){
-    this.pointLight = new THREE.PointLight(0xff0000, 0.8, 100);
-    this.ambientLight = new THREE.AmbientLight(0x404040);
-    this.scene.add(this.pointLight);
-    this.scene.add(this.ambientLight);
-  }
-  
-  // Instantiates and adds geometry to scene
-  buildGeometryAndMaterial(){
-    this.geometry = new THREE.SphereGeometry(5, 32, 32);
-    this.material = new THREE.MeshBasicMaterial( { color: 0xff11ee } );
-    this.buildSphere();
-  }
-
-  buildSphere(){
-    this.sphere = new THREE.Mesh( this.geometry, this.material );
-    this.scene.add(this.sphere);
-    console.log(this.scene);
-  }
-
-
-  // create scene controls
-  buildControls(){}
-
-  // Utility function to add items to scene instance
-  addToScene(scene, ...toAdd){
-    toAdd.forEach(item => scene.add(item));
-    // console.log(this.scene);
-  }
-
-  // applying responsive dimensions to canvas
-  onWindowResize(){}
-  
-  // initalize render() and rAF
-  animate(){}
+      
+    }
+    
+    // Instantiates renderer
+    buildRenderer(){
+      this.renderer = new THREE.WebGLRenderer();
+      this.renderer.setPixelRatio( window.devicePixelRatio );
+      this.renderer.setSize( window.innerWidth, window.innerHeight );
+      this.container.appendChild( this.renderer.domElement );
+      console.log(this.renderer);
+    }
+    
+    // Instantiates scene
+    buildScene(){
+      this.scene = new THREE.Scene();
+    }
+    
+    // Instantiates lights
+    buildLights(){
+      this.pointLight = new THREE.PointLight(0xff0000, 0.8, 100);
+      this.ambientLight = new THREE.AmbientLight(0x404040);
+      this.scene.add(this.pointLight);
+      this.scene.add(this.ambientLight);
+    }
+    
+    // Instantiates and adds geometry to scene
+    buildGeometryAndMaterial(){
+      this.geometry = new THREE.SphereGeometry(5, 32, 32);
+      this.material = new THREE.MeshBasicMaterial( { color: 0xff11ee } );
+      this.buildSphere();
+    }
+    
+    buildSphere(){
+      this.sphere = new THREE.Mesh( this.geometry, this.material );
+      this.scene.add(this.sphere);
+    }
+    
+    
+    // create scene controls
+    buildControls(){}
+    
+    // Utility function to add items to scene instance
+    // addToScene(scene, ...toAdd){
+      //   toAdd.forEach(item => scene.add(item));
+      // }
+      
+      // applying responsive dimensions to canvas
+      onWindowResize(){}
+      
+      // initalize render() and rAF
+      animate(){
+        requestAnimationFrame(this.animate);
+        this.render();
+      }
+      
+      render(){
+        this.renderer.render( this.scene, this.camera );
+        this.animate();
+      }
 
 }
