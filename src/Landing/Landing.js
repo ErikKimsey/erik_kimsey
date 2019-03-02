@@ -14,7 +14,7 @@ class Landing extends Component {
   componentDidMount(){
     const width = this.mount.clientWidth;
     const height = this.mount.clientHeight;
-    console.log();
+
     
 
     this.scene = new THREE.Scene();
@@ -97,7 +97,7 @@ class Landing extends Component {
   render(){
     return (
       <div
-      style={{ width: `${window.innerWidth}px`, height: `${window.innerHeight}px` }}
+      style={{ width: `${window.innerWidth*0.8}px`, height: `${window.innerHeight-220}px` }}
       ref={(mount) => { this.mount = mount }}
     />
     )
