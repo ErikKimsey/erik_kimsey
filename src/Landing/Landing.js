@@ -54,9 +54,7 @@ class Landing extends Component {
 
     this.raycaster = new THREE.Raycaster();
 
-
-
-    document.addEventListener('mousedown', this.onMouseMove, false);
+    document.addEventListener('mousemove', this.onMouseMove, false);
     this.start();
   }
 
