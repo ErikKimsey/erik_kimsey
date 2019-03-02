@@ -16,16 +16,9 @@ export default class Scene {
   }
   
   init(){
+    this.buildScene();
     this.buildCamera();
     this.buildLights();
-    let prom = new Promise((res, rej)=>{
-      setTimeout(() => {
-        res(this.scene = this.buildScene())
-      }, 100);
-    });
-    prom.then(()=>{
-      console.log(this.scene.add(this.onWindowResize));
-    })
   }
 
   // Instantiates camera
@@ -45,13 +38,16 @@ export default class Scene {
   
   // Instantiates scene
   buildScene(){
-    return new THREE.Scene();
+    this.scene = new THREE.Scene();
   }
   
   // Instantiates lights
   buildLights(){
     this.pointLight = new THREE.PointLight(0xff0000, 0.8, 100);
     this.ambientLight = new THREE.AmbientLight(0x404040);
+    this.scene.add(this.pointLight);
+    this.scene.add(this.ambientLight);
+    console.log(this.scene);
   }
 
   // create scene controls
