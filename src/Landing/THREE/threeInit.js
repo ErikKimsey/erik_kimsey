@@ -1,37 +1,22 @@
-import {Scene} from './Scene';
+import * as THREE from 'three';
 
+export const threeInit = () => {
 
-export const ThreeWrapper = (container) => {
+}
 
-  console.log(container);
-  
-  let canvas = createCanvas(document, container);
-  let scene = new Scene({canvas});
+export default class Scene {
+  constructor(container){
+    this.container = container;
+    console.log(this.container);
+    
+    this.sceneDimensions = {
 
-  function createCanvas(document, container) {
-    let tempCanvas = document.createElement('canvas');
-    container.appendChild(tempCanvas);
-    return tempCanvas;
+    }
+    this.scene = new THREE.Scene();
+    this.camera = new THREE.PerspectiveCamera();
   }
 
-  function resizeCanvas(){
-    console.log('canvas resuze');
+  init(container){
+    console.log('initing');
   }
-
-  function mouseMove(screenX){
-    console.log(`mouseX: ${screenX}`);
-  }
-
-  // Set event listeners
-  function setEventListeners(){
-    window.onresize = resizeCanvas;
-    window.onmousemove = mouseMove;
-  }
-
-  // Update scene
-  function render(){
-    requestAnimationFrame(render);
-  }
-
-  render();
 }
