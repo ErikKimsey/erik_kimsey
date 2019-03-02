@@ -25,22 +25,17 @@ export default class Scene {
 
   // Instantiates camera
   buildCamera(){
-    this.camera = new THREE.PerspectiveCamera(
-      45, 
-      this.container.offSetWidth / (this.container.offSetWidth/2.5), 
-      1, 
-      1000 );
-      this.camera.position.set( 0, 0 ,400 );
-      // this.camera.position.z = 1800;
-
-      this.camera.lookAt(this.scene.position);
+      this.camera = new THREE.PerspectiveCamera(75, this.container.offSetWidth / (this.container.offSetWidth/2.5), 0.8, 1000);
+      this.camera.position.z = 20;
+      this.scene.add(this.camera);
     }
     
     // Instantiates renderer
     buildRenderer(){
       this.renderer = new THREE.WebGLRenderer();
       this.renderer.setPixelRatio( window.devicePixelRatio);
-      this.renderer.setSize();
+      this.renderer.setClearColor(0xffffff);
+      this.renderer.setSize(this.container.offSetWidth,  (this.container.offSetWidth/2.5));
       this.container.appendChild( this.renderer.domElement );
     }
     
@@ -52,28 +47,29 @@ export default class Scene {
     
     // Instantiates lights
     buildLights(){
-      this.pointLight = new THREE.DirectionalLight(0xff0000);
-      this.pointLight.position.set(10,10,11);
-      this.scene.add(this.pointLight);
-      this.ambientLight = new THREE.AmbientLight(0x404040);
+      this.ambientLight = new THREE.AmbientLight(0xFFFFFF);
       this.scene.add(this.ambientLight);
+      this.pointLight = new THREE.DirectionalLight(0xffffff, 0.9, 1000);
+      this.pointLight.position.set(-120, 120, 222);
+      this.pointLight.castShadow = false; 
+      this.scene.add(this.pointLight);
     }
     
     // Instantiates and adds geometry to scene
     buildGeometryAndMaterial(){
-      this.geometry = new THREE.SphereGeometry(15, 32, 32, 0, 6.3,0,3.1);
-      // this.geometry.colors(0xFFFFFF);
-      this.material = new THREE.MeshLambertMaterial( {color: 0xffff00} );
-      this.buildSphere(this.geometry,this.material);
-    }
-    
-    buildSphere(geo, mat){
-      this.sphere = new THREE.Mesh( geo, mat );   
-      this.sphere.position.z = 100;   
+      this.geometry = new THREE.SphereGeometry(3, 5, 60);
+      this.material = new THREE.MeshPhongMaterial({ color: 'rgb(0,70,111)'});
+      this.sphere = new THREE.Mesh( this.geometry, this.material );   
+      this.sphere.position.z = 9;   
       this.scene.add(this.sphere);
       console.log(this.sphere);
-      
     }
+    
+    // buildSphere(geo, mat){
+    //   this.sphere = new THREE.Mesh( geo, mat );   
+    //   this.sphere.position.z = 100;   
+    //   this.scene.add(this.sphere);
+    // }
     
     // create scene controls
     buildControls(){}
