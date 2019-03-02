@@ -5,12 +5,12 @@ export const ThreeWrapper = (container) => {
 
   console.log(container);
   
-  createCanvas(document, container);
+  let canvas = createCanvas(document, container);
+  let scene = new Scene({canvas});
 
   function createCanvas(document, container) {
     let tempCanvas = document.createElement('canvas');
-    tempCanvas.width = container.width;
-    console.log(container.offsetHeight);
+    container.appendChild(tempCanvas);
     return tempCanvas;
   }
 

@@ -13,6 +13,8 @@ import { WebGLRenderer } from 'three';
 export class Scene {
   constructor(args){
     this.canvas = args.canvas;
+    console.log(this.canvas);
+    
     this.canvasDimensions = {
       w: 0,
       h: 0,
@@ -59,10 +61,10 @@ export class Scene {
 
   createCamera(){
     this.camera = new THREE.PerspectiveCamera(this.cameraVals.fov,
-       this.cameraVals.aspect, 
-       this.cameraVals.near, 
-       this.cameraVals.far);
-    this.camera.position.set( 0, 5, 5 );
+        this.cameraVals.aspect, 
+        this.cameraVals.near, 
+        this.cameraVals.far);
+        this.camera.position.set( 0, 5, 5 );
   }
 
   createRenderer(){
