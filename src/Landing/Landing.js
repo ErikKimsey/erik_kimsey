@@ -19,9 +19,9 @@ class Landing extends Component {
 
     this.scene = new THREE.Scene();
     this.fogColor = new THREE.Color(0xffffff);
-    this.scene.fog = new THREE.Fog(0xffffff, 1, 12);
+    this.scene.fog = new THREE.Fog(0xffffff, 1, 10);
     this.camera = new THREE.PerspectiveCamera(75, width/height, 0.8, 1000);
-    this.camera.position.z = 20;
+    this.camera.position.z = 17;
     this.scene.add(this.camera);
 
     this.renderer = new THREE.WebGLRenderer({ antialias: true});
@@ -38,7 +38,7 @@ class Landing extends Component {
     this.scene.add(this.pointLight);
 
     this.spotLight = new THREE.SpotLight(0xFFFFFF);
-    this.spotLight.position.set(-20, 20, 180);
+    this.spotLight.position.set(-20, 20, 100);
     this.spotLight.receiveShadow = true;
     this.spotLight.shadow.mapSize = new THREE.Vector2(1024,1024);
     // this.spotLight.shadow.far = 120;
