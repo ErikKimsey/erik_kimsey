@@ -15,6 +15,9 @@ class Landing extends Component {
     const width = this.mount.clientWidth;
     const height = this.mount.clientHeight;
 
+    this.raycaster = new THREE.Raycaster();
+    this.vector2 = new THREE.Vector2();
+
     
 
     this.scene = new THREE.Scene();
