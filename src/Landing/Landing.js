@@ -51,11 +51,15 @@ class Landing extends Component {
     this.geometry = new THREE.SphereGeometry(3, 5, 60);
     // this.geometry.position.z = 10;
     this.material = new THREE.MeshPhongMaterial({ color: 'rgba(255,70,111,0.5)'});
+    // this.material.morphTargets = true;
+    console.log(this.geometry.vertices);
+    
     this.sphere = new THREE.Mesh(this.geometry, this.material);
     this.sphere.position.z = 9;
     this.scene.add(this.sphere);
 
     this.raycaster = new THREE.Raycaster();
+    this.raycaster.intersectObject(this.sphere);
 
     document.addEventListener('mousemove', this.onMouseMove, false);
     this.start();
@@ -66,9 +70,7 @@ class Landing extends Component {
     this.mount.removeChild(this.renderer.domElement);
   }
 
-  start = () => {
-    console.log(this.sphere);
-    
+  start = () => { 
     if (!this.frameId) {
       this.frameId = requestAnimationFrame(this.animate);
     }
@@ -92,7 +94,9 @@ class Landing extends Component {
   onMouseMove = (e) => {
     mouse.x = (e.clientX / window.innerWidth) * 2-1;
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
-    console.log(`${e.clientX}, ${e.clientY}`);
+    // console.log(`${e.clientX}, ${e.clientY}`);
+    console.log(this.raycaster);
+    
   }
   
   render(){
