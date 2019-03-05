@@ -48,9 +48,10 @@ class Landing extends Component {
     // this.spotLight.shadow.near = 6;
     // this.scene.add(this.spotLight);
 
-    this.geometry = new THREE.SphereGeometry(3, 5, 60);
+    // this.geometry = new THREE.SphereGeometry(3, 5, 60);
+    this.geometry = new THREE.BoxGeometry(20, 20, 20, 20, 20, 20); (3, 5, 60);
     // this.geometry.position.z = 10;
-    this.material = new THREE.MeshPhongMaterial({ color: 'rgba(255,70,111,0.5)'});
+    this.material = new THREE.MeshPhongMaterial({ color: 'rgba(255,70,111,0.5)', wireframe: true});
     // this.material.morphTargets = true;
     console.log(this.geometry.vertices);
     
