@@ -28,8 +28,8 @@ export default class LIL_EXTRA extends Component {
   componentDidMount(){
     console.log(window.innerWidth);
     responsiveCanvasDimension();
-    const width = canvasDimensions.w;
-    const height = canvasDimensions.h;
+    const width = this.mount.clientWidth;
+    const height = this.mount.clientHeight;
 
     this.raycaster = new THREE.Raycaster();
     this.vector2 = new THREE.Vector2();
@@ -92,7 +92,6 @@ export default class LIL_EXTRA extends Component {
       );
       this.geometry.vertices[i].applyQuaternion(this.quaternion)
     }
-    
     document.addEventListener('mousemove', this.onMouseMove, false);
     this.start();
   }
@@ -146,19 +145,22 @@ export default class LIL_EXTRA extends Component {
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
     // console.log(`${e.clientX}, ${e.clientY}`);
   }
+
+  isMobileHeight = () => {
+    if(window.clientWidth < 800){
+      canvasDimensions.h = '100px';
+      canvasDimensions.w = '100vw';
+    } else {
+      canvasDimensions.h = `calc(100vh - 160px)`;
+      canvasDimensions.w = `100px`;
+    }
+  }
   
-  render(){
-    responsiveCanvasDimension();
+  render(){ 
     return (
-      <div className="canvas-container"
-      
-      ref={(mount) => { this.mount = mount }}
-    />
+      <div className="canvas-container">
+        <div className="canvas" style={{height: canvasDimensions.h, width: canvasDimensions.w}} ref={(mount) => { this.mount = mount }}></div>
+      </div>
     )
   }
 }
-
-{/* <div className="canvas-container"
-style={{ width: `${canvasDimensions.w}px`, height: `${canvasDimensions.h}px` }}
-ref={(mount) => { this.mount = mount }}
-/> */}
