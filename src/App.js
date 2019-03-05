@@ -7,6 +7,7 @@ import Landing from './Landing/Landing';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Work from './Work/Work';
+import LilExtra from './Lil_Extra/LIL_EXTRA';
 
 class App extends Component {
   constructor(props){
@@ -29,7 +30,9 @@ class App extends Component {
             <Route path="/work" component={Work}/>
             <Route path="/contact" component={Contact}/>
           </div>
-          <div className="lil-extra"></div>
+          <div className="lil-extra">
+            <LilExtra />
+          </div>
         <Nav isActive={this.state.toggled}/>
       </div>
     );
