@@ -49,7 +49,7 @@ class Landing extends Component {
     // this.scene.add(this.spotLight);
 
     // this.geometry = new THREE.SphereGeometry(3, 5, 60);
-    this.geometry = new THREE.BoxGeometry(20, 20, 20, 20, 20, 20); (3, 5, 60);
+    this.geometry = new THREE.BoxGeometry(20, 20, 20, 20, 20, 20);
     // this.geometry.position.z = 10;
     this.material = new THREE.MeshPhongMaterial({ color: 'rgba(255,70,111,0.5)', wireframe: true});
     // this.material.morphTargets = true;
@@ -59,11 +59,29 @@ class Landing extends Component {
     this.sphere.position.z = 9;
     this.scene.add(this.sphere);
 
+    
     this.raycaster = new THREE.Raycaster();
     this.raycaster.intersectObject(this.sphere);
-
+    
     document.addEventListener('mousemove', this.onMouseMove, false);
     this.start();
+  }
+  
+  twist = (geometry) => {
+
+    this.quaternion = new THREE.Quaternion();
+    this.twistAmount = 10;
+    this.upVec = new THREE.Vector3(0,1,0);
+
+    for(let i=0; i<geometry.vertices.length; i++){
+      this.yPos = geometry.vertices[i].y;
+      this.quaternion.setFromAxisAngle(
+        this.yPos, 
+        (Math.PI / 180) * (this.yPos / this.twistAmount)
+      );
+      this.geometry.vertices[i].applyQuaternion(this.quaternion)
+    }
+  
   }
 
   componentWillUnmount(){
