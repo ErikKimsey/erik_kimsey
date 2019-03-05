@@ -1,0 +1,12 @@
+@import '../__styles/globals.scss';
+@import '../__styles/responsive.scss';
+.canvas-container {
+
+  canvas {
+    width:100vw;
+  }
+  @media only screen and (max-width: $lgDevice){}
+  @media only screen and (max-width: $mdDevice){}
+  @media only screen and (max-width: $smDevice){}
+  @media only screen and (max-width: $xsDevice){}
+}

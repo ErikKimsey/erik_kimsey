@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
 import { BREAKPOINTS } from '../__styles/breakPoints';
+import './lil_extra.scss';
+
 const mouse = new THREE.Vector2();
 const radius = 100, theta = 0, raycaster=0;
 const canvasDimensions = {
@@ -8,15 +10,24 @@ const canvasDimensions = {
   w: 100,
 };
 
-function responsiveCanvasDimension(dim){
+function responsiveCanvasDimension(){
 
-  // if (window.innerWidth < )
+  if (window.innerWidth < BREAKPOINTS.mdDevice){
+    canvasDimensions.h = 100;
+    canvasDimensions.w = window.innerWidth;
+  }
 }
 
 export default class LIL_EXTRA extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      canvasW: null,
+    }
+  }
   componentDidMount(){
     console.log(window.innerWidth);
-    
+    responsiveCanvasDimension();
     const width = canvasDimensions.w;
     const height = canvasDimensions.h;
 
@@ -137,11 +148,17 @@ export default class LIL_EXTRA extends Component {
   }
   
   render(){
+    responsiveCanvasDimension();
     return (
-      <div
-      style={{ width: `${canvasDimensions.w}px`, height: `${canvasDimensions.h}px` }}
+      <div className="canvas-container"
+      
       ref={(mount) => { this.mount = mount }}
     />
     )
   }
 }
+
+{/* <div className="canvas-container"
+style={{ width: `${canvasDimensions.w}px`, height: `${canvasDimensions.h}px` }}
+ref={(mount) => { this.mount = mount }}
+/> */}
