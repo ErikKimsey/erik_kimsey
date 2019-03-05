@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
 import { BREAKPOINTS } from '../__styles/breakPoints';
-let mouse;
+const mouse = new THREE.Vector2();
+const radius = 100, theta = 0, raycaster=0;
 const canvasDimensions = {
   h: window.innerHeight-120,
   w: 100,
@@ -119,8 +120,8 @@ export default class LIL_EXTRA extends Component {
   }
 
   animate = () => {
-    this.sphere.rotation.x += 0.01
-    this.sphere.rotation.y += 0.01
+    this.sphere.rotation.x += 0.003;
+    this.sphere.rotation.y += 0.005;
     this.renderScene()
     this.frameId = window.requestAnimationFrame(this.animate);
   }
