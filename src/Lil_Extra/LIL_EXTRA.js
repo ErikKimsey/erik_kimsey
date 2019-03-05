@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import * as THREE from 'three';
-
+import { BREAKPOINTS } from '../__styles/breakPoints';
 let mouse;
+const canvasDimensions = {
+  h: window.innerHeight-120,
+  w: 100,
+};
+
+function responsiveCanvasDimension(dim){
+
+  // if (window.innerWidth < )
+}
 
 export default class LIL_EXTRA extends Component {
   componentDidMount(){
-    const width = this.mount.clientWidth;
-    const height = this.mount.clientHeight;
+    console.log(window.innerWidth);
+    
+    const width = canvasDimensions.w;
+    const height = canvasDimensions.h;
 
     this.raycaster = new THREE.Raycaster();
     this.vector2 = new THREE.Vector2();
@@ -23,15 +34,16 @@ export default class LIL_EXTRA extends Component {
     this.renderer.setSize(width, height);
     this.mount.appendChild(this.renderer.domElement);
 
+    // this.light = new THREE.AmbientLight(0xFFFFFF);
     this.light = new THREE.AmbientLight(0xFFFFFF);
     this.scene.add(this.light);
 
-    this.pointLight = new THREE.DirectionalLight(0xffffff, 0.9, 1000);
+    this.pointLight = new THREE.DirectionalLight(0xFF11EE, 0.9, 1000);
     this.pointLight.position.set(-120, 120, 222);
     this.pointLight.castShadow = false; 
     this.scene.add(this.pointLight);
 
-    this.spotLight = new THREE.SpotLight(0xFFFFFF);
+    this.spotLight = new THREE.SpotLight(0x000000);
     this.spotLight.position.set(-20, 20, 100);
     this.spotLight.receiveShadow = true;
     this.spotLight.shadow.mapSize = new THREE.Vector2(1024,1024);
@@ -42,12 +54,12 @@ export default class LIL_EXTRA extends Component {
     // this.geometry = new THREE.SphereGeometry(3, 5, 60);
     this.geometry = new THREE.BoxGeometry(20, 20, 20, 20, 20, 20);
     // this.geometry.position.z = 10;
-    this.material = new THREE.MeshPhongMaterial({ color: 'rgba(255,70,111,0.5)'
+    // this.material = new THREE.MeshPhongMaterial({ color: 'rgba(255,70,111,0.5)'
+    this.material = new THREE.MeshPhongMaterial({ color: 'rgba(0,0,0,1)'
     , wireframe: true
   });
     // this.material.morphTargets = true;
-    console.log(this.geometry.vertices);
-    
+
     this.sphere = new THREE.Mesh(this.geometry, this.material);
     this.sphere.position.z = 9;
     this.scene.add(this.sphere);
@@ -62,7 +74,6 @@ export default class LIL_EXTRA extends Component {
     
     for(let i=0; i<this.geometry.vertices.length; i++){
       this.yPos = this.geometry.vertices[i].y;
-      console.log(this.yPos);
       this.quaternion.setFromAxisAngle(
         this.upVec, 
         (Math.PI / 180) * (this.yPos / this.twistAmount)
@@ -122,14 +133,12 @@ export default class LIL_EXTRA extends Component {
     mouse.x = (e.clientX / window.innerWidth) * 2-1;
     mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
     // console.log(`${e.clientX}, ${e.clientY}`);
-    console.log(this.raycaster);
-    
   }
   
   render(){
     return (
       <div
-      style={{ width: `${window.innerWidth*0.8}px`, height: `${window.innerHeight-220}px` }}
+      style={{ width: `${canvasDimensions.w}px`, height: `${canvasDimensions.h}px` }}
       ref={(mount) => { this.mount = mount }}
     />
     )
