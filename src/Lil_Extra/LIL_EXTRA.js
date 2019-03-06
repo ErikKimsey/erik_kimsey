@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import * as THREE from 'three';
 import { BREAKPOINTS } from '../__styles/breakPoints';
 import './lil_extra.scss';
+import { sensorPlay } from './sensor_play';
 
 
 export default class LIL_EXTRA extends Component {
@@ -12,6 +13,9 @@ export default class LIL_EXTRA extends Component {
     }
   }
 
+  componentDidMount() {
+    sensorPlay();
+  }
 
   
   render(){ 
