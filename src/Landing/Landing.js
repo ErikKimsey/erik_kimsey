@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import * as THREE from 'three';
 import './landing.scss';
-import Scene from './THREE/Scene';
 
 class Landing extends Component {
   constructor(props){
