@@ -1,8 +1,7 @@
 @import '../__styles/globals.scss';
 @import '../__styles/responsive.scss';
 .canvas-container {
-  width:100px;
-  height:auto;
+
 
   @media only screen and (max-width: $lgDevice){}
 

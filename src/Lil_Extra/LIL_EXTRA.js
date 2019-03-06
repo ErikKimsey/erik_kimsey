@@ -14,7 +14,9 @@ export default class LIL_EXTRA extends Component {
   }
 
   componentDidMount() {
-    sensorPlay();
+    window.addEventListener('devicelight',(e)=>{
+      console.log(e.value);
+    });
   }
 
   
