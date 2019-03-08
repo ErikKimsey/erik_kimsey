@@ -1,5 +1,5 @@
 
-export const Undada = {
+export const undada = {
   "name": "TOPICS", "children": [{
     "name": "Topic A",
     "children": [{"name": "Sub A1", "size": 4}, {"name": "Sub A2", "size": 4}]

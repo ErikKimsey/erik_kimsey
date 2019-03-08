@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import * as d3 from 'd3';
+import { undada } from './data_rays';
 
 export default class Unburzt extends Component {
 
@@ -13,6 +14,11 @@ export default class Unburzt extends Component {
     .attr('transform', 'translate(' + this.props.width / 2 + ',' + this.props.height / 2 + ')'); 
 
   }
+
+  /**
+   * TODO: 
+   * - PARTITIONING WITH D3!!
+   * */ 
 
   render() {
     return (
