@@ -15,7 +15,9 @@ class Landing extends Component {
   render(){
     return (
       <div className="landing-container">
-   
+        <div className="flesh-container">
+          
+        </div>
       </div>
     )
   }
