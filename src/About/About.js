@@ -38,22 +38,22 @@ class About extends Component {
     return (
       <div className="about-container">
   
-        <div className="self-blurb-container">
+        {/* <div className="self-blurb-container">
           <p>I work creatively with technology.</p>
           <p>I focus on web-based and mobile-web technology, design, and content. </p>
           <p>That said, I'm interested in work involving development of creative technology in the realm of mobile-web/PWA, responsive web,and IoT.</p>
           <p>I like to think I'm at the cross-section of interactivity + aesthetic-appeal + innovation + good purpose.</p>
           <p>I love learning new languages and technology.  Especially, in order to put them to use in novel ways.</p>
-        </div>
+        </div> */}
   
-        <div className="icons-container">
+        {/* <div className="icons-container">
         {
           SVGS.map((e)=>{
             return <img className="icon" src={e} />
           })
         }
 
-        </div>
+        </div> */}
         {/* <div className="tech-knowledge-container">
           <SimpleSlider className="slider" data={JS_DATA}/>
           <SimpleSlider className="slider" data={WEB_API_DATA}/>

@@ -12,13 +12,13 @@
     position: relative;
     width: 80%;
     height: calc(100vh - 220px);
-    overflow: scroll;
+    // overflow: scroll;
+    // scroll-behavior: smooth;
     margin: 50px 28px;
     top: 13px;
     display: -webkit-flex;
     display: flex;
     background-color: rgba(0, 0, 0, 0.06);
-    scroll-behavior: smooth;
     -webkit-flex-flow: row;
     flex-flow: row;
   }

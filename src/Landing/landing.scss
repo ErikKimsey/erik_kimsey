@@ -1,10 +1,20 @@
+@import '../__styles/globals.scss';
 
 .landing-container {
   height: calc(100vh - 220px);
   width:100%;
   font-size: 3em;
   color:#fff;
+
+  .something-cool-container {
+    margin: 0 120px;
+    height:100px;
+    border:solid 1px $grayish;
+  }
+  
+  .self-blurb-container {
+    margin: 0 120px;
+  }
   
   .flesh-container {}
-
 }
