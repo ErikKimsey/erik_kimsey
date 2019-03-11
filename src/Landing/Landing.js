@@ -11,22 +11,6 @@ class Landing extends Component {
     }
   }
 
-  componentDidMount() {
-    console.log(document.querySelector('.landing-container').offsetWidth);
-    window.addEventListener('resize', ()=>{ this.handleResize(); 
-    });
-
-    
-  }
-
-  // change dimensions of container in state
-  handleResize = () => {
-    this.setState({
-      width: document.querySelector('.landing-container').offsetWidth,
-      height: document.querySelector('.landing-container').offsetHeight 
-    })
-  }
-
   render(){
     return (
       <div className="landing-container">
