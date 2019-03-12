@@ -1,6 +1,11 @@
+@import '../__styles/globals.scss';
+@import '../__styles/responsive.scss';
 
 .work-container {
-  
+  height: calc(100vh - 220px);
+  width:100%;
+  margin-left: 100px;
+  color:#fff;
   .work-data-list-contaner {
 
     .data-item-container {
@@ -13,4 +18,9 @@
 
     }
   }
+
+  @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $smDevice) {}
 }

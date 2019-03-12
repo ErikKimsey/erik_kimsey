@@ -66,7 +66,7 @@
   },
   {
     name:'Roman-Numeral Calculator ',
-    stack: 'NodeJS, HTML, JavaScript'
+    stack: 'NodeJS, HTML, JavaScript',
     url: 'https://young-bayou-82655.herokuapp.com/',
     github:'https://github.com/ErikKimsey/Roman_Numeral_Calculator'
   },
