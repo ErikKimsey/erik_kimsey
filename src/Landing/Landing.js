@@ -40,7 +40,7 @@ class Landing extends Component {
           {
             this.state.item
           }
-        ./l</div>
+        </div>
       </div>
     )
   }
