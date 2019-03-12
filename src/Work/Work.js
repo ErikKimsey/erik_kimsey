@@ -1,12 +1,21 @@
 import React from 'react';
 import './work.scss';
 import { data } from './data';
+import Slider from "react-slick";
+
+let sliderSettings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
  
 const Work = () => {
+
   return (
     <div className="work-container">
-     
-      <div className="work-data-list-contaner">
+      <Slider {...sliderSettings} className="work-data-list-contaner">
         {
           data.map((e) => {
             return (
@@ -20,7 +29,7 @@ const Work = () => {
             )
           } )
         }
-      </div>
+      </Slider>
     </div>
   )
 }

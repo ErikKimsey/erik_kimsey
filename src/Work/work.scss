@@ -1,16 +1,33 @@
 @import '../__styles/globals.scss';
 @import '../__styles/responsive.scss';
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 .work-container {
   height: calc(100vh - 220px);
-  width:100%;
+  max-width: $lgDevice;
+  width:90%;
   margin-left: 100px;
   color:#fff;
-  .work-data-list-contaner {
+  
+  .slick-slider {
+    height: calc(100vh - 380px);
+    border:none;
 
+    .slick-dots {
+      box-sizing: border-box;
+      background-color: $grayish;
+      border: solid 1px none;
+      border-right: solid 33px $yellow;
+      border-bottom: solid 3px $yellow;
+    }
+  }
+
+  .work-data-list-contaner {
+    margin: 5%;
     .data-item-container {
 
-      .item-name{}
+      .item-name{}  
       .item-stack{}
       .item-description{}
       .item-url{}
