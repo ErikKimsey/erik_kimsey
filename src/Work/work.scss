@@ -13,24 +13,40 @@
   .slick-slider {
     height: calc(100vh - 380px);
     border:none;
-
+    align-content: center;
     .slick-dots {
+      padding:0;
+      padding-bottom: 5px;
       box-sizing: border-box;
-      background-color: $grayish;
+      background-color: none;
       border: solid 1px none;
       border-right: solid 33px $yellow;
-      border-bottom: solid 3px $yellow;
+      border-bottom: solid 0px $yellow;
     }
   }
 
   .work-data-list-contaner {
     margin: 5%;
     .data-item-container {
-
-      .item-name{}  
-      .item-stack{}
+      font-size: 1em;
+      a {
+        text-decoration: none;
+        color:$pink;
+        &:hover {
+          font-size: 1.002em;
+          color:$lighterpink;
+        }
+      }
+      .item-name{
+        font-size: 3em;
+      }  
+      .item-stack{
+        font-size: 1.5em;
+        color:$teal;
+      }
       .item-description{}
-      .item-url{}
+      .item-url{
+      }
       .item-github{}
 
     }

@@ -47,7 +47,7 @@
     github:'https://github.com/ErikKimsey/Simple_Synthesizer_usingWebAudioAPI'
   },
   {
-    name:'Mobile Motion Painter (P5.js & JS Sensor API)',
+    name:'Mobile Motion Painter',
     stack: 'Gyroscope & Accelerometer of the W3C Sensor API, P5.js',
     url: '',
     github:'https://github.com/ErikKimsey/MobileMotionPaint'
