@@ -22,6 +22,10 @@
       border: solid 1px none;
       border-right: solid 33px $yellow;
       border-bottom: solid 0px $yellow;
+      li button:before {
+        color: $yellow;
+        font-size: 20px;
+      }
     }
   }
 
@@ -32,8 +36,8 @@
       a {
         text-decoration: none;
         color:$pink;
+        font-size: 1.2em;
         &:hover {
-          font-size: 1.002em;
           color:$lighterpink;
         }
       }
