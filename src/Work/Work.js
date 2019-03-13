@@ -46,10 +46,10 @@ const Work = () => {
                 <div className="item-name">{e.name}</div>
                 <div className="item-stack">{e.stack}</div>
                 <div className="item-description"></div>
-                <div className="item-url">
+                <div className="item-url url-and-github-styles">
                   <a href={e.url} target="_blank">{e.url}</a>
                 </div>
-                <div className="item-github">
+                <div className="item-github url-and-github-styles">
                   <a href={e.github} target="_blank">{e.github}</a>
                   {/* {e.github} */}
                 </div>

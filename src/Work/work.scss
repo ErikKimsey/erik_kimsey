@@ -58,13 +58,31 @@
 
   @media only screen and (max-width: $smDevice) {
     margin:10px;
+
+    .slick-slider {
+      height: calc(100vh - 380px);
+      border:none;
+      align-content: center;
+      .slick-dots {
+        padding:0;
+        padding-bottom: 5px;
+        box-sizing: border-box;
+        background-color: none;
+        border: none;
+        li button:before {
+          color: $yellow;
+          font-size: 20px;
+        }
+      }
+    }
     .work-data-list-contaner {
       display: flex;
       flex-flow: column;
-
+      height: 98%;
+      
       .data-item-container {
         font-size: 1em;
-        
+
         a {
           text-decoration: none;
           color:$pink;
@@ -86,14 +104,16 @@
 
         .item-description{}
 
-        .item-url{
+        .item-url {
           overflow-wrap:hyphens;
         }
 
         .item-github{
-          padding:10px;
           overflow-wrap:hyphens;
+        }
 
+        .url-and-github-styles {
+          padding: 5px 0 5px 0;
         }
   
       }
