@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "d3": "^5.9.1",
-    "gsap": "^2.0.2",
+    "gsap": "^2.1.2",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
     "react-burgers": "^1.2.0",

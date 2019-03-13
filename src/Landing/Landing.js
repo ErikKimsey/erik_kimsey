@@ -16,7 +16,7 @@ class Landing extends Component {
   componentDidMount() {
     window.setInterval(()=>{
       this.handleSelfSlide();
-    }, 2800);
+    }, 2000);
   }
 
   handleSelfSlide = () => {
