@@ -162,18 +162,17 @@ export const EDUCATION = [
  */
 export const PROFESSIONAL_DATA = [
   {
-    employer: 'RainCrow Studios',
-    role: 'Node Developer',
-    duration: 'January 2018',
-    description:'',
+    employer: 'NextLevelSh!t',
+    role: 'JavaScript Developer',
+    duration: '2018',
+    description:'Short-term, Contract',
     projects: [
-      'Contributed to the development of NodeJS server, hosting live data for map-based MMORPG, "Covens"',
+      'Contributed to building, and debugging, an interactive guilloche in Angular 4 and D3.js.',
     ],
     tech: [
-      'NodeJS',
       'JavaScript',
-      'Redis',
-      'Google Cloud',
+      'D3.js',
+      'Angular 4',
     ]
   },
   {
