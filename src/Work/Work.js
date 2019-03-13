@@ -10,6 +10,28 @@ let sliderSettings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  responsive:[
+    {
+      breakpoint:405,  
+      sliderSettings: {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint:700,
+      sliderSettings: {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
 };
  
 const Work = () => {

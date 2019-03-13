@@ -56,7 +56,45 @@
     }
   }
 
-  @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $smDevice) {
+    margin:10px;
+    .work-data-list-contaner {
+      display: flex;
+      flex-flow: column;
+
+      .data-item-container {
+        font-size: 1em;
+        a {
+          text-decoration: none;
+          color:$pink;
+          font-size: 1em;
+          &:hover {
+            color:$lighterpink;
+          }
+        }
+        .item-name{
+          font-size: 1.5em;
+          padding:10px;
+        }  
+        .item-stack{
+          font-size: 1em;
+          color:$teal;
+        }
+        .item-description{}
+        .item-url{
+          padding:10px;
+          overflow-wrap:hyphens;
+          
+        }
+        .item-github{
+          padding:10px;
+          overflow-wrap:hyphens;
+
+        }
+  
+      }
+  }
+}
   @media only screen and (max-width: $smDevice) {}
   @media only screen and (max-width: $smDevice) {}
   @media only screen and (max-width: $smDevice) {}
