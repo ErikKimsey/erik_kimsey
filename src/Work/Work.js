@@ -2,6 +2,7 @@ import React from 'react';
 import './work.scss';
 import { data } from './data';
 import Slider from "react-slick";
+import { BREAKPOINTS as bp } from '../__styles/breakPoints';
 
 
 let sliderSettings = {
@@ -12,7 +13,7 @@ let sliderSettings = {
   slidesToScroll: 1,
   responsive:[
     {
-      breakpoint:405,  
+      breakpoint:bp.smDevice,  
       sliderSettings: {
         dots: true,
         infinite: true,
@@ -22,7 +23,7 @@ let sliderSettings = {
       }
     },
     {
-      breakpoint:700,
+      breakpoint:bp.mdDevice,
       sliderSettings: {
         dots: true,
         infinite: true,
