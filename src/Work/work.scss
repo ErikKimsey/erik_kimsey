@@ -64,6 +64,7 @@
 
       .data-item-container {
         font-size: 1em;
+        
         a {
           text-decoration: none;
           color:$pink;
@@ -73,20 +74,22 @@
             color:$lighterpink;
           }
         }
+
         .item-name{
           font-size: 1.5em;
-          padding:10px;
         }  
+
         .item-stack{
           font-size: 1em;
           color:$teal;
         }
+
         .item-description{}
+
         .item-url{
-          padding:10px;
           overflow-wrap:hyphens;
-          
         }
+
         .item-github{
           padding:10px;
           overflow-wrap:hyphens;
