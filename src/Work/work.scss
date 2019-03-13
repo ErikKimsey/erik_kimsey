@@ -68,6 +68,7 @@
           text-decoration: none;
           color:$pink;
           font-size: 1em;
+          overflow-wrap: break-word;        
           &:hover {
             color:$lighterpink;
           }
