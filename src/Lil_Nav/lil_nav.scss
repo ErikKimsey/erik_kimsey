@@ -56,11 +56,8 @@ Animating the menu with Sass
   }
   
   .nav-list {
-    transform: skew(-33deg);
-    display: flex;
-    flex-flow: column;
-    padding: 14px;
-    width: 314px;
+    display: none;
+
     .list-item {
       width: 100%;
       font-weight: 900;
@@ -71,7 +68,7 @@ Animating the menu with Sass
       padding: 7px;
       margin: 7px;
       border-right: 2px solid $lighterpink;
-      background-color: rgba(0,0,0,0.1);
+      background-color: rgba(0,0,0,0.5);
       &:hover {
         color:$lighterpink;
         border-bottom: 1px solid $yellow;
@@ -79,8 +76,15 @@ Animating the menu with Sass
         border-bottom-right-radius: 5px;
         
       }
-
       a {}
     }
+  }
+
+  .no-show {
+    transform: skew(-33deg);
+    display: flex;
+    flex-flow: column;
+    padding: 14px;
+    width: 314px;
   }
 }

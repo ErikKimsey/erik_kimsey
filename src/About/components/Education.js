@@ -5,7 +5,7 @@ export default function Education(props) {
   console.log(props);
   
   return (
-    <div className="education-container">
+    <div className="education-container" id="EDUCATION">
       
       <div className="school-name">{props.data.name}</div>
       <div className="major">{props.data.major}</div>
