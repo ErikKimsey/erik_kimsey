@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './about.scss';
 import { 
-  EDUCATION, PROFESSIONAL_DATA} from '../__data/data';
+  EDUCATION, PROFESSIONAL_DATA, navListData} from '../__data/data';
 import Education from './components/Education';
 import Employment from './components/Employment';
 import Lil_Nav from '../Lil_Nav/Lil_Nav';
@@ -24,10 +24,6 @@ import nodeIMG from '../assets/icons/node-dot-js.png';
 import djangoIMG from '../assets/icons/django.svg';
 import d3IMG from '../assets/icons/d3-dot-js.svg';
 
-// const SKILL_DATA = [
-//   JS_DATA,STYLE_DATA, WEB_API_DATA, HTML_DATA, BACKEND_DATA, LANGUAGE_DATA,DESIGN_DATA, FAV_COMBOS_DATA, AUDIO_SKILLS_DATA, VIDEO_EDITING_SKILLS
-// ];
-
 const SVGS = [adobeIMG, reactIMG, cssIMG, jsIMG, html5IMG, sassIMG, nodeIMG, npmIMG, pythonIMG, djangoIMG, d3IMG, webpackIMG,bootstrap, illustratorIMG, photoshopIMG, graphqlIMG];
 
 class About extends Component {
@@ -38,7 +34,7 @@ class About extends Component {
   render(){
     return (
       <div className="about-container">
-        <Lil_Nav />
+        <Lil_Nav data={navListData}/>
         <div className="education-block-container">
         <i class="fas fa-graduation-cap fa-6x"></i>
         {

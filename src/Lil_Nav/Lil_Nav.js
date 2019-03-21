@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './lil_nav.scss'
-import { navListData } from '../__data/data';
 
 
 export default class Lil_Nav extends Component {
@@ -16,7 +15,7 @@ export default class Lil_Nav extends Component {
         <div className="nav-btn" onClick={this.toggleMenu}>BTN</div>
         <div className="nav-list">
         {
-          navListData.map((e)=>{
+          this.props.data.map((e)=>{
             return <a href={`/about/#${e}`} key={e} className="list-item" onClick={this.toggleMenu}>{e}</a>
           })
         }
