@@ -3,24 +3,38 @@
 
 .lil-nav-container {
   position: absolute;
-  color:#fff;
-  display: block;
+  color: #fff;
+  display: flex;
   right: 314px;
-  top:31.4px;
-  .nav-btn {}
-
+  top: 31.4px;
+  width: 222px;
+  flex-flow: column;
+  align-items: flex-end;
+  // background-color: black;
+  
+  .nav-btn {
+    align-self: flex-start;
+  }
+  
   .nav-list {
     transform: skew(-33deg);
     display: flex;
     flex-flow: column;
+    padding: 14px;
+    border-right: 12px solid beige;
+    border-radius: 0 5px 5px 0;
+
     .list-item {
       transform: skew(33deg);
       color:#fff;
       text-decoration: none;
-
+      align-self: center;
+      padding: 7px;
+      margin: 7px;
       &:hover {
         color:$lighterpink;
       }
+      
       a {}
     }
   }
