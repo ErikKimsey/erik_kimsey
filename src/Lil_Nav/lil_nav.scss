@@ -40,15 +40,12 @@ Animating the menu with Sass
   width: 31.4%;
   flex-flow: column;
   align-items: flex-end;
-  // background-color: black;
-  // background-color: rgba(0,0,0,0.1);
-  // border: solid 1px $grayish;
   
   .nav-btn {
+    cursor: pointer;
     align-self: flex-start;
     width: 33px;
     height: 33px;
-    border-right: 2px solid #fff;
     padding: 4px;
     &:active {
       background: pink;

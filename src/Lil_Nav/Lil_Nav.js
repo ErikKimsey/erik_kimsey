@@ -17,11 +17,10 @@ export default class Lil_Nav extends Component {
         <div className="nav-list">
         {
           navListData.map((e)=>{
-            return <a href={`/about/#${e}`} key={e} className="list-item">{e}</a>
+            return <a href={`/about/#${e}`} key={e} className="list-item" onClick={this.toggleMenu}>{e}</a>
           })
         }
         </div>
-        
       </div>
     )
   }
