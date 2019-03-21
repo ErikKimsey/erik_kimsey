@@ -18,7 +18,7 @@ export default function Employment(props) {
         </ul>
       </div>
       <div className="tech-container">
-      <ul>
+        <ul>
           {
             props.data.tech.map((e,i)=>{
               return <li>{e}</li>

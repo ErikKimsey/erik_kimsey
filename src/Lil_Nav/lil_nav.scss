@@ -1,0 +1,27 @@
+@import '../__styles/responsive.scss';
+@import '../__styles/globals.scss';
+
+.lil-nav-container {
+  position: absolute;
+  color:#fff;
+  display: block;
+  right: 314px;
+  top:31.4px;
+  .nav-btn {}
+
+  .nav-list {
+    transform: skew(-33deg);
+    display: flex;
+    flex-flow: column;
+    .list-item {
+      transform: skew(33deg);
+      color:#fff;
+      text-decoration: none;
+
+      &:hover {
+        color:$lighterpink;
+      }
+      a {}
+    }
+  }
+}

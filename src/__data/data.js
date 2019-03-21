@@ -11,6 +11,7 @@ export const JS_DATA = [
   'D3',
   'Angular',
   'Apollo',
+  'NextJS'
 ];
 
 export const STYLE_DATA = [

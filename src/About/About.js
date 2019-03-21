@@ -4,6 +4,7 @@ import {
   EDUCATION, PROFESSIONAL_DATA} from '../__data/data';
 import Education from './components/Education';
 import Employment from './components/Employment';
+import Lil_Nav from '../Lil_Nav/Lil_Nav';
 
 // SVGs
 import adobeIMG from '../assets/icons/adobe.svg';
@@ -37,6 +38,7 @@ class About extends Component {
   render(){
     return (
       <div className="about-container">
+        <Lil_Nav />
         <div className="education-block-container">
         <i class="fas fa-graduation-cap fa-6x"></i>
         {
