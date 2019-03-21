@@ -84,4 +84,9 @@ Animating the menu with Sass
     padding: 14px;
     width: 314px;
   }
+
+  @media only screen and (max-width: $lgDevice) {}
+  @media only screen and (max-width: $mdDevice) {}
+  @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $xsDevice) {}
 }
