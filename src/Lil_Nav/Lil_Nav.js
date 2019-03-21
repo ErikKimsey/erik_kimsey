@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import './lil_nav.scss'
+import { navListData } from '../__data/data';
 
-const navListData = [
-  'RESUME', 'SKILLSET', 'EDUCATION', 'EXPERIENCE',
-]
 
 export default class Lil_Nav extends Component {
   render() {

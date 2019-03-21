@@ -227,3 +227,11 @@ export const PROFESSIONAL_DATA = [
     phone: '540-278-4525',
     email: 'kimseyerik@gmail.com',
   }
+
+/**
+ * ABOUT PAGE - LIL-NAV DATA
+ */
+
+export const navListData = [
+  'RESUME', 'SKILLSET', 'EDUCATION', 'EXPERIENCE',
+]
