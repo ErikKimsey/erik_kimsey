@@ -28,8 +28,6 @@ Animating the menu with Sass
   }
 */
 
-
-
 .lil-nav-container {
   position: absolute;
   width: 100%;
@@ -41,21 +39,35 @@ Animating the menu with Sass
   flex-flow: column;
   align-items: flex-end;
   
-  .nav-btn {
+  .lil-nav-btn {
     cursor: pointer;
     align-self: flex-start;
     width: 33px;
     height: 33px;
     padding: 4px;
-    &:active {
-      background: pink;
+    transform: scaleX(-1);
+    img {
+      opacity: 0.6;
+      height:43px;
+      transition: 0.1s;
+      &:hover {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+      &:active {
+        // transform: scale(2);
+        transform: rotate(22deg);
+        // transform: scaleX(-1);
+      }
     }
   }
   
   .nav-list {
     display: none;
-
+    // box-sizing: border-box;
+    
     .list-item {
+      box-sizing: border-box;
       width: 100%;
       font-weight: 900;
       transform: skew(33deg);
@@ -66,12 +78,12 @@ Animating the menu with Sass
       margin: 7px;
       border-right: 2px solid $lighterpink;
       background-color: rgba(0,0,0,0.5);
+      transition: 0.4s;
       &:hover {
         color:$lighterpink;
         border-bottom: 1px solid $yellow;
         border-right: 4px solid $yellow;
         border-bottom-right-radius: 5px;
-        
       }
       a {}
     }
@@ -84,9 +96,87 @@ Animating the menu with Sass
     padding: 14px;
     width: 314px;
   }
-
+  
   @media only screen and (max-width: $lgDevice) {}
   @media only screen and (max-width: $mdDevice) {}
-  @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $smDevice) {
+
+    position: absolute;
+    width: 80%;
+    color: #fff;
+    display: flex;
+    right: 6.28% * 2;
+    top: 3.14%;
+    width: 31.4%;
+    flex-flow: column;
+    align-items: flex-end;
+
+    /**
+    cursor: pointer;
+    -webkit-align-self: flex-start;
+    align-self: flex-end;
+    width: 33px;
+    height: 33px;
+    padding: 4px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+
+    */
+
+      
+  .lil-nav-btn {
+    cursor: pointer;
+    align-self: flex-end;
+    width: 33px;
+    height: 33px;
+    padding: 4px;
+    transform: scaleX(-1);
+    img {
+      height:43px;
+      transition: 0.1s;
+      &:hover {
+        transform: scale(1.2);
+      }
+      &:active {
+        // transform: scale(2);
+        transform: rotate(22deg);
+        // transform: scaleX(-1);
+      }
+    }
+  }
+
+    .nav-list {
+      display: none;
+  
+      .list-item {
+        width: 100%;
+        font-weight: 900;
+        transform: skew(23deg);
+        color:#fff;
+        text-decoration: none;
+        align-self: center;
+        padding: 7px;
+        margin: 7px;
+        border-right: 2px solid $lighterpink;
+        background-color: rgba(0,0,0,0.9);
+        &:hover {
+          color:$lighterpink;
+          border-bottom: 1px solid $yellow;
+          border-right: 4px solid $yellow;
+          border-bottom-right-radius: 5px;
+          
+        }
+        a {}
+      }
+    }
+    
+    .no-show {
+      transform: skew(-23deg);
+      display: flex;
+      flex-flow: column;
+      padding: 14px;
+      width: 222px;
+    }
+  }
   @media only screen and (max-width: $xsDevice) {}
 }
