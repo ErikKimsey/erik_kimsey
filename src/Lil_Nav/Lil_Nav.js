@@ -7,10 +7,16 @@ export default class Lil_Nav extends Component {
   toggleMenu = () => {
     let menu = document.querySelector('.nav-list');
     let menuItems = document.querySelectorAll('.list-item');
-    menuItems.forEach((e)=>{
-      console.log(e);
-      if(   )
-    })
+    setTimeout(() => {
+      menuItems.forEach((e,i)=>{
+        console.log(e);
+        if( menu.classList.contains('.no-show') ){
+          menuItems[i].classList.toggle('item-animation');
+        } else {
+          menuItems[i].classList.toggle('item-animation');
+        }
+      })
+    }, 500);
     menu.classList.toggle('no-show');
   }
 

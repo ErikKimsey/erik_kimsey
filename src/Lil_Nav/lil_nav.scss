@@ -65,10 +65,10 @@ Animating the menu with Sass
   .nav-list {
     display: none;
     // box-sizing: border-box;
-    
+    width: 0px;
     .list-item {
       box-sizing: border-box;
-      width: 100%;
+      width: 0%;
       font-weight: 900;
       transform: skew(33deg);
       color:#fff;
@@ -89,6 +89,7 @@ Animating the menu with Sass
     }
   }
 
+  
   .no-show {
     transform: skew(-33deg);
     display: flex;
@@ -96,6 +97,18 @@ Animating the menu with Sass
     padding: 14px;
     width: 314px;
   }
+  .item-animation {
+    animation: itemout 2s ease-in-out 1;
+  }
+
+  @keyframes itemout {
+    from {
+      width:0%;
+    }
+    to {
+      width: 100%;
+    }
+  } 
   
   @media only screen and (max-width: $lgDevice) {}
   @media only screen and (max-width: $mdDevice) {}
