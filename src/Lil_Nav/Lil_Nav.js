@@ -1,23 +1,27 @@
 import React, { Component } from 'react'
 import './lil_nav.scss'
+let boolee = false;
 
 
 export default class Lil_Nav extends Component {
 
+
+  componentDidMount() {
+    let items = document.querySelectorAll('.list-item');
+    items.forEach((e,i)=>{
+      items[i].classList.add('item-animation-in');
+    })
+  }
+
   toggleMenu = () => {
     let menu = document.querySelector('.nav-list');
     let menuItems = document.querySelectorAll('.list-item');
-    setTimeout(() => {
+      menu.classList.toggle('no-show');
       menuItems.forEach((e,i)=>{
-        console.log(e);
-        if( menu.classList.contains('.no-show') ){
-          menuItems[i].classList.toggle('item-animation');
-        } else {
-          menuItems[i].classList.toggle('item-animation');
-        }
+        menuItems[i].classList.toggle('item-animation-out');
+        menuItems[i].classList.toggle('item-animation-in');
       })
-    }, 500);
-    menu.classList.toggle('no-show');
+
   }
 
   render() {
