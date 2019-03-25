@@ -15,7 +15,7 @@ export default function Education(props) {
         <ul>
           {
             props.data.curriculum.map((e, i)=>{
-              return <li>{e}</li>
+              return <li key={e}>{e}</li>
             })
           }
         </ul>
@@ -25,7 +25,7 @@ export default function Education(props) {
       <ul>
           {
             props.data.tech.map((e, i)=>{
-              return <li>{e}</li>
+              return <li key={e}>{e}</li>
             })
           }
         </ul>
@@ -35,7 +35,7 @@ export default function Education(props) {
       <ul>
           {
             props.data.projects.map((e, i)=>{
-              return <li>{e}</li>
+              return <li key={e}>{e}</li>
             })
           }
         </ul>

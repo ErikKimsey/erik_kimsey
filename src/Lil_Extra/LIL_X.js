@@ -142,7 +142,6 @@ export default class LIL_EXTRA extends Component {
     if(window.clientWidth < 800){
       canvasDimensions.h = '100px';
       canvasDimensions.w = '100vw';
-      
     } else {
       canvasDimensions.h = `calc(100vh - 160px)`;
       canvasDimensions.w = `100px`;

@@ -12,7 +12,7 @@ export default function Employment(props) {
         <ul>
           {
             props.data.projects.map((e,i)=>{
-              return <li>{e}</li>
+              return <li key={e}>{e}</li>
             })
           }
         </ul>
@@ -21,7 +21,7 @@ export default function Employment(props) {
         <ul>
           {
             props.data.tech.map((e,i)=>{
-              return <li>{e}</li>
+              return <li key={e}>{e}</li>
             })
           }
         </ul>
