@@ -4,7 +4,6 @@
 $education: $purple;
 
 .education-container {
-  // width:94%;
   border-top: 0.1px solid $education;
   display: flex;
   flex-flow: column;
@@ -12,7 +11,6 @@ $education: $purple;
   padding: 10px;
 
   .school-name {
-    // font-size: 24px;
     color:$education;
     font-weight: 400;
   }

@@ -23,8 +23,9 @@ export const SKILLSET_OVERVIEW = [
   'NodeJS',
   'SQLite',
   'Django',
-  'GraphQL',
-]
+  'GraphQL / Apollo',
+  'Python / C / C++ /',
+];
 
 export const STYLE_DATA = [
   'Styling Tools',
