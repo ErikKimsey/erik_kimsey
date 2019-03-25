@@ -8,10 +8,8 @@
   width: 48%;
   font-weight: 400;
 
-  .resume-sub-container {
-
-
-  }
+  .resume-sub-container {}
+  
   .text-container {
     display: flex;
     flex-flow: column;
@@ -43,6 +41,7 @@
       }
     }
   }
+
   @media only screen and (max-width: $mdDevice) {
     width: 100%;
   }
