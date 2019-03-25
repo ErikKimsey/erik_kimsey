@@ -14,6 +14,18 @@ export const JS_DATA = [
   'NextJS'
 ];
 
+export const SKILLSET_OVERVIEW = [
+  'JavaScript ES6/7',
+  'ReactJS / NextJS',
+  'CSS3 / SASS / Less / Styled-Components',
+  'HTML5 / Canvas',
+  'GreenSock',
+  'NodeJS',
+  'SQLite',
+  'Django',
+  'GraphQL',
+]
+
 export const STYLE_DATA = [
   'Styling Tools',
   'CSS3',

@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './about.scss';
 import { 
-  EDUCATION, PROFESSIONAL_DATA, navListData} from '../__data/data';
+  EDUCATION, 
+  PROFESSIONAL_DATA, 
+  navListData,
+  SKILLSET_OVERVIEW
+} from '../__data/data';
 import Education from './components/Education';
 import Employment from './components/Employment';
 import Lil_Nav from '../Lil_Nav/Lil_Nav';
@@ -37,7 +41,8 @@ class About extends Component {
       <div className="about-container">
         <Lil_Nav data={navListData}/>
         <div className="resume-skillset-block">
-          <Skillset />
+        {/* <i class="fas fa-syringe fa-6x"></i> */}
+          <Skillset data={SKILLSET_OVERVIEW}/>
           <Resume />
         </div>
         <div className="education-block-container">

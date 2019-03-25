@@ -147,15 +147,11 @@ Animating the menu with Sass
     }
 
     .nav-list {
-
       .list-item {
         transform: skew(23deg);
         background-color: #000000;
       }
     }
-
-
-
   }
 
   @media only screen and (max-width: $smDevice) {
