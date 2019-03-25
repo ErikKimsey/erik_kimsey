@@ -36,6 +36,7 @@ $hover-color: #fcfa85;
   }
 
   .resume-skillset-block {
+    margin-top: 100px;
     width: 100%;
     display: flex;
     flex-flow: row;
@@ -119,6 +120,12 @@ $hover-color: #fcfa85;
     opacity: 0.1;
   }
 
+  .resume-skillset-block {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
     .tech-knowledge-container {
       display: flex;
       flex-flow: column;
@@ -131,6 +138,12 @@ $hover-color: #fcfa85;
     height: auto;
     justify-content: space-between;
     margin-left: 0px;
+
+    .resume-skillset-block {
+      display: flex;
+      flex-flow: column;
+    }
+
     .tech-knowledge-container {
       display: flex;
       flex-flow: column;
@@ -138,6 +151,11 @@ $hover-color: #fcfa85;
     }
 
 }
-  @media only screen and (max-width: $xsDevice) {}
+  @media only screen and (max-width: $xsDevice) {
+    .resume-skillset-block {
+      display: flex;
+      flex-flow: column;
+    }
+  }
 
 }
