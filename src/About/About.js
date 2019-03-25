@@ -36,7 +36,7 @@ class About extends Component {
     return (
       <div className="about-container">
         <Lil_Nav data={navListData}/>
-        <div className="resume-block">
+        <div className="resume-skillset-block">
         <Resume />
         </div>
         <div className="education-block-container">

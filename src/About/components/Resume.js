@@ -8,7 +8,7 @@ export default function Resume() {
     <div className="resume-container" id="RESUME">
     <div className="text-container resume-sub-container">
       <div className="resume-text">
-        Resume 
+        Resume
       </div>
     </div>
       <div className="image-container resume-sub-container">

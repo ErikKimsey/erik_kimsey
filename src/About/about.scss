@@ -34,6 +34,14 @@ $hover-color: #fcfa85;
       border-radius: 10px;
     }
   }
+
+  .resume-skillset-block {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   
   .tech-knowledge-container{
     display: flex;

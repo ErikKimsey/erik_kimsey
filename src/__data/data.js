@@ -233,5 +233,5 @@ export const PROFESSIONAL_DATA = [
  */
 
 export const navListData = [
-  'RESUME', 'SKILLSET', 'EDUCATION', 'EXPERIENCE',
+ 'SKILLSET', 'RESUME', 'EDUCATION', 'EXPERIENCE',
 ]
