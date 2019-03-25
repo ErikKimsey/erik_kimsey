@@ -5,6 +5,7 @@
   border-top: 0.1px solid $pink;
   display: flex;
   flex-flow: column;
+  width: 48%;
   // justify-content: space-evenly;
 
   .resume-sub-container {
@@ -21,9 +22,9 @@
   }
 
   .image-container {
-
+    
     a {
-      margin-left: 18px;
+      margin: 18px;
       i {
         color: $antiquewhite;
         transform: rotate(-10deg);

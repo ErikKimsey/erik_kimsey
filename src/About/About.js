@@ -6,7 +6,7 @@ import Education from './components/Education';
 import Employment from './components/Employment';
 import Lil_Nav from '../Lil_Nav/Lil_Nav';
 import Resume from './components/Resume';
-
+import Skillset from './components/Skillset';
 // SVGs
 import adobeIMG from '../assets/icons/adobe.svg';
 import reactIMG from '../assets/icons/react.svg';
@@ -37,15 +37,16 @@ class About extends Component {
       <div className="about-container">
         <Lil_Nav data={navListData}/>
         <div className="resume-skillset-block">
-        <Resume />
+          <Skillset />
+          <Resume />
         </div>
         <div className="education-block-container">
-        <i class="fas fa-graduation-cap fa-6x"></i>
-        {
-          EDUCATION.map((e,i)=>{
-            return <Education data={e}/>
-          })
-        }
+          <i class="fas fa-graduation-cap fa-6x"></i>
+          {
+            EDUCATION.map((e,i)=>{
+              return <Education data={e}/>
+            })
+          }
         </div>
 
         <div className="professional-history-block-container">

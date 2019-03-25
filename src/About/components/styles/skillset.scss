@@ -2,10 +2,23 @@
 @import '../../../__styles/globals.scss';
 
 .skillset-container {
+  border-top: 0.1px solid $teal;
+  width: 48%;
 
   .text-container {
-
-    .skillset-header {}
+    margin: 8px;
+    i.fas.fa-syringe {
+      margin: 18px;
+      display: flex;
+      position: relative;
+      color: $purple;
+      opacity: 1;
+      transform: rotate(0deg);
+      z-index: 10;
+    }
+    .skillset-header {
+      color:$teal;
+    }
     .skillset-subheader {}
   }
 }
