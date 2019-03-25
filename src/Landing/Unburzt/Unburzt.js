@@ -5,7 +5,6 @@ import { undada } from './data_rays';
 export default class Unburzt extends Component {
 
   componentDidMount() {
-    console.log(this.props.height);
     
     var g = d3.select('svg')  
     .attr('width', this.props.width)  

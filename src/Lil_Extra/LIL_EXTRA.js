@@ -15,7 +15,7 @@ export default class LIL_EXTRA extends Component {
 
   componentDidMount() {
     window.addEventListener('devicelight',(e)=>{
-      console.log(e.value);
+      // console.log(e.value);
     });
   }
 

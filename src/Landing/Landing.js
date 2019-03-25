@@ -28,7 +28,6 @@ class Landing extends Component {
       item = data[i];
       i++;
     }
-    console.log(item);
     this.setState({ item: item });
   }
 

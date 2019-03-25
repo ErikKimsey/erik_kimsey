@@ -18,13 +18,10 @@ export default class LIL_EXTRA extends Component {
     }
   }
   componentDidMount(){
-    console.log(window.innerWidth);
     this.isMobileHeight();
     const container = document.querySelector('.canvas-container');
     const width = container.clientWidth;
     const height = container.clientHeight;
-    console.log(width);
-    
 
     this.raycaster = new THREE.Raycaster();
     this.vector2 = new THREE.Vector2();
@@ -145,7 +142,6 @@ export default class LIL_EXTRA extends Component {
     if(window.clientWidth < 800){
       canvasDimensions.h = '100px';
       canvasDimensions.w = '100vw';
-      console.log('yep');
       
     } else {
       canvasDimensions.h = `calc(100vh - 160px)`;
