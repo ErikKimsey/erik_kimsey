@@ -51,15 +51,23 @@
       margin: 0;
       height:20px;
     }
-
+    
     .spin {
-      margin: 3px;
+      padding: 3px !important;
+      font-size: 1em;
     }
     
     .self-blurb-container {
       margin: 0;
       font-size: 1.8em;
       width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: $xsDevice) {
+    .spin {
+      padding: 3px !important;
+      font-size: 1em;
     }
   }
 

@@ -25,7 +25,7 @@
 
   
 
-  .lil-extra{
+  .lil-extra {
     position: absolute;
     width: 100px;
     right: calc(0px);
@@ -63,7 +63,7 @@
     .lil-extra{
       width: 97%;
       height: 70px;
-      top: 100px;
+      top: 130px;
       margin: 0 5px;
       left: 0px;
     }
@@ -77,18 +77,24 @@
       width: 97%;
       margin-left: 5px;
       margin-right: 5px;
-      top: 77px;
+      top: 70px;
     }
     
     .lil-extra{
       width: 97%;
       height: 70px;
-      top: 100px;
+      top: 88px;
       margin: 0 5px;
       left: 0px;
     }
 
   }
-  @media only screen and (max-width: $xsDevice) {}
+  @media only screen and (max-width: $xsDevice) {
+
+    .routes-container {
+      top: 70px;
+      margin-top: 78px;
+    }
+  }
 }
 

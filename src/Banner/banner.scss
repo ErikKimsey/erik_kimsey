@@ -67,9 +67,9 @@ $hover-color: #fcfa85;
       display: none;
     }
     .role {
-      // display: none;
       bottom:10px;
     }
+    .banner-item {}
   }
   @media only screen and (max-width: $mdDevice) {
     display: flex;
@@ -99,6 +99,7 @@ $hover-color: #fcfa85;
         }
       }
     }
+    
     .name {
       position: absolute;
       top:0px;
@@ -111,6 +112,9 @@ $hover-color: #fcfa85;
     }
     .role {
       // display: block;
+    }
+    .banner-item {
+      padding-top: 10px;
     }
   }
   @media only screen and (max-width: $smDevice) {
@@ -136,8 +140,12 @@ $hover-color: #fcfa85;
         .fa-bars{
           font-size: 2em;
         }
+        .spin.BurgerSpin.Burger {
+          padding: 0;
+        }
       }
     }
+
     .name {
       left: inherit;
     }
