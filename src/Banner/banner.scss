@@ -40,7 +40,7 @@ $hover-color: #fcfa85;
     width: 100%;
     .toggle-logo-container {
       height: 100px;
-      width: 100%;
+      width: 25%;
       display: flex;
       .navbar-toggle {
         position: absolute;
@@ -66,7 +66,8 @@ $hover-color: #fcfa85;
       display: none;
     }
     .role {
-      display: none;
+      // display: none;
+      bottom:10px;
     }
   }
   @media only screen and (max-width: $mdDevice) {
