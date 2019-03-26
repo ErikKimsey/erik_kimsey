@@ -2,6 +2,7 @@
   "name": "erik_kimsey",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://github.com/ErikKimsey/erik_kimsey",
   "dependencies": {
     "d3": "^5.9.1",
     "gsap": "^2.1.2",
