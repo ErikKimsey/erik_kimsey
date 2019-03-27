@@ -12,7 +12,7 @@ export default function Skillset(props) {
         {/* <i class="fas fa-syringe fa-4x"></i> */}
         <div className="skillset-subheader">
         <div className="skill-list-subheader">
-          the short version:
+          the short version
         <ul>
           {
             props.data.map((e)=>{

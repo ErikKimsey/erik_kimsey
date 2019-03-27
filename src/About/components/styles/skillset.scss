@@ -20,11 +20,15 @@
     .skillset-header {
       font-size: 20px;
       font-weight: 400;
-      color:$pink;
+      color:$teal;
 
     }
     .skill-list-subheader {
       color: $purple;
+      span {
+        color:$yellow;
+        
+      }
       ul {
         list-style-type: square;
         color: #ffffff;
