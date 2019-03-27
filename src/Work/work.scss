@@ -5,10 +5,11 @@
 
 .work-container {
   height: calc(100vh - 220px);
-  max-width: $lgDevice;
+  max-width: $xlDevice;
   width:90%;
   margin-left: 100px;
   color:#fff;
+  margin: 0 auto;
   
   .slick-slider {
     height: calc(100vh - 380px);
@@ -57,8 +58,8 @@
   }
 
   @media only screen and (max-width: $lgDevice) {
-    margin-left: 0;
-    // width: 76%;
+    max-width: $lgDevice;
+    width:90%;
   }
 
   @media only screen and (max-width: $mdDevice) {
