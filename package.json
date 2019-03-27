@@ -2,9 +2,10 @@
   "name": "erik_kimsey",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://github.com/ErikKimsey/erik_kimsey",
+  "homepage": "https://github.com/ErikKimsey/erik_kimsey",
   "dependencies": {
     "d3": "^5.9.1",
+    "gh-pages": "^2.0.1",
     "gsap": "^2.1.2",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
@@ -25,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
