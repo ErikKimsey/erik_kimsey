@@ -14,6 +14,7 @@ $hover-color: #fcfa85;
   
   z-index: 5;
   transition: opacity 1s; 
+  overflow-y: scroll;
   &:hover {
     opacity: 1;
   }
@@ -40,6 +41,9 @@ $hover-color: #fcfa85;
           animation: 0.5s ease 0s navbuzz 1;
           color:$hover-color;
         }
+      }
+      &:last-child {
+        margin-bottom: 100px;
       }
     }
   }
