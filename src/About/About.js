@@ -49,7 +49,7 @@ class About extends Component {
           <i class="fas fa-graduation-cap fa-6x"></i>
           {
             EDUCATION.map((e,i)=>{
-              return <Education data={e}/>
+              return <Education key={e} data={e}/>
             })
           }
         </div>
@@ -58,7 +58,7 @@ class About extends Component {
         <i class="fas fa-briefcase fa-6x"></i>
           {
             PROFESSIONAL_DATA.map((e,i)=>{
-              return <Employment data={e}/>
+              return <Employment key={e} data={e}/>
             })
           }
         </div>
