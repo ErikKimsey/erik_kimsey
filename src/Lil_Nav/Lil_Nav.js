@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './lil_nav.scss'
-let boolee = false;
 
 
 export default class Lil_Nav extends Component {
-
 
   componentDidMount() {
     let items = document.querySelectorAll('.list-item');
@@ -33,7 +32,7 @@ export default class Lil_Nav extends Component {
         <div className="nav-list">
         {
           this.props.data.map((e)=>{
-            return <a href={`/about/#${e}`} key={e} className="list-item" onClick={this.toggleMenu}>{e}</a>
+            return <Link to={`/about/#${e}`} key={e} className="list-item" onClick={this.toggleMenu}>{e}</Link>
           })
         }
         </div>
