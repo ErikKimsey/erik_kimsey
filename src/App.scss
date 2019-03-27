@@ -36,8 +36,12 @@
   @media only screen and (max-width: $lgDevice) {
     display: flex;
     flex-flow: column;
+    max-width: 1000px;
+    width: 100%;
     .routes-container {
-      width: 100%;
+      max-width: 1000px;
+      width: 98%;
+
       margin-left: 5px;
       margin-right: 5px;
       top: 77px;
