@@ -56,12 +56,9 @@
     }
   }
 
-  @media only screen and (max-width: $lgDevice) {
-    max-width: $lgDevice;
-    width:90%;
-    .slick-slider {
-      width: 90%;
-    }
+  @media only screen and (max-width: $xlDevice) {
+    max-width: $xlDevice;
+    width: 80%;
   }
 
   @media only screen and (max-width: $mdDevice) {
