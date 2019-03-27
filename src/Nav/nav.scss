@@ -50,14 +50,14 @@ $hover-color: #fcfa85;
 @media only screen and (max-width: $xlDevice) {
   .nav-container{
     position: fixed;
-    width: 100%;
-    top:83px;
+    width: 100px;
     margin: 0;
     font-size: 1.6em;
     display: flex;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     opacity: 1;
+    height: calc(100vh - 70px);
     .nav-list {
       position: absolute;
       left: 10px;
@@ -86,7 +86,7 @@ $hover-color: #fcfa85;
 @media only screen and (max-width: $lgDevice) {
   .nav-container{
     position: fixed;
-    width: 100%;
+    width: 20%;
     top:83px;
     margin: 0;
     font-size: 1.6em;
