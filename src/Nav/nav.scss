@@ -1,5 +1,6 @@
 
 @import '../__styles/responsive.scss';
+@import '../__styles/globals.scss';
 
 $hover-color: #fcfa85;
 
@@ -167,6 +168,20 @@ $hover-color: #fcfa85;
         li {
           a {
             align-self: center;
+            &:nth-child(1)::after{
+              content: " - Home";
+              color:$yellow;
+            }
+            &:nth-child(2)::after{
+              content: " - Resume";
+            }
+            &:nth-child(3)::after{
+              content: " - Examples";
+            }
+            &:nth-child(4)::after{
+              content: " - Contact";
+            }
+    
           }
         }
       }
