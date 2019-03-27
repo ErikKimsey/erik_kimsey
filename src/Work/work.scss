@@ -56,13 +56,18 @@
     }
   }
 
-  @media only screen and (max-width: $xlDevice) {
-    max-width: $xlDevice;
+  @media only screen and (max-width: $lgDevice) {
+    max-width: $lgDevice;
     width: 80%;
+    margin-top: 10px;
+    width: 87%;
+    height: 53vh;
   }
 
   @media only screen and (max-width: $mdDevice) {
-    margin: 4%;
+    margin-top: 42px;
+    width: 87%;
+    height: 53vh;
 
     .slick-slider {
       // height: calc(100vh - 380px);
@@ -125,5 +130,9 @@
     }
   }
   
-  // @media only screen and (max-width: $smDevice) {}
+  @media only screen and (max-width: $smDevice) {
+    margin-top: 10px;
+    width: 87%;
+    height: 53vh;
+  }
 }

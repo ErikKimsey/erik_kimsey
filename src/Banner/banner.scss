@@ -19,7 +19,7 @@ $hover-color: #fcfa85;
   }
 
   .banner-item {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 100;
     margin: 5px 20px;
   }
@@ -115,6 +115,7 @@ $hover-color: #fcfa85;
     }
     .banner-item {
       padding-top: 10px;
+      font-size: 2em;
     }
   }
   @media only screen and (max-width: $smDevice) {
