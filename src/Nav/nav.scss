@@ -11,10 +11,8 @@ $hover-color: #fcfa85;
   height:400px;
   margin: 77px 0px;
   left:30px;
-  
   z-index: 12;
   transition: opacity 1s; 
-  overflow-y: scroll;
   &:hover {
     opacity: 1;
   }
@@ -130,6 +128,7 @@ $hover-color: #fcfa85;
     display: none;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
     .nav-list {
       position: absolute;
       left: 10px;
