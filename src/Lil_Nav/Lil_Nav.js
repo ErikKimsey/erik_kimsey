@@ -4,7 +4,6 @@ import './lil_nav.scss'
 
 
 export default class Lil_Nav extends Component {
-
   componentDidMount() {
     let items = document.querySelectorAll('.list-item');
     items.forEach((e,i)=>{
