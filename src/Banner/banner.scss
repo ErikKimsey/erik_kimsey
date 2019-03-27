@@ -113,14 +113,14 @@ $hover-color: #fcfa85;
     .underscore {
       display: none;
     }
-    .role {
-      // display: block;
-    }
+    .role {}
+
     .banner-item {
       padding-top: 10px;
       font-size: 2em;
     }
   }
+
   @media only screen and (max-width: $smDevice) {
     display: flex;
     flex-flow: column;

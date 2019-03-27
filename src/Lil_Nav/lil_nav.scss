@@ -65,9 +65,7 @@ Animating the menu with Sass
     display: none;
     box-sizing: border-box;
     width: 1%;
-    // height: 100%;
     .list-item {
-      // display: none;
       box-sizing: border-box;
       width:100%;
       font-weight: 900;
@@ -165,19 +163,6 @@ Animating the menu with Sass
     width: 31.4%;
     flex-flow: column;
     align-items: flex-end;
-
-    /**
-    cursor: pointer;
-    -webkit-align-self: flex-start;
-    align-self: flex-end;
-    width: 33px;
-    height: 33px;
-    padding: 4px;
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-
-    */
-
       
   .lil-nav-btn {
     cursor: pointer;
@@ -193,9 +178,7 @@ Animating the menu with Sass
         transform: scale(1.2);
       }
       &:active {
-        // transform: scale(2);
         transform: rotate(22deg);
-        // transform: scaleX(-1);
       }
     }
   }
@@ -219,7 +202,6 @@ Animating the menu with Sass
           border-bottom: 1px solid $yellow;
           border-right: 4px solid $yellow;
           border-bottom-right-radius: 5px;
-          
         }
         a {}
       }

@@ -20,7 +20,6 @@ $hover-color: #fcfa85;
     margin: 0 auto;
   }
   .icons-container {
-    // width: 94%;
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -52,17 +51,12 @@ $hover-color: #fcfa85;
   }
   
   .education-block-container {
-    // margin-top: 57px;
     width: 100%;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    .education-header {
-      
-    }
-    .employment-header {
-      
-    }
+    .education-header {}
+    .employment-header {}
   }
   
   .professional-history-block-container {
@@ -72,7 +66,6 @@ $hover-color: #fcfa85;
     flex-flow: column;
     justify-content: space-between;
   }
-
 
   h5{
     font-size: 1.4em;
@@ -88,22 +81,21 @@ $hover-color: #fcfa85;
     margin: 50px 0px;
     overflow: scroll;
 
+    .fas {
+      margin: 16px 33px -40px 400px;
+      transform: rotate(30deg);
+      width: 100px;
+      z-index: -1;
+      opacity: 0.1;
+    }
 
-  .fas {
-    margin: 16px 33px -40px 400px;
-    transform: rotate(30deg);
-    width: 100px;
-    z-index: -1;
-    opacity: 0.1;
+    .tech-knowledge-container {
+      display: flex;
+      flex-flow: column;
+      height: auto;
+      overflow: scroll;
+    }
   }
-
-  .tech-knowledge-container {
-    display: flex;
-    flex-flow: column;
-    height: auto;
-    overflow: scroll;
-  }
-}
 
   @media only screen and (max-width: $mdDevice) {
     display: block;
@@ -150,12 +142,11 @@ $hover-color: #fcfa85;
       height: auto;
     }
 
-}
+  }
   @media only screen and (max-width: $xsDevice) {
     .resume-skillset-block {
       display: flex;
       flex-flow: column;
     }
   }
-
 }
