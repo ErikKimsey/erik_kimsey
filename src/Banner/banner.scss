@@ -69,7 +69,10 @@ $hover-color: #fcfa85;
     .role {
       bottom:10px;
     }
-    .banner-item {}
+    .banner-item {
+      font-size: 2.2em;
+      padding: 5px;
+    }
   }
   @media only screen and (max-width: $mdDevice) {
     display: flex;
