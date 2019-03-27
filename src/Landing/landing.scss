@@ -4,9 +4,10 @@
 .landing-container {
   height: calc(100vh - 220px);
   width:100%;
-  margin-left: 100px;
+  margin: 0 auto;
   color:#fff;
   overflow: hidden;
+  padding: 0 100px;
 
   .something-cool-container {
     margin: 0;
