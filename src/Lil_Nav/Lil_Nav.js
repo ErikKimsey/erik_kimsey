@@ -26,7 +26,7 @@ export default class Lil_Nav extends Component {
     return (
       <div className="lil-nav-container">
         <div className="lil-nav-btn" onClick={this.toggleMenu}>
-          <img src={require('../assets/icons/lil_nav_btn-8.png')} />
+          <img src={require('../assets/droopy_e.png')} />
         </div>
         <div className="nav-list">
         {
