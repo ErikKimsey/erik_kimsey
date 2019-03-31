@@ -11,6 +11,8 @@ class Landing extends Component {
       height: 0,
       item:data[0],
     }
+    console.log(this.props.history);
+    
   }
 
   componentDidMount() {
@@ -20,7 +22,6 @@ class Landing extends Component {
   }
 
   handleSelfSlide = () => {
-    this.handingIterationFade();
     let len = data.length, item = '';
     if(i === len) {
       i = 0;
@@ -41,7 +42,6 @@ class Landing extends Component {
      * 4. compare curr and temp...
      * 5. if curr and temp are different, toggle fade-text
      */
-
   }
 
   render(){
