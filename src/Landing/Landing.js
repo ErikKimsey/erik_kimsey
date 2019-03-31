@@ -20,6 +20,7 @@ class Landing extends Component {
   }
 
   handleSelfSlide = () => {
+    this.handingIterationFade();
     let len = data.length, item = '';
     if(i === len) {
       i = 0;
@@ -29,6 +30,18 @@ class Landing extends Component {
       i++;
     }
     this.setState({ item: item });
+    this.toggleFade()
+  }
+
+  toggleFade = () => {
+    /**
+     * 1. get curr value of element
+     * 2. pass curr value to temp var
+     * 3. pass new value to curr var
+     * 4. compare curr and temp...
+     * 5. if curr and temp are different, toggle fade-text
+     */
+
   }
 
   render(){
