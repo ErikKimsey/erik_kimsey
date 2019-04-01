@@ -9,21 +9,24 @@ import Contact from './Contact/Contact';
 import Work from './Work/Work';
 import LilExtra from './Lil_Extra/LIL_EXTRA';
 import detectOrientation from './utils/detectOrientation';
+import Landscape from './LANDSCAPE/Landscape';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
       toggled: false,
+      props: props
     }
+    
   }
   
   componentDidMount() {
+    console.log(this.props);
     let isLandscape = detectOrientation();
     if(isLandscape){
       this.handleLandscapeOrientation(isLandscape);
     }
-    console.log(isLandscape);
     this.orientationListener();
   }
 
@@ -53,6 +56,9 @@ class App extends Component {
   */
     if(o === true){
       // route to "Landscape Component"
+      // this.props.push('/history');
+      console.log(this.props);
+      
     } else {
       // route to last non-Landscape component
     }
@@ -70,6 +76,8 @@ class App extends Component {
             <Route path="/about" component={About}/>
             <Route path="/work" component={Work}/>
             <Route path="/contact" component={Contact}/>
+            <Route path="/landscape" component={Landscape}/>
+
           </div>
           <div className="lil-extra">
             <LilExtra />
