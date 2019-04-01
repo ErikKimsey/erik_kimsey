@@ -20,6 +20,9 @@ class App extends Component {
   
   componentDidMount() {
     let isLandscape = detectOrientation();
+    if(isLandscape){
+      this.handleLandscapeOrientation(isLandscape);
+    }
     console.log(isLandscape);
     this.orientationListener();
   }
@@ -32,11 +35,6 @@ class App extends Component {
   }
 
   /**
-   * Flow
-   * 1. detect if landscape,
-   * 2. if landscape, route to Landscape Component (via history.push??),
-   * 3. if portrait, return/do nothing
-   * 
    * TODO:
    * 1. Setup "Flow" logic in App.js.
    * 2. Create "Landscape Component" (i.e., its design).
@@ -49,12 +47,17 @@ class App extends Component {
    * applies landscape component
    */
   handleLandscapeOrientation = (o) => {
-    /**
+  /**
    * Flow
    * 1. if landscape, route to Landscape Component (via history.push??),
    * 2. if portrait, return/do nothing
-   * 
-     */
+  */
+    if(o === true){
+      // route to "Landscape Component"
+    } else {
+      // route to last non-Landscape component
+    }
+
   }
 
   handleToggle = () => {
