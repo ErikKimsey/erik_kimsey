@@ -8,6 +8,7 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Work from './Work/Work';
 import LilExtra from './Lil_Extra/LIL_EXTRA';
+import detectOrientation from './utils/detectOrientation';
 
 class App extends Component {
   constructor(props){
@@ -18,23 +19,42 @@ class App extends Component {
   }
   
   componentDidMount() {
+    let isLandscape = detectOrientation();
+    console.log(isLandscape);
+    this.orientationListener();
+  }
 
-    let orntn = window.screen.msOrientation || window.screen.mozOrientation || (window.screen.orientation || {}).type;
-    if(orntn === "landscape-primary"){
-      document.querySelector('.App').style.background = "rgb(211,88,199)";
-    } else {
-      document.querySelector('.App').style.background = "none";
-    }
-
+  orientationListener = () => {
     window.addEventListener('orientationchange', ()=>{
-      let orntn = window.screen.msOrientation || window.screen.mozOrientation || (window.screen.orientation || {}).type;
-      console.log(orntn);
-      if(orntn === "landscape-primary"){
-        document.querySelector('.App').style.background = "rgb(211,88,199)";
-      } else {
-        document.querySelector('.App').style.background = "rgb(0,0,0)";
-      }
+      let isLandscape = detectOrientation();
+      this.handleLandscapeOrientation(isLandscape);
     })
+  }
+
+  /**
+   * Flow
+   * 1. detect if landscape,
+   * 2. if landscape, route to Landscape Component (via history.push??),
+   * 3. if portrait, return/do nothing
+   * 
+   * TODO:
+   * 1. Setup "Flow" logic in App.js.
+   * 2. Create "Landscape Component" (i.e., its design).
+   * 3. Build "Landscape Component"
+   */
+
+  /**
+   * Method
+   * handleLandscapeOrientation
+   * applies landscape component
+   */
+  handleLandscapeOrientation = (o) => {
+    /**
+   * Flow
+   * 1. if landscape, route to Landscape Component (via history.push??),
+   * 2. if portrait, return/do nothing
+   * 
+     */
   }
 
   handleToggle = () => {
