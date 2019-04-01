@@ -42,9 +42,8 @@ class App extends Component {
    */
 
   /**
-   * Method
-   * handleLandscapeOrientation
-   * applies landscape component
+   * Method : "handleLandscapeOrientation"
+   * >> applies landscape component
    */
   handleLandscapeOrientation = (o) => {
   /**
@@ -57,7 +56,6 @@ class App extends Component {
     } else {
       // route to last non-Landscape component
     }
-
   }
 
   handleToggle = () => {
