@@ -37,10 +37,7 @@ let sliderSettings = {
 };
  
 const Work = (props) => {
-  console.log(props);
-  
-  detectOrientation(props);
-  orientationListener(props);
+
   return (
     <div className="work-container">
       <Slider {...sliderSettings} className="work-data-list-contaner">
