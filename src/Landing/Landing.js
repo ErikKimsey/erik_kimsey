@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './landing.scss';
 import Unburzt from './Unburzt/Unburzt';
 import { data } from './data';
+import detectOrientation, { orientationListener } from '../utils/detectOrientation';
+
 let i=0;
 class Landing extends Component {
   constructor(props){
@@ -11,14 +13,18 @@ class Landing extends Component {
       height: 0,
       item:data[0],
     }
-    console.log(this.props.history);
-    
+  
+    let isLandscape = detectOrientation(props);
+    if(isLandscape){
+      console.log('In land@');
+    }
   }
-
+  
   componentDidMount() {
     window.setInterval(()=>{
       this.handleSelfSlide();
     }, 2600);
+    orientationListener(this.props);
   }
 
   handleSelfSlide = () => {

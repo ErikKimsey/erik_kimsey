@@ -1,8 +1,9 @@
 @import '../__styles/globals.scss';
 
 .landscape-container {
-  width:100%;
+  position: fixed;
+  width:100vw;
   height:100vh;
   background-color: $pink;
-  color:$teal;
+  color: #000000;
 }

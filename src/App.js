@@ -8,7 +8,7 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Work from './Work/Work';
 import LilExtra from './Lil_Extra/LIL_EXTRA';
-import detectOrientation from './utils/detectOrientation';
+import detectOrientation, { orientationListener } from './utils/detectOrientation';
 import Landscape from './LANDSCAPE/Landscape';
 
 class App extends Component {
@@ -16,51 +16,12 @@ class App extends Component {
     super(props);
     this.state = {
       toggled: false,
-      props: props
+      props: props,
     }
   }
   
-  componentDidMount() {
-    console.log(this.props);
-    let isLandscape = detectOrientation();
-    if(isLandscape){
-      this.handleLandscapeOrientation(isLandscape);
-    }
-    this.orientationListener();
-  }
-
-  orientationListener = () => {
-    window.addEventListener('orientationchange', ()=>{
-      let isLandscape = detectOrientation();
-      this.handleLandscapeOrientation(isLandscape);
-    })
-  }
-
-  /**
-   * TODO:
-   * 1. Setup "Flow" logic in App.js.
-   * 2. Create "Landscape Component" (i.e., its design).
-   * 3. Build "Landscape Component"
-   */
-
-  /**
-   * Method : "handleLandscapeOrientation"
-   * >> applies landscape component
-   */
-  handleLandscapeOrientation = (o) => {
-  /**
-   * Flow
-   * 1. if landscape, route to Landscape Component (via history.push??),
-   * 2. if portrait, return/do nothing
-  */
-    if(o === true){
-      // route to "Landscape Component"
-      // this.props.push('/history');
-      console.log(this.props);
-      
-    } else {
-      // route to last non-Landscape component
-    }
+  componentDidMount(){
+    orientationListener(this.props);
   }
 
   handleToggle = () => {
@@ -71,7 +32,7 @@ class App extends Component {
     return (
       <div className="App">
           <div className="routes-container">
-            <Route exact path="/" component={Landing}/>
+            <Route exact path="/" component={Landing} />
             <Route path="/about" component={About}/>
             <Route path="/work" component={Work}/>
             <Route path="/contact" component={Contact}/>
