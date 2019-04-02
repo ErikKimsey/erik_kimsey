@@ -19,7 +19,7 @@ export default class Landscape extends Component {
   render() {
     return (
       <div className="landscape-container">
-        <h1>LANDSCAPING!</h1>
+        <h1>The best experience <br></br> is with your device upright.</h1>
       </div>
     )
   }
