@@ -1,26 +1,27 @@
 
 // Uses Screen API to detect orientation and return a Boolean of "false" if the device orientation is landscape.  
-
+let history = null;
+let landscapeURI = '/landscape', verticalURI = '/';
 export default function detectOrientation(props) {
   let orntn = window.screen.msOrientation || window.screen.mozOrientation || (window.screen.orientation || {}).type;
+
   if(orntn === "landscape-primary"){
-    console.log('props in detectO >>> ', props);
-    orientationListener(props);
-    return true;
+    handleLandscapeOrientation(landscapeURI, props);
+    // return true;
   } else {
-    return false;
+    handleLandscapeOrientation(verticalURI, props);
+    // return false;
   }
 }
 
 export const orientationListener = (props) => {
   window.addEventListener('orientationchange', ()=>{
-    let isLandscape = detectOrientation();
-    handleLandscapeOrientation(isLandscape, props);
+    detectOrientation(props);
   })
 }
 
-const handleLandscapeOrientation = (isLandscape, props) => {
+const handleLandscapeOrientation = (URI,props) => {
   console.log(props);
-  props.history.push('/landscape');
+  props.history.push(URI);
 }
 

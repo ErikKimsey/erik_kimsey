@@ -13,11 +13,9 @@ class Landing extends Component {
       height: 0,
       item:data[0],
     }
-  
-    let isLandscape = detectOrientation(props);
-    if(isLandscape){
-      console.log('In land@');
-    }
+    console.log(props);
+    
+    detectOrientation(props);
   }
   
   componentDidMount() {
