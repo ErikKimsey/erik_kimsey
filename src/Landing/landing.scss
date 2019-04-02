@@ -38,8 +38,8 @@
     
     .self-blurb-container {
       margin: 0;
-      font-size: 3.4em;
-      width: 80%;
+      font-size: 3em;
+      width: 100%;
     }
   }
   @media only screen and (max-width: $mdDevice) {
@@ -51,6 +51,7 @@
     .self-blurb-container {
       margin: 0;
       font-size: 1.8em;
+      width: 100%;
     }
   }
   @media only screen and (max-width: $smDevice) {
