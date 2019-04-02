@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './landscape.scss';
-import detectOrientation, { orientationListener } from '../utils/detectOrientation';
+import detectOrientation, { orientationListener, deleteListener } from '../utils/detectOrientation';
 
 export default class Landscape extends Component {
   constructor(props){
@@ -10,6 +10,10 @@ export default class Landscape extends Component {
 
   componentDidMount() {
     orientationListener(this.props)
+  }
+
+  componentWillUnmount() {
+    deleteListener();
   }
   
   render() {

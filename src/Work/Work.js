@@ -3,6 +3,7 @@ import './work.scss';
 import { data } from './data';
 import Slider from "react-slick";
 import { BREAKPOINTS as bp } from '../__styles/breakPoints';
+import detectOrientation, { orientationListener } from '../utils/detectOrientation';
 
 
 let sliderSettings = {
@@ -35,8 +36,11 @@ let sliderSettings = {
   ]
 };
  
-const Work = () => {
-
+const Work = (props) => {
+  console.log(props);
+  
+  detectOrientation(props);
+  orientationListener(props);
   return (
     <div className="work-container">
       <Slider {...sliderSettings} className="work-data-list-contaner">

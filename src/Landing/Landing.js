@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './landing.scss';
 import Unburzt from './Unburzt/Unburzt';
 import { data } from './data';
-import detectOrientation, { orientationListener } from '../utils/detectOrientation';
+import detectOrientation, { orientationListener, deleteListener } from '../utils/detectOrientation';
 
 let i=0;
 class Landing extends Component {
@@ -13,8 +13,6 @@ class Landing extends Component {
       height: 0,
       item:data[0],
     }
-    console.log(props);
-    
     detectOrientation(props);
   }
   
@@ -23,6 +21,10 @@ class Landing extends Component {
       this.handleSelfSlide();
     }, 2600);
     orientationListener(this.props);
+  }
+
+  componentWillUnmount() {
+    deleteListener();
   }
 
   handleSelfSlide = () => {
