@@ -4,23 +4,31 @@
 .landing-container {
   height: calc(100vh - 220px);
   width:100%;
+  // display: flex;  
+  // flex-flow: column;
+  // justify-content: center;
+  // align-items: center;
   margin: 0 auto;
   color:#fff;
   overflow: hidden;
+  // padding: 66px 100px 0;
   padding: 0 100px;
+  
 
   .something-cool-container {
     margin: 0;
     // height:100px;
-    border-bottom: solid 35px rgba(0,0,0,0.2);
+    border-bottom: solid 135px rgba(0,0,0,0.2);
+    border-top-left-radius: 400px;
     border-left: solid 35px transparent;
+    transition: 1s;
   }
   
   .self-blurb-container {
     margin: 0;
     font-size: 3.4em;
     opacity: 1;
-    transition: opacity 100ms;
+    transition: 1000ms;  
   }
 
   .fade-text {

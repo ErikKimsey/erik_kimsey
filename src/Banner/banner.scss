@@ -4,14 +4,18 @@ $hover-color: #fcfa85;
 
 .banner-container {
   position: fixed;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-flow: row;
   flex-flow: row;
-  color:white;
+  color: white;
   font-weight: 400;
+  -webkit-justify-content: center;
   justify-content: center;
   height: 50px;
-  margin: 5px;
-  left: 100px;
+  margin: 0 50px;
+  left: 0px;
+  width: 90%;
   top: calc( 100vh - 120px);
 
   .toggle-logo-container {
