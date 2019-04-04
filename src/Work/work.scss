@@ -5,10 +5,13 @@
 
 .work-container {
   height: calc(100vh - 220px);
-  max-width: $xlDevice;
-  width:90%;
-  color:#fff;
+  max-width: 1250px;
+  width: 70%;
+  color: #fff;
   margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   
   .slick-slider {
     height: calc(100vh - 380px);
