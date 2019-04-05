@@ -13,3 +13,17 @@ I want to be at the cross-section of interactivity, aesthetic-appeal, innovation
 //
 //
 //
+::: My Skillset :::
+Web-Stack:
+ES6/7,
+React/Redux/NextJS,
+CSS3, LESS, SASS, Styled-Components,
+HTML5,
+Apollo Client,
+NodeJS,
+GraphQL, SQL, SQLite.
+
+General Purpose:
+Python,
+C,
+Java (Android)
