@@ -19,8 +19,9 @@ I want to be at the cross-section of interactivity, aesthetic-appeal, innovation
 WebStack:
 ES6/7,
 React/Redux/NextJS,
+P5JS,
 CSS3, LESS, SASS, Styled-Components,
-HTML5,
+HTML5 / Canvas API,
 Apollo-Client,
 NodeJS / Express / SocketIO, 
 Django,
@@ -30,4 +31,5 @@ GraphQL / Apollo-Server.
 General Purpose:
 Python,
 C,
-Java (Android)
+Processing,
+Java (Android).
