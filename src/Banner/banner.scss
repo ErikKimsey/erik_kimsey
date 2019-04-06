@@ -22,34 +22,43 @@ $hover-color: #fcfa85;
     display: none;
   }
 
-  .banner-item {
-    font-size: 3em;
-    font-weight: 100;
-    margin: 5px 20px;
+  .text-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    
+    .banner-item {
+      font-size: 3em;
+      font-weight: 100;
+      margin: 5px 20px;
+    }
+  
+    .name {
+      color: #fcfa85;
+    }
+  
+    .role {}
+    
   }
 
-  .name {
-    color: #fcfa85;
-  }
-
-  .role {}
   
   @media only screen and (max-width: $xlDevice) {
-    .banner-item {
-      padding: 1px;
-      font-size: 2.5em;
+
+    .text-container {
+      .banner-item {
+        padding: 1px;
+        font-size: 2.5em;
+      }
     }
   }
 
   @media only screen and (max-width: $lgDevice) {
     display: flex;
-    display: row;
     justify-content: flex-start;
     margin: 0;
     top: 8px;
     left: 0px;
     width: 100%;
-    // font-size: initial;
     .toggle-logo-container {
       height: 100px;
       width: 25%;
@@ -60,29 +69,36 @@ $hover-color: #fcfa85;
         top: 10px;
         right: 20px;
         cursor: pointer; 
-        font-size: 1em;
+        // font-size: 1em;
         color: rgba(255,255,255,0.8);
         .fa-bars{
           font-size: 2em;
         }
       }
     }
-    .name {
-      position: absolute;
-      top:0px;
+    .text-container {
+      display: flex;
+      flex-flow: row;
+      
+      .underscore {
+        display: none;
+      }
 
-      font-size: 2em;
-      align-self: center;
-    }
-    .underscore {
-      display: none;
-    }
-    .role {
-      bottom:10px;
-    }
-    .banner-item {
-      font-size: 2.2em;
-      padding: 5px;
+      .banner-item {
+        padding: 0;
+        margin: 0;
+        font-size: 1.6em;
+      }
+      // .name {
+      //   position: absolute;
+      //   top:0px;
+  
+      //   font-size: 2em;
+      //   align-self: center;
+      // }
+      // .role {
+      //   bottom:10px;
+      // }
     }
   }
   @media only screen and (max-width: $mdDevice) {
@@ -114,21 +130,26 @@ $hover-color: #fcfa85;
       }
     }
     
-    .name {
-      position: absolute;
-      top:0px;
-      font-size: 2em;
-      align-self: center;
-      left: inherit;
-    }
-    .underscore {
-      display: none;
-    }
-    .role {}
-
-    .banner-item {
-      padding-top: 10px;
-      font-size: 2em;
+    .text-container {
+      display: flex;
+      flex-flow: column;
+      font-size: 1em;
+      // .name {
+      //   position: absolute;
+      //   top:0px;
+      //   font-size: 2em;
+      //   align-self: center;
+      //   left: inherit;
+      // }
+      // .underscore {
+      //   display: none;
+      // }
+      // .role {}
+  
+      // .banner-item {
+      //   padding-top: 10px;
+      //   font-size: 2em;
+      // }
     }
   }
 
@@ -161,12 +182,17 @@ $hover-color: #fcfa85;
       }
     }
 
-    .name {
-      left: inherit;
+    .text-container {
+      display: flex;
+      flex-flow: column;
+      // .name {
+      //   left: inherit;
+      // }
+      // .underscore {
+      //   display: none;
+      // }
+      // .role {}
+
     }
-    .underscore {
-      display: none;
-    }
-    .role {}
   }
 }
