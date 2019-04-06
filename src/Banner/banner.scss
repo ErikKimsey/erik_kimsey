@@ -34,6 +34,12 @@ $hover-color: #fcfa85;
 
   .role {}
   
+  @media only screen and (max-width: $xlDevice) {
+    .banner-item {
+      font-size: 2.5rem;
+    }
+  }
+
   @media only screen and (max-width: $lgDevice) {
     display: flex;
     display: row;
@@ -42,7 +48,7 @@ $hover-color: #fcfa85;
     top: 8px;
     left: 0px;
     width: 100%;
-    font-size: initial;
+    // font-size: initial;
     .toggle-logo-container {
       height: 100px;
       width: 25%;
