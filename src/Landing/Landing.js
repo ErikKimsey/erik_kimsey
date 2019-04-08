@@ -12,7 +12,7 @@ class Landing extends Component {
       height: 0,
       item:data[0],
     }
-    detectOrientation(props);
+    // detectOrientation(props);
   }
   
   componentDidMount() {
@@ -22,7 +22,7 @@ class Landing extends Component {
     window.setInterval(()=>{
       this.handleSelfSlide();
     }, 2600);
-    orientationListener(this.props);
+    // orientationListener(this.props);
   }
 
   handleSelfSlide = () => {

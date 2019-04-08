@@ -5,8 +5,7 @@ let landscapeURI = '/landscape', verticalURI = '/', wW;
 export default function detectOrientation(props) {
   let orntn = window.screen.msOrientation || window.screen.mozOrientation || (window.screen.orientation || {}).type;
   console.log(orntn);
-  
-  
+
   if(orntn === "landscape-primary" && window.innerWidth < bp.mdDevice){
     handleLandscapeOrientation(landscapeURI, props);
   } else {
@@ -15,9 +14,15 @@ export default function detectOrientation(props) {
 }
 
 export const orientationListener = (props) => {
+  console.log('orient listener');
+  
   window.addEventListener('orientationchange', ()=>{
     detectOrientation(props);
-  })
+  });
+  window.addEventListener('resize', ()=>{
+    console.log("resuze");
+    detectOrientation(props);
+  });
 }
 
 const handleLandscapeOrientation = (URI,props) => {
