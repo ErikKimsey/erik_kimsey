@@ -22,7 +22,7 @@ class App extends Component {
   }
   
   componentDidMount(){
-    orientationListener(this.props);
+    // orientationListener(this.props);
   }
 
   handleToggle = () => {
