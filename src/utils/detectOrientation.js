@@ -19,10 +19,6 @@ export const orientationListener = (props) => {
   window.addEventListener('orientationchange', ()=>{
     detectOrientation(props);
   });
-  window.addEventListener('resize', ()=>{
-    console.log("resuze");
-    detectOrientation(props);
-  });
 }
 
 const handleLandscapeOrientation = (URI,props) => {
