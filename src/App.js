@@ -18,6 +18,7 @@ class App extends Component {
       toggled: false,
       props: props,
     }
+    // detectOrientation();
   }
   
   componentDidMount(){

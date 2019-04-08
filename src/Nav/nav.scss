@@ -96,7 +96,7 @@ $hover-color: #fcfa85;
     .nav-list {
       position: absolute;
       left: 10px;
-      top: 18%;
+      top: 8%;
       display: flex;
       flex-flow: column;
       height: 360px;
@@ -125,31 +125,17 @@ $hover-color: #fcfa85;
   .nav-container{
     position: fixed;
     width: 100%;
-    top:83px;
+    top:90px;
     margin: 0;
     font-size: 1.6em;
     display: none;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
-    overflow-y: scroll;
+    overflow-y: hidden;
     .nav-list {
       position: absolute;
       left: 10px;
-      top: 18%;
-      // li {
-      //   &:nth-child(2)::after{
-      //     content: " - Resume";
-      //     color:$yellow;
-      //   }
-      //   &:nth-child(3)::after{
-      //     content: " - Examples";
-      //     color:$yellow;
-      //   }
-      //   &:nth-child(4)::after{
-      //     content: " - Contact";
-      //     color:$yellow;
-      //   }
-      // }
+      top: 8%;
     }
   }
   .active {
@@ -159,7 +145,7 @@ $hover-color: #fcfa85;
     height:100%;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     left: 0px;
@@ -174,27 +160,14 @@ $hover-color: #fcfa85;
     font-size: 1.6em;
     display: none;
     left:0px;
+    overflow-y: hidden;
     .nav-list {
       position: absolute;
-      top: 18%;
+      top: 0;
       ul {
         width: 100%;
         margin: 0;
         li {
-          &:nth-child(1)::after{
-            content: " - Home";
-            color:$yellow;
-          }
-          &:nth-child(2)::after{
-            content: " - Resume";
-          }
-          &:nth-child(3)::after{
-            content: " - Examples";
-          }
-          &:nth-child(4)::after{
-            content: " - Contact";
-          }
-  
           a {
             align-self: center;
           }
@@ -209,7 +182,7 @@ $hover-color: #fcfa85;
         height:100%;
         flex-flow: column;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         margin: 0;
         padding: 0;
         left: 0px;
