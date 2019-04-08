@@ -61,7 +61,7 @@ $hover-color: #fcfa85;
     width: 100%;
     .toggle-logo-container {
       height: 100px;
-      width: 25%;
+      width: 7%;
       display: flex;
       .navbar-toggle {
         position: absolute;
@@ -88,6 +88,7 @@ $hover-color: #fcfa85;
         padding: 0;
         margin: 0;
         font-size: 1.6em;
+        padding: 0 5px;
       }
       // .name {
       //   position: absolute;
@@ -134,23 +135,8 @@ $hover-color: #fcfa85;
       display: flex;
       flex-flow: column;
       font-size: 1em;
-      // .name {
-      //   position: absolute;
-      //   top:0px;
-      //   font-size: 2em;
-      //   align-self: center;
-      //   left: inherit;
-      // }
-      // .underscore {
-      //   display: none;
-      // }
-      // .role {}
-  
-      // .banner-item {
-      //   padding-top: 10px;
-      //   font-size: 2em;
-      // }
-    }
+      padding-left: 20px;
+  }
   }
 
   @media only screen and (max-width: $smDevice) {
@@ -185,13 +171,7 @@ $hover-color: #fcfa85;
     .text-container {
       display: flex;
       flex-flow: column;
-      // .name {
-      //   left: inherit;
-      // }
-      // .underscore {
-      //   display: none;
-      // }
-      // .role {}
+      padding: 20px;
 
     }
   }
