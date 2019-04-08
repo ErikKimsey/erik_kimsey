@@ -41,9 +41,6 @@ $hover-color: #fcfa85;
           color:$hover-color;
         }
       }
-      &:last-child {
-        // margin-bottom: 100px;
-      }
     }
   }
 }
@@ -76,7 +73,7 @@ $hover-color: #fcfa85;
     height:100%;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     margin: 0;
     padding: 0;
     left: 0px;
@@ -101,6 +98,7 @@ $hover-color: #fcfa85;
       flex-flow: column;
       height: 360px;
       justify-content: space-around;
+      align-items: center;
     }
     ul {
       li {
@@ -115,7 +113,6 @@ $hover-color: #fcfa85;
     background-color: #000000;
     flex-flow: column;
     align-items: center;
-    justify-content: center;
     margin: 0;
     padding: 0;
     left: 0px;
@@ -182,7 +179,6 @@ $hover-color: #fcfa85;
         height:100%;
         flex-flow: column;
         align-items: center;
-        // justify-content: center;
         margin: 0;
         padding: 0;
         left: 0px;

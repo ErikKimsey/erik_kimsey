@@ -236,7 +236,7 @@ export const PROFESSIONAL_DATA = [
 
   export const CONTACT_DATA = {
     name: 'Erik Kimsey',
-    role: 'Software Developer, Creative Technologist',
+    role: 'Software Developer',
     phone: '540-278-4525',
     email: 'kimseyerik@gmail.com',
   }
