@@ -4,6 +4,8 @@ import { BREAKPOINTS as bp } from '../__styles/breakPoints';
 let landscapeURI = '/landscape', verticalURI = '/', wW;
 export default function detectOrientation(props) {
   let orntn = window.screen.msOrientation || window.screen.mozOrientation || (window.screen.orientation || {}).type;
+  console.log(orntn);
+  
   
   if(orntn === "landscape-primary" && window.innerWidth < bp.mdDevice){
     handleLandscapeOrientation(landscapeURI, props);
