@@ -81,7 +81,11 @@ $hover-color: #fcfa85;
     margin: 0;
     padding: 0;
     left: 0px;
-    
+    // background-image: url('../assets/bige_color_v1.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // // background-size: 119%;
+    // background-position: center;
   }
 }
 @media only screen and (max-width: $lgDevice) {
@@ -121,6 +125,11 @@ $hover-color: #fcfa85;
     padding: 0;
     left: 0px;
     color:#fff;
+    background-image: url('../assets/bige_color_v1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 129%;
+    background-position: center;
   }
 }
 @media only screen and (max-width: $mdDevice) {
