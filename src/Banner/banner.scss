@@ -79,6 +79,8 @@ $hover-color: #fcfa85;
         }
         .spin {
           background-color: $pink;
+          // width: 50px;
+          // height: 45px;
         }
       }
     }
@@ -170,6 +172,8 @@ $hover-color: #fcfa85;
         }
         .spin.BurgerSpin.Burger {
           padding: 0;
+          width: 50px;
+          height: 45px;
         }
       }
     }
