@@ -1,4 +1,5 @@
 @import '../__styles/responsive.scss';
+@import '../__styles/globals.scss';
 
 $hover-color: #fcfa85;
 
@@ -35,6 +36,7 @@ $hover-color: #fcfa85;
   
     .name {
       color: #fcfa85;
+      text-shadow: 2px 2px 2px $purple;
     }
   
     .role {}

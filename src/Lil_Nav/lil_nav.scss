@@ -76,7 +76,7 @@ Animating the menu with Sass
       padding: 7px;
       margin: 7px;
       border-right: 2px solid $lighterpink;
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.9);
       transition: 0.4s;
       animation: itemout 0.3s ease-in-out 1;
       &:hover {

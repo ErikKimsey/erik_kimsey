@@ -10,8 +10,9 @@ $hover-color: #fcfa85;
   width:100px;
   opacity: 0.1;
   height:400px;
-  margin: 77px 0px;
+  margin: 50px 0px; 
   left:30px;
+  top:123px;
   z-index: 12;
   transition: opacity 1s; 
   &:hover {
@@ -57,9 +58,9 @@ $hover-color: #fcfa85;
     opacity: 1;
     height: calc(100vh - 70px);
     .nav-list {
-      position: absolute;
-      left: 10px;
-      top: 18%;
+      position: absolute; 
+      left: 10px; 
+      top: 0; 
     }
     ul {
       li {
