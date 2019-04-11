@@ -13,7 +13,7 @@ export default function Resume() {
     </div>
       <div className="image-container resume-sub-container">
         <a href={resumePDF} target="_blank">
-        <i class="far fa-file-pdf fa-6x"></i>
+        <i class="far fa-file-pdf fa-10x"></i>
         </a>
       </div>
     </div>
