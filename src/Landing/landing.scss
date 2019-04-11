@@ -2,19 +2,13 @@
 @import '../__styles/responsive.scss';
 
 .landing-container {
-  height: calc(100vh - 220px);
-  width:100%;
-  // display: flex;  
-  // flex-flow: column;
-  // justify-content: center;
-  // align-items: center;
+  height: calc(100vh - 320px);
+  width: 100%;
   margin: 0 auto;
-  color:#fff;
+  color: #fff;
   overflow: hidden;
-  // padding: 66px 100px 0;
-  padding: 0 100px;
+  padding: 100px;
   
-
   .something-cool-container {
     display: none;
     margin: 0;
