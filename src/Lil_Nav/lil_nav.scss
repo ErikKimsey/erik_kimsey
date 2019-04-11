@@ -29,12 +29,12 @@ Animating the menu with Sass
 */
 
 .lil-nav-container {
-  position: absolute;
+  position: fixed;
   width: 100%;
   color: #fff;
   display: flex;
-  right: 6.28% * 2;
-  top: 3.14%;
+  right: 3.28% * 3;
+  top: 16.14%;
   width: 31.4%;
   flex-flow: column;
   align-items: flex-end;
@@ -46,7 +46,6 @@ Animating the menu with Sass
     width: 33px;
     height: 33px;
     padding: 4px;
-    // transform: scaleX(-1);
     img {
       opacity: 0.6;
       height:83px;
@@ -85,7 +84,6 @@ Animating the menu with Sass
         border-right: 4px solid $yellow;
         border-bottom-right-radius: 5px;
       }
-      a {}
     }
   }
   
@@ -97,6 +95,7 @@ Animating the menu with Sass
     padding: 14px;
     height:100%;
     width: 314px;
+    // animation: itemin 0.2s ease-in-out 1;
   }
 
   .item-animation-out {
@@ -136,7 +135,7 @@ Animating the menu with Sass
   
   @media only screen and (max-width: $lgDevice) {}
   @media only screen and (max-width: $mdDevice) {
-        
+      
     .no-show {
       transform: skew(-23deg);
       display: flex;
@@ -154,12 +153,12 @@ Animating the menu with Sass
 
   @media only screen and (max-width: $smDevice) {
 
-    position: absolute;
+    position: fixed;
     width: 80%;
     color: #fff;
     display: flex;
     right: 6.28% * 2;
-    top: 3.14%;
+    top: 16.14%;
     width: 31.4%;
     flex-flow: column;
     align-items: flex-end;
@@ -216,7 +215,13 @@ Animating the menu with Sass
     }
   }
   @media only screen and (max-width: $xsDevice) {
-        
+    position: fixed;
+    width: 80%;
+    color: #fff;
+    display: -webkit-flex;
+    display: flex;
+    right: 12.56%;
+    top: 16.14%;
     .no-show {
       transform: skew(-23deg);
       display: flex;
