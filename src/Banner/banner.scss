@@ -75,6 +75,10 @@ $hover-color: #fcfa85;
         color: rgba(255,255,255,0.8);
         .fa-bars{
           font-size: 2em;
+          color:$grayish;
+        }
+        .spin {
+          background-color: $pink;
         }
       }
     }
