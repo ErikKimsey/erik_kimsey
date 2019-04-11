@@ -30,12 +30,12 @@
     a {
       margin: 18px;
       i {
-        color: $antiquewhite;
+        color: $teal;
         transform: rotate(-10deg);
         transition: 500ms;
         z-index: 0;
         &:hover {
-          color: $yellow;
+          color: $purple;
           transform: rotate(0deg);
           transform: scale(1.2);
         }
