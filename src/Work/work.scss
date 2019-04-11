@@ -23,10 +23,10 @@
       box-sizing: border-box;
       background-color: none;
       border: solid 1px none;
-      border-right: solid 33px $yellow;
-      border-bottom: solid 0px $yellow;
+      border-right: solid 33px $grayish;
+      border-bottom: solid 0px $grayish;
       li button:before {
-        color: $yellow;
+        color: $grayish;
         font-size: 20px;
       }
     }
@@ -40,6 +40,7 @@
         text-decoration: none;
         color:$pink;
         font-size: 1.2em;
+        overflow: hidden;
         &:hover {
           color:$lighterpink;
         }

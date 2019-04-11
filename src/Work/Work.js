@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './work.scss';
 import { data } from './data';
 import Slider from "react-slick";
@@ -36,32 +36,66 @@ let sliderSettings = {
   ]
 };
  
-const Work = (props) => {
+class Work extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
 
-  return (
-    <div className="work-container">
-      <Slider {...sliderSettings} className="work-data-list-contaner">
-        {
-          data.map((e) => {
-            return (
-              <div key={e.name} className="data-item-container">
-                <div className="item-name">{e.name}</div>
-                <div className="item-stack">{e.stack}</div>
-                <div className="item-description"></div>
-                <div className="item-url url-and-github-styles">
-                  <a href={e.url} target="_blank">{e.url}</a>
+    }
+  }
+
+  componentDidMount() {
+    document.querySelector('.data-item-container').focus();
+    window.addEventListener('keypress', (e)=>{
+      let code = e.which || e.keyCode;
+      console.log('code >>> ', e);
+      
+      if(code === '37') this.previous();
+      if(code === '39') this.next();
+    });
+  }
+
+  next = () => {
+    this.slider.slickNext();
+  }
+
+  previous = () => {
+    this.slider.slickPrev();
+  }
+
+  render(){
+
+    return (
+      <div className="work-container">
+        <Slider ref={c => (this.slider = c)} {...sliderSettings} className="work-data-list-contaner">
+          {
+            data.map((e) => {
+              return (
+                <div key={e.name} className="data-item-container">
+                  <div className="item-name">{e.name}</div>
+                  <div className="item-stack">{e.stack}</div>
+                  <div className="item-description"></div>
+                  <div className="item-url url-and-github-styles">
+                    <a href={e.url} target="_blank">{e.url}</a>
+                  </div>
+                  <div className="item-github url-and-github-styles">
+                    <a href={e.github} target="_blank">{e.github}</a>
+                    {/* {e.github} */}
+                  </div>
+          {/* <button className="button" onClick={this.previous}>
+            Previous
+          </button>
+          <button className="button" onClick={this.next}>
+            Next
+          </button> */}
                 </div>
-                <div className="item-github url-and-github-styles">
-                  <a href={e.github} target="_blank">{e.github}</a>
-                  {/* {e.github} */}
-                </div>
-              </div>
-            )
-          } )
-        }
-      </Slider>
-    </div>
-  )
+              )
+            } )
+          }
+        </Slider>
+      </div>
+    )
+  }
 }
 
 export default Work;
