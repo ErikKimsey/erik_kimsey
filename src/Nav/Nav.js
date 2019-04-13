@@ -39,9 +39,9 @@ class Nav extends Component {
             <li onClick={this.handleToggle}>
               <NavLink activeStyle={activeStyles} title="Some Work Examples" className="nav-link" to="/work"><i className="fas fa-code fa-1x"></i></NavLink>
             </li>
-            <li onClick={this.handleToggle}>
+            {/* <li onClick={this.handleToggle}>
               <NavLink activeStyle={activeStyles} title="Playground" className="nav-link" to="/playground"><i className="fas fa-code fa-1x"></i></NavLink>
-            </li>
+            </li> */}
             <li onClick={this.handleToggle}>
               <NavLink activeStyle={activeStyles} title="Contact" className="nav-link" to="/contact"><i className="fas fa-phone fa-1x"></i></NavLink>
             </li>
