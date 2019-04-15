@@ -46,6 +46,8 @@ class About extends Component {
           <Resume />
         </div>
         <div className="education-block-container">
+        
+        <div className="block-label">EDUCATION</div>
           {
             EDUCATION.map((e,i)=>{
               return <Education key={e} data={e}/>
@@ -54,6 +56,7 @@ class About extends Component {
         </div>
 
         <div className="professional-history-block-container">
+        <div className="block-label">WORK HISTORY</div>
           {
             PROFESSIONAL_DATA.map((e,i)=>{
               return <Employment key={e} data={e}/>

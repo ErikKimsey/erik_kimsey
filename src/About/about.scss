@@ -57,6 +57,11 @@ $hover-color: #fcfa85;
     justify-content: space-between;
     .education-header {}
     .employment-header {}
+    .block-label {
+      font-weight: 700;
+      color: #000000;
+    }
+  
   }
   
   .professional-history-block-container {
@@ -65,6 +70,12 @@ $hover-color: #fcfa85;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+
+    .block-label {
+      font-weight: 700;
+      color: #000000;
+    }
+  
   }
 
   h5{

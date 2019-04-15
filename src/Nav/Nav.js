@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import './nav.scss';
 import Banner from '../Banner/Banner';
-import HoverLabel from '../HoverLabel/HoverLabel';
 
 const activeStyles = {
   color:'#fcfa85'
