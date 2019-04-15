@@ -13,7 +13,6 @@ $hover-color: #fcfa85;
   font-weight: 400;
   -webkit-justify-content: center;
   justify-content: center;
-  height: 50px;
   margin: 0 50px;
   left: 0px;
   width: 90%;
@@ -33,11 +32,17 @@ $hover-color: #fcfa85;
       font-weight: 100;
       margin: 5px 20px;
     }
-  
-    .name {
-      color: #fcfa85;
-      text-shadow: 2px 2px 2px $purple;
+    
+    .underscore {
+      width: 86px;
+      color:#E80C7A;
+      height:100%;
+      background-image: url('../assets/bige_color_v1.png');
+      background-size: contain;
+      background-repeat: no-repeat;
     }
+  
+    .name {}
   
     .role {}
     
