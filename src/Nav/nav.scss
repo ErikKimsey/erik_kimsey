@@ -32,6 +32,14 @@ $hover-color: #fcfa85;
       transform: rotate(20deg);
       height: 90px;
       font-size: 26px;
+      .hover-label-container {
+        position: fixed;
+        height: 100px;
+        width: 300px;
+        background-color: #000000;
+        color:#ffffff;
+        
+      }
       a {
         width: 250px;
         text-decoration: none;

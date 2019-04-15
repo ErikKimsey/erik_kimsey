@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { NavLink } from 'react-router-dom';
 import './nav.scss';
 import Banner from '../Banner/Banner';
+import HoverLabel from '../HoverLabel/HoverLabel';
 
 const activeStyles = {
   color:'#fcfa85'
@@ -22,9 +23,18 @@ class Nav extends Component {
   }
 
   handleHover = (e) => {
-    console.log(e.target.title);
-    
-    
+    let label = document.createElement('div');
+    label.className = 'hover-label';
+    console.log(label);
+    label.innerHTML = e.target.title;
+    let nav = document.querySelector('.nav-container');
+    nav.appendChild(label);
+  }
+  
+  handleLeave = (e) => {
+    let nav = document.querySelector('.nav-container');
+    let item = document.querySelector(e.target.title);
+    console.log(item);
   }
   
   render(){
@@ -46,7 +56,7 @@ class Nav extends Component {
             </li>
             <li onClick={this.handleToggle}>
               <NavLink activeStyle={activeStyles} className="nav-link" to="/work">
-              <i className="fas fa-code fa-1x" title="Work" onMouseOver={this.handleHover}></i>
+              <i className="fas fa-code fa-1x" title="Work" onMouseOver={this.handleHover} onMouseLeave={this.handleLeave}></i>
               </NavLink>
             </li>
             {/* <li onClick={this.handleToggle}>
