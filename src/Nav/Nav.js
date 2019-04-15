@@ -28,7 +28,7 @@ class Nav extends Component {
     console.log(label);
     label.innerHTML = e.target.title;
     let nav = document.querySelector('.nav-container');
-    nav.appendChild(label);
+    // nav.appendChild(label);
   }
   
   handleLeave = (e) => {
