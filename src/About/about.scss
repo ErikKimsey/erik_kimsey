@@ -52,6 +52,7 @@ $hover-color: #fcfa85;
   
   .education-block-container {
     width: 100%;
+    padding-top: 185px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -65,7 +66,7 @@ $hover-color: #fcfa85;
   }
   
   .professional-history-block-container {
-    margin-top: 57px;
+    padding-top: 185px;
     width: 100%;
     display: flex;
     flex-flow: column;
