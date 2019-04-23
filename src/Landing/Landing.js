@@ -51,12 +51,15 @@ class Landing extends Component {
   render(){
     return (
       <div className="landing-container">
-        <div className="something-cool-container"></div>
-        <div className="self-blurb-container">
-          {
-            this.state.item
-          }
-        </div>
+        {
+          data.map((e,i)=>{
+            <div className="self-blurb-container" key={e}>
+              {
+                e
+              }
+            </div>
+          })
+        }
       </div>
     )
   }
