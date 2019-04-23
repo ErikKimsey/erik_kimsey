@@ -48,6 +48,10 @@ class Landing extends Component {
      */
   }
 
+  handleGrowthFactor = () => {
+    
+  }
+
   render(){
     return (
       <div className="landing-container">
