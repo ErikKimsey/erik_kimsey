@@ -53,7 +53,8 @@ class Landing extends Component {
       <div className="landing-container">
         {
           data.map((e,i)=>{
-            <div className="self-blurb-container" key={e}>
+            i+=1;
+            return <div className={"self-blurb-container" + ` blurb-${i}`} key={e}>
               {
                 e
               }
