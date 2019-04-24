@@ -18,22 +18,32 @@ class Landing extends Component {
     i = 0;
     let blurbs = document.querySelectorAll('.self-blurb-container');
     let blurbsArr = Array.from(blurbs);
-    // console.log(blurbsArr);
-    
     
     window.addEventListener('mouseover', (e)=> {
       if(blurbsArr.includes(e.target)){
-        
         let blurb = e.target;
-        blurb.classList.add('active-grid');
+        let solo = document.querySelector('.blurb-1');
+        if(blurb.classList.contains('blurb-1')){
+          console.log(blurb);
+          solo.classList.remove('active-grid');
+          // solo.classList.add('inactive-blurb');
+        } else {
+          solo.classList.add('inactive-blurb');
+          blurb.classList.add('active-grid');
+        }
       }
     });
     window.addEventListener('mouseout', (e)=> {
       if(blurbsArr.includes(e.target)){
-        
+        let solo = document.querySelector('.blurb-1');
         let blurb = e.target;
-
-        blurb.classList.remove('active-grid');
+        if(blurb.classList.contains('blurb-1')){
+          console.log(blurb);
+          blurb.classList.remove('inactive-blurb');
+        } else {
+          solo.classList.remove('inactive-blurb');
+          blurb.classList.remove('active-grid');
+        }
       }
     });
   }
