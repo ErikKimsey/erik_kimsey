@@ -12,17 +12,30 @@ class Landing extends Component {
       height: 0,
       item:data[0],
     }
-    // detectOrientation(props);
   }
   
   componentDidMount() {
     i = 0;
-    console.log(data.length);
+    let blurbs = document.querySelectorAll('.self-blurb-container');
+    let blurbsArr = Array.from(blurbs);
+    // console.log(blurbsArr);
     
-    window.setInterval(()=>{
-      this.handleSelfSlide();
-    }, 2600);
-    // orientationListener(this.props);
+    
+    window.addEventListener('mouseover', (e)=> {
+      if(blurbsArr.includes(e.target)){
+        
+        let blurb = e.target;
+        blurb.classList.add('active-grid');
+      }
+    });
+    window.addEventListener('mouseout', (e)=> {
+      if(blurbsArr.includes(e.target)){
+        
+        let blurb = e.target;
+
+        blurb.classList.remove('active-grid');
+      }
+    });
   }
 
   handleSelfSlide = () => {
