@@ -11,7 +11,7 @@
   padding-top: 100px;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto auto;
   grid-template-rows: 1fr;
   
   .self-blurb-container {
@@ -25,7 +25,7 @@
   }
   
   .active-grid {
-    grid-column: 200%;
+    grid-column: 75%;
     font-size: calc(200%);
     background-color: $pink;
     color:#fff;
@@ -75,11 +75,8 @@
       font-size: 1em;
     }
     
-    .self-blurb-container {
-      // margin: 0;
-      // font-size: 1.4em;
-      // width: 100%;
-    }
+    .self-blurb-container {}
+
   }
   
   @media only screen and (max-width: $xsDevice) {
