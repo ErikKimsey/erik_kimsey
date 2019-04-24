@@ -20,12 +20,12 @@
     opacity: 1;
     transition: 1000ms;
     color: #000000;
-    border-left: solid 1px $lighterpink;
+    border-left: solid 0.5px $lighterpink;
     padding: 10px;
   }
   
   .active-grid {
-    grid-column: 75%;
+    // grid-column: 175%;
     font-size: calc(200%);
     background-color: $pink;
     color:#fff;
@@ -47,7 +47,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     overflow-y: visible;
     .self-blurb-container {
-      border-top: solid 1px $lighterpink;
+      border-top: solid 0.5px $lighterpink;
       border-left: none;
     }
   }
