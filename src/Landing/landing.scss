@@ -54,12 +54,24 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     overflow-y: visible;
-    background-color: $yellow;
+
     .self-blurb-container {
       border-top: solid 0.5px $lighterpink;
       border-left: none;
+      border-radius: 0;
+    }
+    .blurb-1 {
+      grid-area: 1 / 1 / 4 / 2;
+      font-size: calc(200%);
+      background-color: $pink;
+      color:#fff;
+    }
+    .inactive-blurb {
+      font-size: calc(100%);
+      background-color: #000;
+      color:#fff;
     }
   }
 
