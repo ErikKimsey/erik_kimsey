@@ -24,9 +24,7 @@ class Landing extends Component {
         let blurb = e.target;
         let solo = document.querySelector('.blurb-1');
         if(blurb.classList.contains('blurb-1')){
-          console.log(blurb);
           solo.classList.remove('active-grid');
-          // solo.classList.add('inactive-blurb');
         } else {
           solo.classList.add('inactive-blurb');
           blurb.classList.add('active-grid');
@@ -38,7 +36,6 @@ class Landing extends Component {
         let solo = document.querySelector('.blurb-1');
         let blurb = e.target;
         if(blurb.classList.contains('blurb-1')){
-          console.log(blurb);
           blurb.classList.remove('inactive-blurb');
         } else {
           solo.classList.remove('inactive-blurb');
