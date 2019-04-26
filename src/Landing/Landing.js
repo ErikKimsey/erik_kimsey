@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './landing.scss';
 import { data } from './data';
-// import detectOrientation, { orientationListener, deleteListener } from '../utils/detectOrientation';
 
 let i=0;
 class Landing extends Component {
@@ -61,19 +60,6 @@ class Landing extends Component {
       
   //   })
   // }
-
-  handleSelfSlide = () => {
-    let len = data.length, item = '';
-    if(i === len) {
-      i = 0;
-      item = data[i];
-    } else {
-      item = data[i];
-      i++;
-    }
-    this.setState({ item: item });
-    this.toggleFade();
-  }
   
   render(){
     return (
