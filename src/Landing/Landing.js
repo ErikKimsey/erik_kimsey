@@ -11,6 +11,7 @@ class Landing extends Component {
       width: 0,
       height: 0,
     }
+    this.landingBlurbs = React.createRef();
   }
 
   componentDidMount() {
@@ -51,8 +52,14 @@ class Landing extends Component {
   }
 
   handleMobileGrowth = () => {
-    let centerScreen = document.querySelector('.landing-container');
-    console.log(centerScreen); 
+    let blurbs = this.landingBlurbs.querySelectorAll('.self-blurb-container');
+    let blurbsArr = Array.from(blurbs);
+    console.log(blurbs);
+    let vh = window.innerHeight,
+    vpHalf = vh/2;
+    blurbsArr.forEach((e)=>{
+      
+    })
   }
 
   handleSelfSlide = () => {
@@ -65,12 +72,12 @@ class Landing extends Component {
       i++;
     }
     this.setState({ item: item });
-    this.toggleFade()
+    this.toggleFade();
   }
   
   render(){
     return (
-      <div className="landing-container">
+      <div className="landing-container" ref={(e) => this.landingBlurbs = e}>
         {
           data.map((e,i)=>{
             i+=1;
