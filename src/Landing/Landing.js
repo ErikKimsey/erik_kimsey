@@ -51,16 +51,16 @@ class Landing extends Component {
     });
   }
 
-  handleMobileGrowth = () => {
-    let blurbs = this.landingBlurbs.querySelectorAll('.self-blurb-container');
-    let blurbsArr = Array.from(blurbs);
-    console.log(blurbs);
-    let vh = window.innerHeight,
-    vpHalf = vh/2;
-    blurbsArr.forEach((e)=>{
+  // handleMobileGrowth = () => {
+  //   let blurbs = this.landingBlurbs.querySelectorAll('.self-blurb-container');
+  //   let blurbsArr = Array.from(blurbs);
+  //   console.log(blurbs);
+  //   let vh = window.innerHeight,
+  //   vpHalf = vh/2;
+  //   blurbsArr.forEach((e)=>{
       
-    })
-  }
+  //   })
+  // }
 
   handleSelfSlide = () => {
     let len = data.length, item = '';
