@@ -4,6 +4,15 @@ import { data } from './data';
 import detectOrientation, { orientationListener, deleteListener } from '../utils/detectOrientation';
 
 let i=0;
+    /**
+   * Functionality performed on mobile devices that detects 
+   * if blurb element is in center of sceen.  IF so, then performs 
+   * active/inactive functionality.
+   */
+  const handleMobileGrowth = () => {
+    let centerScreen = document.querySelector('.landing-container');
+    console.log(centerScreen); 
+  }
 class Landing extends Component {
   constructor(props){
     super(props);
@@ -12,9 +21,8 @@ class Landing extends Component {
       height: 0,
       item:data[0],
     }
-    this.myRef = React.createRef();
   }
-  
+
   componentDidMount() {
     i = 0;
     let blurbs = document.querySelectorAll('.self-blurb-container');
@@ -52,7 +60,13 @@ class Landing extends Component {
        * 3. if blurb element overlaps center dimensions,
        * 4. then perform active/inactive functionality above.
        */
+      console.log(this.handleMobileGrowth);
     });
+  }
+
+  handleMobileGrowth = () => {
+    let centerScreen = document.querySelector('.landing-container');
+    console.log(centerScreen); 
   }
 
   handleSelfSlide = () => {
@@ -67,19 +81,10 @@ class Landing extends Component {
     this.setState({ item: item });
     this.toggleFade()
   }
-
-  /**
-   * Functionality performed on mobile devices that detects 
-   * if blurb element is in center of sceen.  IF so, then performs 
-   * active/inactive functionality.
-   */
-  handleMobileGrowth = () => {
-
-  }
-
+  
   render(){
     return (
-      <div className="landing-container" ref={this.myRef} >
+      <div className="landing-container">
         {
           data.map((e,i)=>{
             i+=1;
