@@ -50,7 +50,7 @@ class Landing extends Component {
        * 1. Get scroll action,
        * 2. get center of screen dimensions,
        * 3. if blurb element overlaps center dimensions,
-       * 4. then perform active/inactive functionality above
+       * 4. then perform active/inactive functionality above.
        */
     });
   }
@@ -68,22 +68,13 @@ class Landing extends Component {
     this.toggleFade()
   }
 
+  /**
+   * Functionality performed on mobile devices that detects 
+   * if blurb element is in center of sceen.  IF so, then performs 
+   * active/inactive functionality.
+   */
   handleMobileGrowth = () => {
 
-  }
-
-  toggleFade = () => {
-    /**
-     * 1. get curr value of element
-     * 2. pass curr value to temp var
-     * 3. pass new value to curr var
-     * 4. compare curr and temp...
-     * 5. if curr and temp are different, toggle fade-text
-     */
-  }
-
-  handleGrowthFactor = () => {
-    
   }
 
   render(){
