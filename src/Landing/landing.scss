@@ -12,13 +12,12 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: auto auto auto auto;
-  // grid-template-rows: 1fr;
   
   .self-blurb-container {
     margin: 0;
     font-size: 1.4em;
     opacity: 1;
-    transition: 1000ms;
+    transition: 600ms;
     color: #000000;
     border-left: solid 0.5px none;
     padding: 20px;
@@ -36,6 +35,13 @@
     font-size: calc(200%);
     background-color: $pink;
     color:#fff;
+  }
+
+  .blurb-3 {
+    padding-bottom: 50px;
+  }
+  .blurb-3 {
+    padding-top: 0px;
   }
   
   .inactive-blurb {

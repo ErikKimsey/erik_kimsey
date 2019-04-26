@@ -12,6 +12,7 @@ class Landing extends Component {
       height: 0,
       item:data[0],
     }
+    this.myRef = React.createRef();
   }
   
   componentDidMount() {
@@ -43,6 +44,15 @@ class Landing extends Component {
         }
       }
     });
+    window.addEventListener('touchmove', function(event) {
+      console.log('scrolling');
+      /**
+       * 1. Get scroll action,
+       * 2. get center of screen dimensions,
+       * 3. if blurb element overlaps center dimensions,
+       * 4. then perform active/inactive functionality above
+       */
+    });
   }
 
   handleSelfSlide = () => {
@@ -56,6 +66,10 @@ class Landing extends Component {
     }
     this.setState({ item: item });
     this.toggleFade()
+  }
+
+  handleMobileGrowth = () => {
+
   }
 
   toggleFade = () => {
@@ -74,7 +88,7 @@ class Landing extends Component {
 
   render(){
     return (
-      <div className="landing-container">
+      <div className="landing-container" ref={this.myRef} >
         {
           data.map((e,i)=>{
             i+=1;
