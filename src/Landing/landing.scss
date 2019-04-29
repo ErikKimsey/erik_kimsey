@@ -106,7 +106,6 @@ $num-of-blurbs: 4;
 @for $i from 1 through $num-of-blurbs {
   .self-blurb-container {
     
-    // :nth-child(1-9) 
     &:nth-child(#{$i}) {
       animation-delay: $i * (25s / 20);
     }
