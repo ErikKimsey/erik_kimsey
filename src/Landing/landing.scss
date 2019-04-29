@@ -1,5 +1,9 @@
 @import '../__styles/globals.scss';
 @import '../__styles/responsive.scss';
+@import '../__styles/mixins.scss';
+
+$num-of-blurbs: 4;
+
 
 .landing-container {
   height: calc(100vh - 320px);
@@ -8,21 +12,46 @@
   color: #fff;
   overflow: hidden;
   padding: 100px;
-  
-  .something-cool-container {
-    display: none;
-    margin: 0;
-    border-bottom: solid 135px rgba(0,0,0,0.2);
-    border-top-left-radius: 400px;
-    border-left: solid 35px transparent;
-    transition: 300ms;
-  }
+  padding-top: 100px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto;
   
   .self-blurb-container {
     margin: 0;
-    font-size: 3.4em;
+    font-size: 1.4em;
     opacity: 1;
-    transition: 1000ms;  
+    transition: 600ms;
+    color: #000000;
+    border-left: solid 0.5px none;
+    padding: 20px;
+    border-radius: 2px;
+  }
+  
+  .active-grid {
+    font-size: calc(200%);
+    background-color: $pink;
+    color:#fff;
+  }
+  
+  .blurb-1 {
+    grid-area: 1 / 2 / 3 /4;
+    font-size: calc(200%);
+    background-color: $pink;
+    color:#fff;
+  }
+
+  .blurb-3 {
+    padding-bottom: 50px;
+  }
+  .blurb-3 {
+    padding-top: 0px;
+  }
+  
+  .inactive-blurb {
+    font-size: calc(100%);
+    background-color: #000;
+    color:#fff;
   }
 
   .fade-text {
@@ -30,51 +59,74 @@
   }
 
   @media only screen and (max-width: $lgDevice) {
-    
-    .something-cool-container {
-      margin: 0;
-      height:50px;
-      border-bottom: solid 35px rgba(0,0,0,0.2);
-      border-left: solid 35px transparent;
-    }
-    
+    margin: 50px 0;
+    padding: 0 16px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    overflow-y: visible;
+
     .self-blurb-container {
-      margin: 0;
-      font-size: 3em;
-      width: 100%;
+      border-top: solid 0.5px $lighterpink;
+      border-left: none;
+      border-radius: 0;
+    }
+
+    .blurb-1 {
+      grid-area: 1 / 1 / 4 / 2;
+      font-size: calc(200%);
+      background-color: $pink;
+      color:#fff;
+    }
+
+    .inactive-blurb {
+      font-size: calc(100%);
+      background-color: #000;
+      color:#fff;
     }
   }
+
   @media only screen and (max-width: $mdDevice) {
     margin: 50px 0;
     padding: 0 16px;
-    .something-cool-container {
-      margin: 0;
-    }
+    margin-top: 88px;
+    height: calc(100vh - 220px);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+    overflow-y: visible;
     .self-blurb-container {
-      margin: 0;
-      font-size: 2em;
-      width: 100%;
-      font-weight: 900;
+      border-top: solid 1px $lighterpink;
+      border-left: none;
+      @include landing-bubble($num-of-blurbs);
+    }
+
+@for $i from 1 through $num-of-blurbs {
+  .self-blurb-container {
+    
+    &:nth-child(#{$i}) {
+      animation-delay: $i * (25s / 20);
     }
   }
+}
+  }
+  
+
   @media only screen and (max-width: $smDevice) {
     margin-left:0px;
     padding: 0 16px;
-    .something-cool-container {
-      margin: 0;
-      height:20px;
-    }
-    
+
     .spin {
       padding: 3px !important;
       font-size: 1em;
     }
     
     .self-blurb-container {
-      margin: 0;
-      font-size: 1.4em;
-      width: 100%;
+      @include landing-bubble($num-of-blurbs);
     }
+
   }
   
   @media only screen and (max-width: $xsDevice) {
