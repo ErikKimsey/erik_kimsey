@@ -107,7 +107,7 @@ $num-of-blurbs: 4;
   .self-blurb-container {
     
     &:nth-child(#{$i}) {
-      animation-delay: $i * (25s / 20);
+      animation-delay: $i * (25s / 18);
     }
   }
 }

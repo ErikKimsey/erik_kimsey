@@ -14,10 +14,11 @@
     opacity: 1;
   }
   50% {
-    font-size: calc(100%);
+    font-size: calc(0%);
     background-color: #000;
     color:#fff;
     opacity: 0;
+    display:none;
   }
   100% {
     font-size: calc(200%);
