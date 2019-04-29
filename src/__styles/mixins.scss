@@ -1,7 +1,7 @@
 @mixin landing-bubble($max-elems) {
   @for $i from 1 through $max-elems {
     &:nth-child(#{$i}) {
-      animation: 7s ease-in-out infinite pulse;
+      animation: 8s ease-in-out infinite pulse;
     }
   }
 }
