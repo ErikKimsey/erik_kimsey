@@ -44,10 +44,10 @@ class Landing extends Component {
       
     });
 
-    window.addEventListener('touchmove', () => {
-      console.log('scrolling');
-      this.handleMobileGrowth();
-    });
+    // window.addEventListener('touchmove', () => {
+    //   console.log('scrolling');
+    //   this.handleMobileGrowth();
+    // });
   }
 
   // handleMobileGrowth = () => {

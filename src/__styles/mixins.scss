@@ -1,7 +1,7 @@
 @mixin landing-bubble($max-elems) {
   @for $i from 1 through $max-elems {
     &:nth-child(#{$i}) {
-      animation: 10000ms ease infinite pulse;
+      animation: 7s ease infinite pulse;
     }
   }
 }
@@ -22,20 +22,32 @@
 
 @keyframes pulse {
   0% {
-    font-size: calc(200%);
+    // font-size: calc(200%);
     background-color: $pink;
     color:#fff;
     opacity: 1;
+  }
+  25% {
+    // font-size: calc(100%);
+    background-color: $pink;
+    color:#fff;
+    opacity: 0.5;
   }
   50% {
     font-size: calc(0%);
     background-color: #000;
     color:#fff;
-    opacity: 0;
+    opacity: 0.2;
     display:none;
   }
+  25% {
+    // font-size: calc(100%);
+    background-color: $pink;
+    color:#fff;
+    opacity: 0;
+  }
   100% {
-    font-size: calc(200%);
+    // font-size: calc(200%);
     background-color: $pink;
     color:#fff;
     opacity: 1;

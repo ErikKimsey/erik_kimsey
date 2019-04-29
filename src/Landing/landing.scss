@@ -97,6 +97,11 @@ $num-of-blurbs: 4;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4 1fr);
     overflow-y: visible;
+    // -webkit-transform: translate3d(0, 0, 0);
+    // -moz-transform: translate3d(0, 0, 0);
+    // -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    // backface-visibility: hidden;
     .self-blurb-container {
       border-top: solid 1px $lighterpink;
       border-left: none;
@@ -107,7 +112,7 @@ $num-of-blurbs: 4;
   .self-blurb-container {
     
     &:nth-child(#{$i}) {
-      animation-delay: $i * (25s / 18);
+      animation-delay: $i * (20s / 18);
     }
   }
 }
@@ -117,7 +122,11 @@ $num-of-blurbs: 4;
   @media only screen and (max-width: $smDevice) {
     margin-left:0px;
     padding: 0 16px;
-
+    // -webkit-transform: translate3d(0, 0, 0);
+    // -moz-transform: translate3d(0, 0, 0);
+    // -ms-transform: translate3d(0, 0, 0);
+    // transform: translate3d(0, 0, 0);
+    // backface-visibility: hidden;
     .spin {
       padding: 3px !important;
       font-size: 1em;
