@@ -5,3 +5,6 @@ export const data = [
   'I enjoy learning new languages and technology.',
 ];
 
+console.log(data.length);
+
+

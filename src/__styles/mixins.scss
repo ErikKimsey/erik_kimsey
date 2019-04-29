@@ -1,0 +1,30 @@
+@mixin landing-bubble($max-elems) {
+  @for $i from 1 through $max-elems {
+    &:nth-child(#{$i}) {
+      animation: 10000ms ease infinite pulse;
+
+      // transition: all .2s #{$i * .1}s ease-in;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    font-size: calc(200%);
+    background-color: $pink;
+    color:#fff;
+    opacity: 1;
+  }
+  50% {
+    font-size: calc(100%);
+    background-color: #000;
+    color:#fff;
+    opacity: 0;
+  }
+  100% {
+    font-size: calc(200%);
+    background-color: $pink;
+    color:#fff;
+    opacity: 1;
+  }
+}

@@ -1,5 +1,9 @@
 @import '../__styles/globals.scss';
 @import '../__styles/responsive.scss';
+@import '../__styles/mixins.scss';
+
+$num-of-blurbs: 4;
+
 
 .landing-container {
   height: calc(100vh - 320px);
@@ -96,19 +100,33 @@
     .self-blurb-container {
       border-top: solid 1px $lighterpink;
       border-left: none;
+      @include landing-bubble($num-of-blurbs);
+    }
+
+@for $i from 1 through $num-of-blurbs {
+  .self-blurb-container {
+    
+    // :nth-child(1-9) 
+    &:nth-child(#{$i}) {
+      animation-delay: $i * (25s / 20);
     }
   }
+}
+  }
+  
 
   @media only screen and (max-width: $smDevice) {
     margin-left:0px;
     padding: 0 16px;
-    
+
     .spin {
       padding: 3px !important;
       font-size: 1em;
     }
     
-    .self-blurb-container {}
+    .self-blurb-container {
+      @include landing-bubble($num-of-blurbs);
+    }
 
   }
   
