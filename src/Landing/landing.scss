@@ -103,8 +103,8 @@ $num-of-blurbs: 4;
     transform: translate3d(0, 0, 0);
     // backface-visibility: hidden;
     .self-blurb-container {
-      border-top: solid 1px $lighterpink;
-      border-left: none;
+      background-color: $pink;
+      color:#fff;
       @include landing-bubble($num-of-blurbs);
     }
 

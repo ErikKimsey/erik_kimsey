@@ -1,55 +1,28 @@
 @mixin landing-bubble($max-elems) {
   @for $i from 1 through $max-elems {
     &:nth-child(#{$i}) {
-      animation: 7s ease infinite pulse;
+      animation: 7s ease-in-out infinite pulse;
     }
   }
 }
 
-// @mixin keyframe ($animation_name) {
-//   @-webkit-keyframes $animation_name {
-//       @content;
-//   }
-
-//   @-moz-keyframes $animation_name {
-//       @content;
-//   }
-
-//   @keyframes $animation_name {
-//       @content;
-//   }
-// }
-
 @keyframes pulse {
   0% {
-    // font-size: calc(200%);
-    background-color: $pink;
-    color:#fff;
     opacity: 1;
   }
   25% {
-    // font-size: calc(100%);
-    background-color: $pink;
-    color:#fff;
     opacity: 0.5;
   }
   50% {
     font-size: calc(0%);
     background-color: #000;
-    color:#fff;
     opacity: 0.2;
     display:none;
   }
-  25% {
-    // font-size: calc(100%);
-    background-color: $pink;
-    color:#fff;
+  75% {
     opacity: 0;
   }
   100% {
-    // font-size: calc(200%);
-    background-color: $pink;
-    color:#fff;
     opacity: 1;
   }
 }
