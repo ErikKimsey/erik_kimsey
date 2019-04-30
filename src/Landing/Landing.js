@@ -43,23 +43,7 @@ class Landing extends Component {
       }
       
     });
-
-    // window.addEventListener('touchmove', () => {
-    //   console.log('scrolling');
-    //   this.handleMobileGrowth();
-    // });
   }
-
-  // handleMobileGrowth = () => {
-  //   let blurbs = this.landingBlurbs.querySelectorAll('.self-blurb-container');
-  //   let blurbsArr = Array.from(blurbs);
-  //   console.log(blurbs);
-  //   let vh = window.innerHeight,
-  //   vpHalf = vh/2;
-  //   blurbsArr.forEach((e)=>{
-      
-  //   })
-  // }
   
   render(){
     return (
