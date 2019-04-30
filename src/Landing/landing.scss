@@ -95,7 +95,7 @@ $num-of-blurbs: 4;
       font-size: calc(200%);
       background-color: $pink;
       color:#fff;
-      background-image: url('../assets/bige_color_v1.png');
+      // background-image: url('../assets/bige_color_v1.png');
     }
 
     .inactive-blurb {
@@ -141,6 +141,7 @@ $num-of-blurbs: 4;
       font-size: calc(100%);
       background-color: #000;
       color:#fff;
+      background-image: none;
     }
     
     @for $i from 1 through $num-of-blurbs {
