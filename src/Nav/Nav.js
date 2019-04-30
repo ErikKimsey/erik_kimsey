@@ -24,20 +24,16 @@ class Nav extends Component {
   handleHover = (e) => {
     let label = document.createElement('div');
     label.className = 'hover-label';
-    console.log(label);
     label.innerHTML = e.target.title;
     let nav = document.querySelector('.nav-container');
-    // nav.appendChild(label);
   }
   
   handleLeave = (e) => {
     let nav = document.querySelector('.nav-container');
     let item = document.querySelector(e.target.title);
-    console.log(item);
   }
   
   render(){
-    
     return (
       <div>
         <Banner toggle={this.handleToggle} isActive={this.state.isActive}/>
