@@ -18,7 +18,7 @@
 }
 
 @mixin bubble-1-desktop {
-  animation: 4s ease 1 bubble-one;
+  animation: 3s ease 1 bubble-one;
 }
 
 
@@ -27,7 +27,7 @@
     opacity: 0;
   }
   75% {
-    opacity: 0.25;
+    // opacity: 0;
   }
   100% {
     opacity: 1;
