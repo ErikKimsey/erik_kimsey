@@ -1,26 +1,80 @@
+@import '../__styles/globals.scss';
+@import '../__styles/responsive.scss';
+
 @mixin landing-bubble($max-elems) {
   @for $i from 1 through $max-elems {
     &:nth-child(#{$i}) {
-      animation: 8s ease-in-out infinite pulse;
+      animation: 2s ease-in-out 1 pulse;
     }
+  }
+}
+
+@mixin landing-bubble-desktop($max-elems) {
+  @for $i from 1 through $max-elems {
+    &:nth-child(#{$i}) {
+      animation: 2s ease-in-out 1 pulse-desktop;
+    }
+  }
+}
+
+@mixin bubble-1-desktop {
+  animation: 4s ease 1 bubble-one;
+}
+
+
+@keyframes bubble-one {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-desktop {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.25;
+    color:$pink;
+  }
+  25% {
+    opacity: 0.5;
+    color:$pink;
+  }
+  50% {
+    background-color: #fff;
+    color:$pink;
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes pulse {
   0% {
-    opacity: 1;
+    opacity: 0.5;
   }
   25% {
-    opacity: 0.5;
+    opacity: 0;
   }
   50% {
     font-size: calc(0%);
-    background-color: #000;
-    opacity: 0.2;
+    background-color: $pink;
+    color:#fff;
+    // opacity: 0.2;
     display:none;
   }
   75% {
-    opacity: 0;
+    // opacity: 0;
   }
   100% {
     opacity: 1;

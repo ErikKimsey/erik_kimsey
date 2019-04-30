@@ -4,7 +4,6 @@
 
 $num-of-blurbs: 4;
 
-
 .landing-container {
   height: calc(100vh - 320px);
   width: 100%;
@@ -23,26 +22,36 @@ $num-of-blurbs: 4;
     opacity: 1;
     transition: 600ms;
     color: #000000;
-    border-left: solid 0.5px none;
     padding: 20px;
-    border-radius: 2px;
+    @include landing-bubble-desktop($num-of-blurbs);
+  }
+
+  .blurb-1 {
+    grid-area: 1 / 2 / 3 /4;
+    font-size: calc(200%);
+    background-color: $pink;
+    color:#fff;
+    @include bubble-1-desktop;
+  }
+
+  @for $i from 1 through $num-of-blurbs {
+    .self-blurb-container {
+      &:nth-child(#{$i}) {
+        animation-delay: $i * (20s / 50);
+      }
+    }
   }
   
+
   .active-grid {
     font-size: calc(200%);
     background-color: $pink;
     color:#fff;
   }
   
-  .blurb-1 {
-    grid-area: 1 / 2 / 3 /4;
-    font-size: calc(200%);
-    background-color: $pink;
-    color:#fff;
-  }
 
   .blurb-3 {
-    padding-bottom: 50px;
+    padding-bottom: 0px;
   }
   .blurb-3 {
     padding-top: 0px;
@@ -67,11 +76,7 @@ $num-of-blurbs: 4;
     grid-template-rows: auto auto auto auto;
     overflow-y: visible;
 
-    .self-blurb-container {
-      border-top: solid 0.5px $lighterpink;
-      border-left: none;
-      border-radius: 0;
-    }
+    .self-blurb-container {}
 
     .blurb-1 {
       grid-area: 1 / 1 / 4 / 2;
@@ -102,31 +107,42 @@ $num-of-blurbs: 4;
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
+
     .self-blurb-container {
-      background-color: $pink;
-      color:#fff;
+      background-color: #fff;
+      color:$pink;
       @include landing-bubble($num-of-blurbs);
     }
+    .blurb-1 {
+      background-color: $pink;
+      color:#fff;
+    }
 
-@for $i from 1 through $num-of-blurbs {
-  .self-blurb-container {
+    .active-grid {
+      font-size: calc(200%);
+      background-color: $pink;
+      color:#fff;
+    }
+
+    .inactive-blurb {
+      font-size: calc(100%);
+      background-color: #000;
+      color:#fff;
+    }
     
-    &:nth-child(#{$i}) {
-      animation-delay: $i * (20s / 18);
+    @for $i from 1 through $num-of-blurbs {
+      .self-blurb-container {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * (20s / 40);
+        }
+      }
     }
   }
-}
-  }
-  
 
   @media only screen and (max-width: $smDevice) {
     margin-left:0px;
     padding: 0 16px;
-    // -webkit-transform: translate3d(0, 0, 0);
-    // -moz-transform: translate3d(0, 0, 0);
-    // -ms-transform: translate3d(0, 0, 0);
-    // transform: translate3d(0, 0, 0);
-    // backface-visibility: hidden;
+    
     .spin {
       padding: 3px !important;
       font-size: 1em;
@@ -135,7 +151,6 @@ $num-of-blurbs: 4;
     .self-blurb-container {
       @include landing-bubble($num-of-blurbs);
     }
-
   }
   
   @media only screen and (max-width: $xsDevice) {
