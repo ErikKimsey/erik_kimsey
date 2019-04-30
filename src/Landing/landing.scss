@@ -24,18 +24,6 @@ $num-of-blurbs: 4;
     color: #000000;
     padding: 20px;
     @include landing-bubble-desktop($num-of-blurbs);
-        
-    // &.blurb-1 {
-    //   grid-area: 1 / 2 / 3 /4;
-    //   font-size: calc(200%);
-    //   background-color: $pink;
-    //   background-image: url('../assets/bige_color_v1.png');
-    //   background-position: center;
-    //   background-repeat: none;
-    //   color:#fff;
-    //   @include bubble-1-desktop;
-    // }
-
     &.blurb-3 {
       padding-bottom: 20px;
     }
@@ -60,7 +48,6 @@ $num-of-blurbs: 4;
       }
     }
   }
-  
   
   .active-grid {
     font-size: calc(200%);
@@ -88,14 +75,11 @@ $num-of-blurbs: 4;
     grid-template-rows: auto auto auto auto;
     overflow-y: visible;
     
-    .self-blurb-container {}
-    
     .blurb-1 {
       grid-area: 1 / 1 / 4 / 2;
       font-size: calc(200%);
       background-color: $pink;
       color:#fff;
-      // background-image: url('../assets/bige_color_v1.png');
     }
 
     .inactive-blurb {
@@ -175,5 +159,4 @@ $num-of-blurbs: 4;
       font-size: 1em;
     }
   }
-
 }
