@@ -1,6 +1,7 @@
 @import '../__styles/globals.scss';
 @import '../__styles/responsive.scss';
 
+// Landing onload
 @mixin landing-bubble($max-elems) {
   @for $i from 1 through $max-elems {
     &:nth-child(#{$i}) {
@@ -9,6 +10,7 @@
   }
 }
 
+// Landing onload
 @mixin landing-bubble-desktop($max-elems) {
   @for $i from 1 through $max-elems {
     &:nth-child(#{$i}) {
@@ -17,11 +19,13 @@
   }
 }
 
+// Landing onload
 @mixin bubble-1-desktop {
   animation: 3s ease 1 bubble-one;
 }
 
 
+// Landing onload
 @keyframes bubble-one {
   0% {
     opacity: 0;
@@ -31,6 +35,7 @@
   }
 }
 
+// Landing onload
 @keyframes pulse-desktop {
   0% {
     opacity: 1;
@@ -56,6 +61,7 @@
   }
 }
 
+// Landing onload
 @keyframes pulse {
   0% {
     opacity: 0.5;
@@ -68,6 +74,24 @@
     background-color: $pink;
     color:#fff;
     display:none;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Page onload
+@mixin fade-load-mixin {
+  animation: fade-load 500ms ease-in 1;
+}
+
+// PAge onload
+@keyframes fade-load {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;

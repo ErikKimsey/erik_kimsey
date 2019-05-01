@@ -1,5 +1,7 @@
 @import '../__styles/responsive.scss';
 @import '../__styles/globals.scss';
+@import '../__styles/mixins.scss';
+
 $hover-color: #fcfa85;
 
 .about-container {
@@ -7,6 +9,7 @@ $hover-color: #fcfa85;
   width: 100%;
   overflow-y: scroll;
   margin-left: 140px;
+  @include fade-load-mixin;
 
   .fas {
     margin: 16px 33px -40px 600px;

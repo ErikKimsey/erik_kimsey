@@ -1,6 +1,7 @@
 
 @import '../__styles/responsive.scss';
 @import '../__styles/globals.scss';
+@import '../__styles/mixins.scss';
 
 $hover-color: #fcfa85;
 
@@ -16,6 +17,7 @@ $hover-color: #fcfa85;
   z-index: 12;
   transition: opacity 1s; 
   color: #fff;
+  @include fade-load-mixin;
   &:hover {
     opacity: 1;
   }
@@ -23,6 +25,7 @@ $hover-color: #fcfa85;
   .navbar-toggle {
     display:none;
   }
+
   ul {
     list-style: none;
     .fas {
