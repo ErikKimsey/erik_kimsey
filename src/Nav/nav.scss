@@ -15,7 +15,7 @@ $hover-color: #fcfa85;
   left:30px;
   top:123px;
   z-index: 12;
-  transition: opacity 1s; 
+  transition: opacity 50ms; 
   color: #fff;
   @include fade-load-mixin;
   &:hover {

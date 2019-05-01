@@ -11,8 +11,8 @@ class Contact extends Component {
   render(){
     return (
       <div className="contact-container">
-        <div className="name contact-item">{CONTACT_DATA.name}</div>
-        <div className="title contact-item">{CONTACT_DATA.role}</div>
+        {/* <div className="name contact-item">{CONTACT_DATA.name}</div>
+        <div className="title contact-item">{CONTACT_DATA.role}</div> */}
         <div className="email-address contact-item" id="email-address">{CONTACT_DATA.email}</div>
       </div>
     )
