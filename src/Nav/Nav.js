@@ -54,9 +54,9 @@ class Nav extends Component {
               <i className="fas fa-code fa-1x" title="Work" onMouseOver={this.handleHover} onMouseLeave={this.handleLeave}></i>
               </NavLink>
             </li>
-            {/* <li onClick={this.handleToggle}>
-              <NavLink activeStyle={activeStyles} title="Playground" className="nav-link" to="/playground"><i className="fas fa-code fa-1x"></i></NavLink>
-            </li> */}
+            <li onClick={this.handleToggle}>
+              <NavLink activeStyle={activeStyles} title="Playground" className="nav-link" to="/playground"><i className="fas fa-flask fa-1x"></i></NavLink>
+            </li>
             <li onClick={this.handleToggle}>
               <NavLink activeStyle={activeStyles} 
               className="nav-link" to="/contact">

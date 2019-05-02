@@ -4,4 +4,17 @@
 
 .playground-container {
   width: 100%;
+  height: calc(100vh - 320px);
+  padding: 100px;
+  padding-top: 100px;
+  margin-left: 140px;
+  display: grid;
+  grid-template-columns: repeat(10, 5fr);
+  overflow-y: scroll;
+  
+  .data-point {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
 }

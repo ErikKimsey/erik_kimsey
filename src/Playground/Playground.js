@@ -14,16 +14,31 @@ const WEATHER_URL = `http://api.openweathermap.org/data/2.5/forecast?id=4763237&
 
 
 export default class Playground extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      data: null,
+      hourlyList: [],
+    }
+  }
 
   componentDidMount() {
     axios.get(WEATHER_URL)
     .then((res)=>{
-      console.log(res.data);
+      let data = res.data;
+      console.log(data.list);
+      
+      this.setState({data: data, hourlyList: data.list});
     })
     .catch((err)=>{
       console.log(err);
     })
   }
+
+  componentDidUpdate(prevProps, prevState) {
+    
+  }
+  
   
 
   drawGraph = () => {
@@ -32,9 +47,18 @@ export default class Playground extends Component {
 
   render() {
     return (
-      <svg className="playground-container">
-        
-      </svg>
+      <div className="playground-container">
+        {
+          this.state.hourlyList.map((e)=>{
+            console.log(e)
+            return (
+              <div className="data-point">
+                {e.main.temp}
+              </div>
+              )
+           })
+        }
+      </div>
     )
   }
 }
