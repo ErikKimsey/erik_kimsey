@@ -12,9 +12,11 @@
   grid-template-columns: repeat(10, 5fr);
   overflow-y: scroll;
   
-  .data-point {
-    margin: 0;
-    padding: 0;
-    width: auto;
+  g {
+    .data-point {
+      margin: 0;
+      padding: 0;
+      width: auto;
+    }
   }
 }
