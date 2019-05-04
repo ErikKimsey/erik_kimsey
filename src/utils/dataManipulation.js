@@ -8,6 +8,4 @@ export const clean_data = (data) => {
   }); 
 }
 
-const createNuData = () => {
-  
-}
+const createNuData = () => {};
