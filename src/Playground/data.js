@@ -58,51 +58,51 @@ export const PLAYGROUND_DATA = [
     children: [
       {
         label:'C',
-        value: 'C'
+        value: 261.63
       },
       {
         label:'C#',
-        value: 'C#'
+        value: 277.18
       },
       {
         label:'D',
-        value: 'D'
+        value: 293.66
       },
       {
         label:'D#',
-        value: 'D#'
+        value: 311.13
       },
       {
         label:'E',
-        value: 'E'
+        value: 329.63
       },
       {
         label:'F',
-        value: 'F'
+        value: 349.23
       },
       {
         label:'F#',
-        value: 'F#'
+        value: 369.99
       },
       {
         label:'G',
-        value: 'G'
+        value: 392.00
       },
       {
         label:'G#',
-        value: 'G#'
+        value: 415.30
       },
       {
         label:'A',
-        value: 'A'
+        value: 440.00
       },
       {
         label:'A#',
-        value: 'A#'
+        value: 466.16
       },
       {
         label:'B',
-        value: 'B'
+        value: 493.88
       },
     ]
   },
