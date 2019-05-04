@@ -39,21 +39,70 @@ const PLAYGROUND_DATA = [
         ]
       },
       {
-        label: 'semitones',
+        label: 'octave',
         children: [
           {
-            label:'play',
-            value: 'play'
+            label:'increase',
+            value: '1'
           },
           {
-            label:'stop',
-            value: 'stop'
-          },
-          {
-            label:'pause',
-            value: 'pause'
+            label:'decrease',
+            value: '1'
           },
         ]
+      },
+    ]
+  },
+  {
+    label: 'semitones',
+    children: [
+      {
+        label:'C',
+        value: 'C'
+      },
+      {
+        label:'C#',
+        value: 'C#'
+      },
+      {
+        label:'D',
+        value: 'D'
+      },
+      {
+        label:'D#',
+        value: 'D#'
+      },
+      {
+        label:'E',
+        value: 'E'
+      },
+      {
+        label:'F',
+        value: 'F'
+      },
+      {
+        label:'F#',
+        value: 'F#'
+      },
+      {
+        label:'G',
+        value: 'G'
+      },
+      {
+        label:'G#',
+        value: 'G#'
+      },
+      {
+        label:'A',
+        value: 'A'
+      },
+      {
+        label:'A#',
+        value: 'A#'
+      },
+      {
+        label:'B',
+        value: 'B'
       },
     ]
   },
