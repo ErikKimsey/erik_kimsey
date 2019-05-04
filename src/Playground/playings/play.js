@@ -9,16 +9,28 @@ export const draw = (data, container, clientDim) => {
     _data = checkLocalStorageData('data');
     console.log(_data);
     let cleanedData = clean_data(_data.list)
-    // console.log(cleanedData);
+    console.log(cleanedData);
+
+    let hData = d3.stratify()
+      .id((d)=>{
+        console.log(d.main.temp);
+        
+        return d.main.temp;
+      })
+      .parentId((d)=>{
+        console.log(d.dt);
+        
+        return d.dt;
+      })(cleanedData);
+
+    console.log(hData);
     
-    // let hData = d3.stratify()(cleanedData);
     // let hData = d3.stratify()
     // .id( (d) => { return d.dt; }) // return the id instead of the name
     // .parentId(function (d) { return d.temp })
     // (cleanedData);
     // console.log(hData);
     // console.log(hData);
-    // let vRoot = d3.hierarchy(hData).sum(d => d.temp);
     // let packedLayout = d3.pack(vRoot);
 
   } else if (data.length != 0) {
