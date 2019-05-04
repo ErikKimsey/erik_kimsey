@@ -1,6 +1,6 @@
 
 
-const PLAYGROUND_DATA = [
+export const PLAYGROUND_DATA = [
   {
     label: 'controls',
     children: [
