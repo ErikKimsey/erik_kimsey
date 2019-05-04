@@ -8,24 +8,34 @@ export const draw = (data, container, clientDim) => {
   if(checkLocalStorageData('data')){
     _data = checkLocalStorageData('data');
     console.log(_data);
+    let cleanedData = clean_data(_data.list)
+    // console.log(cleanedData);
     
-  }
-  
-  if(data.length != 0) {
-    let cleanedData = clean_data(data);
-    // let hData = {children: cleanedData};
     // let hData = d3.stratify()(cleanedData);
+    // let hData = d3.stratify()
+    // .id( (d) => { return d.dt; }) // return the id instead of the name
+    // .parentId(function (d) { return d.temp })
+    // (cleanedData);
+    // console.log(hData);
+    // console.log(hData);
     // let vRoot = d3.hierarchy(hData).sum(d => d.temp);
     // let packedLayout = d3.pack(vRoot);
-    console.log(cleanedData);
 
+  } else if (data.length != 0) {
+    console.log(data);
+    
+    let cleanedData = clean_data(data);
+    console.log(cleanedData);
+    // let hData = d3.stratify()(cleanedData);
+    // console.log(hData);
+    // let vRoot = d3.hierarchy(hData).sum(d => d.temp);
+    // let packedLayout = d3.pack(vRoot);
+  }
+  
     // let body = d3.select(container).append('svg')
     //   .attr('w', w)
     //   .attr('h', h)
     //   .style('fill', 'pink');
-
-  }
-  
 
 }
 
