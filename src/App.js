@@ -12,6 +12,7 @@ import LilExtra from './Lil_Extra/LIL_EXTRA';
 import detectOrientation, { orientationListener } from './utils/detectOrientation';
 import Landscape from './LANDSCAPE/Landscape';
 
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -37,7 +38,7 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route path="/about" component={About}/>
             <Route path="/work" component={Work}/>
-            <Route path="/playground" component={Playground}/>
+            {/* <Route path="/playground" component={Playground}/> */}
             <Route path="/contact" component={Contact}/>
             <Route path="/landscape" component={Landscape}/>
 
