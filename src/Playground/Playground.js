@@ -3,6 +3,8 @@ import { Route, Link } from 'react-router-dom';
 import axios from 'axios';
 import './playground.scss';
 import { draw } from './playings/play';
+import { setLocalStorageData, checkLocalStorageData } from '../utils/localStorageUtils';
+import { clean_data } from '../utils/dataManipulation';
 
 const HBURG_COORDS = {
   lat: 38.44957,
@@ -30,14 +32,20 @@ export default class Playground extends Component {
 
   componentDidMount() {
     let data = null;
-    axios.get(WEATHER_URL)
-    .then((res)=>{
-      data = res.data;
-      this.setState({data: data, hourlyList: data.list});
-    })
-    .catch((err)=>{
-      console.log(err);
-    })
+    if(checkLocalStorageData('data') == null){
+      axios.get(WEATHER_URL)
+      .then((res)=>{
+        data = res.data;
+        this.setState({data: data, hourlyList: data.list});
+        setLocalStorageData(data);
+        console.log('made a call');
+        
+      })
+      .catch((err)=>{
+        console.log(err);
+      })
+    }
+    console.log('did NOT make a call');
     let dimensCopy = Object.assign({}, this.state.containerDimens);
     dimensCopy.w = this.container.clientWidth;
     dimensCopy.h = window.innerHeight-320;
