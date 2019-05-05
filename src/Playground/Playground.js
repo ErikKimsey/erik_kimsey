@@ -41,15 +41,9 @@ export default class Playground extends Component {
   render() {
     return (
       <div className="playground-container" ref={(container) => this.container = container}>
-        {/* {
-          this.state.hourlyList.map((e)=>{
-            return (
-              <div className="data-point" key={e.dt_txt}>
-                {e.main.temp}
-              </div>
-              )
-           })
-        } */}
+        <svg>
+          <g></g>
+        </svg>
       </div>
     )
   }

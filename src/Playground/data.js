@@ -1,132 +1,124 @@
-export const PLAYGROUND_DATA = [
+export const PLAYGROUND_DATA = 
   {
-    label: 'controls',
-    level: 1,
-    children: [
+    'level':1,
+    'children': [
       {
-        label: 'volume',
-        level:2,
-        children: [
+        'level':2,
+        'children': [
           {
-            label:'increase',
+            'label':'increase',
             value: 1,
-            level:3,
+            'level':3,
           },
           {
-            label:'decrease',
+            'label':'decrease',
             value: 1,
-            level:3,
+            'level':3,
           },
           {
-            label:'mute',
+            'label':'mute',
             value: 0,
-            level:3,
+            'level':3,
           }
         ]
       },
       {
-        label: 'playback',
-        level:2,
-        children: [
+        'level':2,
+        'children': [
           {
-            label:'play',
+            'label':'play',
             value: 'play',
-            level:3,
+            'level':3,
           },
           {
-            label:'stop',
+            'label':'stop',
             value: 'stop',
-            level:3,
+            'level':3,
           },
           {
-            label:'pause',
+            'label':'pause',
             value: 'pause',
-            level:3,
+            'level':3,
           },
         ]
       },
       {
-        label: 'octave',
-        level:2,
-        children: [
+        'level':2,
+        'children': [
           {
-            label:'increase',
+            'label':'increase',
             value: '1',
-            level:3,
+            'level':3,
           },
           {
-            label:'decrease',
+            'label':'decrease',
             value: '1',
-            level:3,
+            'level':3,
           },
         ]
       },
-    ]
-  },
-  {
-    label: 'semitones',
-    level:1,
-    children: [
+    ],
+    'level':1,
+    'children': [
       {
-        label:'C',
+        'label':'C',
         value: 261.63,
-        level:2,
+        'level':2,
       },
       {
-        label:'C#',
+        'label':'C#',
         value: 277.18,
-        level:2,
+        'level':2,
       },
       {
-        label:'D',
+        'label':'D',
         value: 293.66,
-        level:2,
+        'level':2,
       },
       {
-        label:'D#',
+        'label':'D#',
         value: 311.13,
-        level:2,
+        'level':2,
       },
       {
-        label:'E',
+        'label':'E',
         value: 329.63,
-        level:2,
+        'level':2,
       },
       {
-        label:'F',
+        'label':'F',
         value: 349.23,
-        level:2,
+        'level':2,
       },
       {
-        label:'F#',
+        'label':'F#',
         value: 369.99,
-        level:2,
+        'level':2,
       },
       {
-        label:'G',
+        'label':'G',
         value: 392.00,
-        level:2,
+        'level':2,
       },
       {
-        label:'G#',
+        'label':'G#',
         value: 415.30,
-        level:2,
+        'level':2,
       },
       {
-        label:'A',
+        'label':'A',
         value: 440.00,
-        level:2,
+        'level':2,
       },
       {
-        label:'A#',
+        'label':'A#',
         value: 466.16,
-        level:2,
+        'level':2,
       },
       {
-        label:'B',
+        'label':'B',
         value: 493.88,
-        level:2,
+        'level':2,
       },
     ]
-  }
-]
+  };
