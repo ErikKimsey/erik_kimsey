@@ -3,8 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import axios from 'axios';
 import './playground.scss';
 import { draw } from './playings/play';
-import { setLocalStorageData, checkLocalStorageData } from '../utils/localStorageUtils';
-import { clean_data } from '../utils/dataManipulation';
+import { PLAYGROUND_DATA } from './data';
 
 
 export default class Playground extends Component {
@@ -12,7 +11,6 @@ export default class Playground extends Component {
     super(props);
     this.state = {
       data: null,
-      hourlyList: [],
       containerDimens: {
         h: null,
         w: null,
@@ -27,16 +25,17 @@ export default class Playground extends Component {
     dimensCopy.w = this.container.clientWidth;
     dimensCopy.h = window.innerHeight-320;
     this.setState({
-      containerDimens: dimensCopy
+      containerDimens: dimensCopy,
+      data: PLAYGROUND_DATA
     });
   }
 
   componentDidUpdate(prevProps, prevState) {
-    this.drawGraph(this.state.hourlyList, this.state.containerDimens);
+    this.drawGraph(PLAYGROUND_DATA, this.state.containerDimens);
   }
   
-  drawGraph = (list, dimens) => {
-    draw(list, this.container, dimens);
+  drawGraph = (data, dimens) => {
+    draw(data, this.container, dimens);
   }
   
   render() {
