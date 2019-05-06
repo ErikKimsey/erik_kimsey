@@ -11,7 +11,7 @@ export const draw = (data, container, clientDim) => {
   root.sum((d) => {
     return d.level;
   });
-  
+
   let cont= d3.select(container).select('svg g');
 
   let circles = cont.selectAll('circle').data(root.descendants()).enter().append('circle')
@@ -25,8 +25,6 @@ export const draw = (data, container, clientDim) => {
       return d.r;
     })
     .style('opacity',0.2);
-
-  console.log(circles);
 }
 
 
