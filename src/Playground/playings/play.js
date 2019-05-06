@@ -6,11 +6,13 @@ import { clean_data } from '../../utils/dataManipulation';
 export const draw = (data, container, clientDim) => {
   let w = clientDim.w, h = clientDim.h;
 
-  let layout = d3.pack().size([w,h]).padding(3);
+  let layout = d3.pack().size([w,h]);
   let root = d3.hierarchy(data);
   root.sum((d) => {
     return d.level;
   });
+
+  layout(root);
 
   let cont= d3.select(container).select('svg g');
 
@@ -25,6 +27,8 @@ export const draw = (data, container, clientDim) => {
       return d.r;
     })
     .style('opacity',0.2);
+
+
 }
 
 

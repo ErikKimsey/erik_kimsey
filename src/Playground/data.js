@@ -1,6 +1,7 @@
 export const PLAYGROUND_DATA = 
   {
-    'level':1,
+    
+    // 'level':1,
     'children': [
       {
         'level':2,
@@ -58,7 +59,7 @@ export const PLAYGROUND_DATA =
         ]
       },
     ],
-    'level':1,
+    // 'level':1,
     'children': [
       {
         'label':'C',
