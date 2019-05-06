@@ -1,71 +1,71 @@
 export const PLAYGROUND_DATA = {
 	level: 1,
 	children: [
-    {
-      level: 1,
-      children: [
-        {
-          label: 'C',
-          value: 261.63,
-          level: 2
-        },
-        {
-          label: 'C#',
-          value: 277.18,
-          level: 2
-        },
-        {
-          label: 'D',
-          value: 293.66,
-          level: 2
-        },
-        {
-          label: 'D#',
-          value: 311.13,
-          level: 2
-        },
-        {
-          label: 'E',
-          value: 329.63,
-          level: 2
-        },
-        {
-          label: 'F',
-          value: 349.23,
-          level: 2
-        },
-        {
-          label: 'F#',
-          value: 369.99,
-          level: 2
-        },
-        {
-          label: 'G',
-          value: 392.0,
-          level: 2
-        },
-        {
-          label: 'G#',
-          value: 415.3,
-          level: 2
-        },
-        {
-          label: 'A',
-          value: 440.0,
-          level: 2
-        },
-        {
-          label: 'A#',
-          value: 466.16,
-          level: 2
-        },
-        {
-          label: 'B',
-          value: 493.88,
-          level: 2
-        }
-      ],
-    },
+		{
+			level: 2,
+			children: [
+				{
+					label: 'C',
+					value: 261.63,
+					level: 5
+				},
+				{
+					label: 'C#',
+					value: 277.18,
+					level: 5
+				},
+				{
+					label: 'D',
+					value: 293.66,
+					level: 5
+				},
+				{
+					label: 'D#',
+					value: 311.13,
+					level: 5
+				},
+				{
+					label: 'E',
+					value: 329.63,
+					level: 5
+				},
+				{
+					label: 'F',
+					value: 349.23,
+					level: 5
+				},
+				{
+					label: 'F#',
+					value: 369.99,
+					level: 5
+				},
+				{
+					label: 'G',
+					value: 392.0,
+					level: 5
+				},
+				{
+					label: 'G#',
+					value: 415.3,
+					level: 5
+				},
+				{
+					label: 'A',
+					value: 440.0,
+					level: 5
+				},
+				{
+					label: 'A#',
+					value: 466.16,
+					level: 5
+				},
+				{
+					label: 'B',
+					value: 493.88,
+					level: 5
+				}
+			]
+		},
 		{
 			level: 2,
 			children: [
@@ -121,8 +121,8 @@ export const PLAYGROUND_DATA = {
 				}
 			]
 		}
-  ],
-}
+	]
+};
 /**
  * {
       "name": "B1",

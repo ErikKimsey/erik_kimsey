@@ -8,7 +8,7 @@ export const draw = (data, container, clientDim) => {
 		h = clientDim.h;
 	console.log(`h: ${h}, w: ${w}`);
 
-	let layout = d3.pack().size([ w, h ]);
+	let layout = d3.pack().size([ w / 2, h ]);
 	let root = d3.hierarchy(data);
 	root.sum((d) => {
 		console.log(d);
