@@ -123,29 +123,7 @@ export const PLAYGROUND_DATA = {
 		}
 	]
 };
-/**
- * {
-      "name": "B1",
-      "children": [
-        {
-          "name": "C1",
-          "value": 100
-        },
-        {
-          "name": "C2",
-          "value": 300
-        },
-        {
-          "name": "C3",
-          "value": 200
-        }
-      ]
-    },
-    {
-      "name": "B2",
-      "value": 200
-    }
- */
+
 
 export const D2 = {
 	level: 1,

@@ -40,9 +40,7 @@ export default class Playground extends Component {
 	render() {
 		return (
 			<div className="playground-container" ref={(container) => (this.container = container)}>
-				<svg>
-					<g />
-				</svg>
+				<svg />
 			</div>
 		);
 	}

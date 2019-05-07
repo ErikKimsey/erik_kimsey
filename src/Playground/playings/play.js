@@ -8,11 +8,9 @@ export const draw = (data, container, clientDim) => {
 		h = clientDim.h;
 	// console.log(`h: ${h}, w: ${w}`);
 
-	let layout = d3.pack().size([ w / 2, h ]).padding(10);
+	let layout = d3.pack().size([ w / 3, h / 3 ]);
 	let root = d3.hierarchy(data);
 	root.sum((d) => {
-		// console.log(d);
-
 		return d.level;
 	});
 
@@ -28,21 +26,11 @@ export const draw = (data, container, clientDim) => {
 
 	let simulation = d3
 		.forceSimulation()
-		.force(
-			'collide',
-			d3
-				.forceCollide((d) => {
-					return d.r + 8;
-				})
-				.iterations(16)
-		)
-		.force('charge', d3.forceManyBody())
-		.force('x', d3.forceX().x(w / 2))
-		.force('y', d3.forceY().y(h / 2));
+		.force('center', d3.forceCenter().x(w / 3).y(h / 3))
+		.force('collide', d3.forceCollide().strength(0.01).radius(30).iterations(1))
+		.force('charge', d3.forceManyBody().strength(0.5));
 
-	layout(root);
-
-	let cont = d3.select(container).select('svg g');
+	let cont = d3.select(container).select('svg').append('g');
 
 	let circles = cont.selectAll('circle').data(root.descendants());
 
@@ -50,17 +38,30 @@ export const draw = (data, container, clientDim) => {
 		.enter()
 		.append('circle')
 		.attr('cx', (d) => {
-			return d.x;
+			return w / 2;
 		})
 		.attr('cy', (d) => {
-			return d.y;
+			return h;
 		})
 		.attr('r', (d) => {
-			console.log(d.r);
+			console.log(d.value);
 
-			return d.r;
+			return d.value * 5;
 		})
-		.style('opacity', 0.1);
+		.style('opacity', 0.3);
 
-	circles.merge(circlesEnter);
+	console.log(circlesEnter);
+
+	circles = circles.merge(circlesEnter);
+
+	simulation.nodes(root.descendants()).on('tick', (d) => {
+		circles
+			.attr('cx', (d) => {
+				return d.x;
+			})
+			.attr('cy', (d) => {
+				return d.y;
+			});
+	});
+	layout(root);
 };
