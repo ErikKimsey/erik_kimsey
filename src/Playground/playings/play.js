@@ -6,7 +6,6 @@ import { clean_data } from '../../utils/dataManipulation';
 export const draw = (data, container, clientDim) => {
 	let w = clientDim.w,
 		h = clientDim.h;
-	// console.log(`h: ${h}, w: ${w}`);
 
 	let layout = d3.pack().size([ w / 3, h / 3 ]);
 	let root = d3.hierarchy(data);
@@ -14,21 +13,15 @@ export const draw = (data, container, clientDim) => {
 		return d.level;
 	});
 
-	/**
-   *     var simulation = d3.forceSimulation()
-            .force("collide",d3.forceCollide( function(d){
-              	return d.r + 8 }).iterations(16) 
-            )
-            .force("charge", d3.forceManyBody())
-            .force("y", d3.forceY().y(h / 2))
-            .force("x", d3.forceX().x(w / 2))
-   */
-
 	let simulation = d3
 		.forceSimulation()
 		.force('center', d3.forceCenter().x(w / 3).y(h / 3))
-		.force('collide', d3.forceCollide().strength(0.01).radius(30).iterations(1))
+		.force('collide', d3.forceCollide().strength(0.01).radius(25).iterations(12))
 		.force('charge', d3.forceManyBody().strength(0.5));
+
+	let linearScale = d3.scaleLinear().domain([ 0, 20 ]).range([ 0, 500 ]);
+
+	let sqrtScale = d3.scaleSqrt().domain([ 0, 100 ]).range([ 0, 50 ]);
 
 	let cont = d3.select(container).select('svg').append('g');
 
@@ -38,26 +31,21 @@ export const draw = (data, container, clientDim) => {
 		.enter()
 		.append('circle')
 		.attr('cx', (d) => {
-			return w / 2;
+			return linearScale(d.value * 5);
 		})
 		.attr('cy', (d) => {
-			return h;
+			return linearScale(d.value);
 		})
 		.attr('r', (d) => {
-			console.log(d.value);
-
-			return d.value * 5;
+			return sqrtScale(d.value * 6);
 		})
-		.style('opacity', 0.3);
-
-	console.log(circlesEnter);
-
-	circles = circles.merge(circlesEnter);
+		.style('opacity', 1)
+		.call(drag(simulation));
 
 	simulation.nodes(root.descendants()).on('tick', (d) => {
-		circles
+		circlesEnter
 			.attr('cx', (d) => {
-				return d.x;
+				return d.x * 0.8;
 			})
 			.attr('cy', (d) => {
 				return d.y;
@@ -65,3 +53,33 @@ export const draw = (data, container, clientDim) => {
 	});
 	layout(root);
 };
+
+const drag = (simulation) => {
+	function dragstarted(d) {
+		if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+		d.fx = d.x;
+		d.fy = d.y;
+	}
+
+	function dragged(d) {
+		d.fx = d3.event.x;
+		d.fy = d3.event.y;
+	}
+
+	function dragended(d) {
+		if (!d3.event.active) simulation.alphaTarget(0);
+		d.fx = null;
+		d.fy = null;
+	}
+
+	return d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
+};
+
+/**
+ * d3.layout.pack()
+    .sort(null)
+    .size([width, height])
+    .children(function(d) { return d.values; })
+    .value(function(d) { return d.radius * d.radius; })
+    .nodes({values: nested});
+ */
