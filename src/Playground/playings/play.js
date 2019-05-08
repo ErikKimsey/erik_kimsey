@@ -39,7 +39,10 @@ export const draw = (data, container, clientDim) => {
 		.attr('r', (d) => {
 			return sqrtScale(d.value * 6);
 		})
-		.style('opacity', 1)
+		.style('opacity', 0.5)
+		.attr('fill', () => {
+			return makeColor();
+		})
 		.call(drag(simulation));
 
 	simulation.nodes(root.descendants()).on('tick', (d) => {
@@ -73,6 +76,17 @@ const drag = (simulation) => {
 	}
 
 	return d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
+};
+
+const alphaHexVals = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f' ];
+
+const makeColor = () => {
+	let color = '#';
+	for (let i = 0; i < 6; i++) {
+		color += alphaHexVals[Math.floor(Math.random() * alphaHexVals.length)];
+	}
+	console.log(typeof color);
+	return color;
 };
 
 /**
