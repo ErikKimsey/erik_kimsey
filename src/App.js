@@ -12,44 +12,42 @@ import LilExtra from './Lil_Extra/LIL_EXTRA';
 import detectOrientation, { orientationListener } from './utils/detectOrientation';
 import Landscape from './LANDSCAPE/Landscape';
 
-
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      toggled: false,
-      props: props,
-    }
-    // detectOrientation();
-  }
-  
-  componentDidMount(){
-    // orientationListener(this.props);
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			toggled: false,
+			props: props
+		};
+		// detectOrientation();
+	}
 
-  handleToggle = () => {
-    this.setState({toggle: !this.state.toggled});
-  }
+	componentDidMount() {
+		// orientationListener(this.props);
+	}
 
-  render() {
-    return (
-      <div className="App">
-          <div className="routes-container">
-            <Route exact path="/" component={Landing} />
-            <Route path="/about" component={About}/>
-            <Route path="/work" component={Work}/>
-            {/* <Route path="/playground" component={Playground}/> */}
-            <Route path="/contact" component={Contact}/>
-            <Route path="/landscape" component={Landscape}/>
+	handleToggle = () => {
+		this.setState({ toggle: !this.state.toggled });
+	};
 
-          </div>
-          <div className="lil-extra">
-            <LilExtra />
-          </div>
-        <Nav isActive={this.state.toggled}/>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div className="App">
+				<div className="routes-container">
+					<Route exact path="/" component={Landing} />
+					<Route path="/about" component={About} />
+					<Route path="/work" component={Work} />
+					<Route path="/playground" component={Playground} />
+					<Route path="/contact" component={Contact} />
+					<Route path="/landscape" component={Landscape} />
+				</div>
+				<div className="lil-extra">
+					<LilExtra />
+				</div>
+				<Nav isActive={this.state.toggled} />
+			</div>
+		);
+	}
 }
 
 export default App;

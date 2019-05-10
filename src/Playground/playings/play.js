@@ -43,7 +43,15 @@ export const draw = (data, container, clientDim) => {
 		.attr('fill', () => {
 			return makeColor();
 		})
-		.call(drag(simulation));
+		.call(drag(simulation))
+		.on('mouseover', (d) => {
+			// console.log('1 >>> ', d3.select(d).attr('r', 0));
+			console.log('2 >>> ', d3.select(d)._groups[0]);
+			console.log('3 >>>>', d3.select(d)._groups[0][0]);
+			d3.selectAll(d).attr('r', 200);
+		});
+	// .on('mouseover', mouseOverHandler);
+	// .on('mouseout', mouseOutHandler);
 
 	simulation.nodes(root.descendants()).on('tick', (d) => {
 		circlesEnter
@@ -78,6 +86,15 @@ const drag = (simulation) => {
 	return d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
 };
 
+const mouseOverHandler = (e) => {
+	console.log(this);
+	// console.log(d3.select(e).attr('r'));
+	// e.r = e.r + 10;
+};
+const mouseOutHandler = (e) => {
+	// let radius = e.r - 5;
+};
+
 const alphaHexVals = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f' ];
 
 const makeColor = () => {
@@ -85,7 +102,6 @@ const makeColor = () => {
 	for (let i = 0; i < 6; i++) {
 		color += alphaHexVals[Math.floor(Math.random() * alphaHexVals.length)];
 	}
-	console.log(typeof color);
 	return color;
 };
 
