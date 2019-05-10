@@ -45,7 +45,7 @@ export const draw = (data, container, clientDim) => {
 		})
 		.call(drag(simulation))
 		.on('mouseover', (d) => {
-			// console.log('1 >>> ', d3.select(d).attr('r', 0));
+			console.log('1 >>> ', d3.selectAll(d).attr);
 			console.log('2 >>> ', d3.select(d)._groups[0]);
 			console.log('3 >>>>', d3.select(d)._groups[0][0]);
 			d3.selectAll(d).attr('r', 200);
