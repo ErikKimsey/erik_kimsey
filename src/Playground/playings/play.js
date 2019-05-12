@@ -68,7 +68,6 @@ const mouseOverHandler = (e) => {
 };
 
 const mouseOutHandler = (e, sqr) => {
-	// let elemR = d3.select(e);
 	d3.select(e).transition().attr('r', (d) => {
 		return sqr(d.value * 6);
 	});
