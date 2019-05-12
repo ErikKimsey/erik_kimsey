@@ -67,7 +67,7 @@ class Nav extends Component {
 								/>
 							</NavLink>
 						</li>
-						<li onClick={this.handleToggle}>
+						{/* <li onClick={this.handleToggle}>
 							<NavLink
 								activeStyle={activeStyles}
 								title="Playground"
@@ -76,7 +76,7 @@ class Nav extends Component {
 							>
 								<i className="fas fa-flask fa-1x" />
 							</NavLink>
-						</li>
+						</li> */}
 						<li onClick={this.handleToggle}>
 							<NavLink activeStyle={activeStyles} className="nav-link" to="/contact">
 								<i className="fas fa-phone fa-1x" title="Contact" onMouseOver={this.handleHover} />
