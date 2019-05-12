@@ -44,14 +44,12 @@ export const draw = (data, container, clientDim) => {
 			return makeColor();
 		})
 		.call(drag(simulation))
-		.on('mouseover', (d) => {
-			console.log('1 >>> ', d3.selectAll(d).attr);
-			console.log('2 >>> ', d3.select(d)._groups[0]);
-			console.log('3 >>>>', d3.select(d)._groups[0][0]);
-			d3.selectAll(d).attr('r', 200);
+		.on('mouseover', (e, i, node) => {
+			mouseOverHandler(node[i]);
+		})
+		.on('mouseout', (e, i, node) => {
+			mouseOutHandler(node[i], sqrtScale);
 		});
-	// .on('mouseover', mouseOverHandler);
-	// .on('mouseout', mouseOutHandler);
 
 	simulation.nodes(root.descendants()).on('tick', (d) => {
 		circlesEnter
@@ -63,6 +61,17 @@ export const draw = (data, container, clientDim) => {
 			});
 	});
 	layout(root);
+};
+
+const mouseOverHandler = (e) => {
+	d3.select(e).transition().attr('r', d3.select(e).attr('r') * 1.3);
+};
+
+const mouseOutHandler = (e, sqr) => {
+	// let elemR = d3.select(e);
+	d3.select(e).transition().attr('r', (d) => {
+		return sqr(d.value * 6);
+	});
 };
 
 const drag = (simulation) => {
@@ -86,15 +95,6 @@ const drag = (simulation) => {
 	return d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended);
 };
 
-const mouseOverHandler = (e) => {
-	console.log(this);
-	// console.log(d3.select(e).attr('r'));
-	// e.r = e.r + 10;
-};
-const mouseOutHandler = (e) => {
-	// let radius = e.r - 5;
-};
-
 const alphaHexVals = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f' ];
 
 const makeColor = () => {
@@ -104,12 +104,3 @@ const makeColor = () => {
 	}
 	return color;
 };
-
-/**
- * d3.layout.pack()
-    .sort(null)
-    .size([width, height])
-    .children(function(d) { return d.values; })
-    .value(function(d) { return d.radius * d.radius; })
-    .nodes({values: nested});
- */
