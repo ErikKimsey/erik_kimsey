@@ -11,6 +11,15 @@ $hover-color: #fcfa85;
   margin-left: 140px;
   @include fade-load-mixin;
 
+  .background-text {
+    z-index: -1;
+    position: fixed;
+    font-size: 12em;
+    columns: #000000;
+    opacity: 0.2;
+    bottom: 100px;
+  }
+
   .fas {
     margin: 16px 33px -40px 600px;
     transform: rotate(30deg);
@@ -119,6 +128,18 @@ $hover-color: #fcfa85;
     justify-content: space-between;
     margin: 0px 0px;
 
+    .background-text {
+      z-index: -1;
+      position: fixed;
+      font-size: 6em;
+      columns: #000000;
+      opacity: 0.2;
+      height: 130px;
+      top: 400px;
+      opacity: 0.2;
+      transform: rotate(-90deg);
+    }
+
   .fas {
     margin: 16px 33px -40px 100px;
     transform: rotate(30deg);
@@ -145,6 +166,18 @@ $hover-color: #fcfa85;
     justify-content: space-between;
     margin-left: 0px;
     height: 100vh;
+
+    .background-text {
+      z-index: -1;
+      position: fixed;
+      font-size: 4em;
+      color: #000000;
+      opacity: 0.2;
+      height: 100px;
+      left: 61px;
+      top: 286px;
+      transform: rotate(-90deg);
+    }
 
     .resume-skillset-block {
       display: flex;

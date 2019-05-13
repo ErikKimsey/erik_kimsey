@@ -39,6 +39,7 @@ class About extends Component {
   render(){
     return (
       <div className="about-container">
+      <div className="background-text">ABOUT_ME</div> 
         <Lil_Nav data={navListData}/>
         <div className="resume-skillset-block">
         {/* <i class="fas fa-syringe fa-6x"></i> */}
