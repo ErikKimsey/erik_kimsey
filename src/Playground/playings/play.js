@@ -43,7 +43,13 @@ export const draw = (data, container, clientDim) => {
 		.attr('fill', () => {
 			return makeColor();
 		})
-		.call(drag(simulation));
+		.call(drag(simulation))
+		.on('mouseover', (e, i, node) => {
+			mouseOverHandler(node[i]);
+		})
+		.on('mouseout', (e, i, node) => {
+			mouseOutHandler(node[i], sqrtScale);
+		});
 
 	simulation.nodes(root.descendants()).on('tick', (d) => {
 		circlesEnter
@@ -55,6 +61,16 @@ export const draw = (data, container, clientDim) => {
 			});
 	});
 	layout(root);
+};
+
+const mouseOverHandler = (e) => {
+	d3.select(e).transition().attr('r', d3.select(e).attr('r') * 1.3);
+};
+
+const mouseOutHandler = (e, sqr) => {
+	d3.select(e).transition().attr('r', (d) => {
+		return sqr(d.value * 6);
+	});
 };
 
 const drag = (simulation) => {
@@ -85,15 +101,5 @@ const makeColor = () => {
 	for (let i = 0; i < 6; i++) {
 		color += alphaHexVals[Math.floor(Math.random() * alphaHexVals.length)];
 	}
-	console.log(typeof color);
 	return color;
 };
-
-/**
- * d3.layout.pack()
-    .sort(null)
-    .size([width, height])
-    .children(function(d) { return d.values; })
-    .value(function(d) { return d.radius * d.radius; })
-    .nodes({values: nested});
- */
