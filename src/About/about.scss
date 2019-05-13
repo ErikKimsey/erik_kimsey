@@ -131,13 +131,14 @@ $hover-color: #fcfa85;
     .background-text {
       z-index: -1;
       position: fixed;
-      font-size: 6em;
-      columns: #000000;
+      font-size: 4em;
+      color: #000000;
       opacity: 0.2;
       height: 130px;
-      top: 400px;
+      top: 200px;
+      left: calc(100vw - 260px);
       opacity: 0.2;
-      transform: rotate(-90deg);
+      // transform: rotate(-90deg);
     }
 
   .fas {
@@ -174,8 +175,8 @@ $hover-color: #fcfa85;
       color: #000000;
       opacity: 0.2;
       height: 100px;
-      left: 61px;
-      top: 286px;
+      left: calc(100vw - 190px);
+      top: 386px;
       transform: rotate(-90deg);
     }
 
