@@ -9,7 +9,7 @@ $hover-color: #fcfa85;
   display: flex;
   position: fixed;
   width:100px;
-  opacity: 0.1;
+  opacity: 1;
   height:400px;
   margin: 50px 0px; 
   left:30px;
@@ -51,11 +51,9 @@ $hover-color: #fcfa85;
         width: 150px;
         &:hover {
           animation: 0.5s ease 0s navbuzz 1;
-          color:$hover-color;
         }
         &:click {
           animation: 0.5s ease 0s navbuzz 1;
-          color:$hover-color;
         }
       }
     }
@@ -229,7 +227,7 @@ $hover-color: #fcfa85;
     filter: blur(0);
   }
   20% {
-    filter: blur(4px);
+    filter: blur(6px);
   }
   80% {
     filter: blur(0);
