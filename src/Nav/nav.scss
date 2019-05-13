@@ -227,12 +227,10 @@ $hover-color: #fcfa85;
     filter: blur(0);
   }
   20% {
-    filter: blur(4px);
-    color:$teal;
+    filter: blur(6px);
   }
   80% {
     filter: blur(0);
-    color:$teal;
   }
   100% {
     transform: translate3d(0, 0, 0);
