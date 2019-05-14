@@ -10,6 +10,7 @@ $hover-color: #fcfa85;
   -webkit-flex-flow: row;
   flex-flow: row;
   color: white;
+  background-color: rgba(255,255,255,0.8);
   font-weight: 400;
   -webkit-justify-content: center;
   justify-content: center;
@@ -40,17 +41,11 @@ $hover-color: #fcfa85;
       background-image: url('../assets/bige_color_v1.png');
       background-size: contain;
       background-repeat: no-repeat;
-    }
-  
-    .name {}
-  
-    .role {}
-    
+    }  
   }
 
   
   @media only screen and (max-width: $xlDevice) {
-
     .text-container {
       .banner-item {
         padding: 1px;
@@ -76,7 +71,6 @@ $hover-color: #fcfa85;
         top: 10px;
         right: 20px;
         cursor: pointer; 
-        // font-size: 1em;
         color: rgba(255,255,255,0.8);
         .fa-bars{
           font-size: 2em;
@@ -84,8 +78,6 @@ $hover-color: #fcfa85;
         }
         .spin {
           background-color: $pink;
-          // width: 50px;
-          // height: 45px;
         }
       }
     }
@@ -103,18 +95,9 @@ $hover-color: #fcfa85;
         font-size: 1.6em;
         padding: 0 5px;
       }
-      // .name {
-      //   position: absolute;
-      //   top:0px;
-  
-      //   font-size: 2em;
-      //   align-self: center;
-      // }
-      // .role {
-      //   bottom:10px;
-      // }
     }
   }
+
   @media only screen and (max-width: $mdDevice) {
     display: flex;
     flex-flow: column;
