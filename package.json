@@ -2,7 +2,7 @@
   "name": "erik_kimsey",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ErikKimsey/erik_kimsey/build",
+  "homepage": "https://github.com/ErikKimsey/erik_kimsey/",
   "dependencies": {
     "axios": "^0.18.0",
     "d3": "^5.9.2",
