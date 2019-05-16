@@ -37,29 +37,34 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 25px;
+  padding: 2px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
-
-::-webkit-scrollbar-button {
-  background-color: $darkGrayish;
-}
-::-webkit-scrollbar-button {
-  background-color: $darkGrayish;
+::-webkit-scrollbar:hover {
+  // width: 40px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: none; 
+  // background: none;
+  box-shadow: inset 1px 0px 5px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $darkGrayish; 
+  background-image: url('./assets/droopy_e.png'); 
+  background-repeat: no-repeat;
+  background-size: 20px;
+  margin-left: -10px;
+  transition: transform 2000ms;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $yellow; 
+
 }
 
 code {

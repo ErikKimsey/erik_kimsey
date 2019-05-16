@@ -41,9 +41,6 @@ class App extends Component {
 					<Route path="/contact" component={Contact} />
 					<Route path="/landscape" component={Landscape} />
 				</div>
-				<div className="lil-extra">
-					<LilExtra />
-				</div>
 				<Nav isActive={this.state.toggled} />
 			</div>
 		);

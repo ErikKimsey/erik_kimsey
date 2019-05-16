@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import './about.scss';
-import { 
-  EDUCATION, 
-  PROFESSIONAL_DATA, 
-  navListData,
-  SKILLSET_OVERVIEW
-} from '../__data/data';
+import { EDUCATION, PROFESSIONAL_DATA, navListData, SKILLSET_OVERVIEW } from '../__data/data';
 import Education from './components/Education';
 import Employment from './components/Employment';
 import Lil_Nav from '../Lil_Nav/Lil_Nav';
@@ -29,43 +24,55 @@ import nodeIMG from '../assets/icons/node-dot-js.png';
 import djangoIMG from '../assets/icons/django.svg';
 import d3IMG from '../assets/icons/d3-dot-js.svg';
 
-const SVGS = [adobeIMG, reactIMG, cssIMG, jsIMG, html5IMG, sassIMG, nodeIMG, npmIMG, pythonIMG, djangoIMG, d3IMG, webpackIMG,bootstrap, illustratorIMG, photoshopIMG, graphqlIMG];
+const SVGS = [
+	adobeIMG,
+	reactIMG,
+	cssIMG,
+	jsIMG,
+	html5IMG,
+	sassIMG,
+	nodeIMG,
+	npmIMG,
+	pythonIMG,
+	djangoIMG,
+	d3IMG,
+	webpackIMG,
+	bootstrap,
+	illustratorIMG,
+	photoshopIMG,
+	graphqlIMG
+];
 
 class About extends Component {
-  constructor(props){
-    super(props);
-  }
- 
-  render(){
-    return (
-      <div className="about-container">
-        <Lil_Nav data={navListData}/>
-        <div className="resume-skillset-block">
-        {/* <i class="fas fa-syringe fa-6x"></i> */}
-          <Skillset data={SKILLSET_OVERVIEW}/>
-          <Resume />
-        </div>
-        <div className="education-block-container">
-        
-        <div className="block-label">EDUCATION</div>
-          {
-            EDUCATION.map((e,i)=>{
-              return <Education key={e} data={e}/>
-            })
-          }
-        </div>
+	constructor(props) {
+		super(props);
+	}
 
-        <div className="professional-history-block-container">
-        <div className="block-label">WORK HISTORY</div>
-          {
-            PROFESSIONAL_DATA.map((e,i)=>{
-              return <Employment key={e} data={e}/>
-            })
-          }
-        </div>
-      </div>
-    )
-  }
+	render() {
+		return (
+			<div className="about-container">
+				{/* <Lil_Nav data={navListData}/> */}
+				<div className="resume-skillset-block">
+					{/* <i class="fas fa-syringe fa-6x"></i> */}
+					<Skillset data={SKILLSET_OVERVIEW} />
+					<Resume />
+				</div>
+				<div className="education-block-container">
+					<div className="block-label">EDUCATION</div>
+					{EDUCATION.map((e, i) => {
+						return <Education key={e} data={e} />;
+					})}
+				</div>
+
+				<div className="professional-history-block-container">
+					<div className="block-label">WORK HISTORY</div>
+					{PROFESSIONAL_DATA.map((e, i) => {
+						return <Employment key={e} data={e} />;
+					})}
+				</div>
+			</div>
+		);
+	}
 }
 
 export default About;
