@@ -114,7 +114,6 @@ export const EDUCATION = [
 			'NodeJS',
 			'SQL/SQLite',
 			'CSS3/LESS/SASS',
-			'CSS3/LESS/SASS',
 			'Git/Github'
 		],
 		projects: [
