@@ -27,6 +27,7 @@ $hover-color: #fcfa85;
     width: 100%;
     display: flex;
     flex-flow: row;
+    justify-content: flex-end;
     
     .banner-item {
       font-size: 3em;
