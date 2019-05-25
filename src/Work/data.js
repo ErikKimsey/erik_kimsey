@@ -59,17 +59,17 @@ export const data = [
 		github: 'https://github.com/Lambda-School-Labs/labs-team-home'
 	},
 	{
-		name: 'Simple C Server',
+		name: 'HTTP Server (C lang)',
 		stack: 'C Language',
 		url: '',
 		github: 'https://github.com/ErikKimsey/C-Web-Server/tree/master/src'
 	},
-	{
-		name: 'Roman-Numeral Calculator ',
-		stack: 'NodeJS, HTML, JavaScript',
-		url: 'https://young-bayou-82655.herokuapp.com/',
-		github: 'https://github.com/ErikKimsey/Roman_Numeral_Calculator'
-	},
+	// {
+	// 	name: 'Roman-Numeral Calculator ',
+	// 	stack: 'NodeJS, HTML, JavaScript',
+	// 	url: 'https://young-bayou-82655.herokuapp.com/',
+	// 	github: 'https://github.com/ErikKimsey/Roman_Numeral_Calculator'
+	// },
 	{
 		name: '8-bit CPU Emulator',
 		stack: 'C Language',

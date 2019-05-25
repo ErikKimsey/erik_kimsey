@@ -1,5 +1,5 @@
 // The document contains data used to populate fields throughout the site.
-
+// Google News API key: 670f9cd6f82643a99331cc217f30f479
 export const JS_DATA = [
 	'FrontEnd Tools',
 	'JavaScript',
