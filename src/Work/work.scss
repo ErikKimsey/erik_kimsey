@@ -19,6 +19,16 @@
     height: calc(100vh - 380px);
     border:none;
     align-content: center;
+    .slick-arrow {
+      color:$grayish;
+      background-color: $lighterpink;
+      padding: 5px;
+      width: 30px;
+      height: 44px;
+      padding-top: 7px;
+      padding-left: 5px;
+      border-radius: 20px;
+    }
     .slick-dots {
       padding:0;
       padding-bottom: 5px;
@@ -77,12 +87,15 @@
     .slick-slider {
       border:none;
       align-content: center;
+      .slick-arrow {
+        color:black;
+      }
       .slick-dots {
         padding:0;
         padding-bottom: 5px;
         box-sizing: border-box;
-        background-color: none;
-        border: none;
+        // background-color: none;
+        // border: none;
         li button:before {
           color: $yellow;
           font-size: 20px;

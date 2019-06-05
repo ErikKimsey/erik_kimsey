@@ -29,6 +29,12 @@
 
 export const data = [
 	{
+		name: 'Slide right >> ',
+		stack: 'To see some of my work!',
+		url: '',
+		github: ''
+	},
+	{
 		name: 'Interactive Guilloche',
 		stack: 'Angular v4, D3.js',
 		url: 'https://www.npmjs.com/package/nls-guilloche',
