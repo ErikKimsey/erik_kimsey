@@ -2,7 +2,6 @@
 @import './__styles/globals.scss';
 
 .App {
-  // position: absolute;
   margin: 0 auto;
   height: 100vh;
   max-width: 1600px;
@@ -11,6 +10,9 @@
   flex-flow: row;
   justify-content: center;
   align-items: flex-start;
+  background-image: url('./assets/plant.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
 
   .routes-container{
     position: relative;
