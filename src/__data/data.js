@@ -16,7 +16,7 @@ export const JS_DATA = [
 
 export const SKILLSET_OVERVIEW = [
 	'JavaScript ES6/7',
-	'ReactJS / NextJS',
+	'ReactJS / NextJS / Redux',
 	'CSS3 / SASS / Less / Styled-Components',
 	'HTML5 / Canvas',
 	'Web Audio API',
