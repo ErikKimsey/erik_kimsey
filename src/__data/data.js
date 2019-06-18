@@ -19,7 +19,6 @@ export const SKILLSET_OVERVIEW = [
 	'ReactJS / NextJS',
 	'CSS3 / SASS / Less / Styled-Components',
 	'HTML5 / Canvas',
-	'GreenSock',
 	'NodeJS',
 	'SQLite',
 	'Django',
