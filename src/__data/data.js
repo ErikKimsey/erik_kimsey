@@ -19,11 +19,12 @@ export const SKILLSET_OVERVIEW = [
 	'ReactJS / NextJS',
 	'CSS3 / SASS / Less / Styled-Components',
 	'HTML5 / Canvas',
-	'NodeJS',
+	'Web Audio API',
+	'NodeJS / Express / SocketIO',
 	'SQLite',
 	'Django',
 	'GraphQL / Apollo',
-	'Python / C / C++ /'
+	'Python / C / C++'
 ];
 
 export const STYLE_DATA = [ 'Styling Tools', 'CSS3', 'SASS', 'Less', 'Styled-Components', 'GreenSock' ];
