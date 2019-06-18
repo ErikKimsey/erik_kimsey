@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './nav.scss';
 import Banner from '../Banner/Banner';
+import resumePDF from '../assets/resume/erikkimsey_software_dev_resume.pdf';
 
 const activeStyles = {
 	color: '#fcfa85'
@@ -67,16 +68,17 @@ class Nav extends Component {
 								/>
 							</NavLink>
 						</li>
-						{/* <li onClick={this.handleToggle}>
+						<li onClick={this.handleToggle}>
 							<NavLink
 								activeStyle={activeStyles}
-								title="Playground"
+								title="Resume"
 								className="nav-link"
-								to="/playground"
+								to={resumePDF}
+								target="_blank"
 							>
-								<i className="fas fa-flask fa-1x" />
+								<i className="far fa-file-pdf fa-1x" />
 							</NavLink>
-						</li> */}
+						</li>
 						<li onClick={this.handleToggle}>
 							<NavLink activeStyle={activeStyles} className="nav-link" to="/contact">
 								<i className="fas fa-phone fa-1x" title="Contact" onMouseOver={this.handleHover} />

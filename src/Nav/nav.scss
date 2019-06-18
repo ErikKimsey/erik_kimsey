@@ -28,7 +28,7 @@ $hover-color: #fcfa85;
 
   ul {
     list-style: none;
-    .fas {
+    .fas .far {
       color:#000;
     }
     li {
@@ -107,7 +107,7 @@ $hover-color: #fcfa85;
       li {
         height: 0px;
       }
-      .fas {
+      .fas, .far {
         color:#fff;
       }
     }
@@ -150,7 +150,7 @@ $hover-color: #fcfa85;
       display: flex;
       flex-flow: column;
       justify-content: center;
-      .fas {
+      .fas .far {
         color:#fff;
       }
     }
