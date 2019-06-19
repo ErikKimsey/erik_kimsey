@@ -26,13 +26,12 @@ class Nav extends Component {
 		let label = document.createElement('div');
 		label.className = 'hover-label';
 		label.innerHTML = e.target.title;
-		let nav = document.querySelector('.nav-container');
 	};
 
-	handleLeave = (e) => {
-		let nav = document.querySelector('.nav-container');
-		let item = document.querySelector(e.target.title);
-	};
+	// handleLeave = (e) => {
+	// 	let nav = document.querySelector('.nav-container');
+	// 	let item = document.querySelector(e.target.title);
+	// };
 
 	render() {
 		return (

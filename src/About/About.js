@@ -59,14 +59,14 @@ class About extends Component {
 				<div className="education-block-container">
 					<div className="block-label">EDUCATION</div>
 					{EDUCATION.map((e, i) => {
-						return <Education key={e} data={e} />;
+						return <Education key={i} data={e} />;
 					})}
 				</div>
 
 				<div className="professional-history-block-container">
 					<div className="block-label">WORK HISTORY</div>
 					{PROFESSIONAL_DATA.map((e, i) => {
-						return <Employment key={e} data={e} />;
+						return <Employment key={i} data={e} />;
 					})}
 				</div>
 			</div>

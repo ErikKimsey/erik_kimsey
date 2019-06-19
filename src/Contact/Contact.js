@@ -3,8 +3,6 @@ import './contact.scss';
 import { CONTACT_DATA } from '../__data/data';
 import droopy_e from '../assets/droopy_e.png';
 
-console.log(droopy_e);
-
 class Contact extends Component {
 	constructor(props) {
 		super(props);

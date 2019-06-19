@@ -7,9 +7,8 @@ import Landing from './Landing/Landing';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Work from './Work/Work';
-import Playground from './Playground/Playground';
 import LilExtra from './Lil_Extra/LIL_EXTRA';
-import detectOrientation, { orientationListener } from './utils/detectOrientation';
+// import detectOrientation, { orientationListener } from './utils/detectOrientation';
 import Landscape from './LANDSCAPE/Landscape';
 
 class App extends Component {
