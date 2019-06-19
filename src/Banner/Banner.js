@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './banner.scss';
 import '../Nav/Nav';
-import { Slider, Spin } from 'react-burgers';
-
-let isActive = false;
-const toggleBurger = () => {
-	isActive = !isActive;
-};
+import { Spin } from 'react-burgers';
 
 class Banner extends Component {
 	constructor(props) {
