@@ -51,7 +51,7 @@ class About extends Component {
 	render() {
 		return (
 			<div className="about-container">
-				<Lil_Nav data={navListData} />
+				{/* <Lil_Nav data={navListData} /> */}
 				<div className="resume-skillset-block">
 					<Skillset data={SKILLSET_OVERVIEW} />
 					<Resume />

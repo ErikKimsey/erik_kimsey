@@ -9,7 +9,6 @@
   max-width: 1250px;
   width: 70%;
   color: #fff;
-  // background-color: rgba(255,255,255,0.5);
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -64,8 +63,8 @@
       }  
       .item-stack{
         font-size: 1.5em;
-        color:$grayish;
-        background-color: rgba(255,55,255,0.1);
+        background-color: rgba(255,255,255,0.5);
+        color:$purple;
       }
       .item-description{}
       .item-url{
