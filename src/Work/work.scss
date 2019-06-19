@@ -9,6 +9,7 @@
   max-width: 1250px;
   width: 70%;
   color: #fff;
+  // background-color: rgba(255,255,255,0.5);
   margin: 0 auto;
   display: flex;
   flex-flow: column;
@@ -28,6 +29,7 @@
       padding-top: 7px;
       padding-left: 5px;
       border-radius: 20px;
+      z-index: 1;
     }
     .slick-dots {
       padding:0;
@@ -58,15 +60,20 @@
       }
       .item-name{
         font-size: 3em;
+        background-color: rgba(255,255,255,0.5);
       }  
       .item-stack{
         font-size: 1.5em;
-        color:$teal;
+        color:$grayish;
+        background-color: rgba(255,55,255,0.1);
       }
       .item-description{}
       .item-url{
+        background-color: rgba(255,255,255,0.5);
       }
-      .item-github{}
+      .item-github{
+        background-color: rgba(255,255,255,0.5);
+      }
 
     }
   }
@@ -83,7 +90,6 @@
     margin-top: 42px;
     width: 87%;
     height: 70vh;
-
     .slick-slider {
       border:none;
       align-content: center;
@@ -94,8 +100,6 @@
         padding:0;
         padding-bottom: 5px;
         box-sizing: border-box;
-        // background-color: none;
-        // border: none;
         li button:before {
           color: $yellow;
           font-size: 20px;
@@ -123,11 +127,6 @@
 
         .item-name{
           font-size: 1.5em;
-        }  
-
-        .item-stack{
-          font-size: 1em;
-          color:$teal;
         }
 
         .item-description{}

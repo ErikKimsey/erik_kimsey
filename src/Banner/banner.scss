@@ -28,6 +28,10 @@ $hover-color: #fcfa85;
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
     
     .banner-item {
       font-size: 3em;
@@ -48,6 +52,10 @@ $hover-color: #fcfa85;
   
   @media only screen and (max-width: $xlDevice) {
     .text-container {
+      display: flex;
+      flex-flow: row;
+      align-items: flex-start;
+      justify-content: end;
       .banner-item {
         padding: 1px;
         font-size: 2.5em;
@@ -57,6 +65,8 @@ $hover-color: #fcfa85;
 
   @media only screen and (max-width: $lgDevice) {
     display: flex;
+    flex-flow: row;
+    align-items: center;
     justify-content: flex-start;
     margin: 0;
     top: 8px;
@@ -171,7 +181,7 @@ $hover-color: #fcfa85;
       display: flex;
       flex-flow: column;
       padding: 20px;
-
+      margin: 0 auto;
     }
   }
 }
