@@ -4,7 +4,7 @@
 
 .contact-container {
   position: relative;
-  margin: 40% auto;
+  margin: 10% auto;
   padding: 0 84px;
   font-size: 2em;
   background-color: $transWhite;
@@ -44,19 +44,19 @@
   @media only screen and (max-width: $lgDevice) {
     bottom: 100px;
     position: relative;
-    margin: 40% auto;
-    padding: 0 84px;
+    margin: 10% auto;
     font-size: 2em;
     .contact-item {
       margin: 0;
     }
   }
-
+  
   @media only screen and (max-width: $mdDevice) {
     margin: 40% auto;
     padding: 10px;
     width: 80%;
     font-size: 0.7em;
+    height: 28%;
   }
 
   @media only screen and (max-width: $smDevice) {
