@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './about.scss';
 import { EDUCATION, PROFESSIONAL_DATA, SKILLSET_OVERVIEW } from '../__data/data';
 import Education from './components/Education';
@@ -42,34 +42,28 @@ import Skillset from './components/Skillset';
 // 	graphqlIMG
 // ];
 
-class About extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
-		return (
-			<div className="about-container">
-				<div className="resume-skillset-block">
-					<Skillset data={SKILLSET_OVERVIEW} />
-					<Resume />
-				</div>
-				<div className="education-block-container">
-					<div className="block-label">EDUCATION</div>
-					{EDUCATION.map((e, i) => {
-						return <Education key={i} data={e} />;
-					})}
-				</div>
-
-				<div className="professional-history-block-container">
-					<div className="block-label">WORK HISTORY</div>
-					{PROFESSIONAL_DATA.map((e, i) => {
-						return <Employment key={i} data={e} />;
-					})}
-				</div>
+const About = (props) => {
+	return (
+		<div className="about-container">
+			<div className="resume-skillset-block">
+				<Skillset data={SKILLSET_OVERVIEW} />
+				<Resume />
 			</div>
-		);
-	}
-}
+			<div className="education-block-container">
+				<div className="block-label">EDUCATION</div>
+				{EDUCATION.map((e, i) => {
+					return <Education key={i} data={e} />;
+				})}
+			</div>
+
+			<div className="professional-history-block-container">
+				<div className="block-label">WORK HISTORY</div>
+				{PROFESSIONAL_DATA.map((e, i) => {
+					return <Employment key={i} data={e} />;
+				})}
+			</div>
+		</div>
+	);
+};
 
 export default About;
