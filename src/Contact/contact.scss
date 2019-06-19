@@ -3,10 +3,14 @@
 @import '../__styles/mixins.scss';
 
 .contact-container {
-  position: absolute;
-  right: 50px;
-  bottom: 50px;
-  font-size: 1em;
+  position: relative;
+  margin: 40% auto;
+  padding: 0 84px;
+  font-size: 2em;
+  background-color: $transWhite;
+  border: 0px;
+  border-bottom-right-radius: 40px;
+
   @include fade-load-mixin;
 
   .contact-item {
@@ -15,9 +19,9 @@
     font-size: 2.5em;
   }
   
-  .name {}
+  // .name {}
   
-  .title {}
+  // .title {}
   
   .email-address {
     color:$teal;
@@ -35,26 +39,31 @@
     }
   }
 
-  .phone-number {}
+  // .phone-number {}
 
   @media only screen and (max-width: $lgDevice) {
-    right: 50px;
     bottom: 100px;
+    position: relative;
+    margin: 40% auto;
+    padding: 0 84px;
+    font-size: 2em;
     .contact-item {
       margin: 0;
     }
   }
 
-  @media only screen and (max-width: $mdDevice) {}
+  @media only screen and (max-width: $mdDevice) {
+    margin: 40% auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 0.7em;
+  }
 
   @media only screen and (max-width: $smDevice) {
-    bottom: 0;
-    right: 10px;
+    margin: 40% auto;
+    padding: 10px;
     font-size: 0.7em;
   }
   
-  @media only screen and (max-width: $xsDevice) {
-    bottom: 0;
-    right: 0;
-  }
+  @media only screen and (max-width: $xsDevice) {}
 }
