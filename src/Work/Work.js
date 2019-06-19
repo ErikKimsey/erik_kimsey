@@ -67,15 +67,15 @@ class Work extends Component {
 					{data.map((e) => {
 						return (
 							<div key={e.name} className="data-item-container">
-								<div className="item-name">{e.name}</div>
-								<div className="item-stack">{e.stack}</div>
-								<div className="item-description" />
-								<div className="item-url url-and-github-styles">
+								<div className="item-name data-item-general">{e.name}</div>
+								<div className="item-stack data-item-general">{e.stack}</div>
+								<div className="item-description data-item-general" />
+								<div className="item-url url-and-github-styles data-item-general">
 									<a href={e.url} target="_blank">
 										{e.url}
 									</a>
 								</div>
-								<div className="item-github url-and-github-styles">
+								<div className="item-github url-and-github-styles data-item-general">
 									<a href={e.github} target="_blank">
 										{e.github}
 									</a>

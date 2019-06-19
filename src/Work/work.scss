@@ -48,13 +48,25 @@
     .data-item-container {
       font-size: 1em;
       overflow: hidden;
+
+      .data-item-general {
+        padding-left: 33px;
+      }
+
       a {
         text-decoration: none;
         color:$pink;
         font-size: 1.2em;
         overflow: hidden;
+      }
+      .url-and-github-styles {
+        padding-left: 15px;
+        background-color: rgba(255,255,255,0.5);
+        transition: all 500ms;
         &:hover {
-          color:$lighterpink;
+          padding-left: 40px;
+          transform: scale(1.05);
+          color:darken($pink, 20%);
         }
       }
       .item-name{
@@ -68,9 +80,17 @@
       }
       .item-description{}
       .item-url{
-        background-color: rgba(255,255,255,0.5);
+        // padding-left: 15px;
+        // background-color: rgba(255,255,255,0.5);
+        // transition: all 500ms;
+        // &:hover {
+        //   padding-left: 40px;
+        //   transform: scale(1.05);
+        //   color:darken($pink, 20%);
+        // }
       }
       .item-github{
+        padding-left: 15px;
         background-color: rgba(255,255,255,0.5);
       }
 
