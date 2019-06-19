@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './landing.scss';
 import { data } from './data';
 
-let i = 0;
 class Landing extends Component {
 	constructor(props) {
 		super(props);
@@ -51,7 +50,7 @@ class Landing extends Component {
 				{data.map((e, i) => {
 					i += 1;
 					return (
-						<div className={'self-blurb-container' + ` blurb-${i}`} key={e}>
+						<div className={`self-blurb-container blurb-${i}`} key={e}>
 							{e}
 						</div>
 					);

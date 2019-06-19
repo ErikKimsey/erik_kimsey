@@ -13,6 +13,7 @@ $hover-color: #fcfa85;
   background-color: rgba(255,255,255,0.8);
   font-weight: 400;
   -webkit-justify-content: center;
+  align-items: flex-start;
   justify-content: center;
   margin: 0 50px;
   left: 0px;
@@ -72,6 +73,16 @@ $hover-color: #fcfa85;
     top: 8px;
     left: 0px;
     width: 100%;
+    .text-container {
+      display: flex;
+      flex-flow: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .banner-item {
+        padding: 1px;
+        font-size: 2.5em;
+      }
+    }
     .toggle-logo-container {
       height: 100px;
       width: 7%;
@@ -154,7 +165,7 @@ $hover-color: #fcfa85;
     top: 5px;
     left: 0px;
     height: 83px;
-    font-size: small;
+    font-size: 1em;
     .toggle-logo-container {
       width: 100%;
       .navbar-toggle {
@@ -182,6 +193,27 @@ $hover-color: #fcfa85;
       flex-flow: column;
       padding: 20px;
       margin: 0 auto;
+      .banner-item {
+        padding: 0;
+        margin: 0;
+        font-size: 1.6em;
+        padding: 0 5px;
+      }
     }
+  }
+  @media only screen and (max-width: $xsDevice) {
+    .text-container {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding: 15px;
+      margin: 0 auto;
+      .banner-item {
+        padding: 0;
+        margin: 0;
+        font-size: 1.3em;
+      }
+    }
+    
   }
 }
