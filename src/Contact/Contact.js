@@ -12,13 +12,11 @@ const Contact = () => {
 
 	return (
 		<div className="contact-container">
-			<div className="email-address contact-item" id="email-address">
+			<div className="email-address contact-item">
 				{divideString(CONTACT_DATA.email_1)}
 				<span className="email-address contact-item letter">[@]</span>
 			</div>
-			<div className="email-address contact-item" id="email-address">
-				{divideString(atGmail)}
-			</div>
+			<div className="email-address contact-item">{divideString(atGmail)}</div>
 		</div>
 	);
 };

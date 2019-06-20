@@ -4,17 +4,20 @@
 
 .contact-container {
   position: relative;
+  width: 600px;
   margin: 10% auto;
   padding: 0 84px;
-  background-color: $transWhite;
   border: 0px;
   
   @include fade-load-mixin;
   
   .letter {
-    color:black;
-    font-size: 2em;
+    background-color: $transWhite;
+    color: black;
+    font-size: 4em;
     font-weight: 900;
+    padding: 0px 5px 10px 5px;
+    margin: 3px;
   }
   .contact-item {
     color:black;
@@ -26,7 +29,7 @@
     color:$pink;
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     .fa-clipboard {
       margin-left: 20px;
     }
