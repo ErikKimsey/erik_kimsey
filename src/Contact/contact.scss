@@ -6,17 +6,19 @@
   position: relative;
   margin: 10% auto;
   padding: 0 84px;
-  font-size: 2em;
   background-color: $transWhite;
   border: 0px;
-  border-bottom-right-radius: 40px;
-
+  
   @include fade-load-mixin;
-
+  
+  .letter {
+    color:black;
+    font-size: 2em;
+    font-weight: 900;
+  }
   .contact-item {
     color:black;
     margin: 10px 0 0 100px;
-    // font-size: 2.5em;
   }
   
   .email-address {
@@ -32,17 +34,11 @@
       width: 100px;
     }
     span {
-      font-size: 1em;
       margin: 0;
       color:$teal;
     }
-    .letter {
-      color:black;
-      font-size: 2em;
-    }
-  }
 
-  // .phone-number {}
+  }
 
   @media only screen and (max-width: $lgDevice) {
     bottom: 100px;
