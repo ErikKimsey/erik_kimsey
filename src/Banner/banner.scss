@@ -110,7 +110,10 @@ $dope: 'dope';
           color:$grayish;
         }
         .spin {
+          padding: 15px 15px 10px;
           background-color: $pink;
+          border: 0px;
+          border-radius: 3px;
         }
       }
     }
