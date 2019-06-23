@@ -4,6 +4,12 @@
 
 $hover-color: #fcfa85;
 
+$dope: 'dope';
+@font-face {
+  font-family: 'dope';
+  src: url(../assets/Dopestyle.ttf) format('truetype');
+}
+
 .about-container {
   color:#fff;
   width: 100%;
@@ -65,6 +71,7 @@ $hover-color: #fcfa85;
     .block-label {
       font-weight: 700;
       color: #000000;
+      font-family: $dope;
     }
   
   }
@@ -79,6 +86,7 @@ $hover-color: #fcfa85;
     .block-label {
       font-weight: 700;
       color: #000000;
+      font-family: $dope;
     }
   
   }
