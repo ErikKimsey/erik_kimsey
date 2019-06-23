@@ -29,7 +29,7 @@
 
 export const data = [
 	{
-		name: 'Slide right >> ',
+		name: 'Slide right ',
 		stack: 'To see some of my work!',
 		url: '',
 		github: '',

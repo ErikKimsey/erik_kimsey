@@ -4,6 +4,12 @@
 @import "~slick-carousel/slick/slick-theme.css";
 @import '../__styles/mixins.scss';
 
+$dope: 'dope';
+@font-face {
+  font-family: 'dope';
+  src: url(../assets/Dopestyle.ttf) format('truetype');
+}
+
 .work-container {
   height: calc(100vh - 220px);
   max-width: 1250px;
@@ -71,6 +77,10 @@
       }
       .item-name{
         font-size: 3em;
+        padding-top: 10px;
+        font-family: $dope;
+        font-weight: 100;
+        color:$darkGrayish;
         background-color: rgba(255,255,255,0.5);
       }  
       .item-stack{
