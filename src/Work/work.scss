@@ -51,6 +51,7 @@ $dope: 'dope';
 
   .work-data-list-contaner {
     margin: 5%;
+    background-color: rgba(255,255,255,0.5);
     .data-item-container {
       font-size: 1em;
       overflow: hidden;
@@ -67,7 +68,6 @@ $dope: 'dope';
       }
       .url-and-github-styles {
         padding-left: 15px;
-        background-color: rgba(255,255,255,0.5);
         transition: all 500ms;
         &:hover {
           padding-left: 40px;
@@ -81,11 +81,9 @@ $dope: 'dope';
         font-family: $dope;
         font-weight: 100;
         color:$darkGrayish;
-        background-color: rgba(255,255,255,0.5);
       }  
       .item-stack{
         font-size: 1.5em;
-        background-color: rgba(255,255,255,0.5);
         color:$purple;
       }
       .item-description{}
@@ -101,7 +99,6 @@ $dope: 'dope';
       }
       .item-github{
         padding-left: 15px;
-        background-color: rgba(255,255,255,0.5);
       }
 
     }
