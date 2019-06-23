@@ -9,14 +9,11 @@ export default class EmailForm extends Component {
 	};
 
 	handleInput = (e) => {
-		console.log(e.target);
 		this.setState({ [e.target.name]: e.target.value });
 	};
 
 	handleSubmit = (e) => {
 		e.preventDefault();
-		console.log('submit');
-		console.log(this.state);
 		if (this.validateEmailAddress(this.state.email)) {
 			console.log('yup');
 		} else {
@@ -27,6 +24,12 @@ export default class EmailForm extends Component {
 	validateEmailAddress = (addr) => {
 		return /\S+@\S+\.\S+/.test(addr);
 	};
+
+	// Handling not valid email alert
+	handleNotValidEmail = () => {};
+
+	// Handling required field alert
+	handleRequiredField = () => {};
 
 	render() {
 		console.log(this.state);
