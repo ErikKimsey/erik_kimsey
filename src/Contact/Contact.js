@@ -1,6 +1,5 @@
 import React from 'react';
 import './contact.scss';
-import { CONTACT_DATA } from '../__data/data';
 
 const EMAIL = {
 	prefix: 'kimseyerik',

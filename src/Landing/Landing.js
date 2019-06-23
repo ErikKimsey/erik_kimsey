@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './landing.scss';
 import { data } from './data';
+import IconLinks from '../IconLinks/IconLinks';
 
 class Landing extends Component {
 	constructor(props) {
@@ -55,6 +56,7 @@ class Landing extends Component {
 						</div>
 					);
 				})}
+				<IconLinks />
 			</div>
 		);
 	}

@@ -3,7 +3,6 @@ import './work.scss';
 import { data } from './data';
 import Slider from 'react-slick';
 import { BREAKPOINTS as bp } from '../__styles/breakPoints';
-import detectOrientation, { orientationListener } from '../utils/detectOrientation';
 
 let sliderSettings = {
 	dots: true,
@@ -71,12 +70,12 @@ class Work extends Component {
 								<div className="item-stack data-item-general">{e.stack}</div>
 								<div className="item-description data-item-general" />
 								<div className="item-url url-and-github-styles data-item-general">
-									<a href={e.url} target="_blank">
+									<a href={e.url} target="_blank" rel="noopener noreferrer">
 										{e.url}
 									</a>
 								</div>
 								<div className="item-github url-and-github-styles data-item-general">
-									<a href={e.github} target="_blank">
+									<a href={e.github} target="_blank" rel="noopener noreferrer">
 										{e.github}
 									</a>
 									{/* {e.github} */}
