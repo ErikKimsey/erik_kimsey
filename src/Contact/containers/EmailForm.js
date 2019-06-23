@@ -14,12 +14,18 @@ export default class EmailForm extends Component {
 	};
 
 	handleSubmit = (e) => {
+		e.preventDefault();
 		console.log('submit');
 		console.log(this.state);
+		if (this.validateEmailAddress(this.state.email)) {
+			console.log('yup');
+		} else {
+			console.log('not valid');
+		}
 	};
 
 	validateEmailAddress = (addr) => {
-		// return bool
+		return /\S+@\S+\.\S+/.test(addr);
 	};
 
 	render() {
