@@ -15,6 +15,7 @@ $dope: 'dope';
   width: 100%;
   overflow-y: scroll;
   margin-left: 140px;
+  padding: 15px;
   background-color: rgba(255,255,255,0.2);
   @include fade-load-mixin;
 
@@ -29,6 +30,7 @@ $dope: 'dope';
   .self-blurb-container {
     margin: 0 auto;
   }
+
   .icons-container {
     display: flex;
     flex-flow: row;
@@ -71,7 +73,7 @@ $dope: 'dope';
     .block-label {
       font-weight: 400;
       font-size: 1.4em;
-      color: #000000;
+      color: $darkGrayish;
       font-family: $dope;
     }
   
@@ -87,7 +89,7 @@ $dope: 'dope';
     .block-label {
       font-weight: 400;
       font-size: 1.4em;
-      color: #000000;
+      color: $darkGrayish;
       font-family: $dope;
     }
   
