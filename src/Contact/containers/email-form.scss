@@ -1,0 +1,15 @@
+
+.form-container {
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+
+  .form-item {
+    padding: 5px;
+    // margin: 2px;
+  }
+
+  .input-label {
+    margin: 14px 0 0 0;
+  }
+}

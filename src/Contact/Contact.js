@@ -1,6 +1,7 @@
 import React from 'react';
 import './contact.scss';
 import { CONTACT_DATA } from '../__data/data';
+import EmailForm from './containers/EmailForm';
 
 const Contact = () => {
 	return (
@@ -12,6 +13,7 @@ const Contact = () => {
 			<div className="email-address contact-item" id="email-address">
 				gmail<span>[dot]</span>com
 			</div>
+			<EmailForm />
 		</div>
 	);
 };
