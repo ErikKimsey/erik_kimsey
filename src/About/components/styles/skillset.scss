@@ -1,6 +1,12 @@
 @import '../../../__styles/responsive.scss';
 @import '../../../__styles/globals.scss';
 
+$dope: 'dope';
+@font-face {
+  font-family: 'dope';
+  src: url(../../../assets/Dopestyle.ttf) format('truetype');
+}
+
 .skillset-container {
   border-top: 0.1px solid $teal;
   width: 48%;
@@ -18,9 +24,10 @@
       transform: rotate(0deg);
     }
     .skillset-header {
-      font-size: 20px;
-      font-weight: 400;
       color:$teal;
+      font-weight: 400;
+      font-family: $dope;
+      font-size: 1.4em;
 
     }
     .skill-list-subheader {
