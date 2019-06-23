@@ -57,7 +57,7 @@ class Nav extends Component {
 								/>
 							</NavLink>
 						</li>
-						<li onClick={this.handleToggle}>
+						{/* <li onClick={this.handleToggle}>
 							<NavLink activeStyle={activeStyles} className="nav-link" to="/work">
 								<i
 									className="fas fa-code fa-1x"
@@ -66,7 +66,7 @@ class Nav extends Component {
 									onMouseLeave={this.handleLeave}
 								/>
 							</NavLink>
-						</li>
+						</li> */}
 						<li onClick={this.handleToggle}>
 							<NavLink
 								activeStyle={activeStyles}
