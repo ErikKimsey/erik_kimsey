@@ -8,10 +8,17 @@ export default class EmailForm extends Component {
 		message: ''
 	};
 
+	/**
+   * handles setstate on input change
+   */
 	handleInput = (e) => {
 		this.setState({ [e.target.name]: e.target.value });
 	};
 
+	/**
+   * Form submission
+   * validates email address & required fields
+   */
 	handleSubmit = (e) => {
 		e.preventDefault();
 		if (this.validateEmailAddress(this.state.email)) {
@@ -21,14 +28,21 @@ export default class EmailForm extends Component {
 		}
 	};
 
+	/**
+   * validates email address
+   */
 	validateEmailAddress = (addr) => {
 		return /\S+@\S+\.\S+/.test(addr);
 	};
 
-	// Handling not valid email alert
+	/**
+   * Handling not valid email alert
+   */
 	handleNotValidEmail = () => {};
 
-	// Handling required field alert
+	/**
+   * Handling required field alert
+   */
 	handleRequiredField = () => {};
 
 	render() {
