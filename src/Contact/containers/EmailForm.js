@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './email-form.scss';
+import axios from 'axios';
 
 export default class EmailForm extends Component {
 	state = {
 		email: '',
 		name: '',
-		message: ''
+		message: '',
+		sent: false
 	};
 
 	/**
@@ -45,6 +47,20 @@ export default class EmailForm extends Component {
    */
 	handleRequiredField = () => {};
 
+	/**
+   * Send email - API
+   */
+	handleEmailSend = (data) => {
+		axios
+			.post('API_URI', data)
+			.then((res) => {
+				this.setState({ sent: true });
+			})
+			.catch((err) => {
+				console.error(err);
+			});
+	};
+
 	render() {
 		console.log(this.state);
 		return (
@@ -54,6 +70,7 @@ export default class EmailForm extends Component {
 				</label>
 				<input
 					className="text-input form-item"
+					id="name"
 					type="text"
 					value={this.state.name}
 					name="name"
@@ -61,11 +78,12 @@ export default class EmailForm extends Component {
 					onChange={this.handleInput}
 					required
 				/>
-				<label className="input-label form-item" htmlFor="name">
+				<label className="input-label form-item" htmlFor="email">
 					Your email address:
 				</label>
 				<input
 					className="text-input form-item"
+					id="email"
 					type="text"
 					value={this.state.email}
 					name="email"
@@ -73,11 +91,12 @@ export default class EmailForm extends Component {
 					onChange={this.handleInput}
 					required
 				/>
-				<label className="input-label form-item" htmlFor="name">
+				<label className="input-label form-item" htmlFor="message">
 					Your message:
 				</label>
 				<textarea
 					className="text-input form-item"
+					id="message"
 					rows="5"
 					cols="33"
 					value={this.state.message}
