@@ -25,6 +25,7 @@ export default class EmailForm extends Component {
 		e.preventDefault();
 		if (this.validateEmailAddress(this.state.email)) {
 			console.log('yup');
+			this.handleEmailSend(this.state);
 		} else {
 			console.log('not valid');
 		}
@@ -54,6 +55,7 @@ export default class EmailForm extends Component {
 		axios
 			.post('API_URI', data)
 			.then((res) => {
+				console.log(res);
 				this.setState({ sent: true });
 			})
 			.catch((err) => {
@@ -62,7 +64,6 @@ export default class EmailForm extends Component {
 	};
 
 	render() {
-		console.log(this.state);
 		return (
 			<form className="form-container" onSubmit={this.handleSubmit}>
 				<label className="input-label form-item" htmlFor="name">
