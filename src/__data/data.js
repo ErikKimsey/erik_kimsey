@@ -92,7 +92,7 @@ export const FAV_COMBOS_DATA = [
  */
 export const EDUCATION = [
 	{
-		name: 'Lambda School',
+		name: 'Lambda School - 2018-2019',
 		major: 'Computer Science',
 		focus: 'Full-Stack Web Development',
 		extraCurricular: [],
@@ -126,7 +126,9 @@ export const EDUCATION = [
 			'VSCode',
 			'CLion',
 			'Bash Scripting',
-			'Continuous Integration / Continuous Deployment'
+			'Continuous Integration / Continuous Deployment',
+			'DevTools',
+			'Debugging practices'
 		],
 		projects: [
 			'Conways Game of Life (JavaScript, P5js, Canvas, React)',
@@ -137,7 +139,7 @@ export const EDUCATION = [
 		]
 	},
 	{
-		name: 'James Madison University',
+		name: 'James Madison University - 2004-2009',
 		major: "Bachelor's Degree in Philosophy",
 		minor: 'Writing (Creative / Technical) and Fine-Art/Graphic Design',
 		focus: 'Nietzsche and 20th Century European Philosophy',
@@ -167,8 +169,8 @@ export const EDUCATION = [
 		projects: [ "Gille Deleuze's Concept of Becoming", 'The Nature of Nietzsches Perspectivism' ]
 	},
 	{
-		name: 'Oregon State University',
-		major: 'Computer Science',
+		name: 'Oregon State University - 2017',
+		major: 'Computer Science 2nd Degree (incomplete)',
 		minor: 'NA',
 		focus: 'Software Engineering',
 		curriculum: [ 'Accelerated Object-Oriented Programming in C++', 'Discrete Mathematics' ],
@@ -180,25 +182,30 @@ export const EDUCATION = [
 		projects: [ 'NA' ]
 	},
 	{
-		name: '',
-		major: '',
-		minor: '',
-		focus: '',
-		curriculum: [],
-		extraCurricular: [],
-		tech: [],
-		projects: []
-	},
-	{
-		name: '',
-		major: '',
-		minor: '',
-		focus: '',
-		curriculum: [],
-		extraCurricular: [],
-		tech: [],
-		projects: []
+		name: 'Blue Ridge Community College - 2010',
+		major: 'Web Design and Development Certificate',
+		minor: 'NA',
+		focus: 'Graphic Design and Full-Stack Web Development',
+		curriculum: [
+			'Digital Graphic Design for Web',
+			'Object-Oriented Programming in Java',
+			'Front-End Web Development',
+			'Full-Stack Development'
+		],
+		extraCurricular: [ 'NA' ],
+		tech: [ 'XHTML', 'CSS', 'Javascript (ES5)', 'Java', 'Eclipse', 'Notepad++', 'PHP' ],
+		projects: [ 'Responsive Personal Website', 'Business Card Design', 'Logo Design', '' ]
 	}
+	// {
+	// 	name: '',
+	// 	major: '',
+	// 	minor: '',
+	// 	focus: '',
+	// 	curriculum: [],
+	// 	extraCurricular: [],
+	// 	tech: [],
+	// 	projects: []
+	// }
 ];
 
 /**
