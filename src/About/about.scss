@@ -16,7 +16,7 @@ $dope: 'dope';
   overflow-y: scroll;
   margin-left: 140px;
   padding: 15px;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.6);
   @include fade-load-mixin;
 
   .fas {

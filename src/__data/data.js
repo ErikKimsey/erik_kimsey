@@ -132,7 +132,7 @@ export const EDUCATION = [
 		],
 		// https://github.com/Lambda-School-Labs/labs-team-home
 		projects: [
-			'Sveza team-collaboration tool (React, Styled-Components, Apollo-Client, GraphQL, Apollo-Server, ExpressJS, MongoDB/Mongoose, 0Auth, Material-UI, Stripe, Postman, Twilio, and more',
+			'Sveza team-collaboration tool \n (React, \n Styled-Components, \nApollo-Client, \n GraphQL, \n Apollo-Server, \n ExpressJS, \n MongoDB/Mongoose, \n 0Auth, \n Material-UI, \n Stripe, \n Postman, \n Twilio, \n and more',
 			'Conways Game of Life (JavaScript, P5js, Canvas, React)',
 			'Web Server (C Language)',
 			'CPU Emulator (C Language)',
@@ -183,7 +183,7 @@ export const EDUCATION = [
 	{
 		name: 'Blue Ridge Community College - 2010',
 		major: 'Web Design and Development Certificate',
-		minor: 'NA',
+		minor: '',
 		focus: 'Graphic Design and Full-Stack Web Development',
 		curriculum: [
 			'Digital Graphic Design for Web',
