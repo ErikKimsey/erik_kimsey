@@ -279,6 +279,8 @@ export const PROFESSIONAL_DATA = [
 			'Microsoft Office Suite (Word, Excel, PowerPoint)',
 			'Okta',
 			'SalesForce',
+			'XML',
+			'Adobe Acrobat',
 			'Oracle'
 		]
 	},
