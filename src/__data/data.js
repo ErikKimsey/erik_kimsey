@@ -226,21 +226,23 @@ export const PROFESSIONAL_DATA = [
 		duration: '09/2018',
 		description: 'Contract',
 		projects: [ 'Per design specifications, helped build responsive website for Kardion GmbH' ],
-		tech: [ 'Bootstrap', 'CSS3', 'HTML5', 'Canvas API' ]
+		tech: [ 'Bootstrap 4', 'CSS3', 'HTML5', 'Canvas API' ]
 	},
 	{
 		employer: 'Raincrow Studios',
 		role: 'NodeJS Engineer',
 		duration: '01/2018 - 02/2018',
 		description: 'Contract',
-		projects: [ 'Contributed to the architecture and initial engineering stages of a ' ],
-		tech: [ 'JavaScript', 'D3.js', 'Angular 4' ]
+		projects: [
+			'Contributed to the architecture and initial engineering stages of a server / RESTful API and in-memory database for an international MMORPG, Covens '
+		],
+		tech: [ 'NodeJS', 'Javascript ES6', 'Redis', 'Postman' ]
 	},
 	{
 		employer: 'ChartIQ',
 		role: 'Javascript Engineer',
 		duration: '2016 - 2017',
-		description: '',
+		description: 'In-house Javascript and Front-End / AngularJS Engineer',
 		projects: [
 			'Integration of ChartIQ ProCharts into eToro AngularJS application.',
 			'Contributed to debugging, building and performance enhancement of ChartIQ flagship charting product.',
