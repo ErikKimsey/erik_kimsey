@@ -213,16 +213,32 @@ export const EDUCATION = [
  */
 export const PROFESSIONAL_DATA = [
 	{
-		employer: 'NextLevelSh!t',
-		role: 'JavaScript Developer',
-		duration: '2018',
-		description: 'Short-term, Contract',
-		projects: [ 'Contributed to building, and debugging, an interactive guilloche in Angular 4 and D3.js.' ],
+		employer: 'NextLevel / B612 Design (Stuttgart)',
+		role: 'JavaScript Engineer',
+		duration: '06/2018-07/2018',
+		description: 'Contract',
+		projects: [ 'Contributed to building an interactive guilloche using Angular 4 and D3.js.' ],
+		tech: [ 'TypeScript', 'D3.js', 'Angular 4', 'NodeJS' ]
+	},
+	{
+		employer: 'NextLevel / Kardion (Stuttgart)',
+		role: 'Front-End Engineer',
+		duration: '09/2018',
+		description: 'Contract',
+		projects: [ 'Per design specifications, helped build responsive website for Kardion GmbH' ],
+		tech: [ 'Bootstrap', 'CSS3', 'HTML5', 'Canvas API' ]
+	},
+	{
+		employer: 'Raincrow Studios',
+		role: 'NodeJS Engineer',
+		duration: '01/2018 - 02/2018',
+		description: 'Contract',
+		projects: [ 'Contributed to the architecture and initial engineering stages of a ' ],
 		tech: [ 'JavaScript', 'D3.js', 'Angular 4' ]
 	},
 	{
 		employer: 'ChartIQ',
-		role: 'Software Developer',
+		role: 'Javascript Engineer',
 		duration: '2016 - 2017',
 		description: '',
 		projects: [
