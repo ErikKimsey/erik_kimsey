@@ -94,7 +94,7 @@ export const EDUCATION = [
 	{
 		name: 'Lambda School - 2018-2019',
 		major: 'Computer Science',
-		focus: 'Full-Stack Web Development',
+		focus: 'Software Engineering',
 		extraCurricular: [],
 		curriculum: [
 			'Full-Stack Web Development',
@@ -111,16 +111,16 @@ export const EDUCATION = [
 		],
 		tech: [
 			'JavaScript ES6/ES7',
+			'ReactJS/Redux',
+			'CSS3 / LESS / SASS',
 			'Python',
 			'Django',
 			'Pip',
 			'Bokeh',
 			'C Language',
-			'ReactJS/Redux',
 			'NodeJS',
 			'SQL/SQLite',
 			'Test-Driven Development',
-			'CSS3 / LESS / SASS',
 			'Git/Github',
 			'Webpack',
 			'VSCode',
