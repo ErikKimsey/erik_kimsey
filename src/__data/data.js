@@ -107,33 +107,99 @@ export const EDUCATION = [
 			'Cellular Automata'
 		],
 		tech: [
+			'Full-Stack Web Development',
+			'Database and RESTful API Design',
 			'JavaScript ES6/ES7',
+			'Declarative and Imperative Software Design and Paradigms',
 			'Python',
+			'Django',
+			'Pip',
+			'Bokeh',
 			'C Language',
-			'ReactJS',
+			'ReactJS/Redux',
 			'NodeJS',
 			'SQL/SQLite',
-			'CSS3/LESS/SASS',
-			'Git/Github'
+			'Test-Driven Development',
+			'CSS3 / LESS / SASS',
+			'Git/Github',
+			'Webpack',
+			'VSCode',
+			'CLion',
+			'Bash Scripting',
+			'Continuous Integration / Continuous Deployment'
 		],
 		projects: [
 			'Conways Game of Life (JavaScript, P5js, Canvas, React)',
 			'Web Server (C Language)',
 			'CPU Emulator (C Language)',
-			'Command-line Multi-User Dungeon Game (Python)',
+			'Command-line Multi-User Game (Python)',
 			'Django Rest API (Python, JavaScript)'
 		]
 	},
 	{
 		name: 'James Madison University',
 		major: "Bachelor's Degree in Philosophy",
-		minor: 'Writing (Creative/ Technical) and Fine-Art/Graphic Design',
+		minor: 'Writing (Creative / Technical) and Fine-Art/Graphic Design',
 		focus: 'Nietzsche and 20th Century European Philosophy',
-		curriculum: [],
-		extraCurricular: [],
-		tech: [],
-		projects: []
-	}
+		curriculum: [
+			'Post-Structuralism',
+			'Social Theory',
+			'History of Western Philosophy',
+			'2D Design',
+			'Art Theory',
+			'Drawing and Dry Media',
+			'Painting',
+			'Technical Writing',
+			'Writing Fiction',
+			'Creative Non-fiction',
+			'Poetry'
+		],
+		extraCurricular: [ 'Phi Sigma Tau Philosophy Honors Society', 'Director of the Club of Creative Writing' ],
+		tech: [
+			'Adobe Illustrator',
+			'Adobe Photoshop',
+			'Adobe InDesign',
+			'Gimp',
+			'Propellerheads Reason',
+			'Abelton Live',
+			'Blender'
+		],
+		projects: [ "Gille Deleuze's Concept of Becoming", 'The Nature of Nietzsches Perspectivism' ]
+  },
+  {
+    name:'Oregon State University',
+    major:'Computer Science',
+    minor:'NA',
+    focus:'Software Engineering',
+    curriculum:['Accelerated Object-Oriented Programming in C++', 'Discrete Mathematics'],
+    extraCurricular:['NA'],
+    tech:[
+      'C/C++',
+      'Vim',
+      ''
+    ],
+    projects:[],
+  },
+  {
+    name:'',
+    major:'',
+    minor:'',
+    focus:'',
+    curriculum:[],
+    extraCurricular:[],
+    tech:[],
+    projects:[],
+  },
+  {
+    name:'',
+    major:'',
+    minor:'',
+    focus:'',
+    curriculum:[],
+    extraCurricular:[],
+    tech:[],
+    projects:[],
+  }
 ];
 
 /**
@@ -164,6 +230,27 @@ export const PROFESSIONAL_DATA = [
 		employer: 'Rosetta Stone',
 		role: 'Studio Recording Technician / ConsumerProduct Support',
 		duration: '2012 - 2016',
+		description:
+			'Monitored and recorded Live Studio Sessions. Created training materials for Studio Recording Technician role. Helped Consumers Troubleshoot personal Rosetta Stone software.',
+		projects: [
+			'Trained new employees',
+			'Created training materials for Studio Recording Tech role',
+			'Created inter-dpartmental communication pipeline for recording requests.',
+			"Contributed to Product Support's Troubleshooting Manual"
+		],
+		tech: [
+			'Camtasia',
+			'Rosetta Stone product',
+			'Microsoft Office Suite (Word, Excel, PowerPoint)',
+			'Okta',
+			'SalesForce',
+			'Oracle'
+		]
+	},
+	{
+		employer: 'Westover SkatePark',
+		role: 'Shift Supervisor',
+		duration: '2006 - 2011',
 		description: '',
 		projects: [],
 		tech: [
