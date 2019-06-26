@@ -178,7 +178,7 @@ export const EDUCATION = [
 		curriculum: [ 'Accelerated Object-Oriented Programming in C++', 'Discrete Mathematics' ],
 		extraCurricular: [ '' ],
 		tech: [ 'C/C++', 'Vim', 'CLion', 'Git', 'BASH' ],
-		projects: [ 'NA' ]
+		projects: [ 'Various small exercises within object-oriented programming curriculum and math.' ]
 	},
 	{
 		name: 'Blue Ridge Community College - 2010',
