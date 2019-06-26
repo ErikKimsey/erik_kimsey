@@ -165,41 +165,40 @@ export const EDUCATION = [
 			'Blender'
 		],
 		projects: [ "Gille Deleuze's Concept of Becoming", 'The Nature of Nietzsches Perspectivism' ]
-  },
-  {
-    name:'Oregon State University',
-    major:'Computer Science',
-    minor:'NA',
-    focus:'Software Engineering',
-    curriculum:['Accelerated Object-Oriented Programming in C++', 'Discrete Mathematics'],
-    extraCurricular:['NA'],
-    tech:[
-      'C/C++',
-      'Vim',
-      ''
-    ],
-    projects:[],
-  },
-  {
-    name:'',
-    major:'',
-    minor:'',
-    focus:'',
-    curriculum:[],
-    extraCurricular:[],
-    tech:[],
-    projects:[],
-  },
-  {
-    name:'',
-    major:'',
-    minor:'',
-    focus:'',
-    curriculum:[],
-    extraCurricular:[],
-    tech:[],
-    projects:[],
-  }
+	},
+	{
+		name: 'Oregon State University',
+		major: 'Computer Science',
+		minor: 'NA',
+		focus: 'Software Engineering',
+		curriculum: [ 'Accelerated Object-Oriented Programming in C++', 'Discrete Mathematics' ],
+		extraCurricular: [
+			'Feeling real intellectual humility',
+			"Trying to keep up with already seasoned developers who were at OSU simply to acquire a Bachelor's Degree."
+		],
+		tech: [ 'C/C++', 'Vim', 'CLion', 'Git', 'BASH' ],
+		projects: [ 'NA' ]
+	},
+	{
+		name: '',
+		major: '',
+		minor: '',
+		focus: '',
+		curriculum: [],
+		extraCurricular: [],
+		tech: [],
+		projects: []
+	},
+	{
+		name: '',
+		major: '',
+		minor: '',
+		focus: '',
+		curriculum: [],
+		extraCurricular: [],
+		tech: [],
+		projects: []
+	}
 ];
 
 /**
