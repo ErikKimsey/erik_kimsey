@@ -156,7 +156,7 @@ export const EDUCATION = [
 			'Creative Non-fiction',
 			'Poetry'
 		],
-		extraCurricular: [ 'Phi Sigma Tau Philosophy Honors Society', 'Director of the Club of Creative Writing' ],
+		extraCurricular: [ 'Phi Sigma Tau Philosophy Honors Society, ', 'Director of the Club of Creative Writing' ],
 		tech: [
 			'Adobe Illustrator',
 			'Adobe Photoshop',
@@ -171,13 +171,10 @@ export const EDUCATION = [
 	{
 		name: 'Oregon State University - 2017',
 		major: 'Computer Science 2nd Degree (incomplete)',
-		minor: 'NA',
+		minor: '',
 		focus: 'Software Engineering',
 		curriculum: [ 'Accelerated Object-Oriented Programming in C++', 'Discrete Mathematics' ],
-		extraCurricular: [
-			'Feeling real intellectual humility',
-			"Trying to keep up with already seasoned developers who were at OSU simply to acquire a Bachelor's Degree."
-		],
+		extraCurricular: [ '' ],
 		tech: [ 'C/C++', 'Vim', 'CLion', 'Git', 'BASH' ],
 		projects: [ 'NA' ]
 	},
@@ -192,9 +189,13 @@ export const EDUCATION = [
 			'Front-End Web Development',
 			'Full-Stack Development'
 		],
-		extraCurricular: [ 'NA' ],
+		extraCurricular: [ '' ],
 		tech: [ 'XHTML', 'CSS', 'Javascript (ES5)', 'Java', 'Eclipse', 'Notepad++', 'PHP' ],
-		projects: [ 'Responsive Personal Website', 'Business Card Design', 'Logo Design', '' ]
+		projects: [
+			'Various websites utilizing web development fundamentals',
+			'Various business-card, business logo, and poster designs',
+			'Various simple, small projects demonstrating rudimentary programming exercises'
+		]
 	}
 	// {
 	// 	name: '',
@@ -288,15 +289,22 @@ export const PROFESSIONAL_DATA = [
 		employer: 'Westover SkatePark',
 		role: 'Shift Supervisor',
 		duration: '2006 - 2011',
-		description: '',
-		projects: [],
+		description:
+			'Supervised all skatepark activity. Created employee schedules. Maintained equipment and skatepark cleanliness.',
+		projects: [
+			'Was recently told by 2 skaters (then children, now adults) that if it were not for me, they would have chosen paths of criminality and self-destruction. Both pursued college degrees, one became a software engineer.',
+			'Splinted broken arms and legs.',
+			'Stopped fights.',
+			'Staved young skaters from dehydration.',
+			'Taught an autistic child to ride a skateboard.',
+			'Nudged skaters from listening to bad dubstep.'
+		],
 		tech: [
-			'Camtasia',
-			'Rosetta Stone product',
-			'Microsoft Office Suite (Word, Excel, PowerPoint)',
-			'Okta',
-			'SalesForce',
-			'Oracle'
+			'Canon EOS Rebel XT SLR camera',
+			'the under-rated, universal "skate-tool"',
+			'allen wrenches',
+			'leaf blower',
+			'outdated Sony boombox'
 		]
 	}
 ];
