@@ -7,8 +7,12 @@ export default function Employment(props) {
 			<div className="employer-name">{props.data.employer}</div>
 			<div className="role">{props.data.role}</div>
 			<div className="duration">{props.data.duration}</div>
-			{/* Add links to products in place of role description */}
-			{/* <div className="role-description bold-list-title">{props.data.description}</div> */}
+			<div className="role-description ">
+				<b className="bold-list-title">
+					Description: <br />
+				</b>
+				<span className="job-description">{props.data.description}</span>
+			</div>
 			<div className="projects-container">
 				<br />
 				<b className="bold-list-title">Specific Involvement:</b>
