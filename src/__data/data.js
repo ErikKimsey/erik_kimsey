@@ -97,7 +97,9 @@ export const EDUCATION = [
 		focus: 'Full-Stack Web Development',
 		extraCurricular: [],
 		curriculum: [
-			'Full-Stack Web',
+			'Full-Stack Web Development',
+			'Database and RESTful API Design',
+			'Declarative and Imperative software design techniques and paradigms',
 			'Single-Page Application Development',
 			'Programming Paradigms-',
 			'Algorithm Analysis',
@@ -107,10 +109,7 @@ export const EDUCATION = [
 			'Cellular Automata'
 		],
 		tech: [
-			'Full-Stack Web Development',
-			'Database and RESTful API Design',
 			'JavaScript ES6/ES7',
-			'Declarative and Imperative Software Design and Paradigms',
 			'Python',
 			'Django',
 			'Pip',
