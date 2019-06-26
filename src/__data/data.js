@@ -92,48 +92,123 @@ export const FAV_COMBOS_DATA = [
  */
 export const EDUCATION = [
 	{
-		name: 'Lambda School',
+		name: 'Lambda School - 2018-2019',
 		major: 'Computer Science',
-		focus: 'Full-Stack Web Development',
+		focus: 'Software Engineering',
 		extraCurricular: [],
 		curriculum: [
-			'Full-Stack Web',
+			'Full-Stack Web Development',
+			'Database and RESTful API Design',
+			'Programming paradigms (Declarative, Imperative, and Procedural)',
 			'Single-Page Application Development',
-			'Programming Paradigms-',
 			'Algorithm Analysis',
 			'Data Structures',
 			'Theory of Computation',
 			'Computer Architecture',
-			'Cellular Automata'
+			'Cellular Automata',
+			'Version Control',
+			'Agile (Scrum and Kanban) and Waterfall techniques'
 		],
 		tech: [
 			'JavaScript ES6/ES7',
+			'ReactJS/Redux',
+			'CSS3 / LESS / SASS',
 			'Python',
+			'Django',
+			'Pip',
+			'Bokeh',
 			'C Language',
-			'ReactJS',
 			'NodeJS',
 			'SQL/SQLite',
-			'CSS3/LESS/SASS',
-			'Git/Github'
+			'Test-Driven Development',
+			'Git/Github',
+			'Webpack',
+			'VSCode',
+			'CLion',
+			'Bash Scripting',
+			'Continuous Integration / Continuous Deployment',
+			'DevTools',
+			'Debugging practices'
 		],
+		// https://github.com/Lambda-School-Labs/labs-team-home
 		projects: [
+			'Sveza team-collaboration tool (React, Styled-Components, Apollo-Client, GraphQL, Apollo-Server, ExpressJS, MongoDB/Mongoose, 0Auth, Material-UI, Stripe, Postman, Twilio, and more',
 			'Conways Game of Life (JavaScript, P5js, Canvas, React)',
 			'Web Server (C Language)',
 			'CPU Emulator (C Language)',
-			'Command-line Multi-User Dungeon Game (Python)',
+			'Command-line Multi-User Game (Python)',
 			'Django Rest API (Python, JavaScript)'
 		]
 	},
 	{
-		name: 'James Madison University',
+		name: 'James Madison University - 2004-2009',
 		major: "Bachelor's Degree in Philosophy",
-		minor: 'Writing (Creative/ Technical) and Fine-Art/Graphic Design',
+		minor: 'Writing (Creative / Technical) and Fine-Art/Graphic Design',
 		focus: 'Nietzsche and 20th Century European Philosophy',
-		curriculum: [],
-		extraCurricular: [],
-		tech: [],
-		projects: []
+		curriculum: [
+			'Post-Structuralism',
+			'Social Theory',
+			'History of Western Philosophy',
+			'2D Design',
+			'Art Theory',
+			'Drawing and Dry Media',
+			'Painting',
+			'Technical Writing',
+			'Writing Fiction',
+			'Creative Non-fiction',
+			'Poetry'
+		],
+		extraCurricular: [ 'Phi Sigma Tau Philosophy Honors Society, ', 'Director of the Club of Creative Writing' ],
+		tech: [
+			'Adobe Illustrator',
+			'Adobe Photoshop',
+			'Adobe InDesign',
+			'Gimp',
+			'Propellerheads Reason',
+			'Abelton Live',
+			'Blender'
+		],
+		projects: [ "Gille Deleuze's Concept of Becoming", 'The Nature of Nietzsches Perspectivism' ]
+	},
+	{
+		name: 'Oregon State University - 2017',
+		major: 'Computer Science 2nd Degree (incomplete)',
+		minor: '',
+		focus: 'Software Engineering',
+		curriculum: [ 'Accelerated Object-Oriented Programming in C++', 'Discrete Mathematics' ],
+		extraCurricular: [ '' ],
+		tech: [ 'C/C++', 'Vim', 'CLion', 'Git', 'BASH' ],
+		projects: [ 'NA' ]
+	},
+	{
+		name: 'Blue Ridge Community College - 2010',
+		major: 'Web Design and Development Certificate',
+		minor: 'NA',
+		focus: 'Graphic Design and Full-Stack Web Development',
+		curriculum: [
+			'Digital Graphic Design for Web',
+			'Object-Oriented Programming in Java',
+			'Front-End Web Development',
+			'Full-Stack Development'
+		],
+		extraCurricular: [ '' ],
+		tech: [ 'XHTML', 'CSS', 'Javascript (ES5)', 'Java', 'Eclipse', 'Notepad++', 'PHP' ],
+		projects: [
+			'Various websites utilizing web development fundamentals',
+			'Various business-card, business logo, and poster designs',
+			'Various simple, small projects demonstrating rudimentary programming exercises'
+		]
 	}
+	// {
+	// 	name: '',
+	// 	major: '',
+	// 	minor: '',
+	// 	focus: '',
+	// 	curriculum: [],
+	// 	extraCurricular: [],
+	// 	tech: [],
+	// 	projects: []
+	// }
 ];
 
 /**
@@ -141,38 +216,97 @@ export const EDUCATION = [
  */
 export const PROFESSIONAL_DATA = [
 	{
-		employer: 'NextLevelSh!t',
-		role: 'JavaScript Developer',
-		duration: '2018',
-		description: 'Short-term, Contract',
-		projects: [ 'Contributed to building, and debugging, an interactive guilloche in Angular 4 and D3.js.' ],
-		tech: [ 'JavaScript', 'D3.js', 'Angular 4' ]
+		employer: 'NextLevel / B612 Design (Stuttgart)',
+		role: 'JavaScript Engineer',
+		duration: '06/2018-07/2018',
+		description: 'Contract',
+		projects: [ 'Contributed to building an interactive guilloche using Angular 4 and D3.js.' ],
+		tech: [ 'TypeScript', 'D3.js', 'Angular 4', 'NodeJS' ]
+	},
+	{
+		employer: 'NextLevel / Kardion (Stuttgart)',
+		role: 'Front-End Engineer',
+		duration: '09/2018',
+		description: 'Contract',
+		projects: [ 'Per design specifications, helped build responsive website for Kardion GmbH' ],
+		tech: [ 'Bootstrap 4', 'CSS3', 'HTML5', 'Canvas API' ]
+	},
+	{
+		employer: 'Raincrow Studios',
+		role: 'NodeJS Engineer',
+		duration: '01/2018 - 02/2018',
+		description: 'Contract',
+		projects: [
+			'Contributed to the architecture and initial engineering stages of a server / RESTful API and in-memory database for an international MMORPG, Covens '
+		],
+		tech: [ 'NodeJS', 'Javascript ES6', 'Redis', 'Postman' ]
 	},
 	{
 		employer: 'ChartIQ',
-		role: 'Software Developer',
+		role: 'Javascript Engineer',
 		duration: '2016 - 2017',
-		description: '',
+		description: 'In-house Javascript and Front-End / AngularJS Engineer',
 		projects: [
 			'Integration of ChartIQ ProCharts into eToro AngularJS application.',
 			'Contributed to debugging, building and performance enhancement of ChartIQ flagship charting product.',
 			'Contributed to ChartIQ public-facing developer documentation.'
 		],
-		tech: [ 'JavaScript', 'HTML5 Canvas', 'CSS3', 'WebPack', 'NodeJS', 'AngularJS', 'Jira', 'Trello' ]
+		tech: [
+			'JavaScript',
+			'HTML5 Canvas',
+			'CSS3',
+			'WebPack',
+			'NodeJS',
+			'AngularJS',
+			'Jira',
+			'Trello',
+			'JSLint',
+			'Testing with: Chai, Mocha, SinonJS'
+		]
 	},
 	{
 		employer: 'Rosetta Stone',
 		role: 'Studio Recording Technician / ConsumerProduct Support',
 		duration: '2012 - 2016',
-		description: '',
-		projects: [],
+		description:
+			'Monitored and recorded Live Studio Sessions. Created training materials for Studio Recording Technician role. Helped Consumers Troubleshoot personal Rosetta Stone software.',
+		projects: [
+			'Trained new employees',
+			'Created training materials for Studio Recording Tech role',
+			'Created inter-dpartmental communication pipeline for recording requests.',
+			"Contributed to Product Support's Troubleshooting Manual"
+		],
 		tech: [
 			'Camtasia',
 			'Rosetta Stone product',
 			'Microsoft Office Suite (Word, Excel, PowerPoint)',
 			'Okta',
 			'SalesForce',
+			'XML',
+			'Adobe Acrobat',
 			'Oracle'
+		]
+	},
+	{
+		employer: 'Westover SkatePark',
+		role: 'Shift Supervisor',
+		duration: '2006 - 2011',
+		description:
+			'Supervised all skatepark activity. Created employee schedules. Maintained equipment and skatepark cleanliness.',
+		projects: [
+			'Was recently told by 2 skaters (then children, now adults) that if it were not for me, they would have chosen paths of criminality and self-destruction. Both pursued college degrees, one became a software engineer.',
+			'Splinted broken arms and legs.',
+			'Stopped fights.',
+			'Staved young skaters from dehydration.',
+			'Taught an autistic child to ride a skateboard.',
+			'Nudged skaters from listening to bad dubstep.'
+		],
+		tech: [
+			'Canon EOS Rebel XT SLR camera',
+			'the under-rated, universal "skate-tool"',
+			'allen wrenches',
+			'leaf blower',
+			'outdated Sony boombox'
 		]
 	}
 ];
