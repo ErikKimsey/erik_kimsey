@@ -99,7 +99,7 @@ export const EDUCATION = [
 		curriculum: [
 			'Full-Stack Web Development',
 			'Database and RESTful API Design',
-			'Declarative, Imperative, Functional, and Object-Oriented software design paradigms / techniques',
+			'Programming paradigms (Declarative, Imperative, and Procedural)',
 			'Single-Page Application Development',
 			'Algorithm Analysis',
 			'Data Structures',
