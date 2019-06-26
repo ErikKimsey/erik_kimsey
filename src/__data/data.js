@@ -248,7 +248,18 @@ export const PROFESSIONAL_DATA = [
 			'Contributed to debugging, building and performance enhancement of ChartIQ flagship charting product.',
 			'Contributed to ChartIQ public-facing developer documentation.'
 		],
-		tech: [ 'JavaScript', 'HTML5 Canvas', 'CSS3', 'WebPack', 'NodeJS', 'AngularJS', 'Jira', 'Trello' ]
+		tech: [
+			'JavaScript',
+			'HTML5 Canvas',
+			'CSS3',
+			'WebPack',
+			'NodeJS',
+			'AngularJS',
+			'Jira',
+			'Trello',
+			'JSLint',
+			'Testing with: Chai, Mocha, SinonJS'
+		]
 	},
 	{
 		employer: 'Rosetta Stone',
