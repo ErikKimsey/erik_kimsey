@@ -105,7 +105,9 @@ export const EDUCATION = [
 			'Data Structures',
 			'Theory of Computation',
 			'Computer Architecture',
-			'Cellular Automata'
+			'Cellular Automata',
+			'Version Control',
+			'Agile (Scrum and Kanban) and Waterfall techniques'
 		],
 		tech: [
 			'JavaScript ES6/ES7',
