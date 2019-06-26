@@ -130,7 +130,9 @@ export const EDUCATION = [
 			'DevTools',
 			'Debugging practices'
 		],
+		// https://github.com/Lambda-School-Labs/labs-team-home
 		projects: [
+			'Sveza team-collaboration tool (React, Styled-Components, Apollo-Client, GraphQL, Apollo-Server, ExpressJS, MongoDB/Mongoose, 0Auth, Material-UI, Stripe, Postman, Twilio, and more',
 			'Conways Game of Life (JavaScript, P5js, Canvas, React)',
 			'Web Server (C Language)',
 			'CPU Emulator (C Language)',
