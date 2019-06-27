@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/resume.scss';
-import resumePDF from '../../assets/resume/erikkimsey_software_engineer_resume.pdf';
+import resumePDF from '../../assets/resume/erikkimsey_fullstack_engineer_resume.pdf';
 import resumeShot from '../../assets/resume/resume_shot_small.png';
 
 export default function Resume() {
