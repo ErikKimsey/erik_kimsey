@@ -159,15 +159,7 @@ export const EDUCATION = [
 			'Poetry'
 		],
 		extraCurricular: [ 'Phi Sigma Tau Philosophy Honors Society, ', 'Director of the Club of Creative Writing' ],
-		tech: [
-			'Adobe Illustrator',
-			'Adobe Photoshop',
-			'Adobe InDesign',
-			'Gimp',
-			'Propellerheads Reason',
-			'Abelton Live',
-			'Blender'
-		],
+		tech: [ 'Microsoft Office', 'Propellerheads Reason' ],
 		projects: [ "Gille Deleuze's Concept of Becoming", 'The Nature of Nietzsches Perspectivism' ]
 	},
 	{
@@ -181,7 +173,7 @@ export const EDUCATION = [
 		projects: [ 'Various small exercises within object-oriented programming curriculum and math.' ]
 	},
 	{
-		name: 'Blue Ridge Community College - 2010',
+		name: 'Blue Ridge Community College - 2012',
 		major: 'Web Design and Development Certificate',
 		minor: '',
 		focus: 'Graphic Design and Full-Stack Web Development',
