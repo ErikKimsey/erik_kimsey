@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './nav.scss';
 import Banner from '../Banner/Banner';
-import resumePDF from '../assets/resume/erikkimsey_fullstack_engineer_resume.pdf';
+import resumePDF from '../assets/resume/erikkimsey_resume_june26.pdf';
 const activeStyles = {
 	color: '#fcfa85'
 };
@@ -26,11 +26,6 @@ class Nav extends Component {
 		label.className = 'hover-label';
 		label.innerHTML = e.target.title;
 	};
-
-	// handleLeave = (e) => {
-	// 	let nav = document.querySelector('.nav-container');
-	// 	let item = document.querySelector(e.target.title);
-	// };
 
 	render() {
 		return (
