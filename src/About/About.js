@@ -49,17 +49,16 @@ const About = (props) => {
 				<Skillset data={SKILLSET_OVERVIEW} />
 				<Resume />
 			</div>
-			<div className="education-block-container">
-				<div className="block-label">Education</div>
-				{EDUCATION.map((e, i) => {
-					return <Education key={i} data={e} />;
-				})}
-			</div>
-
 			<div className="professional-history-block-container">
 				<div className="block-label">Work History</div>
 				{PROFESSIONAL_DATA.map((e, i) => {
 					return <Employment key={i} data={e} />;
+				})}
+			</div>
+			<div className="education-block-container">
+				<div className="block-label">Education</div>
+				{EDUCATION.map((e, i) => {
+					return <Education key={i} data={e} />;
 				})}
 			</div>
 		</div>
