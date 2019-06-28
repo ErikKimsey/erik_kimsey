@@ -9,6 +9,7 @@ export default function Employment(props) {
 			<div className="duration">{props.data.duration}</div>
 			<div className="role-description ">
 				<b className="bold-list-title">
+					<br />
 					Description: <br />
 				</b>
 				<span className="job-description">{props.data.description}</span>
@@ -23,7 +24,8 @@ export default function Employment(props) {
 				</ul>
 			</div>
 			<div className="tech-container">
-				<b>Technologies:</b>{' '}
+				<br />
+				<b className="bold-list-title">Technologies:</b>{' '}
 				<ul>
 					{props.data.tech.map((e, i) => {
 						return <li key={e}>{e}</li>;
