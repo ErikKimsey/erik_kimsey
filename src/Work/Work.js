@@ -63,7 +63,41 @@ class Work extends Component {
 		return (
 			<div className="work-container">
 				<Slider ref={(c) => (this.slider = c)} {...sliderSettings} className="work-data-list-contaner">
-					{data.map((e) => {
+					{data.map((e, i) => {
+						if (i === 0) {
+							return (
+								<div key={e.name} className="data-item-container">
+									<div className="item-name data-item-general">{e.name}</div>
+									<div className="item-stack data-item-general">{e.stack}</div>
+								</div>
+							);
+						} else if (e.github === '') {
+							return (
+								<div key={e.name} className="data-item-container">
+									<div className="item-name data-item-general">{e.name}</div>
+									<div className="item-stack data-item-general">{e.stack}</div>
+									<div className="item-description data-item-general" />
+									<div className="item-url url-and-github-styles data-item-general">
+										<a href={e.url} target="_blank" rel="noopener noreferrer">
+											See it live.
+										</a>
+									</div>
+								</div>
+							);
+						} else if (e.url === '') {
+							return (
+								<div key={e.name} className="data-item-container">
+									<div className="item-name data-item-general">{e.name}</div>
+									<div className="item-stack data-item-general">{e.stack}</div>
+									<div className="item-description data-item-general" />
+									<div className="item-github url-and-github-styles data-item-general">
+										<a href={e.github} target="_blank" rel="noopener noreferrer">
+											See the code.
+										</a>
+									</div>
+								</div>
+							);
+						}
 						return (
 							<div key={e.name} className="data-item-container">
 								<div className="item-name data-item-general">{e.name}</div>
@@ -71,21 +105,14 @@ class Work extends Component {
 								<div className="item-description data-item-general" />
 								<div className="item-url url-and-github-styles data-item-general">
 									<a href={e.url} target="_blank" rel="noopener noreferrer">
-										{e.url}
+										See it live.
 									</a>
 								</div>
 								<div className="item-github url-and-github-styles data-item-general">
 									<a href={e.github} target="_blank" rel="noopener noreferrer">
-										{e.github}
+										See the code.
 									</a>
-									{/* {e.github} */}
 								</div>
-								{/* <button className="button" onClick={this.previous}>
-            Previous
-          </button>
-          <button className="button" onClick={this.next}>
-            Next
-          </button> */}
 							</div>
 						);
 					})}

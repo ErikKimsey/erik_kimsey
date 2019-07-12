@@ -60,14 +60,14 @@ export const data = [
 		img: '',
 		about: ''
 	},
-	{
-		name: 'Audio Synthesizer',
-		stack: 'Web Audio API, JavaScript, (some weird usage of) CSS',
-		url: '',
-		github: 'https://github.com/ErikKimsey/Simple_Synthesizer_usingWebAudioAPI',
-		img: '',
-		about: ''
-	},
+	// {
+	// 	name: 'Audio Synthesizer',
+	// 	stack: 'Web Audio API, JavaScript, (some weird usage of) CSS',
+	// 	url: '',
+	// 	github: 'https://github.com/ErikKimsey/Simple_Synthesizer_usingWebAudioAPI',
+	// 	img: '',
+	// 	about: ''
+	// },
 	{
 		name: 'Mobile Motion Painter',
 		stack: 'Gyroscope & Accelerometer of the W3C Sensor API, P5.js',
