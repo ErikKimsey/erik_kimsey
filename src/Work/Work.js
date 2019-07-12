@@ -67,7 +67,9 @@ class Work extends Component {
 						if (i === 0) {
 							return (
 								<div key={e.name} className="data-item-container">
-									<div className="item-name data-item-general">{e.name}</div>
+									<div className="item-name data-item-general" style={{ fontSize: '2rem' }}>
+										{e.name}
+									</div>
 									<div className="item-stack data-item-general">{e.stack}</div>
 								</div>
 							);
@@ -79,7 +81,7 @@ class Work extends Component {
 									<div className="item-description data-item-general" />
 									<div className="item-url url-and-github-styles data-item-general">
 										<a href={e.url} target="_blank" rel="noopener noreferrer">
-											See it live.
+											The Product.
 										</a>
 									</div>
 								</div>
@@ -92,7 +94,7 @@ class Work extends Component {
 									<div className="item-description data-item-general" />
 									<div className="item-github url-and-github-styles data-item-general">
 										<a href={e.github} target="_blank" rel="noopener noreferrer">
-											See the code.
+											The Code.
 										</a>
 									</div>
 								</div>
@@ -105,12 +107,12 @@ class Work extends Component {
 								<div className="item-description data-item-general" />
 								<div className="item-url url-and-github-styles data-item-general">
 									<a href={e.url} target="_blank" rel="noopener noreferrer">
-										See it live.
+										The Product.
 									</a>
 								</div>
 								<div className="item-github url-and-github-styles data-item-general">
 									<a href={e.github} target="_blank" rel="noopener noreferrer">
-										See the code.
+										The Code.
 									</a>
 								</div>
 							</div>

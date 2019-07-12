@@ -51,13 +51,25 @@ $dope: 'dope';
 
   .work-data-list-contaner {
     margin: 5%;
-    background-color: rgba(255,255,255,0.5);
+    margin-left: 10%;
+    background-color: rgba(255,255,255,0.9);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     .data-item-container {
       font-size: 1em;
       overflow: hidden;
-
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      
       .data-item-general {
-        padding-left: 33px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        
       }
 
       a {
@@ -67,16 +79,16 @@ $dope: 'dope';
         overflow: hidden;
       }
       .url-and-github-styles {
-        padding-left: 15px;
         transition: all 500ms;
         &:hover {
-          padding-left: 40px;
-          transform: scale(1.05);
+          transform: scale(1.2);
           color:darken($pink, 20%);
         }
       }
       .item-name{
-        font-size: 3em;
+        font-size: 2em;
+        letter-spacing: 2px;
+        text-align: center;
         padding-top: 10px;
         font-family: $dope;
         font-weight: 100;
@@ -84,22 +96,13 @@ $dope: 'dope';
       }  
       .item-stack{
         font-size: 1.5em;
+        padding: 0 20px;
+        text-align: center;
         color:$purple;
       }
       .item-description{}
-      .item-url{
-        // padding-left: 15px;
-        // background-color: rgba(255,255,255,0.5);
-        // transition: all 500ms;
-        // &:hover {
-        //   padding-left: 40px;
-        //   transform: scale(1.05);
-        //   color:darken($pink, 20%);
-        // }
-      }
-      .item-github{
-        padding-left: 15px;
-      }
+      .item-url{}
+      .item-github{}
 
     }
   }
@@ -166,7 +169,15 @@ $dope: 'dope';
         }
 
         .url-and-github-styles {
-          padding: 5px 0 5px 0;
+          padding:0;
+          // padding: 5px 0 5px 0;
+        }
+
+        .item-stack{
+          font-size: 1em;
+          padding: 0 5px;
+          text-align: center;
+          color:$purple;
         }
       }
     }

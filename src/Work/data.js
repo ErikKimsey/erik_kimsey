@@ -29,8 +29,8 @@
 
 export const data = [
 	{
-		name: 'Slide right ',
-		stack: 'To see some of my work!',
+		name: 'My Portfolio',
+		stack: 'Slide right!',
 		url: '',
 		github: '',
 		img: '',
@@ -41,13 +41,37 @@ export const data = [
 		stack: 'ReactJS, Apollo, GraphQL, Styled-Components',
 		url: 'https://team-home.netlify.com/',
 		github: 'https://github.com/Lambda-School-Labs/labs-team-home',
+		img: '../assets/port_images/sveza.png',
+		about: ''
+	},
+	{
+		name: 'Raincrow Studios - Covens',
+		stack: 'JavaScript (ES6), NodeJS, Redis, Python / Pandas',
+		url: 'https://play.google.com/store/apps/details?id=com.raincrow.covens&hl=en_US',
+		github: '',
+		img: '../assets/port_images/raincrow.png',
+		about: ''
+	},
+	{
+		name: 'ChartIQ',
+		stack: 'JavaScript, Angular, HTML5 / Canvas API, CSS3',
+		url: 'https://www.chartiq.com/html5-charting-library/',
+		github: '',
+		img: '../assets/port_images/chartiq.png',
+		about: ''
+	},
+	{
+		name: 'NextLevel - Interactive Guilloche',
+		stack: 'Angular v4, D3.js',
+		url: 'https://www.npmjs.com/package/nls-guilloche',
+		github: '',
 		img: '',
 		about: ''
 	},
 	{
-		name: 'Interactive Guilloche',
-		stack: 'Angular v4, D3.js',
-		url: 'https://www.npmjs.com/package/nls-guilloche',
+		name: 'Kardion',
+		stack: 'Boostrap 4, Sass',
+		url: 'http://www.kardion.de/en/imprint',
 		github: '',
 		img: '',
 		about: ''
@@ -68,16 +92,16 @@ export const data = [
 	// 	img: '',
 	// 	about: ''
 	// },
+	// {
+	// 	name: 'Mobile Motion Painter',
+	// 	stack: 'Gyroscope & Accelerometer of the W3C Sensor API, P5.js',
+	// 	url: '',
+	// 	github: 'https://github.com/ErikKimsey/MobileMotionPaint',
+	// 	img: '',
+	// 	about: ''
+	// },
 	{
-		name: 'Mobile Motion Painter',
-		stack: 'Gyroscope & Accelerometer of the W3C Sensor API, P5.js',
-		url: '',
-		github: 'https://github.com/ErikKimsey/MobileMotionPaint',
-		img: '',
-		about: ''
-	},
-	{
-		name: 'HTTP Server (C lang)',
+		name: 'HTTP Server',
 		stack: 'C Language',
 		url: '',
 		github: 'https://github.com/ErikKimsey/C-Web-Server/tree/master/src',
