@@ -30,7 +30,7 @@
 export const data = [
 	{
 		name: 'My Portfolio',
-		stack: 'Slide right!',
+		stack: 'Slide right.',
 		url: '',
 		github: '',
 		img: '',

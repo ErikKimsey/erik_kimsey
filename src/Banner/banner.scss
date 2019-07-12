@@ -9,6 +9,12 @@ $dope: 'dope';
   src: url(../assets/Dopestyle.ttf) format('truetype');
 }
 
+$bomb: 'bomb';
+@font-face {
+  font-family: 'bomb';
+  src: url(../assets/Painterz.ttf) format('truetype');
+}
+
 .banner-container {
   position: fixed;
   display: -webkit-flex;
@@ -50,6 +56,8 @@ $dope: 'dope';
     .name {
       color:$pink;
     }
+
+    .role {}
     
     .underscore {
       width: 86px;

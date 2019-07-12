@@ -9,6 +9,11 @@ $dope: 'dope';
   font-family: 'dope';
   src: url(../assets/Dopestyle.ttf) format('truetype');
 }
+$bomb: 'bomb';
+@font-face {
+  font-family: 'bomb';
+  src: url(../assets/Painterz.ttf) format('truetype');
+}
 
 .work-container {
   height: calc(100vh - 220px);
@@ -90,7 +95,7 @@ $dope: 'dope';
         letter-spacing: 2px;
         text-align: center;
         padding-top: 10px;
-        font-family: $dope;
+        font-family: $bomb;
         font-weight: 100;
         color:$darkGrayish;
       }  
