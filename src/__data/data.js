@@ -208,6 +208,14 @@ export const EDUCATION = [
  */
 export const PROFESSIONAL_DATA = [
 	{
+		employer: 'Connect Our Kids',
+		role: 'React-Native Engineer',
+		duration: '06/2019 - current',
+		description: 'Contract',
+		projects: [ 'Architecting and developing Connect Our Kids first mobile app, using React-Native.' ],
+		tech: [ 'React-Native', 'Redux', 'Sass', 'JavaScript / ES6', 'Expo' ]
+	},
+	{
 		employer: 'NextLevel / B612 Design (Stuttgart)',
 		role: 'JavaScript Engineer',
 		duration: '06/2018-07/2018',
