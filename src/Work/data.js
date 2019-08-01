@@ -37,6 +37,14 @@ export const data = [
 		about: ''
 	},
 	{
+		name: 'Connect Our Kids',
+		stack: 'React-Native, Redux, Auth0, Swagger',
+		url: 'https://www.connectourkids.org/',
+		github: '',
+		img: '',
+		about: 'Contributed to planning and architecture of Connect Our Kids "Family Connections" in their React-Native application'
+	},
+	{
 		name: 'Sveza',
 		stack: 'ReactJS, Apollo, GraphQL, Styled-Components',
 		url: 'https://team-home.netlify.com/',
