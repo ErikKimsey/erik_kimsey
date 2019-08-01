@@ -16,12 +16,13 @@ export const JS_DATA = [
 
 export const SKILLSET_OVERVIEW = [
 	'JavaScript ES6/7',
+	'React-Native',
 	'ReactJS / NextJS / Redux',
 	'CSS3 / SASS / Less / Styled-Components',
 	'HTML5 / Canvas',
 	'Web Audio API',
 	'NodeJS / Express / SocketIO',
-	'SQLite',
+	'SQL and NoSQL DB',
 	'Django',
 	'GraphQL / Apollo',
 	'Python / C / C++'
