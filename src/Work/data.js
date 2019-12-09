@@ -110,22 +110,6 @@ export const data = [
     img: '',
     about: ''
   },
-  // {
-  // 	name: 'Audio Synthesizer',
-  // 	stack: 'Web Audio API, JavaScript, (some weird usage of) CSS',
-  // 	url: '',
-  // 	github: 'https://github.com/ErikKimsey/Simple_Synthesizer_usingWebAudioAPI',
-  // 	img: '',
-  // 	about: ''
-  // },
-  // {
-  // 	name: 'Mobile Motion Painter',
-  // 	stack: 'Gyroscope & Accelerometer of the W3C Sensor API, P5.js',
-  // 	url: '',
-  // 	github: 'https://github.com/ErikKimsey/MobileMotionPaint',
-  // 	img: '',
-  // 	about: ''
-  // },
   {
     name: 'HTTP Server',
     stack: 'C Language',
@@ -134,12 +118,6 @@ export const data = [
     img: '',
     about: ''
   },
-  // {
-  // 	name: 'Roman-Numeral Calculator ',
-  // 	stack: 'NodeJS, HTML, JavaScript',
-  // 	url: 'https://young-bayou-82655.herokuapp.com/',
-  // 	github: 'https://github.com/ErikKimsey/Roman_Numeral_Calculator'
-  // },
   {
     name: '8-bit CPU Emulator',
     stack: 'C Language',
