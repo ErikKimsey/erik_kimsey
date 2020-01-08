@@ -215,7 +215,7 @@ export const PROFESSIONAL_DATA = [
     duration: '09/2019 - 11/2019',
     description: 'Contract',
     projects: [
-      'Using Messenger API, Postgres, and React, develop a dynamic chatbot that provides Blinkist-type functionality within Messenger.'
+      'Using the Facebook Messenger API, Postgres, and React, I contributed to the development of a dynamic chatbot that provides a Blinkist-type product within Facebook Messenger.'
     ],
     tech: [ 'PostGres', 'Express / NodeJS', 'React', 'Sass', 'JavaScript / ES6', 'Messenger API' ]
   },
