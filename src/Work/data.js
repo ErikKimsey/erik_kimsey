@@ -43,7 +43,7 @@ export const data = [
     github: '',
     img: '',
     about:
-      'Using Messenger API, Postgres, and React, develop a dynamic chatbot that provides Blinkist-type functionality within Messenger.'
+      'Using the Facebook Messenger API, Postgres, and React, I contributed to the development of a dynamic chatbot that provides a Blinkist-type product within Facebook Messenger.'
   },
   {
     name: 'Realm',
