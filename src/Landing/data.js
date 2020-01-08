@@ -1,6 +1,5 @@
 export const data = [
-	'I focus on web-based and mobile-web technology, design, and content.',
-	'I enjoy working creatively with technology.',
-	'I want to be at the cross-section of interactivity, aesthetic-appeal, innovation, and good purpose.',
-	'I enjoy learning new languages and technology.'
+  'High-Technology is a artistic medium. It is no less organic to creativity and culture than the paint brush, the violin, or pen.',
+  "Hey, there! I'm Erik.",
+  'I am at the cross-section of interactivity, aesthetic, innovation, and good purpose with technology.'
 ];

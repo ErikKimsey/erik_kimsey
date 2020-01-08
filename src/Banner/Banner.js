@@ -4,37 +4,37 @@ import '../Nav/Nav';
 import { Spin } from 'react-burgers';
 
 class Banner extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			iconActive: this.props.isActive
-		};
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      iconActive: this.props.isActive
+    };
+  }
 
-	componentDidMount = () => {
-		this.setState({ iconActive: false });
-	};
+  componentDidMount = () => {
+    this.setState({ iconActive: false });
+  };
 
-	handleToggle = () => {
-		this.props.toggle();
-	};
+  handleToggle = () => {
+    this.props.toggle();
+  };
 
-	render() {
-		return (
-			<div className="banner-container">
-				<div className="toggle-logo-container">
-					<span className="navbar-toggle" id="js-navbar-toggle" onClick={this.handleToggle}>
-						<Spin className="spin" active={this.props.isActive} color="white" />
-					</span>
-				</div>
-				<div className="text-container">
-					<div className="name banner-item">erik kimsey</div>
-					<div className="underscore banner-item"> </div>
-					<div className="role banner-item">software engineer</div>
-				</div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="banner-container">
+        <div className="toggle-logo-container">
+          <span className="navbar-toggle" id="js-navbar-toggle" onClick={this.handleToggle}>
+            <Spin className="spin" active={this.props.isActive} color="white" />
+          </span>
+        </div>
+        <div className="text-container">
+          <div className="name banner-item">Erik Kimsey</div>
+          <div className="underscore banner-item"> </div>
+          <div className="role banner-item">Creative technologist</div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Banner;
