@@ -6,8 +6,8 @@ export const JS_DATA = [
   'ES6+',
   'React',
   'React Native',
-  'Node.js',
   'P5.js',
+  'Node.js',
   'D3.js',
   'Apollo-Client'
 ];
@@ -15,16 +15,19 @@ export const JS_DATA = [
 export const SKILLSET_OVERVIEW = [
   'JavaScript ES6/7',
   'React-Native',
+  'P5.js',
+  'Unity3D',
   'ReactJS',
+  'Blender',
   'CSS3 / SASS / Less / Styled-Components',
   'HTML5 / Canvas',
-  'Unity3D',
   'NodeJS / Express',
   'SQL and NoSQL DB',
   'Django',
   'GraphQL / Apollo',
-  'Web Audio API',
-  'Python / C / C++'
+  'Python / C / C++',
+  'Propellerhead Reason (DAW)',
+  'Ableton Live (DAW)'
 ];
 
 export const STYLE_DATA = [ 'Styling Tools', 'CSS3', 'SASS', 'Less', 'Styled-Components', 'GreenSock' ];

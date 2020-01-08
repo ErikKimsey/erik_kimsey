@@ -53,6 +53,15 @@ export const data = [
     img: '',
     about: 'Within React-Native, I contributed to architecting and developing the Realm gamer-focused social-media app.'
   },
+
+  {
+    name: 'Game of Life',
+    stack: 'P5.js, JavaScript (ES6)',
+    url: 'https://wizardly-lewin-048675.netlify.com/',
+    github: 'https://github.com/ErikKimsey/Conways-Life',
+    img: 'https://i.imgur.com/GCOyUvW.png',
+    about: 'A playful project implementing, using P5.js and ES6, John Conway\'s "Game of Life".'
+  },
   {
     name: 'Connect Our Kids',
     stack: 'React-Native, Redux, Auth0, Swagger',
