@@ -73,11 +73,10 @@ export const AUDIO_SKILLS_DATA = [
   'Music Creation / Audio Editing',
   'PropellerHeads Reason',
   'Ableton LIVE',
-  'Audacity',
-  'Adobe Audition'
+  'Audacity'
 ];
 
-export const VIDEO_EDITING_SKILLS = [ 'Video Creation / Editing', 'Camtasia', 'Adobe Premiere', 'After Effects' ];
+export const VIDEO_EDITING_SKILLS = [ 'Video Creation / Editing', 'Adobe Premiere', 'After Effects' ];
 
 export const FAV_COMBOS_DATA = [
   'Favorite Tech Stacks',
