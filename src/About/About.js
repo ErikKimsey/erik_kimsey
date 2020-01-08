@@ -6,76 +6,40 @@ import Employment from './components/Employment';
 import Resume from './components/Resume';
 import Skillset from './components/Skillset';
 import ScrollArrow from '../ScrollArrow/ScrollArrow';
-// SVGs
-// import adobeIMG from '../assets/icons/adobe.svg';
-// import reactIMG from '../assets/icons/react.svg';
-// import jsIMG from '../assets/icons/javascript.svg';
-// import graphqlIMG from '../assets/icons/graphql.svg';
-// import sassIMG from '../assets/icons/sass.svg';
-// import pythonIMG from '../assets/icons/python.png';
-// import webpackIMG from '../assets/icons/webpack.svg';
-// import bootstrap from '../assets/icons/bootstrap.svg';
-// import illustratorIMG from '../assets/icons/adobeillustrator.svg';
-// import photoshopIMG from '../assets/icons/adobephotoshop.svg';
-// import cssIMG from '../assets/icons/css3.svg';
-// import npmIMG from '../assets/icons/npm.svg';
-// import html5IMG from '../assets/icons/html5.svg';
-// import nodeIMG from '../assets/icons/node-dot-js.png';
-// import djangoIMG from '../assets/icons/django.svg';
-// import d3IMG from '../assets/icons/d3-dot-js.svg';
-
-// const SVGS = [
-// 	adobeIMG,
-// 	reactIMG,
-// 	cssIMG,
-// 	jsIMG,
-// 	html5IMG,
-// 	sassIMG,
-// 	nodeIMG,
-// 	npmIMG,
-// 	pythonIMG,
-// 	djangoIMG,
-// 	d3IMG,
-// 	webpackIMG,
-// 	bootstrap,
-// 	illustratorIMG,
-// 	photoshopIMG,
-// 	graphqlIMG
-// ];
 
 export default class About extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			hasArrowed: false
-		};
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      hasArrowed: false
+    };
+  }
 
-	componentDidMount() {
-		this.setState({ hasArrowed: true });
-	}
+  componentDidMount() {
+    this.setState({ hasArrowed: true });
+  }
 
-	render() {
-		return (
-			<div className="about-container">
-				<ScrollArrow />
-				<div className="resume-skillset-block">
-					<Skillset data={SKILLSET_OVERVIEW} />
-					<Resume />
-				</div>
-				<div className="professional-history-block-container">
-					<div className="block-label">Work History</div>
-					{PROFESSIONAL_DATA.map((e, i) => {
-						return <Employment key={i} data={e} />;
-					})}
-				</div>
-				<div className="education-block-container">
-					<div className="block-label">Education</div>
-					{EDUCATION.map((e, i) => {
-						return <Education key={i} data={e} />;
-					})}
-				</div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="about-container">
+        <ScrollArrow />
+        <div className="resume-skillset-block">
+          <Skillset data={SKILLSET_OVERVIEW} />
+          <Resume />
+        </div>
+        <div className="professional-history-block-container">
+          <div className="block-label">Work History</div>
+          {PROFESSIONAL_DATA.map((e, i) => {
+            return <Employment key={i} data={e} />;
+          })}
+        </div>
+        <div className="education-block-container">
+          <div className="block-label">Education</div>
+          {EDUCATION.map((e, i) => {
+            return <Education key={i} data={e} />;
+          })}
+        </div>
+      </div>
+    );
+  }
 }
