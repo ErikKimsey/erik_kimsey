@@ -1,5 +1,5 @@
 export const data = [
-  'I see High-Technology as an artistic medium, in addition to its utility. It is no less organic to creativity and culture than the paint brush, the violin, or pen.',
-  "Hey, there! I'm Erik.",
+  'UI Engineer creating dynamic, unique experiences specializing in current FrontEnd web technologies, React-Native, and Unity3D/C#',
+  "/'Sup! \n I'm Erik.",
   'I am at the cross-section of interactivity, aesthetic, innovation, and good purpose with technology.'
 ];
