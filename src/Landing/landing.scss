@@ -11,7 +11,7 @@ $num-of-blurbs: 4;
   color: #fff;
   overflow: hidden;
   padding: 100px;
-  padding-top: 100px;
+  padding-top: 30px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: auto auto auto auto;
@@ -33,7 +33,7 @@ $num-of-blurbs: 4;
 
   .blurb-1 {
     grid-area: 1 / 2 / 3 /4;
-    font-size: calc(290%);
+    font-size: calc(230%);
     background-color: $pink;
     background-image: url('../assets/bige_color_v2.png');
     background-position: center;

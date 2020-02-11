@@ -1,5 +1,6 @@
 @import './__styles/responsive.scss';
 @import './__styles/globals.scss';
+@import './__styles//mixins.scss';
 
 .App {
   margin: 0 auto;
@@ -10,9 +11,9 @@
   flex-flow: row;
   justify-content: center;
   align-items: flex-start;
-  background-image: url('./assets/plant.png');
-  background-repeat: no-repeat;
-  background-position-x: center;
+  // background-image: url('./assets/plant.png');
+  // background-repeat: no-repeat;
+  // background-position-x: center;
 
   .routes-container{
     position: relative;
