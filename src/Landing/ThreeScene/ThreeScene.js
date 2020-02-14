@@ -8,6 +8,7 @@ export class ThreeScene extends Component {
 		var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 		var renderer = new THREE.WebGLRenderer();
 		renderer.setSize(window.innerWidth - 300, window.innerHeight - 300);
+		renderer.setClearColor('rgb(233, 12, 122)', 1);
 		this.mount.appendChild(renderer.domElement);
 		var geometry = new THREE.BoxGeometry(1, 1, 1);
 		var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
