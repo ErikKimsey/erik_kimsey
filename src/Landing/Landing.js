@@ -8,27 +8,64 @@ class Landing extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			width: 0,
-			height: 0
+			width: null,
+			height: null
 		};
 		this.landingBlurbs = React.createRef();
 	}
 
+	componentDidMount() {
+		let { current } = this.landingBlurbs;
+		this.setState({
+			width: current.offsetWidth,
+			height: current.offsetHeight
+		});
+		this.handleSetDimensions();
+		// window.addEventListener('resize', () => {
+		// 	this.handleSetDimensions();
+		// });
+	}
+
+	handleSetDimensions() {
+		// this.setState({
+		// 	width: current.offsetWidth,
+		// 	height: current.offsetHeight
+		// });
+	}
+
+	handleGetDimensions() {}
+
 	render() {
-		return (
-			<div className="landing-container" ref={(e) => (this.landingBlurbs = e)}>
-				<ThreeScene />
-				{data.map((e, i) => {
-					i += 1;
-					return (
-						<div className={`self-blurb-container blurb-${i}`} key={e}>
-							{e}
-						</div>
-					);
-				})}
-				<IconLinks />
-			</div>
-		);
+		if (this.state.width != null) {
+			return (
+				<div className="landing-container" ref={this.landingBlurbs}>
+					<ThreeScene data={this.state} />
+					{data.map((e, i) => {
+						i += 1;
+						return (
+							<div className={`self-blurb-container blurb-${i}`} key={e}>
+								{e}
+							</div>
+						);
+					})}
+					<IconLinks />
+				</div>
+			);
+		} else {
+			return (
+				<div className="landing-container" ref={this.landingBlurbs}>
+					{data.map((e, i) => {
+						i += 1;
+						return (
+							<div className={`self-blurb-container blurb-${i}`} key={e}>
+								{e}
+							</div>
+						);
+					})}
+					<IconLinks />
+				</div>
+			);
+		}
 	}
 }
 

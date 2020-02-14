@@ -3,11 +3,24 @@ import * as THREE from 'three';
 import './three-scene.scss';
 
 export class ThreeScene extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			w: null,
+			h: null
+		};
+	}
 	componentDidMount() {
+		this.handleScene();
+	}
+
+	handleScene() {
 		var scene = new THREE.Scene();
 		var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 		var renderer = new THREE.WebGLRenderer();
-		renderer.setSize(window.innerWidth - 300, window.innerHeight - 300);
+		console.log(window.innerWidth);
+
+		renderer.setSize(window.innerWidth, window.innerHeight);
 		renderer.setClearColor('rgb(233, 12, 122)', 1);
 		this.mount.appendChild(renderer.domElement);
 		var geometry = new THREE.BoxGeometry(1, 1, 1);

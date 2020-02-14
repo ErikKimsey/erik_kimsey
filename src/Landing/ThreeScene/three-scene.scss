@@ -1,6 +1,7 @@
 .container {
-  position: absolute;
+  position: static;
   z-index: -1000;
-  width: 100%;
-  margin: 0 auto;
+  // width: 100%;
+  top: 100px;
+  // margin: 0 auto;
 }
