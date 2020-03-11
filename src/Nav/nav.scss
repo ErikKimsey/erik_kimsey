@@ -55,7 +55,7 @@ $hover-color: #fcfa85;
       }
       a.active {
         i {
-          color:$pink;
+          color:$grayish;
         }
       }
       &:hover {
@@ -161,6 +161,9 @@ $hover-color: #fcfa85;
       justify-content: center;
       .fas .far {
         color:#fff;
+      } 
+      li {
+
       }
     }
     .nav-list {

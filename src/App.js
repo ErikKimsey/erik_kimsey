@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 import './App.scss';
 import './Banner/banner.scss';
 import Nav from './Nav/Nav';
