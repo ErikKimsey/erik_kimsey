@@ -35,13 +35,13 @@ $hover-color: #fcfa85;
       transform: rotate(20deg);
       height: 90px;
       font-size: 26px;
+      transition: all 300ms;
       .hover-label-container {
         position: fixed;
         height: 100px;
         width: 300px;
         background-color: #000000;
         color:#ffffff;
-        
       }
       a {
         width: 250px;
@@ -49,12 +49,21 @@ $hover-color: #fcfa85;
         font-size: 2em;
         font-weight: 100;
         width: 150px;
-        &:hover {
-          animation: 0.5s ease 0s navbuzz 1;
-        }
         &:click {
           animation: 0.5s ease 0s navbuzz 1;
         }
+      }
+      a.active {
+        i {
+          color:$pink;
+        }
+      }
+      &:hover {
+        transform: rotate(0deg) scale(1.2);
+        i {
+          color:$lighterpink;
+        }
+        animation: 0.5s ease 0s navbuzz 1;
       }
     }
   }
@@ -225,7 +234,7 @@ $hover-color: #fcfa85;
 
 @keyframes navbuzz {
   0% {
-    transform: translate3d(0, 0, 0);
+    // transform: translate3d(0, 0, 0);
     filter: blur(0);
   }
   20% {
@@ -235,7 +244,7 @@ $hover-color: #fcfa85;
     filter: blur(0);
   }
   100% {
-    transform: translate3d(0, 0, 0);
+    // transform: translate3d(0, 0, 0);
     filter: blur(0);
   }
 }
