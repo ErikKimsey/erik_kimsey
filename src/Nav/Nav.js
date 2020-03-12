@@ -54,6 +54,16 @@ class Nav extends Component {
 							</NavLink>
 						</li>
 						<li onClick={this.handleToggle}>
+							<NavLink activeStyle={activeStyles} className="nav-link" to="/oddtreatment">
+								<i
+									className="fas fa-prescription fa-1x"
+									title="oddtreatment"
+									onMouseOver={this.handleHover}
+									onMouseLeave={this.handleLeave}
+								/>
+							</NavLink>
+						</li>
+						<li onClick={this.handleToggle}>
 							<NavLink activeStyle={activeStyles} title="Resume" className="nav-link" to={resumePDF} target="_blank">
 								<i className="far fa-file-pdf fa-1x" />
 							</NavLink>
