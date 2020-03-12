@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './odd_treatment.scss';
-import OT_DATA from './ot_data';
+import mapOfMeData from './ot_data';
 import OT_Item from './components/ot_item';
 
 export default class OddTreatment extends Component {
@@ -12,7 +12,7 @@ export default class OddTreatment extends Component {
 	}
 
 	componentDidMount() {
-		this.setState({ data: OT_DATA });
+		this.setState({ data: mapOfMeData });
 	}
 	render() {
 		return (
@@ -21,9 +21,6 @@ export default class OddTreatment extends Component {
 				{this.state.data &&
 					this.state.data.map((e, i) => {
 						return <OT_Item data={e} />;
-						{
-							/* return <div className={'data-item'}>{e}</div>; */
-						}
 					})}
 			</div>
 		);
