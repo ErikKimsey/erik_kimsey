@@ -4,7 +4,8 @@
 
 .oddtreatment-container {
   // display: flex;
-  // flex-flow: row;
+  // flex-flow: column;
+  overflow-y: scroll;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fill, minmax(233px, 1fr));

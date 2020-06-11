@@ -32,14 +32,29 @@ $hover-color: #fcfa85;
       color:#000;
     }
     li {
+      width: 100px;
+      display: flex;
+      flex-flow: row;
       transform: rotate(20deg);
       height: 90px;
       font-size: 26px;
       transition: all 300ms;
+      .nav-link {
+        display: flex;
+        flex-flow: row;
+        h3 {
+          position: absolute;
+          z-index: 10000;
+          display: inline;
+          opacity: 0;
+          transition: opacity 300s;
+          font-size: 1em;
+        }
+      }
       .hover-label-container {
         position: fixed;
         height: 100px;
-        width: 300px;
+        width: 600px;
         background-color: #000000;
         color:#ffffff;
       }
@@ -62,6 +77,19 @@ $hover-color: #fcfa85;
         transform: rotate(0deg) scale(1.2);
         i {
           color:$lighterpink;
+        }
+        h3 {
+          display: inline;
+          z-index: 1000;
+          background: $purple;
+          opacity: 1;
+          padding: 3px 33px;
+          font-size: 1.1em;
+          // margin-left: 20px;
+          font-weight: 900;
+          border-radius: 5px;
+          color: #fff;
+          text-align: center;
         }
         animation: 0.5s ease 0s navbuzz 1;
       }

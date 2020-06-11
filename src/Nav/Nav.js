@@ -41,6 +41,7 @@ class Nav extends Component {
 						<li onClick={this.handleToggle}>
 							<NavLink activeStyle={activeStyles} className="nav-link" to="/about">
 								<i className="fas fa-user-astronaut fa-1x" title="About" onMouseOver={this.handleHover} />
+								<div />
 							</NavLink>
 						</li>
 						<li onClick={this.handleToggle}>
@@ -53,16 +54,16 @@ class Nav extends Component {
 								/>
 							</NavLink>
 						</li>
-						<li onClick={this.handleToggle}>
-							<NavLink activeStyle={activeStyles} className="nav-link" to="/oddtreatment">
+						{/* <li onClick={this.handleToggle}>
+							<a href="https://elated-hugle-66aa20.netlify.com/" target="_blank">
 								<i
-									className="fas fa-prescription fa-1x"
+									className="fas fa-marker fa-1x"
 									title="oddtreatment"
 									onMouseOver={this.handleHover}
 									onMouseLeave={this.handleLeave}
 								/>
-							</NavLink>
-						</li>
+							</a>
+						</li> */}
 						<li onClick={this.handleToggle}>
 							<NavLink activeStyle={activeStyles} title="Resume" className="nav-link" to={resumePDF} target="_blank">
 								<i className="far fa-file-pdf fa-1x" />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.scss';
 import './Banner/banner.scss';
 import Nav from './Nav/Nav';
@@ -36,7 +36,7 @@ class App extends Component {
 					<Route exact path="/" component={Landing} />
 					<Route path="/about" component={About} />
 					<Route path="/work" component={Work} />
-					<Route path="/oddtreatment" component={OddTreatment} />
+					<Route path="https://elated-hugle-66aa20.netlify.com/" component={OddTreatment} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/landscape" component={Landscape} />
 				</div>
