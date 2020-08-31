@@ -3,11 +3,13 @@
 
 
 .playground-container {
-  width: 100%;
-  height: calc(100vh - 320px);
-  padding: 100px;
-  padding-top: 100px;
-  margin-left: 140px;
-  overflow-y: scroll
-  
+    max-width: 1050px;
+    height: calc(100vh - 220px);
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: #000;
 }

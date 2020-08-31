@@ -8,6 +8,7 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Work from './Work/Work';
 import OddTreatment from './OddTreatment/OddTreatment';
+import Playground from './Playground/Playground';
 // import detectOrientation, { orientationListener } from './utils/detectOrientation';
 import Landscape from './LANDSCAPE/Landscape';
 
@@ -34,6 +35,7 @@ class App extends Component {
 			<div className="App">
 				<div className="routes-container">
 					<Route exact path="/" component={Landing} />
+					<Route exact path="/playground" component={Playground} />
 					<Route path="/about" component={About} />
 					<Route path="/work" component={Work} />
 					<Route path="https://elated-hugle-66aa20.netlify.com/" component={OddTreatment} />

@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import axios from 'axios';
 import './playground.scss';
-import { draw } from './playings/play';
-import { D2, PLAYGROUND_DATA } from './data';
+// import { draw } from './playings/play';
 
 export default class Playground extends Component {
 	constructor(props) {
@@ -18,20 +17,9 @@ export default class Playground extends Component {
 		this.container = React.createRef();
 	}
 
-	componentDidMount() {
-		let data = null;
-		let dimensCopy = Object.assign({}, this.state.containerDimens);
-		dimensCopy.w = this.container.clientWidth;
-		dimensCopy.h = window.innerHeight - 320;
-		this.setState({
-			containerDimens: dimensCopy,
-			data: PLAYGROUND_DATA
-		});
-	}
+	componentDidMount() {}
 
-	componentDidUpdate(prevProps, prevState) {
-		this.drawGraph(PLAYGROUND_DATA, this.state.containerDimens);
-	}
+	componentDidUpdate(prevProps, prevState) {}
 
 	drawGraph = (data, dimens) => {
 		// draw(data, this.container, dimens);
