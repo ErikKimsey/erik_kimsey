@@ -16,6 +16,12 @@ $num-of-blurbs: 4;
   grid-gap: 10px;
   grid-template-columns: auto auto auto auto;
   @include fade-load-mixin;
+
+  .playground-block {
+      grid-area: auto;
+    background-color: $grayish;
+    color:$teal;
+  }
   
   .self-blurb-container {
     margin: 0;

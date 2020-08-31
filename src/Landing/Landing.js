@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './landing.scss';
 import { data } from './data';
 import IconLinks from '../IconLinks/IconLinks';
@@ -16,6 +17,12 @@ class Landing extends Component {
 	render() {
 		return (
 			<div className="landing-container" ref={(e) => (this.landingBlurbs = e)}>
+				{/* <div className="playground-block"> */}
+				<Link className="playground-block" to="/work">
+					PLAYGROUND
+					<i className="fas fa-house-damage fa-1x" />
+				</Link>
+				{/* </div> */}
 				{data == null && <div className="null-data" />}
 				{data &&
 					data.map((e, i) => {
