@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import './icon-links.scss';
 
 export default function IconLinks() {
