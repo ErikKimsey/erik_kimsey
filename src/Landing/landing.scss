@@ -26,6 +26,10 @@ $num-of-blurbs: 4;
     background-color: $grayish;
     color:$teal;
     text-decoration-line: none;
+    &:hover {
+        background-color: $purple;
+        color:$yellow;
+    }
   }
   
   .self-blurb-container {
