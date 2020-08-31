@@ -19,7 +19,7 @@ class Landing extends Component {
 			<div className="landing-container" ref={(e) => (this.landingBlurbs = e)}>
 				{/* <div className="playground-block"> */}
 				<Link className="playground-block" to="/work">
-					PLAYGROUND
+					<h1>PLAYGROUND</h1>
 					<i className="fas fa-house-damage fa-1x" />
 				</Link>
 				{/* </div> */}

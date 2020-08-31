@@ -18,9 +18,14 @@ $num-of-blurbs: 4;
   @include fade-load-mixin;
 
   .playground-block {
-      grid-area: auto;
+    grid-area: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
     background-color: $grayish;
     color:$teal;
+    text-decoration-line: none;
   }
   
   .self-blurb-container {
