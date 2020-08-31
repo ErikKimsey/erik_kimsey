@@ -17,12 +17,10 @@ class Landing extends Component {
 	render() {
 		return (
 			<div className="landing-container" ref={(e) => (this.landingBlurbs = e)}>
-				{/* <div className="playground-block"> */}
-				<Link className="playground-block" to="/work">
+				<Link className="playground-block" to="/playground">
 					<h1>PLAYGROUND</h1>
 					<i className="fas fa-house-damage fa-1x" />
 				</Link>
-				{/* </div> */}
 				{data == null && <div className="null-data" />}
 				{data &&
 					data.map((e, i) => {

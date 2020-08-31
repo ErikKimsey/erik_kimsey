@@ -34,14 +34,10 @@ export default class Playground extends Component {
 	}
 
 	drawGraph = (data, dimens) => {
-		draw(data, this.container, dimens);
+		// draw(data, this.container, dimens);
 	};
 
 	render() {
-		return (
-			<div className="playground-container" ref={(container) => (this.container = container)}>
-				<svg />
-			</div>
-		);
+		return <div className="playground-container" ref={(container) => (this.container = container)} />;
 	}
 }
