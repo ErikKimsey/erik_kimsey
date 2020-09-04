@@ -9,7 +9,7 @@
     "gh-pages": "^2.0.1",
     "gsap": "^2.1.2",
     "modernizr": "^3.7.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.1",
     "react-burgers": "^1.2.0",
