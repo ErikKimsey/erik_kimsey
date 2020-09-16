@@ -28,9 +28,10 @@ $hover-color: #fcfa85;
 
   ul {
     list-style: none;
-    .fas .far {
-      color:#000;
+    .fas, .far { 
+      color:$grayish;
     }
+    
     li {
       width: 100px;
       display: flex;
@@ -42,6 +43,7 @@ $hover-color: #fcfa85;
       .nav-link {
         display: flex;
         flex-flow: row;
+        color: #fff;
         h3 {
           position: absolute;
           z-index: 10000;
@@ -64,6 +66,7 @@ $hover-color: #fcfa85;
         font-size: 2em;
         font-weight: 100;
         width: 150px;
+        color:#fff;
         &:click {
           animation: 0.5s ease 0s navbuzz 1;
         }
