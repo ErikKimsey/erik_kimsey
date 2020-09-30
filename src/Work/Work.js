@@ -71,6 +71,7 @@ class Work extends Component {
                     {e.name}
                   </div>
                   <div className="item-stack data-item-general">{e.stack}</div>
+                  <div className="">{e.about}</div>
                 </div>
               );
             } else if (e.github === '') {
@@ -84,6 +85,7 @@ class Work extends Component {
                       The Product.
                     </a>
                   </div>
+                  <div className="">{e.about}</div>
                 </div>
               );
             } else if (e.url === '') {
@@ -97,6 +99,7 @@ class Work extends Component {
                       The Code.
                     </a>
                   </div>
+                  <div className="">{e.about}</div>
                 </div>
               );
             }
