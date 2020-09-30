@@ -77,7 +77,7 @@ export const data = [
     url: 'https://team-home.netlify.com/',
     github: 'https://github.com/Lambda-School-Labs/labs-team-home',
     img: '../assets/port_images/sveza.png',
-    about: ''
+    about: 'UI/UX design and implementation for entire app, Auth0 implementation, '
   },
   {
     name: 'Raincrow Studios - Covens',

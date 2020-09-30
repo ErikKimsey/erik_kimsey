@@ -114,6 +114,7 @@ class Work extends Component {
                   <a href={e.github} target="_blank" rel="noopener noreferrer">
                     The Code.
                   </a>
+                  <div className="">{e.about}</div>
                 </div>
               </div>
             );
