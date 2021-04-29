@@ -37,6 +37,15 @@ export const data = [
     about: ''
   },
   {
+    name: 'SkillSTAR',
+    stack: 'React Native, TypeScript, React-Navigation, Jest, Context API',
+    url: '',
+    github: 'https://github.com/sartography/SkillSTAR',
+    img: '',
+    about:
+      'For clients at the University of Virginia, I used React Native to build this mobile app whose purpose was to collect data on educational model for teaching Autistic child essential skills.'
+  },
+  {
     name: 'Chatwise',
     stack: 'PostGres, Express / NodeJS, React, Sass, JavaScript / ES6, Messenger API',
     url: '',

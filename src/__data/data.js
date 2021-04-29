@@ -14,18 +14,13 @@ export const JS_DATA = [
 
 export const SKILLSET_OVERVIEW = [
   'JavaScript ES6/7',
-  'React-Native',
-  'P5.js',
-  'Unity3D',
-  'ReactJS',
+  'React-Native / ReactJS',
+  'Unity3D / C#',
   'Blender',
   'CSS3 / SASS / Less / Styled-Components',
   'HTML5 / Canvas',
   'NodeJS / Express',
-  'SQL and NoSQL DB',
-  'Django',
-  'GraphQL / Apollo',
-  'Python / C / C++',
+  'Python',
   'Propellerhead Reason (DAW)',
   'Ableton Live (DAW)'
 ];
@@ -208,6 +203,16 @@ export const EDUCATION = [
  * Professional Data
  */
 export const PROFESSIONAL_DATA = [
+  {
+    employer: 'Sartography / UVA',
+    role: 'UI Engineer',
+    duration: '09/2020 - 02/2021',
+    description: 'Contract',
+    projects: [
+      'Primary developer on SkillSTAR mobile app, using React Native.  Designed, architected, and developed a mobile app for teaching Autistic children essential skills.'
+    ],
+    tech: ['React Native', 'JavaScript / ES6+', 'TypeScript', 'Adobe Illustrator', 'Jest']
+  },
   {
     employer: 'Chatwise (chatbot)',
     role: 'Software Engineer',
