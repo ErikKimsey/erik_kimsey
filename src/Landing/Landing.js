@@ -22,7 +22,7 @@ class Landing extends Component {
 						i += 1;
 						return (
 							<div className={`self-blurb-container blurb-${i}`} key={e}>
-								{e}
+								{`${e}`}
 							</div>
 						);
 					})}
