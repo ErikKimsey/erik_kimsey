@@ -1,14 +1,7 @@
 import React from 'react';
 import './ot-item.scss';
 
-export default function OT_Item(props) {
-	console.log(props);
-
-	const itemBackgroundStyles = {
-		backgroundPosition: 'center',
-		backgroundSize: 'cover',
-		backgroundRepeat: 'no-repeat'
-	};
+export default function OTItem(props) {
 	return (
 		<div
 			className="item-container"

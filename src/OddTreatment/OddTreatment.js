@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './odd_treatment.scss';
 import mapOfMeData from './ot_data';
-import OT_Item from './components/ot_item';
+import OTItem from './components/OTItem';
 
 export default class OddTreatment extends Component {
 	constructor(props) {
@@ -20,7 +20,7 @@ export default class OddTreatment extends Component {
 				{this.state.data == null && <div className="null-data">NOPE</div>}
 				{this.state.data &&
 					this.state.data.map((e, i) => {
-						return <OT_Item data={e} />;
+						return <OTItem data={e} />;
 					})}
 			</div>
 		);
