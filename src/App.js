@@ -10,6 +10,7 @@ import Work from './Work/Work';
 import OddTreatment from './OddTreatment/OddTreatment';
 // import detectOrientation, { orientationListener } from './utils/detectOrientation';
 import Landscape from './LANDSCAPE/Landscape';
+import Bush from './Bush/Bush'
 
 class App extends Component {
 	constructor(props) {
@@ -38,7 +39,7 @@ class App extends Component {
 					<Route path="/work" component={Work} />
 					<Route path="https://elated-hugle-66aa20.netlify.com/" component={OddTreatment} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/landscape" component={Landscape} />
+					<Route path="/bush" component={Bush} />
 				</div>
 				<Nav isActive={this.state.toggled} />
 			</div>
