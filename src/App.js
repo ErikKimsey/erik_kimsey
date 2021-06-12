@@ -38,7 +38,6 @@ class App extends Component {
 					<Route path="/work" component={Work} />
 					<Route path="https://elated-hugle-66aa20.netlify.com/" component={OddTreatment} />
 					<Route path="/contact" component={Contact} />
-					<Route path="/landscape" component={Landscape} />
 				</div>
 				<Nav isActive={this.state.toggled} />
 			</div>
