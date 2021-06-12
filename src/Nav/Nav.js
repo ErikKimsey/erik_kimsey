@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './nav.scss';
 import Banner from '../Banner/Banner';
-import resumePDF from '../assets/resume/erikkimsey_resume_softwareengineer.pdf';
+import resumePDF from '../assets/resume/erik_kimsey_resume__UX_engineer.pdf';
 const activeStyles = {
 	color: '#AA5EF4'
 };
