@@ -205,8 +205,8 @@ export const EDUCATION = [
 export const PROFESSIONAL_DATA = [
   {
     employer: 'Sartography / UVA',
-    role: 'UI Engineer',
-    duration: '09/2020 - 02/2021',
+    role: 'React-Native/UI Engineer',
+    duration: '2020 - 2021',
     description: 'Contract',
     projects: [
       'Primary developer on SkillSTAR mobile app, using React Native.  Designed, architected, and developed a mobile app for teaching Autistic children essential skills.'
@@ -215,8 +215,8 @@ export const PROFESSIONAL_DATA = [
   },
   {
     employer: 'Chatwise (chatbot)',
-    role: 'Software Engineer',
-    duration: '09/2019 - 11/2019',
+    role: 'Full-Stack Engineer',
+    duration: '2019',
     description: 'Contract',
     projects: [
       'Using the Facebook Messenger API, Postgres, and React, I contributed to the development of a dynamic chatbot that provides a Blinkist-type product within Facebook Messenger.'
@@ -226,7 +226,7 @@ export const PROFESSIONAL_DATA = [
   {
     employer: 'Realm',
     role: 'React-Native Engineer',
-    duration: '06/2019 - ',
+    duration: '2019',
     description: 'Contract',
     projects: [
       'Within React-Native, I contributed to architecting and developing the Realm gamer-focused social-media app.'
@@ -236,7 +236,7 @@ export const PROFESSIONAL_DATA = [
   {
     employer: 'Connect Our Kids',
     role: 'React-Native Engineer',
-    duration: '06/2019 - current',
+    duration: '2019',
     description: 'Contract',
     projects: [ 'Architecting and developing Connect Our Kids first mobile app, using React-Native.' ],
     tech: [ 'React-Native', 'Redux', 'Sass', 'JavaScript / ES6', 'Expo' ]
@@ -244,7 +244,7 @@ export const PROFESSIONAL_DATA = [
   {
     employer: 'NextLevel / B612 Design (Stuttgart)',
     role: 'JavaScript Engineer',
-    duration: '06/2018-07/2018',
+    duration: '2018',
     description: 'Contract',
     projects: [ 'Contributed to building an interactive guilloche using Angular 4 and D3.js.' ],
     tech: [ 'TypeScript', 'D3.js', 'Angular 4', 'NodeJS' ]
@@ -252,7 +252,7 @@ export const PROFESSIONAL_DATA = [
   {
     employer: 'NextLevel / Kardion (Stuttgart)',
     role: 'Front-End Engineer',
-    duration: '09/2018',
+    duration: '2018',
     description: 'Contract',
     projects: [ 'Per design specifications, helped build responsive website for Kardion GmbH' ],
     tech: [ 'Bootstrap 4', 'CSS3', 'HTML5', 'Canvas API' ]
@@ -260,7 +260,7 @@ export const PROFESSIONAL_DATA = [
   {
     employer: 'Raincrow Studios',
     role: 'NodeJS Engineer',
-    duration: '01/2018 - 02/2018',
+    duration: '2018',
     description: 'Contract',
     projects: [
       'Contributed to the architecture and initial engineering stages of a server / RESTful API and in-memory database for an international MMORPG, Covens '

@@ -48,13 +48,15 @@ $num-of-blurbs: 4;
 
   .blurb-1 {
     grid-area: 1 / 2 / 3 /4;
+    padding:20px;
     font-size: calc(300%);
+    line-height: 1em;
     background-color: $pink;
     background-repeat: space;
     background-image: url('../assets/bige_color_v2.png');
     background-position: center;
     color:#fff;
-    font-weight: 900;
+    font-weight: 700;
     @include bubble-1-desktop;
   }
   
