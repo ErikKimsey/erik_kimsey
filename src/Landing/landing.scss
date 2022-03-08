@@ -57,6 +57,7 @@ $num-of-blurbs: 4;
     background-position: center;
     color:#fff;
     font-weight: 700;
+    border-bottom-right-radius: 200px;
     @include bubble-1-desktop;
   }
 
