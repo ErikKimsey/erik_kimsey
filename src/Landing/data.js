@@ -1,5 +1,5 @@
 export const data = [
-	"Mountains can be moved. An endeavour that technology has no small part.  Be it in medicine, the environment, education, academic disciplines, journalism, mental health, communication, economic (or any) policy, entertainment, architecture or art.",
+	"Mountains can be moved. An endeavour that technology has no small part.  Be it in medicine, the environment, infrastructure, education, academic disciplines, journalism, mental health, communication, economic (or any) policy, entertainment, architecture or art.",
 	// 'JavaScript (ES6+), ReactJS, React-Native,  NodeJS, C# / Unity3D, Blender, Adobe CC.'
 ];
 
