@@ -52,7 +52,7 @@ $num-of-blurbs: 4;
     .blurb-1 {
         grid-area: 1 / 2 / 3 /4;
         padding: 20px;
-        font-size: calc(300%);
+        font-size: calc(200%);
         line-height: 1em;
         background-color: $pink;
         background-repeat: space;
@@ -101,9 +101,13 @@ $num-of-blurbs: 4;
         grid-template-rows: auto auto auto auto;
         overflow-y: visible;
 
+        .routes-container {
+            padding-top: 10px;
+        }
+
         .blurb-1 {
             grid-area: 1 / 1 / 4 / 2;
-            font-size: calc(200%);
+            font-size: calc(100%);
             background-color: $pink;
             color: #fff;
         }
@@ -127,6 +131,10 @@ $num-of-blurbs: 4;
         overflow-y: visible;
         transform: translate3d(0, 0, 0);
         backface-visibility: hidden;
+
+        .routes-container {
+            padding-top: 10px;
+        }
 
         .self-blurb-container {
             background-color: #fff;
@@ -164,6 +172,10 @@ $num-of-blurbs: 4;
     @media only screen and (max-width: $smDevice) {
         margin-left: 0px;
         padding: 0 16px;
+
+        .routes-container {
+            padding-top: 10px;
+        }
 
         .spin {
             padding: 3px !important;
