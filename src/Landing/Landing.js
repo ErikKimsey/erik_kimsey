@@ -21,12 +21,14 @@ class Landing extends Component {
 			>
 				{data == null && <div className="null-data" />}
 				<div className="skill-list-container">
-					<h2>core skillset</h2>
+                    <h4></h4>
+					{/* <h3>The strengths of my ever-growing skillset</h3> */}
 					{coreSkills &&
 						coreSkills.map((e) => {
 							return <li>{`${e}`}</li>;
 						})}
 				</div>
+                <div className="subData"></div> 
 				{data &&
 					data.map((e, i) => {
 						i += 1;
@@ -39,7 +41,6 @@ class Landing extends Component {
 							</div>
 						);
 					})}
-				<div className="subData"></div>
 				<IconLinks />
 			</div>
 		);

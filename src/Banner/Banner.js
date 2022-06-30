@@ -38,7 +38,7 @@ class Banner extends Component {
 				<div className="text-container">
 					<div className="name banner-item">Erik Kimsey</div>
 					<div className="underscore banner-item"> </div>
-					<div className="role banner-item">Frontend Developer</div>
+					<div className="role banner-item">Creative Technologist</div>
 				</div>
 			</div>
 		);

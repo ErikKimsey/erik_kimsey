@@ -52,7 +52,7 @@ $num-of-blurbs: 4;
     .blurb-1 {
         grid-area: 1 / 2 / 3 /4;
         padding: 20px;
-        font-size: calc(400%);
+        font-size: calc(300%);
         line-height: 1em;
         background-color: $pink;
         background-repeat: space;
@@ -60,7 +60,6 @@ $num-of-blurbs: 4;
         background-position: center;
         color: #fff;
         font-weight: 700;
-        border-bottom-right-radius: 200px;
         @include bubble-1-desktop;
     }
 
