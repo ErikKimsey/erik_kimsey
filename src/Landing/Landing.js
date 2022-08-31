@@ -1,50 +1,31 @@
-import React, { Component } from "react";
+import React, { Component, useRef, useState, useEffect } from "react";
 import "./landing.scss";
 import { data, coreSkills, subData } from "./data";
 import IconLinks from "../IconLinks/IconLinks";
+import P5Sketch from "../P5Sketch/P5Sketch";
 
-class Landing extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			width: 0,
-			height: 0,
-		};
-		this.landingBlurbs = React.createRef();
-	}
+function Landing(props) {
+    console.log(props);
+    const sketchRef = useRef();
+    const [dimens, setDimens] = useState({ w: 0, h: 0 });
+    const [data, setData] = useState();
 
-	render() {
-		return (
-			<div
-				className="landing-container"
-				ref={(e) => (this.landingBlurbs = e)}
-			>
-				{data == null && <div className="null-data" />}
-				<div className="skill-list-container">
-                    <h4></h4>
-					{/* <h3>The strengths of my ever-growing skillset</h3> */}
-					{coreSkills &&
-						coreSkills.map((e) => {
-							return <li>{`${e}`}</li>;
-						})}
-				</div>
-                <div className="subData"></div> 
-				{data &&
-					data.map((e, i) => {
-						i += 1;
-						return (
-							<div
-								className={`self-blurb-container blurb-${i}`}
-								key={e}
-							>
-								{`${e}`}
-							</div>
-						);
-					})}
-				<IconLinks />
-			</div>
-		);
-	}
+    useEffect(() => {
+        if (sketchRef.current) {
+            setDimens({ w: sketchRef.current.offsetWidth, h: sketchRef.current.offsetHeight });
+        }
+    }, [])
+
+    return (
+        <div
+            className="landing-container"
+            ref={sketchRef}
+        >
+            {/* {dimens.w > 0 && <P5Sketch props={dimens} />} */}
+            {/* <IconLinks /> */}
+        </div>
+    );
+
 }
 
 export default Landing;

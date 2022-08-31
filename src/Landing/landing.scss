@@ -6,21 +6,24 @@ $num-of-blurbs: 4;
 
 .landing-container {
     height: calc(100vh - 320px);
+    background-color: aqua;
     width: 100%;
     margin: 0 auto;
     color: #fff;
     overflow: hidden;
-    padding: 100px;
-    padding-top: 30px;
+    // padding: 100px;
+    // padding-top: 30px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto auto auto;
     @include fade-load-mixin;
 
     .skill-list-container {
+        transform: rotateZ(-11deg);
+        height: auto;
+        width: auto;
         margin: 5px;
         padding: 5px;
-        width: 200px;
 
         h2 {
             font-weight: 900;
@@ -50,8 +53,9 @@ $num-of-blurbs: 4;
     }
 
     .blurb-1 {
+        height: fit-content;
         grid-area: 1 / 2 / 3 /4;
-        padding: 20px;
+        padding: 100px 20px;
         font-size: calc(200%);
         line-height: 1em;
         background-color: $pink;
