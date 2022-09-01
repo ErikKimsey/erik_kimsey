@@ -19,6 +19,7 @@ $bomb: 'bomb';
 }
 
 .work-container {
+    z-index: 1;
     height: calc(100vh - 220px);
     max-width: 1250px;
     width: 70%;

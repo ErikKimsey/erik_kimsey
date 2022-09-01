@@ -18,13 +18,14 @@ $bomb: 'bomb';
 }
 
 .banner-container {
+    z-index: 10;
     position: fixed;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row;
     flex-flow: row;
     color: white;
-    background-color: #fff;
+
     font-weight: 400;
     -webkit-justify-content: center;
     align-items: flex-start;
@@ -117,7 +118,7 @@ $bomb: 'bomb';
                 position: absolute;
                 flex-flow: row;
                 top: 10px;
-                right: 20px;
+                right: 10vw;
                 cursor: pointer;
                 color: rgba(255, 255, 255, 0.8);
 
@@ -172,7 +173,7 @@ $bomb: 'bomb';
                 position: absolute;
                 flex-flow: row;
                 top: 10px;
-                right: 20px;
+                right: 10vw;
                 cursor: pointer;
                 font-size: 1em;
                 color: rgba(255, 255, 255, 0.8);
@@ -209,7 +210,7 @@ $bomb: 'bomb';
                 display: flex;
                 flex-flow: row;
                 top: 10px;
-                right: 20px;
+                right: 10vw;
                 cursor: pointer;
                 font-size: 1em;
                 color: rgba(255, 255, 255, 0.8);

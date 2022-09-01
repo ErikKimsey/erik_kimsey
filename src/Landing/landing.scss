@@ -6,7 +6,6 @@ $num-of-blurbs: 4;
 
 .landing-container {
     height: calc(100vh - 320px);
-    background-color: aqua;
     width: 100%;
     margin: 0 auto;
     color: #fff;
@@ -16,6 +15,7 @@ $num-of-blurbs: 4;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto auto auto;
+    background: none;
     @include fade-load-mixin;
 
     .skill-list-container {

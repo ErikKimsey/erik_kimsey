@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import { Route } from 'react-router-dom';
 import './App.scss';
 import './Banner/banner.scss';
@@ -13,40 +13,37 @@ import IconLinks from './IconLinks/IconLinks';
 // import detectOrientation, { orientationListener } from './utils/detectOrientation';
 import Landscape from './LANDSCAPE/Landscape';
 
-class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            toggled: false,
-            props: props
-        };
-        // detectOrientation();
-    }
+export default function App(props) {
+    const [toggled, setToggled] = useState(false);
+    const [thisProps, setThisProps] = useState(props);
 
-    componentDidMount() {
-        // orientationListener(this.props);
-    }
+    useEffect(() => {
 
-    handleToggle = () => {
+        if (toggled !== false) {
+            setToggled(false);
+        }
+
+        if (props) {
+            setThisProps(props);
+        }
+    }, []);
+
+    const handleToggle = () => {
         this.setState({ toggle: !this.state.toggled });
     };
 
-    render() {
-        return (
-            <div className="App">
-                <P5Sketch />
-                {/* <div className="routes-container"> */}
-                <Route exact path="/" component={Landing} />
-                <Route path="/about" component={About} />
-                <Route path="/work" component={Work} />
-                <Route path="https://elated-hugle-66aa20.netlify.com/" component={OddTreatment} />
-                <Route path="/contact" component={Contact} />
-                {/* </div> */}
-                <Nav isActive={this.state.toggled} />
-                <IconLinks />
-            </div>
-        );
-    }
+    return (
+        <div className="App">
+            {/* <div className="routes-container"> */}
+            <Route exact path="/" component={Landing} />
+            <Route path="/about" component={About} />
+            <Route path="/work" component={Work} />
+            <Route path="https://elated-hugle-66aa20.netlify.com/" component={OddTreatment} />
+            <Route path="/contact" component={Contact} />
+            {/* </div> */}
+            <P5Sketch />
+            <Nav isActive={toggled} />
+            <IconLinks />
+        </div>
+    );
 }
-
-export default App;
