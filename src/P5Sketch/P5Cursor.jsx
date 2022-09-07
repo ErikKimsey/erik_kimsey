@@ -29,7 +29,7 @@ export default class P5Cursor {
         this.xMove += this.p5.floor(this.p5.movedX / 5);
 
         let { x, y } = this.calcOrbit(this.radius);
-        this.p5.fill(this.p5.color(255, 111, 255));
+        this.p5.fill(this.p5.color("#32ff40"));
         this.p5.noStroke();
         this.p5.ellipse(x, y, this.diam);
     }

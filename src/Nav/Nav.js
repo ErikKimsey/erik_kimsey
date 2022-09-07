@@ -31,10 +31,10 @@ class Nav extends Component {
     render() {
         return (
             <>
-                <Banner
+                {/* <Banner
                     toggle={this.handleToggle}
                     isActive={this.state.isActive}
-                />
+                /> */}
                 <div className="nav-container">
                     <ul className="nav-list">
                         <li onClick={this.handleToggle}>

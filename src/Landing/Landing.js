@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./landing.scss";
+import LandingBlurb from "./LandingBlurb";
 
 function Landing(props) {
     const sketchRef = useRef();
@@ -16,6 +17,7 @@ function Landing(props) {
             className="landing-container"
             ref={sketchRef}
         >
+            <LandingBlurb />
         </div>
     );
 
