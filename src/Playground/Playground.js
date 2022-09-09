@@ -3,11 +3,14 @@ import "./playground.scss";
 
 export default function Playground() {
 
-    const containerRef = useRef();
+    const playgroundContentRef = useRef();
 
     return (
-        <div className="playground-container" ref={containerRef}>
-            PLAYGROUND
+        <div className="playgroundContainer" >
+            <div className='playgroundHeader'>
+                <div className='label'>Playground</div>
+            </div>
+            <div className='playgroundContent' ref={playgroundContentRef}></div>
         </div>
     );
 }

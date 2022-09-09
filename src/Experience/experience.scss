@@ -1,5 +1,13 @@
+@import "../styles/globals.scss";
+
 .experienceContainer {
     width: 100%;
     min-height: 100vh;
-    background-color: aliceblue;
+    padding: $pagePadding;
+
+    .experienceHeader {
+
+        .label {}
+
+    }
 }
