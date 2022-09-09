@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
-import "./playground.scss";
+import "./experience.scss";
 
-export default function Playground() {
+export default function Experience() {
 
     const containerRef = useRef();
 
     return (
         <div className="playground-container" ref={containerRef}>
-            PLAYGROUND
+            EXPERIENCE
         </div>
     );
 }

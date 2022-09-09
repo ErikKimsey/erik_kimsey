@@ -1,8 +1,6 @@
 
-
-
 export default class LandingText {
-    constructor(p5, w, text, font, color, dimens) {
+    constructor(p5, w, text, font, color, dimens, size) {
         this.p5 = p5;
         this.w = w;
         this.text = text;
@@ -12,6 +10,7 @@ export default class LandingText {
         this.font = font;
         this.color = color;
         this.dimens = dimens;
+        this.size = size;
     }
 
     drawCompleteText() {

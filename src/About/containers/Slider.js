@@ -1,51 +1,42 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles/slider.scss';
-import { isContainer } from 'postcss-selector-parser';
 
-export default class SimpleSlider extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      data: this.props.data,
-      index:1,
+export default function SimpleSlider(props) {
+
+    const [data, setData] = useState();
+    const [index, setIndex] = useState(1);
+
+
+    const handleForwardToggle = () => {
+        if (this.state.index <= this.state.data.length - 2) {
+            setData(index++);
+        } else {
+            resetIndex();
+        }
     }
-  }
 
-  componentDidMount() {
-    
-  }
-
-  handleForwardToggle = () => {
-    if(this.state.index <= this.state.data.length-2){
-      this.setState({index: this.state.index+1})
-    } else {
-      this.resetIndex();
+    const handleBackwardToggle = () => {
+        if (index > 0) {
+            setIndex(index--)
+        } else if (this.state.index <= 0) {
+            resetIndex();
+        }
     }
-  }
-  handleBackwardToggle = () => {
-    if(this.state.index > 0){
-      this.setState({index: this.state.index-1})
-    } else if(this.state.index <= 0) {
-      this.resetIndex();
-    }
-  }
 
-  resetIndex = () => {
-    this.setState({index: 1});
-  }
-  
-  render() {
+    const resetIndex = () => {
+        this.setState({ index: 1 });
+    }
+
     return (
-      <div className="slider-container">
-        <div className="slider-item-container">
-          <i className="fas fa-caret-left" onClick={()=>{this.handleBackwardToggle()}}></i>
+        <div className="slider-container">
+            <div className="slider-item-container">
+                <i className="fas fa-caret-left" onClick={() => { handleBackwardToggle() }}></i>
 
-          <i className="fas fa-caret-right" onClick={this.handleForwardToggle}></i>
-            <div className="slider-item" title={this.state.data[this.state.index]}>
-              {this.state.data[this.state.index]}
+                <i className="fas fa-caret-right" onClick={this.handleForwardToggle}></i>
+                <div className="slider-item" title={data[index]}>
+                    {data[index]}
+                </div>
             </div>
-          </div>
-      </div>
+        </div>
     )
-  }
 }

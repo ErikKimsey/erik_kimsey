@@ -1,46 +1,54 @@
-@import '../../../__styles/responsive.scss';
-@import '../../../__styles/globals.scss';
+@import '../../../styles/responsive.scss';
+@import '../../../styles/globals.scss';
 
-$employment:$pink;
+$employment: $pink;
 
 .employment-container {
-  border-top:0.1px solid $employment;
-  display: flex;
-  flex-flow: column;
-  margin: 10px;
-  padding: 10px;
+    border-top: 0.1px solid $employment;
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
+    padding: 10px;
 
-  .bold-list-title {
-    font-weight: 600;
-  }
-  
-  .job-description {
-    width: 90%;
-    margin: 1px 10px;
-  }
+    .bold-list-title {
+        font-weight: 600;
+    }
 
-  ul {
-    list-style-type: square;
-    li {}
-  }
+    .job-description {
+        width: 90%;
+        margin: 1px 10px;
+    }
 
-  .employer-name {
-    color:$employment;
-    font-weight: 400;
-  }
-  .role {
-    color:$purple;
-    font-weight: 100;
-    font-size: 2em;
-  }
-  .duration {}
-  .role-description {}
+    ul {
+        list-style-type: square;
 
-  .projects-container {}
-  .tech-container {}
+        li {}
+    }
 
-  @media only screen and (max-width: $lgDevice) {}
-  @media only screen and (max-width: $mdDevice) {}
-  @media only screen and (max-width: $smDevice) {}
-  @media only screen and (max-width: $xsDevice) {}
+    .employer-name {
+        color: $employment;
+        font-weight: 400;
+    }
+
+    .role {
+        color: $purple;
+        font-weight: 100;
+        font-size: 2em;
+    }
+
+    .duration {}
+
+    .role-description {}
+
+    .projects-container {}
+
+    .tech-container {}
+
+    @media only screen and (max-width: $lgDevice) {}
+
+    @media only screen and (max-width: $mdDevice) {}
+
+    @media only screen and (max-width: $smDevice) {}
+
+    @media only screen and (max-width: $xsDevice) {}
 }

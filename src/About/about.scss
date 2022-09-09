@@ -1,15 +1,16 @@
-@import '../__styles/responsive.scss';
-@import '../__styles/globals.scss';
-@import '../__styles/mixins.scss';
+@import '../styles/responsive.scss';
+@import '../styles/globals.scss';
+@import '../styles/mixins.scss';
 
 $hover-color: #fcfa85;
 
-$dope: 'dope';
 
-@font-face {
-    font-family: 'dope';
-    src: url(../assets/Dopestyle.ttf) format('truetype');
-}
+// $dope: 'dope';
+
+// @font-face {
+//     font-family: 'dope';
+//     src: url(../../../assets/fonts/Dopestyle.ttf) format('truetype');
+// }
 
 .about-container {
     z-index: 1;
@@ -84,7 +85,7 @@ $dope: 'dope';
             font-weight: 400;
             font-size: 2em;
             color: $darkGrayish;
-            font-family: $dope;
+            // font-family: $dope;
         }
 
     }
@@ -100,7 +101,7 @@ $dope: 'dope';
             font-weight: 400;
             font-size: 2em;
             color: $darkGrayish;
-            font-family: $dope;
+            // font-family: $dope;
         }
 
     }

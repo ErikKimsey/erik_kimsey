@@ -1,33 +1,31 @@
-@import './__styles/globals.scss';
+@import './styles/globals.scss';
 
 * {
     font-weight: 100;
-    font-size: 20px;
+    // font-size: 20px;
 }
 
-@-webkit-keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
+$comfortaa: "comfortaa";
 
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
+@font-face {
+    font-family: "comfortaa";
+    src: url(./assets/fonts/comfortaa/Comfortaa-Light.ttf) format("truetype");
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, 'Jura', sans-serif;
+
+    font-family: $comfortaa, Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: rgba(0, 0, 0, 0);
+    background-color: #1d142e;
+    color: #fff;
+    overflow-x: hidden;
 
     div,
     i,
     li,
     a {
-        color: black;
+        color: #fff;
     }
 }
 
@@ -56,9 +54,4 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: $yellow;
-}
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
 }

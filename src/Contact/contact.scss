@@ -1,13 +1,13 @@
-@import '../__styles/globals.scss';
-@import '../__styles/responsive.scss';
-@import '../__styles/mixins.scss';
+@import '../styles/globals.scss';
+@import '../styles/responsive.scss';
+@import '../styles/mixins.scss';
 
-$dope: 'dope';
+// $dope: 'dope';
 
-@font-face {
-    font-family: 'dope';
-    src: url(../assets/Dopestyle.ttf) format('truetype');
-}
+// @font-face {
+//     font-family: 'dope';
+//     src: url(../../assets/fonts/Dopestyle.ttf) format('truetype');
+// }
 
 @keyframes bloopbleep {
     0% {
@@ -40,7 +40,7 @@ $dope: 'dope';
     padding: 0 84px;
     font-size: 2em;
     border: 0px;
-    font-family: $dope;
+    // font-family: $dope;
     font-weight: 100;
     background: none;
     @include fade-load-mixin;

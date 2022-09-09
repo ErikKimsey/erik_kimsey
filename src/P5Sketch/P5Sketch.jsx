@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import Sketch from "react-p5";
 import deviceType from "../utils/mobileDetection";
 import P5Cursor from "./P5Cursor";
@@ -15,13 +15,13 @@ let textColors = {
     tankDarkBlue: "#140034"
 }
 
-
 let nameDimens = {
     left: 200,
     top: 200,
     width: 1000,
     height: 200
 }
+
 let titleDimens = {
     left: 200,
     top: 450,
@@ -36,8 +36,6 @@ export default function P5Sketch({ props }) {
     const [devType, setDevType] = useState();
 
     let orbCursor, landingName, landingTitle, font, fontSize;
-    let cursorMoving = false;
-    const plantImgUrl = "./plant.png";
     let img;
     let input;
     let plantXPos, plantYPos, plantH, plantW;
@@ -51,9 +49,12 @@ export default function P5Sketch({ props }) {
         setDevType(device);
     }, [props]);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
+        setDimens(props);
+        let device = deviceType();
+        setDevType(device);
+    }, []);
 
-    }, [])
 
     function initTextElements(p5) {
         landingName = new LandingText(p5, p5.displayWidth, "Erik Kimsey", font, textColors.white, nameDimens);
@@ -89,18 +90,26 @@ export default function P5Sketch({ props }) {
         }
     };
 
-    function draw(p5) {
-        p5.background(textColors.tankDarkBlue);
-        p5.image(img, plantXPos, plantYPos, plantW, plantH);
+    function windowResized(p5) {
+        console.log("resizing");
+        p5.resizeCanvas(p5.displayWidth, p5.displayHeight);
+        initTextElements(p5);
 
-        if (devType !== "desktop") {
-            console.log(devType);
+        orbCursor = new P5Cursor(p5, 11);
+        if (devType === "desktop") {
+            plantXPos = p5.displayWidth * 0.33;
+            plantYPos = p5.displayHeight * 0;
+            plantW = p5.displayWidth * 0.5;
+            plantH = (p5.displayWidth * 0.5) * 0.84;
         } else {
-            if (orbCursor !== undefined) {
-                orbCursor.updateCursor();
-            }
+            plantXPos = 0;
+            plantYPos = (p5.displayHeight) - img.width / 2;
+            plantW = p5.displayWidth;
+            plantH = (p5.displayWidth) * 0.84;
         }
+    }
 
+    function drawText(p5) {
         if (landingName.textDrawn) {
             landingName.drawCompleteText();
         }
@@ -117,14 +126,26 @@ export default function P5Sketch({ props }) {
             let rIndex = Math.ceil(p5.millis() / 100) - 1;
             landingTitle.drawText(rIndex);
         }
-
-
-
-
     }
+
+    function draw(p5) {
+        p5.background(textColors.tankDarkBlue);
+        p5.image(img, plantXPos, plantYPos, plantW, plantH);
+
+        drawText(p5);
+
+        if (devType !== "desktop") {
+            console.log(devType);
+        } else {
+            if (orbCursor !== undefined) {
+                orbCursor.updateCursor();
+            }
+        }
+    }
+
 
     return (
         <>
-            <Sketch preload={preload} setup={setup} draw={draw} style={{ position: "fixed", zIndex: 0 }} />
+            <Sketch preload={preload} setup={setup} draw={draw} windowResized={windowResized} style={{ position: "fixed", zIndex: 0 }} />
         </>)
 }
