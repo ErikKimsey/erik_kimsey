@@ -12,15 +12,17 @@
     box-sizing: border-box;
     background: none;
     padding: $pagePadding_Desktop;
+    padding-top: 0;
 
     // @media only screen and (max-width: $lgDevice) {}
 
     // @media only screen and (max-width: $mdDevice) {}
 
-    // @media only screen and (max-width: $smDevice) {}
+    @media only screen and (max-width: $smDevice) {
+        padding: $pagePadding_Mobile;
+    }
 
     @media only screen and (max-width: $xsDevice) {
-        padding: $pagePadding_Mobile;
-
+        padding: $pagePadding_Mobile
     }
 }

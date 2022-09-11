@@ -18,8 +18,6 @@ export default function Banner(props) {
 
     return (
         <div className="banner-container">
-            <div className="toggle-logo-container">
-            </div>
             <div className="text-container">
                 <div className="name banner-item">Erik Kimsey</div>
                 <div className="underscore banner-item"></div>
