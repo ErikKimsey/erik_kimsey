@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './work.scss';
 import { data } from './data';
 import Slider from 'react-slick';

@@ -1,7 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import "./experience.scss";
-
-import data from "../__data/data";
 
 export default function Experience() {
 

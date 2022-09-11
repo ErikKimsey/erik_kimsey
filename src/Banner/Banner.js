@@ -4,8 +4,6 @@ import "../Nav/Nav";
 // import { Spin } from "react-burgers";
 
 export default function Banner(props) {
-    console.log(props);
-
     const [iconActive, setIconActive] = useState(false);
 
     useEffect(() => {

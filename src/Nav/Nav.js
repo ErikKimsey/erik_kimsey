@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.scss";
 import "../styles/responsive.scss";
-import Banner from "../Banner/Banner";
-import resumePDF from "./erikkimsey_creativeEngineer_resume.pdf";
+// import Banner from "../Banner/Banner";
+// import resumePDF from "./erikkimsey_creativeEngineer_resume.pdf";
 
 const activeStyles = {
     color: "#AA5EF4",
