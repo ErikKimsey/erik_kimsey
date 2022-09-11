@@ -2,192 +2,20 @@
 @import '../styles/responsive.scss';
 @import '../styles/mixins.scss';
 
-$num-of-blurbs: 4;
 
 .landing-container {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    margin: 0;
-    // padding: $pagePadding;
-    @include fade-load-mixin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    // .skill-list-container {
-    //     transform: rotateZ(-11deg);
-    //     height: auto;
-    //     width: auto;
-    //     margin: 5px;
-    //     padding: 5px;
+    // @media only screen and (max-width: $lgDevice) {}
 
-    //     h2 {
-    //         font-weight: 900;
-    //     }
+    // @media only screen and (max-width: $mdDevice) {}
 
-    //     list-style: none;
+    // @media only screen and (max-width: $smDevice) {}
 
-    //     li {
-    //         padding-left: 10px;
-    //     }
-    // }
-
-    // .self-blurb-container {
-    //     margin: 0;
-    //     font-size: 1.4em;
-    //     opacity: 1;
-    //     transition: 600ms;
-    //     color: #000000;
-    //     padding: 20px;
-    //     background-color: rgba(255, 255, 255, 0.5);
-    //     border-radius: 3px;
-    //     @include landing-bubble-desktop($num-of-blurbs);
-
-    //     &.blurb-3 {
-    //         padding-bottom: 20px;
-    //     }
-    // }
-
-    // .blurb-1 {
-    //     height: fit-content;
-    //     grid-area: 1 / 2 / 3 /4;
-    //     padding: 100px 20px;
-    //     font-size: calc(200%);
-    //     line-height: 1em;
-    //     background-color: $pink;
-    //     background-repeat: space;
-    //     background-image: url('../assets/bige_color_v2.png');
-    //     background-position: center;
-    //     color: #fff;
-    //     font-weight: 700;
-    //     @include bubble-1-desktop;
-    // }
-
-    // .blurb-2 {
-    //     font-size: medium;
-    // }
-
-    // @for $i from 1 through $num-of-blurbs {
-    //     .self-blurb-container {
-    //         &:nth-child(#{$i}) {
-    //             animation-delay: $i * (20s / 50);
-    //         }
-    //     }
-    // }
-
-    // .active-grid {
-    //     font-size: calc(200%);
-    //     background-color: $pink;
-    //     color: #fff;
-    // }
-
-    // .inactive-blurb {
-    //     font-size: calc(100%);
-    //     background-image: none;
-    //     background-color: #000;
-    //     color: #fff;
-    // }
-
-    // .fade-text {
-    //     opacity: 0;
-    // }
-
-    // @media only screen and (max-width: $lgDevice) {
-    //     margin: 50px 0;
-    //     padding: 0 16px;
-    //     overflow-y: visible;
-
-    //     .routes-container {
-    //         padding-top: 10px;
-    //     }
-
-    //     .blurb-1 {
-    //         grid-area: 1 / 1 / 4 / 2;
-    //         font-size: calc(100%);
-    //         background-color: $pink;
-    //         color: #fff;
-    //     }
-
-    //     .inactive-blurb {
-    //         font-size: calc(100%);
-    //         background-color: #000;
-    //         color: #fff;
-    //     }
-    // }
-
-    // @media only screen and (max-width: $mdDevice) {
-    //     margin: 50px 0;
-    //     padding: 0 16px;
-    //     margin-top: 88px;
-    //     height: calc(100vh - 220px);
-    //     display: grid;
-    //     grid-gap: 10px;
-    //     grid-template-columns: 1fr;
-    //     grid-template-rows: repeat(4 1fr);
-    //     overflow-y: visible;
-    //     transform: translate3d(0, 0, 0);
-    //     backface-visibility: hidden;
-
-    //     .routes-container {
-    //         padding-top: 10px;
-    //     }
-
-    //     .self-blurb-container {
-    //         background-color: #fff;
-    //         color: $pink;
-    //         @include landing-bubble($num-of-blurbs);
-    //     }
-
-    //     .blurb-1 {
-    //         background-color: $pink;
-    //         color: #fff;
-    //     }
-
-    //     .active-grid {
-    //         font-size: calc(200%);
-    //         background-color: $pink;
-    //         color: #fff;
-    //     }
-
-    //     .inactive-blurb {
-    //         font-size: calc(100%);
-    //         background-color: #000;
-    //         color: #fff;
-    //         background-image: none;
-    //     }
-
-    //     @for $i from 1 through $num-of-blurbs {
-    //         .self-blurb-container {
-    //             &:nth-child(#{$i}) {
-    //                 animation-delay: $i * (20s / 40);
-    //             }
-    //         }
-    //     }
-    // }
-
-    // @media only screen and (max-width: $smDevice) {
-    //     margin-left: 0px;
-    //     padding: 0 16px;
-
-    //     .routes-container {
-    //         padding-top: 10px;
-    //     }
-
-    //     .spin {
-    //         padding: 3px !important;
-    //         font-size: 1em;
-    //     }
-
-    //     .self-blurb-container {
-    //         @include landing-bubble($num-of-blurbs);
-    //     }
-    // }
-
-    // @media only screen and (max-width: $xsDevice) {
-    //     margin-left: 0px;
-    //     padding: 10px;
-
-    //     .spin {
-    //         padding: 3px !important;
-    //         font-size: 1em;
-    //     }
-    // }
+    // @media only screen and (max-width: $xsDevice) {}
 }

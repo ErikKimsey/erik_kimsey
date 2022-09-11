@@ -1,13 +1,16 @@
 @import "../styles/globals.scss";
+@import "../styles/responsive.scss";
 
 .experienceContainer {
     width: 100%;
     min-height: 100vh;
-    padding: $pagePadding;
 
     .experienceHeader {
 
-        .label {}
-
+        .label {
+            // font-size: $componentLabelFontSize_Desktop;
+        }
     }
+
+    .experienceContent {}
 }

@@ -12,6 +12,7 @@ export default function Experience() {
             <div className='experienceHeader'>
                 <div className='label'>Experience In Brief</div>
             </div>
+            <div className='experienceContent'></div>
         </div>
     );
 }

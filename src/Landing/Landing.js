@@ -20,10 +20,7 @@ function Landing(props) {
         <div
             className="landing-container"
         >
-            <>
-                <Banner />
-                <Nav />
-            </>
+            <Banner />
         </div>
     );
 }

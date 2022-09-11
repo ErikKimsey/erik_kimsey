@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "./nav.scss";
+import "../styles/responsive.scss";
 import Banner from "../Banner/Banner";
 import resumePDF from "./erikkimsey_creativeEngineer_resume.pdf";
 
@@ -33,6 +34,7 @@ class Nav extends Component {
             <div className="nav-container">
                 <NavLink to="/" className="nav-item">Home</NavLink>
                 <NavLink to="/playground" className="nav-item">Playground</NavLink>
+                <NavLink to="/experience" className="nav-item">Experience</NavLink>
             </div>
         );
     }

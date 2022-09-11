@@ -4,7 +4,7 @@ import "./footer.scss";
 export default function Footer() {
     return (
         <div className="footerContainer">
-            YOYOYO
+            Footer
         </div>
     )
 }

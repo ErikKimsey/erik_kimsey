@@ -4,8 +4,9 @@
 
 .playgroundContainer {
     width: 100%;
-    height: 100vh;
-    padding: $pagePadding;
+    min-height: 100vh;
+    margin: 0;
+    // background-color: aqua;
 
     .playgroundHeader {
 
