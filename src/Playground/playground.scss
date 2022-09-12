@@ -8,8 +8,12 @@
     margin: 0;
 
     .playgroundHeader {
+        padding-top: 10px;
+        border-top: solid 1px #F3066D;
 
-        .label {}
+        .label {
+            font-size: $componentLabelFontSize_Desktop;
+        }
 
     }
 
