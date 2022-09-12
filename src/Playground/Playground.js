@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import "./playground.scss";
 
+import PlaygroundCarousel from './PlaygroundCarousel';
+
 export default function Playground() {
 
     const playgroundContentRef = useRef();
@@ -10,7 +12,9 @@ export default function Playground() {
             <div className='playgroundHeader'>
                 <div className='label'>Playground</div>
             </div>
-            <div className='playgroundContent' ref={playgroundContentRef}></div>
+            <div className='playgroundContent'>
+                <PlaygroundCarousel />
+            </div>
         </div>
     );
 }

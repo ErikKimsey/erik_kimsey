@@ -21,8 +21,8 @@ export default function Experience() {
             </div>
             <div className='experienceContent'>
                 {
-                    data && data.map((e) => {
-                        return <ExperienceItem name={e.name} stack={e.stack} about={e.about} />
+                    data && data.map((e, i) => {
+                        return <ExperienceItem name={e.name} stack={e.stack} about={e.about} key={i} />
                     })
                 }
             </div>
