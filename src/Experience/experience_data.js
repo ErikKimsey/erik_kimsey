@@ -1,13 +1,5 @@
 
-export const data = [
-    {
-        name: 'My Portfolio',
-        stack: 'Slide right.',
-        url: '',
-        github: '',
-        img: '',
-        about: ''
-    },
+export const EXPERIENCE_DATA = [
     {
         name: 'SkillSTAR',
         stack: 'React Native, TypeScript, React-Navigation, Jest, Context API',
