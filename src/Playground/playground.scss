@@ -6,6 +6,8 @@
     width: 100%;
     min-height: 100vh;
     margin: 0;
+    display: flex;
+    flex-flow: column;
 
     .playgroundHeader {
         padding-top: 10px;
@@ -18,7 +20,7 @@
     }
 
     .playgroundContent {
-        height: 100%;
-        width: 100%;
+        flex: 0.9 1 auto;
+        background-color: #444;
     }
 }

@@ -82,8 +82,6 @@ export default function P5Sketch({ props }) {
     };
 
     function windowResized(p5) {
-        console.log("resizing");
-        console.log(p5);
         if (p5) {
             // p5.resizeCanvas(p5.displayWidth, p5.displayHeight);
             // initTextElements(p5);

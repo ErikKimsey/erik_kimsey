@@ -19,14 +19,13 @@
     .experienceContent {
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start;
+        padding-left: 5%;
 
         .experienceItemContainer {
             display: flex;
             flex-flow: column;
             width: 300px;
-            margin: 5px;
+            margin: 10px;
             padding: 5px;
             border-left: solid 1px #9D0A9D;
 

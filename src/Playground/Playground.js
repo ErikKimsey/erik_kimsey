@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import "./playground.scss";
-
-import PlaygroundCarousel from './PlaygroundCarousel';
+import Traveling from '../ThreeSketches/Traveling';
 
 export default function Playground() {
 
@@ -13,7 +12,7 @@ export default function Playground() {
                 <div className='label'>Playground</div>
             </div>
             <div className='playgroundContent'>
-                <PlaygroundCarousel />
+                <Traveling />
             </div>
         </div>
     );

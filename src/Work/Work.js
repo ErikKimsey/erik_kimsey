@@ -42,7 +42,6 @@ export default function Work() {
         document.querySelector('.data-item-container').focus();
         window.addEventListener('keypress', (e) => {
             let code = e.which || e.keyCode;
-            console.log('code >>> ', e);
 
             if (code === '37') this.previous();
             if (code === '39') this.next();
