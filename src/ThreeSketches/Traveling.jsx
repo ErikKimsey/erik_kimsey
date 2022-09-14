@@ -1,37 +1,42 @@
-import React, { useEffect, useState } from "react";
-import { Canvas } from '@react-three/fiber';
+import React, { useEffect, useState, useMemo, useRef } from "react";
+import { extend, Canvas, useFrame, useThree, useResource } from '@react-three/fiber';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
 import * as THREE from "three";
-import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera, Sparkles } from "@react-three/drei";
 
+extend({ EffectComposer, RenderPass, UnrealBloomPass })
 
 function Box(props) {
     let { position } = props;
-    return <mesh position={position} rotation={[2, 2, 2]}>
-        <meshStandardMaterial color="#ff00ff" />
-        <boxBufferGeometry />
+
+    let [isHovering, setIsHovering] = useState(false);
+
+    useEffect(() => {
+
+    }, [isHovering]);
+
+    return <mesh position={position}
+        rotation={[2, 2, 2]}
+        scale={isHovering ? 1.05 : 1}
+        onPointerOver={() => setIsHovering(true)}
+        onPointerOut={() => setIsHovering(false)}
+    >
+        <sphereGeometry attach="geometry" />
+        <meshStandardMaterial attach="material" color="rgb(255,0,255)" transparent />
     </mesh>
 }
 
 export default function Traveling(props) {
-
     let { w, h } = props.dimens;
-    let [dim, setDim] = useState();
 
-    console.log(props.dimens);
-
-    useEffect(() => {
-        setDim({ w: w, h: h });
-    }, []);
-
-
-    return <Canvas style={{ background: "#333", width: w, height: h }}>
+    return <Canvas style={{ width: w, height: h }}>
+        <directionalLight color="#ffffff" intensity={2} position={[0, 0, -5]} />
         <PerspectiveCamera />
         <OrbitControls />
-        <Box position={new THREE.Vector3(0, -1, 0)} />
-        <Box position={new THREE.Vector3(0, 1, 0)} />
-        <Box position={new THREE.Vector3(-5, 1, 3)} />
-        <Box position={new THREE.Vector3(4, 1, -3)} />
-        <ambientLight intensity={0.2} color="#fff" />
-        <directionalLight color="#ffffff" intensity={2} position={[0, 0, 5]} />
+        <Sparkles size={2} amount={100} scale={20} />
+        <Box position={new THREE.Vector3(0, -1, 4)} />
+        {/* <ambientLight intensity={0.2} color="#fff" /> */}
     </Canvas>
 }
