@@ -16,7 +16,7 @@
         z-index: 1000;
         padding: 10px;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column;
         justify-content: flex-end;
         align-items: flex-end;
         right: 0px;
@@ -25,6 +25,7 @@
         .resumeText {
             align-self: center;
             text-align: center;
+            font-size: 12px;
         }
 
         a {

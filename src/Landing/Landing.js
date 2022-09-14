@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFloppyDisk, faPrint } from "@fortawesome/free-solid-svg-icons";
 import "./landing.scss";
 import Banner from "../Banner/Banner";
-import resume from "./erikkimsey_creativeEngineer_resume.pdf";
+
 
 function Landing(props) {
     const sketchRef = useRef();
@@ -22,11 +22,11 @@ function Landing(props) {
         >
             <Banner />
             <div className="landingLinksContainer">
-                <div className="resumeText">Resume ::</div>
 
-                <a target="_blank" href={resume}>
+                {/* <a target="_blank" href={resume}>
                     <FontAwesomeIcon icon={faFloppyDisk} size="3x" />
                 </a>
+                <div className="resumeText">Resume</div> */}
 
             </div>
         </div>

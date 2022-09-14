@@ -114,7 +114,7 @@ export default function P5Sketch({ props }) {
         // drawText(p5);
 
         if (devType !== "desktop") {
-            console.log(devType);
+            // console.log(devType);
         } else {
             if (orbCursor !== undefined) {
                 orbCursor.updateCursor();

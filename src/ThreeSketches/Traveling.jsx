@@ -1,12 +1,11 @@
-import React, { useEffect, useState, useMemo, useRef } from "react";
+import React, { useEffect, useState, Suspense, useMemo, useRef } from "react";
+import { EffectComposer, DepthOfField, Bloom, Noise, Vignette } from '@react-three/postprocessing'
+import { BlurPass, Resizer, KernelSize } from 'postprocessing'
 import { extend, Canvas, useFrame, useThree, useResource } from '@react-three/fiber';
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
-import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
-import * as THREE from "three";
-import { OrbitControls, PerspectiveCamera, Sparkles } from "@react-three/drei";
 
-extend({ EffectComposer, RenderPass, UnrealBloomPass })
+import * as THREE from "three";
+import { OrbitControls, PerspectiveCamera, Sparkles, Html } from "@react-three/drei";
+
 
 function Box(props) {
     let { position } = props;
@@ -24,19 +23,28 @@ function Box(props) {
         onPointerOut={() => setIsHovering(false)}
     >
         <sphereGeometry attach="geometry" />
-        <meshStandardMaterial attach="material" color="rgb(255,0,255)" transparent />
+        <meshStandardMaterial attach="material" color="rgb(255,0,255)" transparent metalness={0.5} />
     </mesh>
 }
 
 export default function Traveling(props) {
     let { w, h } = props.dimens;
 
-    return <Canvas style={{ width: w, height: h }}>
-        <directionalLight color="#ffffff" intensity={2} position={[0, 0, -5]} />
-        <PerspectiveCamera />
-        <OrbitControls />
-        <Sparkles size={2} amount={100} scale={20} />
-        <Box position={new THREE.Vector3(0, -1, 4)} />
-        {/* <ambientLight intensity={0.2} color="#fff" /> */}
-    </Canvas>
+    return (
+        <Canvas colorManagement
+            camera={{ position: [0, 0, 3] }} style={{ width: w, height: h }} >
+            <Suspense fallback={<Html center style={{ fontSize: "24px", color: "#fff" }}>Loading.</Html>}>
+                <Box position={new THREE.Vector3(0, -1, 0)} />
+                <directionalLight color="#ffffff" intensity={5} position={[-5, 0, 5]} />
+                <OrbitControls />
+                <Sparkles size={2} amount={100} scale={20} />
+            </Suspense>
+            {/* <ambientLight intensity={1} color="#fff" /> */}
+            <EffectComposer>
+                <Bloom
+                    luminanceThreshold={0.4} luminanceSmoothing={0.5} height={300} opacity={3}
+                />
+
+            </EffectComposer>
+        </Canvas>)
 }
