@@ -78,7 +78,9 @@ export default function P5Sketch({ props }) {
         p5.createCanvas(p5.displayWidth, p5.displayHeight).parent(canvasParentRef);
         initTextElements(p5);
 
+        p5.frameRate(20);
         orbCursor = new P5Cursor(p5, 11);
+
     };
 
     function windowResized(p5) {
