@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d66539c5.css",
+    "main.js": "/static/js/main.c24fa104.js",
+    "static/media/erikkimsey_creativeEngineer_resume.pdf": "/static/media/erikkimsey_creativeEngineer_resume.394be325dd39e9c85daf.pdf",
+    "static/media/Comfortaa-Light.ttf": "/static/media/Comfortaa-Light.3aa1a958b3fc7c3318c7.ttf",
+    "static/media/droopy_e.png": "/static/media/droopy_e.3e17519b00f145c4a81f.png",
+    "index.html": "/index.html",
+    "main.d66539c5.css.map": "/static/css/main.d66539c5.css.map",
+    "main.c24fa104.js.map": "/static/js/main.c24fa104.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d66539c5.css",
+    "static/js/main.c24fa104.js"
+  ]
+}
